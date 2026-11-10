@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de CSS - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de CSS</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-avanzado-redes-internet-078bd614-753b-4026-b07f-ec1db1b057fe.png" alt="Badge">
+                <div>
+                    <h1>Curso de CSS</h1>
+                    <p class="video-title">1. De la idea al estilo con CSS</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://i.imgur.com/w1KZRRD.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/56e85cd3-fc9b-4258-9178-8ebed295a25d/1_%20De%20la%20idea%20al%20estilo%20con%20CSS_CEGFKT.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">32 clases</span>
+                    </div>
+                <ul id="videoList">
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/56e85cd3-fc9b-4258-9178-8ebed295a25d/1_%20De%20la%20idea%20al%20estilo%20con%20CSS_CEGFKT.mp4" class="active">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>1. De la idea al estilo con CSS</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/961a6e64-b25a-4734-834b-91d836f6363c/2_%20Tres%20formas%20de%20agregar%20CSS%20a%20HTML_RKCHAL.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>2. Tres formas de agregar CSS a HTML</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bed2a74b-28a6-45af-b95c-6abc96700b97/3_%20Clases%20IDs%20y%20especificidad%20en%20CSS_UGNFEI.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>3. Clases IDs y especificidad en CSS</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f4d263f5-7d48-43d3-ac48-337ebaf0023e/4_%20Pseudo-clases%20y%20Elementos_BQOSNU.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>4. Pseudo-clases y Elementos</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9e1c499e-77e2-48b2-9669-e37b717c67af/5_%20Box%20model%20en%20CSS%20contenido%20padding%20y%20margin_DUKUWM.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>5. Box model en CSS contenido padding y margin</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/18357e1b-b37a-47a8-b8b9-b2641ffb5cf8/6_%20C%C3%B3mo%20organizar%20clases%20CSS%20con%20BEM_ZAVOCO.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>6. Cómo organizar clases CSS con BEM</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bdd2ac80-4fe4-4255-b7fd-e314f2ffaa82/7_%20C%C3%B3mo%20posicionar%20elementos%20con%20CSS_MZQSQL.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>7. Cómo posicionar elementos con CSS</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a8771a1a-2c24-45f6-8e6f-609adc337334/8_%20P%C3%ADxeles%20rem%20em%20vw%20y%20vh%20en%20CSS_RXEVPC.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>8. Píxeles rem em vw y vh en CSS</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9ba28fa1-5e9a-4f26-b88f-a83383374ff9/9_%20Crea%20tu%20portafolio%20web%20con%20CSS_SEOFXG.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>9. Crea tu portafolio web con CSS</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c40daa15-dda3-449e-8d53-8260f38b33ff/10_%20Fuentes%20web%20con%20CSS%20y%20Google%20Fonts_NXJIOG.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>10. Fuentes web con CSS y Google Fonts</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/22bc1952-a210-4f04-a6cd-215a09f8d3cf/11_%20Propiedades%20CSS%20para%20controlar%20tus%20fuentes_FVZWOS.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>11. Propiedades CSS para controlar tus fuentes</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/538da60f-4e45-484e-bbd4-9761edbb298b/12_%20Propiedades%20CSS%20para%20controlar%20tu%20texto_JVQWCU.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>12. Propiedades CSS para controlar tu texto</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9e23c66c-56eb-482f-8197-9cbab9009579/13_%20Aplica%20fuentes%20de%20Google%20a%20tu%20portafolio_GQPKEH.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>13. Aplica fuentes de Google a tu portafolio</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cb62140e-97f2-4bdd-81f1-e35590b8c8f5/14_%20Sistemas%20de%20Color_RMFPXP.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>14. Sistemas de Color</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f9d36a07-bdc3-4732-ba9c-812a15cd370c/15_%20Variables%20CSS%20para%20no%20repetir%20estilos_FDLATQ.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>15. Variables CSS para no repetir estilos</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e940b35a-0a6d-41d6-a869-57ecac34ac8a/16_%20Degradados_WVRCZA.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>16. Degradados</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/55c3cad6-8d1e-4bd4-b0ee-977999c69da2/17_%20Sombras%20y%20bordes%20redondeados%20en%20CSS_PFKRML.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>17. Sombras y bordes redondeados en CSS</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f4bafc35-0cad-4c69-a92d-a4cb21d4bc58/18_%20Aplicaci%C3%B3n%20de%20gradientes%20sombras%20y%20esquinas%20redondeadas%20al%20porta_YIKDWE.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>18. Aplicación de gradientes sombras y esquinas redondeadas al portafolio</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/06534c80-8299-4321-8719-a5eb59d0d7f9/19_%20C%C3%B3mo%20Flexbox%20resuelve%20el%20layout%20en%20CSS_FZJODM.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>19. Cómo Flexbox resuelve el layout en CSS</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d99027a3-3a34-4465-8c05-fdedd54753df/20_%20Flexbox%20Avanzado_HNLXCP.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>20. Flexbox Avanzado</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/14fa6a55-9727-4a65-94aa-c3ad2a3a60ac/21_%20Grid%20B%C3%A1sico_EOILZP.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>21. Grid Básico</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/997d8960-7114-48dd-8e36-f207432889d7/22_%20Grid%20Avanzado_KLXCDM.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>22. Grid Avanzado</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ec249310-fd50-4089-8bb2-bc1668d31b9c/23_%20Aplicaci%C3%B3n%20de%20flexbox%20y%20grid%20en%20tu%20portafolio%20web_QGYMWX.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>23. Aplicación de flexbox y grid en tu portafolio web</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3c043881-8ccb-4727-b581-c49b5391fee9/24_%20Media%20queries%20CSS%20con%20mobile%20first_EVFBAU.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>24. Media queries CSS con mobile first</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/af6ec95b-3dd5-4289-8292-942e00c4ed97/25_%20Dise%C3%B1o%20Fluido_RNIMZZ.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>25. Diseño Fluido</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/74a6e74f-b046-4b43-af6a-374df47eacad/26_%20Mejores%20pr%C3%A1cticas%20para%20dise%C3%B1o%20responsive_ERNYOH.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>26. Mejores prácticas para diseño responsive</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4ae40607-941e-461d-af58-515716aff5c7/27_%20Portafolio%20responsive%20con%20media%20queries_IPWPQY.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>27. Portafolio responsive con media queries</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8a743645-294b-44be-806d-5937b988e497/28_%20Transformaciones_ZUBVMJ.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>28. Transformaciones</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6c630213-99d5-4e0c-bafa-c44e60a18a84/29_%20Transiciones%20CSS%20que%20no%20se%20sienten%20abruptas_MUDGBP.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>29. Transiciones CSS que no se sienten abruptas</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ef9359e2-55ef-41bc-a806-13bd98456b75/30_%20Animaciones%20CSS%20en%20una%20card%20con%20hover_XITFCJ.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>30. Animaciones CSS en una card con hover</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bff45e81-4067-4dc7-bfbd-fd9c42bd167f/31_%20Animaciones%20CSS%20con%20keyframes%20desde%20cero_BJNZHA.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>31. Animaciones CSS con keyframes desde cero</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3790c021-d05c-4514-b2d1-d718e5730ed6/32_%20Animaciones%20CSS%20para%20tu%20portafolio%20final_OPDBNZ.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>32. Animaciones CSS para tu portafolio final</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

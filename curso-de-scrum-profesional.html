@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Scrum Profesional - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Scrum Profesional</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badges-scrum-9aaa566f-eb7c-4676-9e55-d36565ec582e.png" alt="Badge">
+                <div>
+                    <h1>Curso de Scrum Profesional</h1>
+                    <p class="video-title">1. Scrum para trabajar con incertidumbre y entregar valor real</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://files.catbox.moe/vyrz23.jpg">
+                        <source src="https://files.catbox.moe/94r9y2.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">26 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://files.catbox.moe/94r9y2.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Scrum para trabajar con incertidumbre y entregar valor real</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/5o7nxm.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Orígenes de la agilidad y por qué no es solo para programadores</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/otwc3t.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Corazón de la agilidad: mentalidad de colaboración y mejora continua</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/347zv6.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Marco Cynefin para elegir el enfoque correcto en proyectos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/d0c02h.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Manifiesto ágil: valores y principios para equipos adaptables</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/00r7mm.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Enfoque iterativo e incremental como base de Scrum</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/29nyye.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Los tres pilares de Scrum: transparencia, inspección y adaptación</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/38u1fw.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Estructura y componentes del framework Scrum</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/uh2bo1.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Responsabilidades y habilidades del Product Owner en Scrum</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/rn8nze.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. El Scrum Master como agente de cambio y facilitador de equipos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/w0blwk.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Desarrolladores en Scrum: equipos autogestionados y multifuncionales</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/tb6l51.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Eventos de Scrum: Sprint Planning, Daily, Review y Retrospective</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/erd2jp.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Sprint Planning en Scrum: definir objetivos y crear planes ejecutables</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/0d1nh6.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Daily Scrum: autogestión del equipo en 15 minutos efectivos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/rfr9b2.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Sprint Review: cómo inspeccionar el incremento y recibir feedback</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/txtjo5.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Sprint Retrospective: como motor de mejora continua en Scrum</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/6xa3au.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Product Backlog y técnica MoSCoW para priorización ágil</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/2zbasj.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Estructura y evaluación de historias de usuario con criterio INVEST</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/lfemfv.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Criterios de aceptación y definición de terminado (Definition of Done) en Scrum</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/4euyxo.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Estimación relativa con Planning Poker para equipos de desarrollo</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/c5j1pf.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. User Story Mapping para planificar Product Backlog en Scrum</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/3uz5i4.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Sprint Backlog y tablero Kanban para equipos de desarrollo</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/bja8jn.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Incremento en Scrum: entrega de valor y feedback de usuarios</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/q4x12u.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Burndown Chart: herramienta de transparencia para el progreso del Sprint</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/e89tm8.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Inception y preparación del primer Sprint en Scrum</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/wciyh5.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Scrum como marco de trabajo para equipos ágiles</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```[cite: 17]

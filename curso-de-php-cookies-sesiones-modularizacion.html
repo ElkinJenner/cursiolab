@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de PHP: Cookies, Sesiones y Modularización - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de PHP: Cookies, Sesiones y Modularización</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-intermediophp-cookies-da5e3c79-4ef9-4198-9244-ba2d88c039c1.png" alt="Badge">
+                <div>
+                    <h1>Curso de PHP: Cookies, Sesiones y Modularización</h1>
+                    <p class="video-title">1. Debugging en PHP con dd y modularización</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_627e9a9f49b7030824e27204_627e9a9f49b7030824e27210_16s.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5cb7a5a6-91ec-4fa8-a47f-c8685e8c500b/1_%20Debugging%20en%20PHP%20con%20dd%20y%20modularizaci%C3%B3n_IKYIXR.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">22 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5cb7a5a6-91ec-4fa8-a47f-c8685e8c500b/1_%20Debugging%20en%20PHP%20con%20dd%20y%20modularizaci%C3%B3n_IKYIXR.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Debugging en PHP con dd y modularización</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/91f5d8f6-2928-48e3-acfc-278acc2afb34/2_%20Debugging%20con%20dd%20de%20Symfony%20en%20PHP_RFBVOO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Debugging con dd de Symfony en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/478cf467-8a49-43e2-bd0b-1e68faab719d/3_%20Qu%C3%A9%20son%20las%20cookies%20y%20c%C3%B3mo%20usarlas%20en%20PHP_FSGKHE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Qué son las cookies y cómo usarlas en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e1439255-b8cc-43f4-849d-561db8d0f29b/4_%20Atributos%20de%20setcookie%20en%20PHP_EZZMRF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Atributos de setcookie en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/168e6126-693c-4c69-9d98-0df844139ef9/5_%20Sesiones%20en%20PHP%20con%20session_start_CMXSVJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Sesiones en PHP con session_start</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/666876c7-2ba5-4b80-b7e2-99637a6acdc7/6_%20Sesiones%20en%20PHP%20login%20y%20logout%20b%C3%A1sico_UQPCGX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Sesiones en PHP login y logout básico</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/831be374-39d7-4d86-8cf1-f9636b8f4067/7_%20Manejo%20de%20excepciones%20en%20PHP%20con%20try%20catch_PNKDHS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Manejo de excepciones en PHP con try catch</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bb0168da-e1fe-46f7-b1b9-d4f5fe678dd8/8_%20C%C3%B3mo%20implementar%20try%20catch%20en%20PHP_AIWPOE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Cómo implementar try catch en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bf0e98b6-7566-4c03-a983-44482437b6a2/9_%20M%C3%A9todos%20de%20la%20clase%20Exception%20en%20PHP_KFORAI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Métodos de la clase Exception en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/00201354-9ea5-4f55-b3b1-243011265ec0/10_%20Creaci%C3%B3n%20de%20Excepciones%20Personalizadas%20en%20PHP_VSAUVA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Creación de Excepciones Personalizadas en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/89070cce-30bd-40f9-8216-aaca78cffc2d/11_%20Fechas%20en%20PHP%20con%20date%20y%20DateTime_EPSDQW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Fechas en PHP con date y DateTime</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2177d2eb-5be6-47af-a695-887c04002dae/12_%20Fechas%20en%20PHP%20funciones%20vs%20clases_GUNKNX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Fechas en PHP funciones vs clases</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/28686605-ba96-4bd3-af42-1f56bf4120b5/13_%20Funciones%20de%20fechas%20%C3%BAtiles%20en%20PHP_MRUJCR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Funciones de fechas útiles en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f1009326-b02a-41cf-9ad4-62f4a8d2f648/14_%20C%C3%B3mo%20calcular%20y%20modificar%20fechas%20en%20PHP_WZSDZF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Cómo calcular y modificar fechas en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6e4711c2-a96b-4090-94d8-e1e8009d578f/15_%20Funciones%20PHP%20para%20fechas%20en%20espa%C3%B1ol_GVNSAJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Funciones PHP para fechas en español</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4b5097b7-7e6a-4e5a-ad12-93350b1deca3/16_%20Modularizaci%C3%B3n%20de%20c%C3%B3digo%20en%20PHP%20con%20archivos_XQQRSH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Modularización de código en PHP con archivos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/eff9a690-de0c-482b-9b97-d6260d2feb49/17_%20Namespaces%20en%20PHP%20para%20evitar%20clases%20repetidas_JMUPNL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Namespaces en PHP para evitar clases repetidas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/933ba249-2eb3-4322-9bb3-2abfd1369019/18_%20Autocarga%20de%20archivos%20con%20Composer%20y%20PSR-4_MLQAXE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Autocarga de archivos con Composer y PSR-4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c834d60e-046d-44dc-9067-b88447813441/19_%20Qu%C3%A9%20es%20un%20front%20controller%20en%20PHP_GLVSVY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Qué es un front controller en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/670989f4-c351-42ba-83d9-19eea4fc6fab/20_%20URLs%20limpias%20con%20htaccess%20en%20PHP_DSRRFZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. URLs limpias con htaccess en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/41ffca6e-3847-490f-996e-8a0447622c59/21_%20Traits%20en%20PHP%20reutiliza%20m%C3%A9todos%20sin%20herencia_GBZDPM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Traits en PHP reutiliza métodos sin herencia</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2877e4ca-5208-4c4c-9fcc-2e9cb7b0dfd8/22_%20Qu%C3%A9%20aprendiste%20en%20el%20curso%20intermedio%20de%20PHP_NTQBKY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Qué aprendiste en el curso intermedio de PHP</span>
+                        </li>
+</ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

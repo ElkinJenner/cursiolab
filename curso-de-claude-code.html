@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Claude Code - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Claude Code</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/design-course-badge-b7e4192c-f9dc-46fc-a63c-9ca361a778a6.png" alt="Badge">
+                <div>
+                    <h1>Curso de Claude Code</h1>
+                    <p class="video-title">1. Qué hace único a Claude Code</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/courses/Piezas_Curso_Claude_Code.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8a5a376a-19fc-4919-8de3-984095629a5b/1_%20Qu%C3%A9%20hace%20%C3%BAnico%20a%20Claude%20Code_TUMVNK.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">18 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8a5a376a-19fc-4919-8de3-984095629a5b/1_%20Qu%C3%A9%20hace%20%C3%BAnico%20a%20Claude%20Code_TUMVNK.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Qué hace único a Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f6bbd0d2-80c1-4108-8410-bef8b433c53b/2_%20C%C3%B3mo%20entender%20un%20codebase%20nuevo%20con%20Claude%20Code_ZOZESV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Cómo entender un codebase nuevo con Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e11cf845-5f03-49ec-a1f0-1b31a7a83cd4/3_%20Instala%20y%20configura%20Claude%20Code%20en%20minutos_BFOUVO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Instala y configura Claude Code en minutos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4489d7d5-d0af-48e9-815d-2de381bf18d0/4_%20Cinco%20conceptos%20clave%20para%20usar%20Claude%20Code_FFKVKQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Cinco conceptos clave para usar Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0024300f-0bd8-43e6-b08e-39ce5f462903/5_%20Analiza%20y%20configura%20un%20proyecto%20con%20Claude%20Code_YFJJYO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Analiza y configura un proyecto con Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/11a47b1a-87d3-43cd-acdd-ebc6396da3dc/6_%20An%C3%A1lisis%20de%20impacto%20del%20feature%20de%20ratings%20con%20Claude%20Code_NHWVWC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Análisis de impacto del feature de ratings con Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2436380f-51e9-46ec-8689-9ab8526600dc/7_%20C%C3%B3mo%20crear%20subagentes%20especializados%20en%20Claude%20Code_WBPAHD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Cómo crear subagentes especializados en Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1a1248d9-6ef7-4d32-be22-4eabdf1aba53/8_%20Novedades%20de%20Claude%20Code%202_0%20y%20Sonnet%204_5_LLTULN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Novedades de Claude Code 2.0 y Sonnet 4.5</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5072f9eb-475e-43ce-8f75-150d706a09bc/9_%20Subagentes%20de%20frontend%20y%20backend%20en%20paralelo_JXZLKL.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Subagentes de frontend y backend en paralelo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/409f2884-1e83-4cec-a11c-59eef75b9501/10_%20Migraciones%20de%20base%20de%20datos%20con%20pruebas%20en%20Claude%20Code_EYBMTX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Migraciones de base de datos con pruebas en Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0e2c69e7-ad91-437a-84ce-cb31c31451bc/11_%20Revisi%C3%B3n%20de%20seguridad%20autom%C3%A1tica%20con%20Claude%20Code_BOWYBG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Revisión de seguridad automática con Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5b0eaf3e-9bd5-4c5d-8f1a-0cbb6fb02128/12_%20Ratings%20en%20frontend%20con%20datos%20mock%20y%20Claude%20Code_TUFIWL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Ratings en frontend con datos mock y Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a426f1db-9d0e-49ed-961a-ea19efc9ce6e/13_%20Integraci%C3%B3n%20full%20stack%20con%20add%20dir%20en%20Claude%20Code_PGFZXK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Integración full stack con add dir en Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2c242551-b236-4c75-9094-a10d063758ed/14_%20Playwright%20Notion%20y%20Linear%20como%20MCPs%20en%20Claude%20Code_NLGHIK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Playwright Notion y Linear como MCPs en Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bc7c97a8-c8e2-42b9-8c6e-f7eb67c5387f/15_%20Control%20de%20costos%20y%20modelos%20en%20Claude%20Code_NCTPLI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Control de costos y modelos en Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f716aefd-4912-40d5-8677-54ec3ccbcca0/16_%20Instala%20Claude%20Code%20en%20GitHub%20Actions_ACXGGX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Instala Claude Code en GitHub Actions</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/33b5ec02-35fa-427d-bd19-862fd8f403aa/17_%20C%C3%B3mo%20invocar%20Claude%20Code%20desde%20un%20pull%20request_ARWPWV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Cómo invocar Claude Code desde un pull request</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/87910219-aafd-4e03-be50-51e295d0d29d/18_%20Qu%C3%A9%20aprendiste%20sobre%20desarrollo%20conversacional_HHCVDI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Qué aprendiste sobre desarrollo conversacional</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

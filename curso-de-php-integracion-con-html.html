@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de PHP: Integración con HTML - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de PHP: Integración con HTML</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-integracion-php-html_badge-e017cef4-d9a5-47bf-814b-68eea412083e.png" alt="Badge">
+                <div>
+                    <h1>Curso de PHP: Integración con HTML</h1>
+                    <p class="video-title">1. Cómo se renderiza una página web en mi computadora</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bb4894a3-c749-4bed-ba61-7e98b07e07a8/file_1794192538673_DZHFKB.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/34e0249d-8136-4b31-8eb4-4491b4e490ac/1_%20C%C3%B3mo%20se%20renderiza%20una%20p%C3%A1gina%20web%20en%20mi%20computadora_ZSJLYD.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">24 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/34e0249d-8136-4b31-8eb4-4491b4e490ac/1_%20C%C3%B3mo%20se%20renderiza%20una%20p%C3%A1gina%20web%20en%20mi%20computadora_ZSJLYD.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Cómo se renderiza una página web en mi computadora</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8d114276-6f76-419e-8c1e-e2c922bca5b4/2_%20Levantando%20un%20servidor%20local_WLMSLZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Levantando un servidor local</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ba8f992c-93db-43ff-bb1c-97de5d29acdc/3_%20PHP%20como%20preprocesador%20de%20HTML_HVLPSE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. PHP como preprocesador de HTML</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/939d2750-77d8-40ae-a90f-489826ac6ef4/4_%20Imprime%20texto%20y%20etiquetas%20HTML_OKHUAA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Imprime texto y etiquetas HTML</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0313cdec-02aa-4663-9874-0edb2e2fe6f9/5_%20Condicionales_RSRQVO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Condicionales</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e138b9e6-58c4-432e-8f4a-b82b640fe862/6_%20Ciclos_MYONOT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Ciclos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b265d1e8-dfaa-4ee4-a662-de0c4e139c73/7_%20C%C3%B3mo%20pasar%20variables%20de%20PHP%20a%20JavaScript_QQWLAK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Cómo pasar variables de PHP a JavaScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c71b3365-80e5-4a75-bf49-f48a65513cd2/8_%20Evita%20el%20c%C3%B3digo%20espagueti_MEZNYY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Evita el código espagueti</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f46741ee-1ccf-4ded-a96b-704c3595afd3/9_%20Refactorizando%20c%C3%B3digo%20espagueti_UXJYPJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Refactorizando código espagueti</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/76089397-8198-4830-8749-e854c57c163a/10_%20C%C3%B3mo%20obtener%20una%20solicitud%20al%20servidor%20con%20PHP_XRZEMF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Cómo obtener una solicitud al servidor con PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d29e9438-9d71-415c-8024-311418e80b84/11_%20Env%C3%ADo%20de%20un%20formulario%20a%20trav%C3%A9s%20de%20GET_ZYJITM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Envío de un formulario a través de GET</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cf6f191f-edaf-4c2f-be82-83ed1e4c846c/12_%20Env%C3%ADo%20de%20un%20formulario%20a%20trav%C3%A9s%20de%20POST_OIMBNM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Envío de un formulario a través de POST</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5e4befa6-af9c-466e-a016-52a4d1a1f907/13_%20Env%C3%ADo%20de%20im%C3%A1genes_VXZSGF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Envío de imágenes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/320c3c6e-73bd-4c17-be87-aaf84db3b7c1/14_%20Guardando%20im%C3%A1genes%20en%20el%20servidor_ONVIOV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Guardando imágenes en el servidor</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d3531f6b-6eec-42d4-bbfb-600de5864b20/15_%20Tipos%20de%20inputs_RGJHGP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Tipos de inputs</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e5fa16a9-b2d9-42ac-9377-a39ece25f94b/16_%20Otros%20tipos%20de%20inputs_QBHOAE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Otros tipos de inputs</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4ae0edaf-7581-4a60-ae91-19ea8ee5cb90/17_%20Valida%20si%20un%20formulario%20ha%20sido%20enviado_CJPSII.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Valida si un formulario ha sido enviado</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b133f204-2be7-4555-9287-28b788d71fee/18_%20Sanitizando%20datos%20de%20mi%20formulario_SQVRKG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Sanitizando datos de mi formulario</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/33a70c58-5412-4158-a290-21756451df5c/19_%20Validando%20datos_HVUPFI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Validando datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bdd56a18-1af7-4878-9e20-7ab1f281b912/20_%20Creando%20el%20maquetado_NLHDTP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Creando el maquetado</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8f24f494-00f9-4fbc-96f6-89f4e3b4994c/21_%20Haciendo%20la%20l%C3%B3gica%20de%20recepci%C3%B3n%20del%20formulario_KHOAXJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Haciendo la lógica de recepción del formulario</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/19171fe5-0e3e-452d-845d-b4a1af89ccbb/22_%20Integrando%20PHPMailer_AHSUUO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Integrando PHPMailer</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6d8cc95f-cda4-4537-924a-1a6727a7f887/23_%20Implementando%20el%20servidor%20de%20correos%20de%20Gmail_UUFVPX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Implementando el servidor de correos de Gmail</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1efac753-3180-480e-946f-513794e521ef/24_%20Es%20tu%20turno%20de%20poner%20todo%20en%20pr%C3%A1ctica_GVWIFI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Es tu turno de poner todo en práctica</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

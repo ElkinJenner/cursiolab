@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Arquitecturas Limpias para Desarrollo de Software - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Arquitecturas Limpias para Desarrollo de Software</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-arquitecturas-limpias-software-d79d8ff0-e893-4dab-9fb5-38fc28d801b4.png" alt="Badge">
+                <div>
+                    <h1>Curso de Arquitecturas Limpias para Desarrollo de Software</h1>
+                    <p class="video-title">1. Qué es la arquitectura limpia en Java y C</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5b362632-3968-42f5-b2f8-89f653cc7255/file_1794180891799_HLYFUY.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/040b90c2-ec07-433b-96c1-4eaf5c3d1bea/1_%20Qu%C3%A9%20es%20la%20arquitectura%20limpia%20en%20Java%20y%20C_NPOMLB.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">24 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/040b90c2-ec07-433b-96c1-4eaf5c3d1bea/1_%20Qu%C3%A9%20es%20la%20arquitectura%20limpia%20en%20Java%20y%20C_NPOMLB.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Qué es la arquitectura limpia en Java y C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7b426a04-fef4-42e3-8f0f-181db5326c84/2_%20L%C3%ADmites%20de%20MVC%20y%20arquitectura%20de%20tres%20capas_ZMWNCI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Límites de MVC y arquitectura de tres capas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/04ce581f-6c61-4fdf-b0cf-aa63f47e6884/3_%20Caracter%C3%ADsticas%20clave%20de%20arquitecturas%20limpias_CDOEJG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Características clave de arquitecturas limpias</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0f225588-d3fe-4747-9234-b0aafb237f49/4_%20Cu%C3%A1ndo%20usar%20y%20cu%C3%A1ndo%20evitar%20clean%20architecture_VPHKZR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Cuándo usar y cuándo evitar clean architecture</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2039b210-f8ab-489e-953e-486324a798bf/5_%20Principios%20SOLID%20Aplicaci%C3%B3n%20Pr%C3%A1ctica%20en%20Arquitecturas%20Limpias_ZJZEPB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Principios SOLID Aplicación Práctica en Arquitecturas Limpias</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d75adfc5-6c8b-41ac-b601-adbc7a690a47/6_%20Arquitectura%20hexagonal%20ports%20y%20adapters_QXQKMX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Arquitectura hexagonal ports y adapters</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7c237c86-16fe-46a3-a169-a52c45aaa956/7_%20Arquitectura%20Onion%20Dise%C3%B1o%20y%20Aplicaci%C3%B3n%20en%20Desarrollo%20de%20Software_QEGGFP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Arquitectura Onion Diseño y Aplicación en Desarrollo de Software</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b6ffab59-ce88-4b95-b2d0-e6d8c79a16d2/8_%20Desglose%20de%20Capas%20en%20Clean%20Architecture_SCOMDW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Desglose de Capas en Clean Architecture</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b0323ee0-4ea4-4518-a67f-b8ab5e8f0c68/9_%20Arquitectura%20limpia%20en%20Netflix%20y%20startups_GUOVTK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Arquitectura limpia en Netflix y startups</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c8a6eeac-245f-4b73-b4ad-efabca4d7a71/10_%20C%C3%B3mo%20adaptar%20arquitecturas%20limpias%20a%20tu%20proyecto_YLBPYO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Cómo adaptar arquitecturas limpias a tu proyecto</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cc4c357b-3538-4156-8ec8-9d3440f05fae/11_%20Errores%20que%20rompen%20el%20encapsulamiento%20del%20dominio_EKQEGD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Errores que rompen el encapsulamiento del dominio</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/dab6b56b-a6fd-4fe2-b321-e979e7482ba2/12_%20Transaction%20Script%20cu%C3%A1ndo%20usarlo%20y%20sus%20l%C3%ADmites_CFDGPA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Transaction Script cuándo usarlo y sus límites</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/690c8460-3fd2-47a9-a29b-f4bd233e4fe0/13_%20Inyecci%C3%B3n%20de%20Dependencias%20e%20Inversi%C3%B3n%20de%20Control%20en%20Java_RLEKNM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Inyección de Dependencias e Inversión de Control en Java</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5f30b9d6-daad-4fb9-8013-b72fecba8a4b/14_%20Qu%C3%A9%20es%20el%20modelo%20de%20dominio%20en%20POO_UURVVD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Qué es el modelo de dominio en POO</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/53bf01e3-02ed-4cc4-bed3-7bc4d29eb0e9/15_%20Capa%20de%20Servicios%20y%20Fachada%20en%20la%20Arquitectura%20de%20Software_TKDOGN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Capa de Servicios y Fachada en la Arquitectura de Software</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/81ba9527-b9c9-495e-bb44-546efa5b874b/16_%20Casos%20de%20uso%20en%20Clean%20Architecture%20con%20C_CVMGXX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Casos de uso en Clean Architecture con C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9c408246-0daa-403b-b639-862fe85be311/17_%20CQRS%20separar%20comandos%20y%20consultas%20en%20tu%20dominio_VFDZHB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. CQRS separar comandos y consultas en tu dominio</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/667a6537-6ce4-45d9-acb0-c9e464f875c4/18_%20Acceso%20a%20datos%20en%20arquitectura%20limpia_GMPSNZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Acceso a datos en arquitectura limpia</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3701a896-c495-40b0-90fe-e4bc443d0214/19_%20Patr%C3%B3n%20Repository%20para%20separar%20datos%20del%20dominio_UHHNXG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Patrón Repository para separar datos del dominio</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/93129b68-81eb-43a4-910c-a0f6fa4ff20c/20_%20REST%20APIs%20en%20arquitectura%20limpia%20con%20Spring%20Boot_CIMQMR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. REST APIs en arquitectura limpia con Spring Boot</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/463ca0e7-c293-472a-86d8-604324331848/21_%20Implementaci%C3%B3n%20de%20Integraciones%20con%20el%20Patr%C3%B3n%20Adapter%20en%20Arquite_UPZNEL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Implementación de Integraciones con el Patrón Adapter en Arquite</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3109fcd2-23aa-46dc-87e6-7e8e95973146/22_%20Pruebas%20Unitarias%20en%20Arquitecturas%20Limpias%20con%20Java%20y%20Spring%20Boo_XIQEHJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Pruebas Unitarias en Arquitecturas Limpias con Java y Spring Boo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/87e612f9-c0b0-4cd0-bdb5-5ab6a7511462/23_%20Mocks%20y%20stubs%20en%20pruebas%20de%20integraci%C3%B3n_HJRHBH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Mocks y stubs en pruebas de integración</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3c78bf7b-ca0d-487c-b8bb-dcb7f6a519c5/24_%20Desaf%C3%ADos%20reales%20al%20aplicar%20arquitectura%20limpia_KGZWFI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Desafíos reales al aplicar arquitectura limpia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

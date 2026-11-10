@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CursioLab :: Cursos Premium gratis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item active">
+                <img src="assets/icons/home_icon.png" class="icon-png" alt="Inicio"> <span>Inicio</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/explore_icon.png" class="icon-png" alt="Explorar"> <span>Explorar</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/courses_icon.png" class="icon-png" alt="Mis Cursos"> <span>Mis Cursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/save_icon.png" class="icon-png" alt="Guardados"> <span>Guardados</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-section">
+            <div class="sidebar-title">Categorías principales</div>
+            <ul class="category-list">
+                <li><a href="#"><span class="dot dot-blue"></span> Programación</a></li>
+                <li><a href="#"><span class="dot dot-yellow"></span> Electrónica</a></li>
+                <li><a href="#"><span class="dot dot-green"></span> Telecomunicaciones</a></li>
+                <li><a href="#"><span class="dot dot-red"></span> Otros</a></li>
+            </ul>
+        </div>
+
+        <div class="pro-card">
+            <div class="pro-title">Pasa a Pro</div>
+            <p>Accede a contenido exclusivo y recursos descargables.</p>
+            <button class="btn-pro">Actualizar</button>
+        </div>
+    </aside>
+
+    <!-- Contenedor Principal -->
+    <div class="main-wrapper">
+        <!-- Topbar / Header -->
+        <header class="topbar">
+            <div class="search-bar">
+                <img src="assets/icons/search_icon.png" class="icon-png" alt="Buscar">
+                <input type="text" id="searchInput" placeholder="Buscar...">
+            </div>
+
+            <nav class="top-nav">
+                <a href="#" class="active">Visión general</a>
+                <a href="#">Suscripciones</a>
+                <a href="#">Comunidad</a>
+                <a href="#">Biblioteca</a>
+            </nav>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Cuerpo del Catálogo -->
+        <main class="content-body">
+            <div class="content-header">
+                <div class="content-header-top">
+                    <div>
+                        <h2>Catálogo de Cursos</h2>
+                        <p class="subtitle">Explora los 92 cursos disponibles en la plataforma</p>
+                    </div>
+                </div>
+
+                <!-- Controles: Filtros + Selector de Vistas (Lista / 4 Cols / 5 Cols) -->
+                <div class="controls-bar">
+                    <div class="filter-controls">
+                        <button class="btn-filter active" data-filter="all">Todos (92)</button>
+                        <button class="btn-filter" data-filter="programacion">Programación</button>
+                        <button class="btn-filter" data-filter="electronica">Electrónica</button>
+                        <button class="btn-filter" data-filter="telecomunicaciones">Telecomunicaciones</button>
+                        <button class="btn-filter" data-filter="otros">Otros</button>
+                    </div>
+
+                    <div class="layout-switcher">
+                        <button class="grid-btn" id="btnList" title="Vista en Lista">
+                            <i data-lucide="list"></i>
+                        </button>
+                        <button class="grid-btn active" id="btnGrid4" title="Vista de 4 Columnas">
+                            <i data-lucide="layout-grid"></i>
+                        </button>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <section class="contender-cursos cols-4" id="contenderCursos">
+                <!-- 1 -->
+                <a href="curso-basico-javacript.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Og_Basico_de_JavaScript.png" alt="Curso Básico de JavaScript"></div>
+                    <div class="card-info"><h3>Curso Básico de JavaScript</h3></div>
+                </a>
+
+                <!-- 2 -->
+                <a href="electronica-desde-cero-edteam.html" class="course-card" data-category="electronica">
+                    <div class="card-thumb"><img src="https://edteam-media.s3.amazonaws.com/courses/original/47766c2e-6ef7-40a9-8c92-50939fe9bfd0.png" alt="Electrónica Desde Cero"></div>
+                    <div class="card-info"><h3>Electrónica Desde Cero</h3></div>
+                </a>
+
+                <!-- 3 -->
+                <a href="curso-de-c++-basico.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Cplusplus-basico.png" alt="Curso Básico de C++"></div>
+                    <div class="card-info"><h3>Curso Básico de C++</h3></div>
+                </a>
+
+                <!-- 4 -->
+                <a href="curso-de-programacion-orientada-a-objetos-con-c++.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/programaci%C3%B3n-orientada-objetos-c_og.png" alt="POO con C++"></div>
+                    <div class="card-info"><h3>Programación Orientada a Objetos con C++</h3></div>
+                </a>
+
+                <!-- 5 -->
+                <a href="curso-c++-profesional-codigofacilito.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://files.catbox.moe/scmmm1.jpg" alt="C++ Profesional"></div>
+                    <div class="card-info"><h3>Curso de C++ Profesional</h3></div>
+                </a>
+
+                <!-- 6 -->
+                <a href="curso-de-fondo-gitHub.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://codigofacilito.com/system/courses/thumbnails/000/000/485/original/thumb-github.jpg?1664464496" alt="Curso de Git y GitHub"></div>
+                    <div class="card-info"><h3>Curso de Git y GitHub</h3></div>
+                </a>
+
+                <!-- 7 -->
+                <a href="curso-de-github.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/gndx-thumb.png" alt="Curso de Git y GitHub"></div>
+                    <div class="card-info"><h3>Curso de Git y GitHub</h3></div>
+                </a>
+
+                <!-- 8 -->
+                <a href="curso-de-react-js.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/OG-reactjs.png" alt="Curso de React JS"></div>
+                    <div class="card-info"><h3>Curso de React JS</h3></div>
+                </a>
+
+                <!-- 9 -->
+                <a href="curso-de-react2-js.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_64499b8a1c436571aa57fb54_64499b8a1c436571aa57fb5f_45s.jpg" alt="Curso de React JS V2"></div>
+                    <div class="card-info"><h3>Curso Avanzado de React JS</h3></div>
+                </a>
+
+                <!-- 10 -->
+                <a href="curso-de-react.js-con-typeScript.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-react-typescript_Opengraph.png" alt="React JS con TypeScript"></div>
+                    <div class="card-info"><h3>React.js con TypeScript</h3></div>
+                </a>
+
+                <!-- 11 -->
+                <a href="reactJs-codigofacilito.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://files.catbox.moe/7crq1o.jpg" alt="Curso de React JS Código Facilito"></div>
+                    <div class="card-info"><h3>Curso Práctico de React JS</h3></div>
+                </a>
+
+                <!-- 12 -->
+                <a href="typeScript-codigofacilito.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://files.catbox.moe/zsjhue.jpg" alt="TypeScript Código Facilito"></div>
+                    <div class="card-info"><h3>Curso de TypeScript</h3></div>
+                </a>
+
+                <!-- 13 -->
+                <a href="curso-de-typescript.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/67ad4533-b717-450c-adbf-87f91ae100ea/imagen_BPWOQO.png" alt="Curso Básico de TypeScript"></div>
+                    <div class="card-info"><h3>Curso Básico de TypeScript</h3></div>
+                </a>
+
+                <!-- 14 -->
+                <a href="curso-de-typeScript-programacion-orientada-a-objetos.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-TypeScript-Programacion-Orientada-Objetos-Asincronismo_Opengraph.png" alt="TypeScript POO"></div>
+                    <div class="card-info"><h3>TypeScript POO y Asincronismo</h3></div>
+                </a>
+
+                <!-- 15 -->
+                <a href="curso-de-typeScript-tipos-avanzados-y-funciones.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Og_TypeScript___Tipos_Avanzados_y_Funciones.png" alt="TypeScript Tipos Avanzados"></div>
+                    <div class="card-info"><h3>TypeScript: Tipos Avanzados</h3></div>
+                </a>
+
+                <!-- 16 -->
+                <a href="taller-de-introducción-a-jetpack-compose-cf.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://codigofacilito.com/system/courses/thumbnails/000/000/374/original/jetpack-compose.jpg" alt="Jetpack Compose"></div>
+                    <div class="card-info"><h3>Taller de Jetpack Compose</h3></div>
+                </a>
+
+                <!-- 17 -->
+                <a href="curso-de-fundamentos-de-pruebas-de-software.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/thumbnails/course-piece-pruebas-software-f06a4ad3-9944-4985-b48d-cdca30dfc3f3..jpg" alt="Fundamentos de QA"></div>
+                    <div class="card-info"><h3>Fundamentos de Pruebas de Software</h3></div>
+                </a>
+
+                <!-- 18 -->
+                <a href="curso-c#-para-videojuegos.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/og-c-videojuegos.png" alt="C# para Videojuegos"></div>
+                    <div class="card-info"><h3>Curso de C# para Videojuegos</h3></div>
+                </a>
+
+                 <!-- 19 -->
+                <a href="pruebas_de_software_cf.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://files.catbox.moe/t7chbx.jpg" alt="Pruebas de Software"></div>
+                    <div class="card-info"><h3>Curso de Pruebas de Software</h3></div>
+                </a>
+
+                <!-- 20 -->
+                <a href="curso-de-redes-informaticas.html" class="course-card" data-category="telecomunicaciones">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/OG-Redes-Inform%C3%A1ticas-Internet.png" alt="Redes Informáticas"></div>
+                    <div class="card-info"><h3>Curso de Redes Informáticas</h3></div>
+                </a>
+
+                <!-- 21 -->
+                <a href="curso-avanzado-de-redes.html" class="course-card" data-category="telecomunicaciones">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/OG-Avanzado-Redes-internet.png" alt="Redes Avanzado"></div>
+                    <div class="card-info"><h3>Curso Avanzado de Redes e Internet</h3></div>
+                </a>
+
+                <!-- 22 -->
+                <a href="curso-profesional-devops.html" class="course-card" data-category="telecomunicaciones">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/opengraph-devops.png" alt="Curso Profesional de DevOps"></div>
+                    <div class="card-info"><h3>Curso Profesional de DevOps</h3></div>
+                </a>
+
+                <!-- 23 -->
+                <a href="curso-de-introduccion-iot.html" class="course-card" data-category="telecomunicaciones">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/og-intro-IoT.png" alt="Introducción a IoT"></div>
+                    <div class="card-info"><h3>Curso de Introducción a IoT</h3></div>
+                </a>
+
+                <!-- 24 -->
+                <a href="curso-de-IoT-telecomunicaciones-con-LoRa.html" class="course-card" data-category="telecomunicaciones">
+                    <div class="card-thumb"><img src="https://files.catbox.moe/wynnfy.jpg" alt="IoT LoRa"></div>
+                    <div class="card-info"><h3>Curso de IoT Telecomunicaciones con LoRa</h3></div>
+                </a>
+
+                <!-- 25 -->
+                <a href="curso-de-programacion-microcontroladores-pic-con-c.html" class="course-card" data-category="electronica">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/OG-Programacion-Microcontroladores-Pic-C.png" alt="Microcontroladores PIC"></div>
+                    <div class="card-info"><h3>Microcontroladores PIC con C</h3></div>
+                </a>
+
+                <!-- 26 -->
+                <a href="curso-Esp32.html" class="course-card" data-category="electronica">
+                    <div class="card-thumb"><img src="https://files.catbox.moe/tzqlc6.jpg" alt="Curso de ESP32"></div>
+                    <div class="card-info"><h3>Programación con ESP32</h3></div>
+                </a>
+
+                <!-- 27 -->
+                <a href="curso-fundamento-ingenieria-de-software.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://files.catbox.moe/0lgg0v.jpg" alt="Fundamentos de Ingeniería de Software"></div>
+                    <div class="card-info"><h3>Fundamentos de Ingeniería de Software</h3></div>
+                </a>
+
+                <!-- 28 -->
+                <a href="curso-klotin.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://files.catbox.moe/pvi9cz.jpg" alt="Curso de Kotlin"></div>
+                    <div class="card-info"><h3>Curso de Kotlin Desde Cero</h3></div>
+                </a>
+
+                <!-- 29 -->
+                <a href="curso-IoT-protocolos-comunicacion.html" class="course-card" data-category="telecomunicaciones">
+                    <div class="card-thumb"><img src="https://files.catbox.moe/46f50q.jpg" alt="IoT Protocolos"></div>
+                    <div class="card-info"><h3>IoT: Protocolos de Comunicación</h3></div>
+                </a>
+
+                <!-- 30 -->
+                <a href="curso-solid-js.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://files.catbox.moe/gxi2jk.jpg" alt="SolidJS"></div>
+                    <div class="card-info"><h3>Curso de SolidJS</h3></div>
+                </a>
+
+                <!-- 31 -->
+                <a href="curso-de-scrum-profesional.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://files.catbox.moe/q40cya.jpg" alt="Scrum Profesional"></div>
+                    <div class="card-info"><h3>Curso de Scrum Profesional</h3></div>
+                </a>
+
+                <!-- 32 -->
+                <a href="curso-docker-fundamentos.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/OG-fundamentos.docker_585B7w0.png" alt="Docker Fundamentos"></div>
+                    <div class="card-info"><h3>Docker: Fundamentos Prácticos</h3></div>
+                </a>
+
+                <!-- 33 -->
+                <a href="curso-de-administracion-de-servidores-linux-manejo-de-recursos.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/og-admin-servidores-linux2_1.png" alt="Linux Manejo Recursos"></div>
+                    <div class="card-info"><h3>Servidores Linux: Manejo de Recursos</h3></div>
+                </a>
+
+                <!-- 34 -->
+                <a href="curso-de-claude-code.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb">
+                        <img src="https://static.platzi.com/media/courses/Piezas_Curso_Claude_Code.jpg" alt="Claude Code">
+                    </div>
+                    <div class="card-info"><h3>Curso de Claude Code</h3></div>
+                </a>
+
+                <!-- 35 -->
+                <a href="curso-de-complejidad-algoritmica-con-python.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-complejidad-algoritmica-python_OG2.png" alt="Complejidad Algorítmica Python"></div>
+                    <div class="card-info"><h3>Complejidad Algorítmica con Python</h3></div>
+                </a>
+
+                <!-- 36 -->
+                <a href="curso-de-configuracion-de-entorno-en-linux.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-Configuracion-Entorno-Linux_OG.jpg" alt="Entorno en Linux"></div>
+                    <div class="card-info"><h3>Configuración de Entorno en Linux</h3></div>
+                </a>
+
+                <!-- 37 -->
+                <a href="curso-de-css.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-Curso-de-Fundamentos-de-CSS_OG.jpg" alt="CSS"></div>
+                    <div class="card-info"><h3>Curso de CSS</h3></div>
+                </a>
+
+                <!-- 38 -->
+                <a href="curso-de-css-grid-basico.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Og_CSS_Grid_Basico.png" alt="CSS Grid"></div>
+                    <div class="card-info"><h3>Curso de CSS Grid Básico</h3></div>
+                </a>
+
+                <!-- 39 -->
+                <a href="curso-de-firebase-5-para-web.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/OG-Firebase-para-Web.png" alt="Firebase para Web"></div>
+                    <div class="card-info"><h3>Curso de Firebase para Web</h3></div>
+                </a>
+
+                <!-- 40 -->
+                <a href="curso-de-fundamentos-de-llms.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-fundamentos-LLMs_OG_1.jpg" alt="Fundamentos de LLMs"></div>
+                    <div class="card-info"><h3>Fundamentos de LLMs</h3></div>
+                </a>
+
+                <!-- 41 -->
+                <a href="curso-de-fundamentos-de-llms.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-fundamentos-LLMs_OG_1.jpg" alt="Fundamentos de LLMs"></div>
+                    <div class="card-info"><h3>Fundamentos de LLMs</h3></div>
+                </a>
+
+                <!-- 42 -->
+                <a href="curso-de-azure-active-directory.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/OG_Azure-Active-Directory.png" alt="Fundamentos de .NET"></div>
+                    <div class="card-info"><h3>Curso de Azure Active Directory</h3></div>
+                </a>
+
+                <!-- 43 -->
+                <a href="curso-de-fundamentos-de-python.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-Fundamentos-Python_OG.jpg" alt="Fundamentos de Python"></div>
+                    <div class="card-info"><h3>Curso de Fundamentos de Python</h3></div>
+                </a>
+
+                <!-- 44 -->
+                <a href="crea- producciones-profesionales-con-video-e-ia.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/688c4fe5-821c-4511-ba83-1a74164fe71d.jpeg" alt="Producción de Video e IA"></div>
+                    <div class="card-info"><h3>Producciones de Video e IA</h3></div>
+                </a>
+
+                <!-- 45 -->
+                <a href="curso-de-generacion-de-imagenes-con-ia.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/thumbnails/f6003083-04dc-41bf-96af-65264af0641a-e4acf3a9-9f12-4d3f-838d-b77f41be685a..jpg" alt="Generación de Imágenes con IA"></div>
+                    <div class="card-info"><h3>Generación de Imágenes con IA</h3></div>
+                </a>
+
+                <!-- 46 -->
+                <a href="curso-de-introduccion-a-la-administracion-de-servidores-linux.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/admin-servidores-linux-og.jpg" alt="Admin Servidores Linux"></div>
+                    <div class="card-info"><h3>Introducción a Servidores Linux</h3></div>
+                </a>
+
+                <!-- 47 -->
+                <a href="curso-de-python-intermedio-para-entornos-virtuales-y-pep8.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/pythopnmid2.jpeg" alt="Python Intermedio PEP8"></div>
+                    <div class="card-info"><h3>Python Intermedio y Entornos Virtuales</h3></div>
+                </a>
+
+                <!-- 48 -->
+                <a href="curso-de-python-orientado-a-objetos.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-Curso-Python-POO_OG.jpg" alt="Python POO"></div>
+                    <div class="card-info"><h3>Python Orientado a Objetos</h3></div>
+                </a>
+
+                <!-- 49 -->
+                <a href="curso-de-figma.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_69f27496301ac379b04484a5_1777497679147.jpg" alt="Curso de Figma UI/UX"></div>
+                    <div class="card-info"><h3>Curso de Figma UI/UX Design</h3></div>
+                </a>
+                 <!-- 50 -->
+                <a href="curso-de-reparacion-de-computadoras.html" class="course-card" data-category="electronica">
+                    <div class="card-thumb"><img src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cc6f12a9-2a7f-4587-a541-3fb0e852d434/c_DMIZNZ.jpeg"></div>
+                    <div class="card-info"><h3>Curso de Reparación de Computadoras</h3></div>
+                </a>
+                <!-- 51 -->
+                <a href="curso-emprende-reparacion-celulares.html" class="course-card" data-category="electronica">
+                    <div class="card-thumb"><img src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/26784be1-d998-4ff7-9b41-4ac5c98f762e/cover_CYSKHI.jpg"></div>
+                    <div class="card-info"><h3>Curso Emprenda Reparación de Celulares</h3></div>
+                </a>
+                <!-- 52 -->
+                <a href="curso-basico-de-circuitos-electronicos.html" class="course-card" data-category="electronica">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/OG-basico-circuitos.png"></div>
+                    <div class="card-info"><h3>Curso Básico de Circuitos Electrónicos</h3></div>
+                </a>
+                <!-- 53 -->
+                <a href="curso-de-excel-basico.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-Curso-excel-basico_OG.jpg"></div>
+                    <div class="card-info"><h3>Curso de Excel Basico</h3></div>
+                </a>
+                <!-- 54 -->
+                <a href="curso-de-excel-intermedio.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Opengraph-excel-intermedio.jpg"></div>
+                    <div class="card-info"><h3>Curso de Excel Intermedio</h3></div>
+                </a>
+                <!-- 55 -->
+                <a href="curso-de-expresiones-regulares.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/0fb48157-2d6b-4532-872a-6e458fa186d5.jpg"></div>
+                    <div class="card-info"><h3>Curso de Expresiones Regulares</h3></div>
+                </a>
+                <!-- 56 -->
+                <a href="curso-de-tailwind.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/tailwincss.png"></div>
+                    <div class="card-info"><h3>Curso de TailwindCSS</h3></div>
+                </a>
+                <!-- 57 -->
+                <a href="curso-de-power-bi.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-Curso-de-Power-BI_OG.jpg"></div>
+                    <div class="card-info"><h3>Curso de Power BI</h3></div>
+                </a>
+                <!-- 58 -->
+                <a href="curso-de-power-bi-avanzado.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-PowerBI-Avanzado_OG.jpg"></div>
+                    <div class="card-info"><h3>Curso Power BI Avanzado</h3></div>
+                </a>
+                <!-- 59 -->
+                <a href="curso-de-visualizacion-de-datos-para-bi.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/OG_QpAIh4n.png"></div>
+                    <div class="card-info"><h3>Curso de Visualización de Datos para BI</h3></div>
+                </a>
+                <!-- 60 -->
+                <a href="curso-de-fundamentos-de-microsoft-azure.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/az-900.png"></div>
+                    <div class="card-info"><h3>Curso de Fundamentos de Microsoft Azure (AZ-900)</h3></div>
+                </a>
+                <!-- 61 -->
+                <a href="curso-de-hacking-etico.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/og-hacking-etico-final.png"></div>
+                    <div class="card-info"><h3>Curso de Hacking Ético</h3></div>
+                </a>
+                <!-- 62 -->
+                <a href="curso-de-introduccion-a-informatica-forense.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/OG_Curso_Informatica_Forense_1.png"></div>
+                    <div class="card-info"><h3>Curso de Introducción a Informática Forense</h3></div>
+                </a>
+                <!-- 63 -->
+                <a href="curso-de-informatica-forense.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/og-inform%C3%A1tica-forense.png"></div>
+                    <div class="card-info"><h3>Curso de Informática Forense</h3></div>
+                </a>
+                <!-- 64 -->
+                <a href="curso-de-introduccion-ciberseguridad.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Og_taller-ciberseguridad.jpg"></div>
+                    <div class="card-info"><h3>Curso de Introducción a Informática Forense</h3></div>
+                </a>
+                <!-- 65 -->
+                <a href="curso-de-introduccion-a-analisis-malware.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-Introduccion-Analisis-Malware_Opengraph.png"></div>
+                    <div class="card-info"><h3>Curso de Introducción al Análisis de Malware</h3></div>
+                </a>
+                 <!-- 66 -->
+                <a href="guia-para-seguridad-informatica.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-Guia-aprender-seguridad-informatica.png"></div>
+                    <div class="card-info"><h3>Guía para Aprender Seguridad Informática</h3></div>
+                </a>
+                <!-- 67 -->
+                <a href="curso-de-openclaw.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/8ee19cbb-d757-420a-9846-b097fdea2f29.jpg"></div>
+                    <div class="card-info"><h3>Curso de OpenClaw</h3></div>
+                </a>
+                <!-- 68 -->
+                <a href="curso-de-react3-js.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/1f4412d4-e151-48d7-938f-4467c3916332.jpg"></div>
+                    <div class="card-info"><h3>Curso de ReactJs</h3></div>
+                </a>
+                <!-- 69 -->
+                <a href="curso-de-routing-en-react.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/thumbnails/8d2d3ccd-4405-4386-8b23-89bb704406a3-d3ec3b9a-564b-4bf1-953a-4212663a23f2..jpg"></div>
+                    <div class="card-info"><h3>Curso de Routing en React</h3></div>
+                </a>
+                <!-- 70 -->
+                <a href="curso-de-antigravity-2.0.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/thumbnails/585783ac-8339-4370-99d6-2cc46554a325-14552bf7-541f-4e14-919f-45a14bad8f81..jpg"></div>
+                    <div class="card-info"><h3>Curso de Antigravity 2.0</h3></div>
+                </a>
+                <!-- 71 -->
+                <a href="curso-de-fundamentos-de-agentes-con-ia.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/thumbnails/defda8e7-f4b4-4f6a-9da8-34ff1f9b1647-ba301659-90ab-4b79-8140-8a8a693a9da6..jpg"></div>
+                    <div class="card-info"><h3>Curso de Fundamentos de Agentes con IA</h3></div>
+                </a>
+                <!-- 72 -->
+                <a href="curso-de-introduccion-al-desarrollo-backend.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/og-introducci%C3%B3n-desarrollo-backend.jpg"></div>
+                    <div class="card-info"><h3>Curso de Introducción al Desarrollo Backend</h3></div>
+                </a>
+                <!-- 73 -->
+                <a href="curso-de-reactjs-manejo-profesional-del-estado.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/React.js-profesional-estado_Og.jpg"></div>
+                    <div class="card-info"><h3>Curso de React.js: Manejo Profesional del Estado</h3></div>
+                </a>
+                <!-- 74 -->
+                <a href="curso-de-claude-code-para-no-programadores.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/thumbnails/Thumb-a24ee9fa-4d73-4bf7-af05-c6cce8b115d2..png"></div>
+                    <div class="card-info"><h3>Curso de Claude Code para No Programadores</h3></div>
+                </a>
+                <!-- 75 -->
+                <a href="curso-de-automatizacion-con-n8n.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/thumbnails/15e5e4bc-2872-4da4-9272-f5a8dee2783f-bd582325-c737-4b46-8f1e-30c1996201f2..jpg"></div>
+                    <div class="card-info"><h3>Curso de Automatizaciones con n8n</h3></div>
+                </a>
+                <!-- 76 -->
+                <a href="curso-de-arquitectura-limpias-para-desarrollo-de-software.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/OG-Arquitecturas-Limpias-Software.png"></div>
+                    <div class="card-info"><h3>Curso de Arquitecturas Limpias para Desarrollo de Software</h3></div>
+                </a> 
+                <!-- 77 -->
+                <a href="curso-de-fundamentos-de-arquitectura-de-software.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-fundamentos-arquitectura-software_OG-compressed.jpg"></div>
+                    <div class="card-info"><h3>Curso de Fundamentos de Arquitectura de Software</h3></div>
+                </a> 
+                <!-- 78 -->
+                <a href="curso-de-sql-y-mysql.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-SQL-MySQL_OG.jpg"></div>
+                    <div class="card-info"><h3>Curso de SQL y MySQL</h3></div>
+                </a> 
+                <!-- 79 -->
+                <a href="curso-de-fundamentos-de-base-de-datos-y-sql.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/thumbnails/Piezas-Fundamentos-bases-datos-sql-server_OG-compressed-738c8dd3-4ff9-4d16-a5_fGblxq1.jpg"></div>
+                    <div class="card-info"><h3>Curso de Fundamentos de Bases de Datos y SQL</h3></div>
+                </a>
+                <!-- 80 -->
+                <a href="curso-de-gestion-de-base-de-datos-con-sql-server.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/thumbnails/Piezas-bases-datos-sql-server_OG_2-compressed-04e968d7-edcf-4986-a048-5fd64f976fd2..jpg"></div>
+                    <div class="card-info"><h3>Curso de Gestión de Bases de Datos con SQL Server</h3></div>
+                </a>
+                <!-- 81 -->
+                <a href="curso-de-base-de-datos-con-nosql.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/nosql-adan.png"></div>
+                    <div class="card-info"><h3>Curso de Base de Datos NoSQL</h3></div>
+                </a>
+                <!-- 82 -->
+                <a href="curso-de-bases-de-datos-con-mySQL-y-MariaDB.html" class="course-card" data-category="otros">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/OG_crop_16-9-mysql-mariadb.png"></div>
+                    <div class="card-info"><h3>Curso de Bases de Datos con MySQL y MariaDB</h3></div>
+                </a>
+                <!-- 83 -->
+                <a href="curso-de-fundamentos-con-php.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Diploma-fundamentos-php.jpg"></div>
+                    <div class="card-info"><h3>Curso de Fundamentos con PHP</h3></div>
+                </a>
+                <!-- 84 -->
+                <a href="curso-de-php-integracion-con-html.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-Integracion-PHP-HTML_Opengraph.png"></div>
+                    <div class="card-info"><h3>Curso de PHP: Integración con HTML</h3></div>
+                </a>
+                <!-- 85 -->
+                <a href="curso-de-php-cookies-sesiones-modularizacion.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Opengraph-IntermedioPHP-cookies.png"></div>
+                    <div class="card-info"><h3>Curso de PHP: Cookies, Sesiones y Modularización</h3></div>
+                </a>
+                <!-- 86 -->
+                <a href="curso-de-php-base-de-datos.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/OG-Piezas-Intermedio-PHP-conexion-bases-datos.png"></div>
+                    <div class="card-info"><h3>Curso de PHP: Bases de Datos</h3></div>
+                </a>
+                <!-- 87 -->
+                <a href="curso-de-api-rest-con-php.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/og-api-rest-php.png"></div>
+                    <div class="card-info"><h3>Curso de API REST con PHP</h3></div>
+                </a>
+                <!-- 88 -->
+                <a href="curso-de-fundamentos-de-node-js.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-Fund-Nodejs_OG.jpg"></div>
+                    <div class="card-info"><h3>Curso de Fundamentos de Node.js</h3></div>
+                </a>
+                <!-- 89 -->
+                <a href="curso-de-backend-con-express-js.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-Backend-ExpressJS_OG.jpg"></div>
+                    <div class="card-info"><h3>Curso de Backend con ExpressJS</h3></div>
+                </a>
+                <!-- 90 -->
+                <a href="curso-de-backend-con-nest-js.html" class="course-card" data-category="programacion">
+                    <div class="card-thumb"><img src="https://static.platzi.com/media/courses/Piezas-Backend_-NestJS_OG.jpg"></div>
+                    <div class="card-info"><h3>Curso de Backend con NestJS</h3></div>
+                </a>
+                <!-- 91 -->
+                <a href="curso-esp32-desde-cero.html" class="course-card" data-category="electronica">
+                    <div class="card-thumb"><img src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/95835dc4-5455-4839-a2f6-cd1ab27082f4/a_OKQLQO.jpg"></div>
+                    <div class="card-info"><h3>Curso ESP32 desde Cero</h3></div>
+                </a>
+                <!-- 92 -->
+                <a href="curso-de-reparacion-de-celulares-y-tablets.html" class="course-card" data-category="electronica">
+                    <div class="card-thumb"><img src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/50ee2bc0-a2cb-4bb5-aae8-d62ac2b1b821/a_LOPRMX.jpg"></div>
+                    <div class="card-info"><h3>Curso de Reparacion de celulares y tablets</h3></div>
+                </a>
+            </section>
+        </main>
+    </div>
+
+    <!-- Script de filtrado, búsqueda y cambio de vistas -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.btn-filter');
+            const courseCards = document.querySelectorAll('.course-card');
+            const searchInput = document.getElementById('searchInput');
+            const contenderCursos = document.getElementById('contenderCursos');
+            
+            const btnList = document.getElementById('btnList');
+            const btnGrid4 = document.getElementById('btnGrid4');
+            const btnGrid5 = document.getElementById('btnGrid5');
+            const gridBtns = [btnList, btnGrid4, btnGrid5];
+
+            // Filtrado por categoría
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const selectedCategory = btn.getAttribute('data-filter').toLowerCase();
+
+                    courseCards.forEach(card => {
+                        const cardCategory = (card.getAttribute('data-category') || '').toLowerCase();
+                        if (selectedCategory === 'all' || cardCategory === selectedCategory) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Buscador por texto
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    const searchTerm = e.target.value.toLowerCase();
+                    courseCards.forEach(card => {
+                        const title = card.querySelector('h3').textContent.toLowerCase();
+                        card.style.display = title.includes(searchTerm) ? 'flex' : 'none';
+                    });
+                });
+            }
+
+            // Cambiador de Vistas: Lista, 4 Cols, 5 Cols
+            function setViewMode(activeBtn, viewClass) {
+                gridBtns.forEach(b => b && b.classList.remove('active'));
+                if (activeBtn) activeBtn.classList.add('active');
+                
+                contenderCursos.classList.remove('view-list', 'cols-4', 'cols-5');
+                contenderCursos.classList.add(viewClass);
+            }
+
+            if (btnList) btnList.addEventListener('click', () => setViewMode(btnList, 'view-list'));
+            if (btnGrid4) btnGrid4.addEventListener('click', () => setViewMode(btnGrid4, 'cols-4'));
+            // Inicializar iconos de Lucide
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Fundamentos de Python - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Fundamentos de Python</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-punto-net-e43a17e5-0b67-456a-b2c9-89057b0e0960.png" alt="Badge">
+                <div>
+                    <h1>Curso de Fundamentos de Python</h1>
+                    <p class="video-title">1. Por qué Instagram y NASA eligieron Python</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/courses/Piezas-Fundamentos-Python_OG.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b4106f68-95b1-458a-8253-2186cbda8027/1_%20Por%20qu%C3%A9%20Instagram%20y%20NASA%20eligieron%20Python_TLJRTN.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">32 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b4106f68-95b1-458a-8253-2186cbda8027/1_%20Por%20qu%C3%A9%20Instagram%20y%20NASA%20eligieron%20Python_TLJRTN.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Por qué Instagram y NASA eligieron Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/626e34d1-d186-431d-8c75-d35f559e0904/2_%20Instalaci%C3%B3n%20de%20Python%20VS%20Code%20y%20Git_NUSUNB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Instalación de Python VS Code y Git</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d95debd6-e454-4acc-982a-64650d3c677c/3_%20Variables%20de%20entorno%20de%20Python%20en%20Windows_FWHYJO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Variables de entorno de Python en Windows</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8d32a322-a823-4093-af14-247ed6ade076/4_%20Comandos%20b%C3%A1sicos%20de%20Python%20en%20la%20terminal%20de%20Windows_VXOQWJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Comandos básicos de Python en la terminal de Windows</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/238bcbdf-75bb-4256-9329-cb1274d0568b/5_%20Sintaxis%20e%20indentaci%C3%B3n%20b%C3%A1sica%20en%20Python%20con%20Visual%20Studio%20Code_HSJMCW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Sintaxis e indentación básica en Python con Visual Studio Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fe91e57f-fe90-49da-be32-801a19c62f9f/6_%20Comentarios%20en%20Python%20una%20y%20multil%C3%ADnea_LDIPBG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Comentarios en Python una y multilínea</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/57acd74c-e48d-433f-81cb-f1d16791256a/7_%20Variables%20en%20Python%20reglas%20y%20convenciones_PJNYVD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Variables en Python reglas y convenciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fcc52adc-4587-4e52-a3b8-5872e6a04f22/8_%20Asignaci%C3%B3n%20m%C3%BAltiple%20de%20variables%20en%20Python_YPFRPZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Asignación múltiple de variables en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1c71c01c-efc7-448b-822b-6141717c02c9/9_%20Tipos%20de%20datos%20en%20Python%20explicados_NKLGZK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Tipos de datos en Python explicados</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/56791527-e602-475f-a89a-c0d5d2e985b6/10_%20Manipulaci%C3%B3n%20y%20conversi%C3%B3n%20de%20tipos%20num%C3%A9ricos%20en%20Python_EKKCHB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Manipulación y conversión de tipos numéricos en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d08c2337-add7-4d6a-90e4-c4b90a8e74e3/11_%20M%C3%A9todos%20esenciales%20para%20strings%20en%20Python_EDJATW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Métodos esenciales para strings en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9685dd7c-76f0-4a35-8347-f6aaa3ee37ee/12_%20Slicing%20replace%20y%20split%20para%20manipular%20strings%20en%20Python_DQCMHL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Slicing replace y split para manipular strings en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2ab03710-1835-450b-96ec-20bf65dabd99/13_%20Booleanos%20en%20Python%20True%20False%20y%20casting_NSFDDL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Booleanos en Python True False y casting</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/39a23c25-8fcc-447f-b5b7-acb55268df1c/14_%20None%20en%20Python%20no%20es%20cero%20ni%20vac%C3%ADo_OFMZDD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. None en Python no es cero ni vacío</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e0920a3c-eb86-4a5a-aae2-7f63163e8b80/15_%20Operadores%20aritm%C3%A9ticos%20en%20Python%20explicados_YSECYG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Operadores aritméticos en Python explicados</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/204ed213-1afd-4158-b0e1-a5daf69da411/16_%20Operadores%20de%20asignaci%C3%B3n%20y%20walrus%20en%20Python_SLIWFR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Operadores de asignación y walrus en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9b0efb5c-f219-43cd-b873-3690dd98f349/17_%20Operadores%20l%C3%B3gicos%20y%20de%20comparaci%C3%B3n%20en%20Python_TZNGHW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Operadores lógicos y de comparación en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/55242187-f053-432b-80ac-837360e104dd/18_%20Condicionales%20en%20Python%20if%20else%20and%20or%20y%20pass_DWAHWG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Condicionales en Python if else and or y pass</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ee07df24-8307-4758-8cd2-a37dc361bbb9/19_%20Sentencia%20match%20en%20Python%203_10%20para%20control%20de%20flujo_XSITUA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Sentencia match en Python 3.10 para control de flujo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1f2f57e3-89e1-4906-a4f8-a6bab8e65f17/20_%20Bucles%20while%20en%20Python%20condiciones%20break%20y%20continue_WVIKDM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Bucles while en Python condiciones break y continue</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/073126ef-2c92-46ac-a55a-61c2643bdaeb/21_%20Bucle%20for%20en%20Python%20para%20recorrer%20listas_LNJPUT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Bucle for en Python para recorrer listas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a7abb8c1-c0b3-47de-b882-4eb1677dbfe0/22_%20M%C3%A9todos%20esenciales%20de%20listas%20en%20Python_EJUVBC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Métodos esenciales de listas en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/903454fd-5298-4d9e-8c27-39da0f05de33/23_%20Tuplas%20en%20Python%20ordenadas%20e%20inmutables_QQHRAL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Tuplas en Python ordenadas e inmutables</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1bda1ab4-4bba-4976-b6df-65f062ef0893/24_%20Conjuntos%20en%20Python%20qu%C3%A9%20son%20y%20c%C3%B3mo%20usarlos_IQKHBM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Conjuntos en Python qué son y cómo usarlos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e98be990-ad9d-4423-b563-94294f28e4d3/25_%20Diccionarios%20en%20Python%20claves%20y%20valores_QKPRON.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Diccionarios en Python claves y valores</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fd41b6b1-e458-4216-b446-17b29c1fe455/26_%20Funciones%20en%20Python%20para%20reutilizar%20c%C3%B3digo_ERXGQI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Funciones en Python para reutilizar código</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/878f89a9-43ab-4175-b6b4-b0872a3a985f/27_%20Funciones%20lambda%20y%20f%C3%A1brica%20de%20funciones%20en%20Python_YYRNGD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Funciones lambda y fábrica de funciones en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/72970ac8-ce2f-48c1-b37c-3425b9c00601/28_%20C%C3%B3mo%20usar%20m%C3%B3dulos%20en%20Python_FVIEHM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>28. Cómo usar módulos en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/55c18e8b-b9e4-4657-a219-3fb40425b283/29_%20Manejo%20de%20errores%20con%20try%20except%20y%20finally%20en%20Python_GCBRPC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>29. Manejo de errores con try except y finally en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c63c3eb1-4c15-4a36-aba5-049a662ef94b/30_%20Leer%20y%20escribir%20archivos%20de%20texto%20en%20Python_ERVQMC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>30. Leer y escribir archivos de texto en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8e15f9ca-8167-41fc-9b03-a283bbd14d77/31_%20M%C3%A1quina%20de%20caf%C3%A9%20en%20Python%20paso%20a%20paso_REXVFW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>31. Máquina de café en Python paso a paso</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/21ce5a1f-195a-40d4-ace1-00be607963ca/32_%20Escritura%20y%20lectura%20de%20archivos%20en%20Python_YRHLCF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>32. Escritura y lectura de archivos en Python</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

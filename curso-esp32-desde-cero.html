@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso ESP32 desde Cero - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso ESP32 desde Cero</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://europe1.discourse-cdn.com/arduino/original/4X/1/b/6/1b6dda7bc18e20c444b37f9b8e0aef6b019d2f1c.png" alt="Badge">
+                <div>
+                    <h1>Curso ESP32 desde Cero</h1>
+                    <p class="video-title">1. Qué es el ESP32 y porque deberías tener esta placa</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/95835dc4-5455-4839-a2f6-cd1ab27082f4/a_OKQLQO.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7c1dd254-3dfd-446a-92f3-7f1ac1ef13a9/1_%20Qu%C3%A9%20es%20el%20ESP32%20y%20porque%20deber%C3%ADas%20tener%20esta%20placa_QFQFAG.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">11 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7c1dd254-3dfd-446a-92f3-7f1ac1ef13a9/1_%20Qu%C3%A9%20es%20el%20ESP32%20y%20porque%20deber%C3%ADas%20tener%20esta%20placa_QFQFAG.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Qué es el ESP32 y porque deberías tener esta placa</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e2906d09-3c0c-4f9a-b25b-b163fa11a6ab/2_%20ESP32%20puesta%20en%20marcha%20y%20consideraciones%20sobre%20sus%20pines_XTSSYP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. ESP32 puesta en marcha y consideraciones sobre sus pines</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/955ddf4f-6f49-4683-a9b0-69feb3e387dd/3_%20ESP32%20Entradas%20y%20salidas%20digitales%20explicadas%20desde%20cero_PZPNPF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. ESP32 Entradas y salidas digitales explicadas desde cero</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/281cef26-4553-48a2-a381-425ae989aabf/4_%20ESP32%20Entradas%20Anal%C3%B3gicas%20c%C3%B3mo%20usar%20el%20ADC%20paso%20a%20paso_DKZYAY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. ESP32 Entradas Analógicas cómo usar el ADC paso a paso</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/283a710d-6fc5-4b0d-b2a8-3b14f2b57799/5_%20ESP32%20salidas%20anal%C3%B3gicas%20DAC_JQIEGN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. ESP32 salidas analógicas DAC</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/19ede04f-aa04-4c5d-afad-d4a44ab1906c/6_%20ESP32%20PWM%20c%C3%B3mo%20funciona%20y%20c%C3%B3mo%20usarlo_WGRUSW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. ESP32 PWM cómo funciona y cómo usarlo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4fd4f532-230b-458d-8a42-3a26237259c8/7_%20ESP32%20Interrupciones%20externas%20ISR_FJAPOY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. ESP32 Interrupciones externas ISR</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5d37ec5d-0cbb-4e42-a7f1-2708fde161d2/8_%20ESP32%20Sensores%20t%C3%A1ctiles_CCGWKG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. ESP32 Sensores táctiles</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/59f12011-21b5-4570-8d19-07bca322a575/9_%20ESP32-CAM%20Reconocimiento%20facial%20explicado%20desde%20cero_UFJAWK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. ESP32-CAM Reconocimiento facial explicado desde cero</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7aadef14-ac4b-46a0-9c66-d2293d07bde9/10_%20Este%20ESP32-S3%20es%20una%20BESTIA%20Terminal%20Elecrow_NTPPCX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Este ESP32-S3 es una BESTIA Terminal Elecrow</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5bcddd4d-08a8-4a23-978d-998041e441b2/11_%20Esta%20pantalla%20t%C3%A1ctil%20esconde%20un%20ESP32-S3_LLKLYS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Esta pantalla táctil esconde un ESP32-S3</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

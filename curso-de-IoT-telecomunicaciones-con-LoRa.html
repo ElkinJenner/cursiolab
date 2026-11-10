@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de IoT Telecomunicaciones con LoRa - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de IoT Telecomunicaciones con LoRa</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/iot-telecomunicaciones-lora-lorawan-badge-8817d647-ceaf-45f6-9c0a-b98d635fcfc0.png" alt="Badge">
+                <div>
+                    <h1>Curso de IoT Telecomunicaciones con LoRa</h1>
+                    <p class="video-title">1. Presentacion del Curso - Curso a fondo de GitHub</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://files.catbox.moe/wynnfy.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/03aeb5c8-5498-47a4-a14d-ca258f681bab/1_%20IoT%20con%20LoRa%20y%20ESP32%20sin%20internet_ZRRJVL.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">17 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/03aeb5c8-5498-47a4-a14d-ca258f681bab/1_%20IoT%20con%20LoRa%20y%20ESP32%20sin%20internet_ZRRJVL.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. IoT con LoRa y ESP32 sin internet</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/80c71058-54c5-411c-97f1-1f293d5cfc9a/2_%20C%C3%B3mo%20funcionan%20las%20ondas%20de%20radio_JXUZHK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Cómo funcionan las ondas de radio</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3ede134c-c22d-44e5-8c3c-2f305e8dcbac/3_%20Qu%C3%A9%20es%20LoRa%20y%20para%20qu%C3%A9%20sirve_DWRMAV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Qué es LoRa y para qué sirve</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5e6213b3-ffe2-4006-8ecc-a2ccf545e414/4_%20TTGO%20LoRa32%20con%20ESP32%20qu%C3%A9%20comprar%20y%20por%20qu%C3%A9_KUODYY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. TTGO LoRa32 con ESP32 qué comprar y por qué</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/00783ba6-3224-4965-a9ab-5c5e6f3939a1/5_%20Instalar%20librer%C3%ADas%20LoRa%20y%20OLED%20en%20ESP-IDF_JDZEXB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Instalar librerías LoRa y OLED en ESP-IDF</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/267da2f4-88b4-44bb-bebf-169c288fd99c/6_%20Pantalla%20OLED%20con%20ESP32%20e%20I2C_PMFMAM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Pantalla OLED con ESP32 e I2C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1881b946-859a-48dd-ad69-5799b9f524a3/7_%20Animaciones%20en%20OLED%20SSD1306%20con%20ESP32_RSUKSK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Animaciones en OLED SSD1306 con ESP32</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d74647b6-db09-4014-b346-f729fbb3c00a/8_%20C%C3%B3mo%20LoRa%20convierte%20chirps%20en%20datos_EYBXNA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Cómo LoRa convierte chirps en datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fd9a0cef-7a5a-4b98-8cd0-afe00b4d3e21/9_%20Configurar%20ESP32%20con%20LoRa%20en%20ESP-IDF_WMISBQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Configurar ESP32 con LoRa en ESP-IDF</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9892f398-2d28-4b40-b5eb-39afd5694249/10_%20Recibir%20mensajes%20LoRa%20en%20ESP32%20con%20FreeRTOS_RZIKVD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Recibir mensajes LoRa en ESP32 con FreeRTOS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/50dff541-9f7c-46d1-acf2-0848c9c6ec7a/11_%20Transmisi%C3%B3n%20LoRa%20entre%20dos%20ESP32%20con%20FreeRTOS_RDZOCC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Transmisión LoRa entre dos ESP32 con FreeRTOS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/286a0f0d-522d-436b-a973-3a01c1acd078/12_%20Servidor%20HTTP%20y%20WiFi%20en%20ESP32%20para%20chat%20LoRa_NAVLYY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Servidor HTTP y WiFi en ESP32 para chat LoRa</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/616ccea4-dd4b-4d15-8460-c537a7e33153/13_%20API%20HTTP%20en%20ESP32%20para%20mensajes%20LoRa_LRODMP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. API HTTP en ESP32 para mensajes LoRa</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fff35a2c-9d87-41c6-8b44-c0f65af9f9b6/14_%20Interfaz%20web%20para%20chat%20LoRa%20con%20HTML%20y%20JS_GBXYSC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Interfaz web para chat LoRa con HTML y JS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bdebd51f-f0b8-468d-a86b-48ba054e285a/15_%20Prueba%20final%20de%20comunicaci%C3%B3n%20LoRa%20entre%20dos%20nodos_MWJCJT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Prueba final de comunicación LoRa entre dos nodos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f72f918b-bb60-48c3-ad73-f7dbcb486515/16_%20LoRaWAN%20y%20redes%20mesh%20con%20LoRa_UNJNYY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. LoRaWAN y redes mesh con LoRa</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3e33dbc8-9344-4d3c-a871-e35fd7ab2373/17_%20LoRa%20con%20ESP32%20y%20el%20sat%C3%A9lite%20de%20Platzi_TDIHKA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. LoRa con ESP32 y el satélite de Platzi</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

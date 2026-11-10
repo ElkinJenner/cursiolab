@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Configuración de Entorno en Linux - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Configuración de Entorno en Linux</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-complejidad-algoritmica-python_badge-ff69b19d-dbc5-4bf8-a2be-d985e9f45932.png" alt="Badge">
+                <div>
+                    <h1>Curso de Configuración de Entorno en Linux</h1>
+                    <p class="video-title">1. Qué es Linux y por qué está en tantos dispositivos</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/courses/Piezas-Configuracion-Entorno-Linux_OG.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/77af4733-a6cc-46cb-a57e-30463bf45ba3/1_%20Qu%C3%A9%20es%20Linux%20y%20por%20qu%C3%A9%20est%C3%A1%20en%20tantos%20dispositivos_MKKRAN.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">19 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/77af4733-a6cc-46cb-a57e-30463bf45ba3/1_%20Qu%C3%A9%20es%20Linux%20y%20por%20qu%C3%A9%20est%C3%A1%20en%20tantos%20dispositivos_MKKRAN.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Qué es Linux y por qué está en tantos dispositivos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6f1e65e4-fa21-474c-a2e9-74637d9d0555/2_%20C%C3%B3mo%20instalar%20Ubuntu%20en%20VirtualBox_DHCMIJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Cómo instalar Ubuntu en VirtualBox</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f2401d2a-1927-43c0-b99d-bd200aaa6af4/3_%20C%C3%B3mo%20instalar%20Ubuntu%20en%20Windows%20con%20WSL_NIRKRH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Cómo instalar Ubuntu en Windows con WSL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a2df9c0f-dbd5-498e-b1db-e2431439c7a1/4_%20C%C3%B3mo%20instalar%20Ubuntu%20junto%20a%20Windows_UTNUJO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Cómo instalar Ubuntu junto a Windows</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/30776a7e-dce4-4263-b191-5584618ee9f5/5_%20Comandos%20b%C3%A1sicos%20de%20Linux%20en%20la%20terminal_ZNNKZI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Comandos básicos de Linux en la terminal</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/488c4f4e-da15-47a6-aa3d-5937d204efd7/6_%20Comandos%20b%C3%A1sicos%20para%20manipular%20archivos%20en%20Linux_AKMIGC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Comandos básicos para manipular archivos en Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5a6e14bd-9f0b-456b-b03c-e7db69e7b88d/7_%20Scripts%20y%20variables%20de%20entorno%20en%20Linux%20con%20bash_HOBWUT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Scripts y variables de entorno en Linux con bash</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7deed142-5727-4ff3-a885-149a13bebedc/8_%20C%C3%B3mo%20gestionar%20procesos%20en%20Linux%20con%20htop_JNMZWA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Cómo gestionar procesos en Linux con htop</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f7be2c22-649c-4757-8336-c0bb058e6b91/9_%20Instala%20Warp%20Zsh%20y%20Powerlevel10k%20en%20Linux_FJYVPT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Instala Warp Zsh y Powerlevel10k en Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c14017d1-64c6-4af3-bdbc-c1b70572beac/10_%20Comando%20APT%20instalar%20y%20gestionar%20software%20en%20Ubuntu_JIECPO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Comando APT instalar y gestionar software en Ubuntu</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/596befe0-4833-4994-9080-f7a6157851d6/11_%20Instalaci%C3%B3n%20de%20Google%20Chrome%20Visual%20Studio%20Code%20y%20Cursor%20en%20Ubuntu_MYPIYL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Instalación de Google Chrome Visual Studio Code y Cursor en Ubuntu</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0f171298-6004-44f2-9145-95fe612fce36/12_%20Instalar%20Node_js%20y%20Python%20con%20version%20managers_RQHFJB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Instalar Node.js y Python con version managers</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/79eb9e45-240e-4682-a991-222d76c6ddaa/13_%20Instalar%20y%20configurar%20Git%20desde%20cero_QIDKNL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Instalar y configurar Git desde cero</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5df96494-b82e-4322-9ab3-b0ea2da1015d/14_%20Flujo%20b%C3%A1sico%20de%20trabajo%20en%20Git_JDNBDZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Flujo básico de trabajo en Git</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9d69e6e8-eb0e-48db-b735-a9e16cd26ba8/15_%20Configuraci%C3%B3n%20de%20clave%20SSH%20para%20conectar%20GitHub%20con%20tu%20computado_ZNJEZS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Configuración de clave SSH para conectar GitHub con tu computado</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cfdbb425-dc41-4ea9-8612-a4df3efe6cfa/16_%20C%C3%B3mo%20subir%20tu%20proyecto%20local%20a%20GitHub_HJRXQB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Cómo subir tu proyecto local a GitHub</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/98c6f395-de9f-4cbb-8b48-51521279e5d0/17_%20Instalaci%C3%B3n%20de%20Docker%20en%20Ubuntu%2024_04_SGCFKJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Instalación de Docker en Ubuntu 24.04</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0ec95dcf-fd69-4dfb-84bb-fd8d8c6ed7d2/18_%20Configuraci%C3%B3n%20y%20despliegue%20web%20con%20GitHub%20Actions%20y%20Pages_OKCTYN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Configuración y despliegue web con GitHub Actions y Pages</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a291a6b7-dfed-49a0-9e1a-4ac66c0364e6/19_%20Desplegando%20en%20Netlify%20sin%20configurar%20servidores_AFIQFC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Desplegando en Netlify sin configurar servidores</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Routing en React - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Routing en React</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/0b7f7d80-ee6a-40d7-98e1-adbb4d808095-789bf7ff-83ce-4202-86a9-dda6946f0c64.png" alt="Badge">
+                <div>
+                    <h1>Curso de Routing en React</h1>
+                    <p class="video-title">1. React Router cómo convertir pantallas en app real</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_6a6cd51cfaab79aa359a589a_6a6cd538e1876ce817fa4947_19s.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a93a883e-2472-4dd3-87dc-186bef93c633/1_%20React%20Router%20c%C3%B3mo%20convertir%20pantallas%20en%20app%20real_WJBDNI.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">20 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a93a883e-2472-4dd3-87dc-186bef93c633/1_%20React%20Router%20c%C3%B3mo%20convertir%20pantallas%20en%20app%20real_WJBDNI.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. React Router cómo convertir pantallas en app real</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ac7a2230-546e-426f-8ed6-882cc66ea031/2_%20Qu%C3%A9%20problema%20resuelve%20el%20routing%20en%20React_FNKOCQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Qué problema resuelve el routing en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b2c999e7-fd8b-4d42-b16c-3e2c6af31160/3_%20C%C3%B3mo%20dise%C3%B1ar%20el%20mapa%20de%20rutas%20con%20React%20Router_FBGBGA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Cómo diseñar el mapa de rutas con React Router</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4c7f8a08-9966-482a-a312-dff06081bdc1/4_%20C%C3%B3mo%20configurar%20React%20Router%20en%20una%20SPA_UBLYZD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Cómo configurar React Router en una SPA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b8ccdbeb-6818-49d4-895f-6118a44ada37/5_%20Link%20vs%20NavLink%20navegaci%C3%B3n%20interna%20con%20React%20Router_UWWWJJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Link vs NavLink navegación interna con React Router</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8c95e2b6-cb0f-49ec-a223-efdb8427b768/6_%20Navegaci%C3%B3n%20program%C3%A1tica%20en%20React%20con%20useNavigate_BRBIBP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Navegación programática en React con useNavigate</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/56507eb7-009a-421b-87ee-3ebf35b55de1/7_%20Layout%20principal%20con%20Outlet%20en%20React%20Router_QATYIF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Layout principal con Outlet en React Router</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e8dd723d-e6b9-42d0-9744-fb3961fc7935/8_%20Layouts%20anidados%20en%20React%20Router_QGQSPU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Layouts anidados en React Router</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fb1fce83-a81c-4ed5-acff-7e75b89b1a99/9_%20Rutas%20din%C3%A1micas%20en%20React%20Router%20con%20useParams_WEPYUE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Rutas dinámicas en React Router con useParams</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8e94d9db-efdb-45a5-ae35-492d1ce33bce/10_%20P%C3%A1gina%20de%20detalle%20con%20rutas%20din%C3%A1micas%20en%20React_ZIGWFR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Página de detalle con rutas dinámicas en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bc89a199-dce9-451b-81a1-2ca9f1e0104e/11_%20P%C3%A1gina%20404%20y%20estados%20no%20encontrados_XOFMQO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Página 404 y estados no encontrados</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c256a881-09e3-446f-b23c-8a9d58dedcb0/12_%20Query%20params%20para%20b%C3%BAsqueda%20en%20React_FORYDL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Query params para búsqueda en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/74d790b4-837b-43c2-af23-90abe47c49d1/13_%20Sincroniza%20filtros%20con%20la%20URL%20usando%20useSearchParams_LUQZRD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Sincroniza filtros con la URL usando useSearchParams</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/db75f7c2-a82f-483a-bec9-57e7ca49a127/14_%20C%C3%B3mo%20crear%20rutas%20protegidas%20con%20React%20Router_CBLZXJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Cómo crear rutas protegidas con React Router</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7f0ea11e-e5cd-403a-9282-7d5c0f02d54e/15_%20C%C3%B3mo%20simular%20login%20y%20logout%20con%20React%20Router_AKHOMG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Cómo simular login y logout con React Router</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f15d9245-d087-4faf-8e36-02e5f70989eb/16_%20C%C3%B3mo%20cargar%20datos%20por%20ruta%20con%20loaders_SKMNRL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Cómo cargar datos por ruta con loaders</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/07554737-2418-46f5-b421-db3702b55499/17_%20Lazy%20loading%20y%20Suspense%20en%20rutas%20de%20React_PWXFCW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Lazy loading y Suspense en rutas de React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9a012a33-2bc5-4493-abc1-e9c40380d3b9/18_%20Manejo%20de%20errores%20por%20ruta%20con%20ErrorElement_NFHCEV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Manejo de errores por ruta con ErrorElement</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/523e0e68-3656-4fb5-9620-bf810ebdb426/19_%20React%20Router%20TanStack%20Router%20y%20Next_js%20cu%C3%A1l%20elegir_MLZICB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. React Router TanStack Router y Next.js cuál elegir</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3a75be2d-f2a1-4e70-9905-e0460da7a6c5/20_%20C%C3%B3mo%20publicar%20tu%20app%20de%20React%20en%20Vercel_SLGMRK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Cómo publicar tu app de React en Vercel</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

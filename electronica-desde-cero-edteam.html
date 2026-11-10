@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso: Electrónica desde cero - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso: Electrónica desde cero</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://cdn-icons-png.flaticon.com/512/4350/4350670.png" alt="Badge">
+                <div>
+                    <h1>Curso: Electrónica desde cero</h1>
+                    <p class="video-title">1.1 - Introducción al curso</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://edteam-media.s3.amazonaws.com/courses/big/47766c2e-6ef7-40a9-8c92-50939fe9bfd0.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5bde6f43-0428-4a14-9bb2-0ba4d0cfcc8d/1_1%20-%20Introducci%C3%B3n%20al%20curso_NASVHX.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">36 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5bde6f43-0428-4a14-9bb2-0ba4d0cfcc8d/1_1%20-%20Introducci%C3%B3n%20al%20curso_NASVHX.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1.1 - Introducción al curso</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0cda7077-d60c-4295-bf4f-1902fdab0f8d/1_2%20-%20Un%20vistazo%20r%C3%A1pido%20a%20la%20tabla%20peri%C3%B3dica_QNXWXF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1.2 - Un vistazo rápido a la tabla periódica</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/090eb603-ed8b-4db8-a9d1-f4a773a47e97/1_3%20-%20Flujo%20de%20electrones%20en%20un%20elemento%20conductor_ZRUDWI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1.3 - Flujo de electrones en un elemento conductor</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bcdaa4b9-f57c-4e3d-bbff-1c0556f56a6a/1_4%20-%20Voltaje%2C%20corriente%20y%20resistencia%20-%20Ley%20de%20Ohm_SHFPON.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1.4 - Voltaje, corriente y resistencia - Ley de Ohm</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1ebcef10-a8e1-465a-b5ba-daf0dda78f02/1_5%20-%20%C2%BFQu%C3%A9%20es%20Potencia_LFCTUG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1.5 - ¿Qué es Potencia</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/08c9ea54-47fd-4233-b7b7-0ab7c1be1e53/1_6%20-%20%C2%BFQu%C3%A9%20es%20un%20circuito_ATCZJD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1.6 - ¿Qué es un circuito</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b582aed7-9fa7-493c-afce-6db92b2e4202/1_7%20-%20Voltaje%20alterno%20y%20voltaje%20continuo%20(AC-DC)_RCFDIB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1.7 - Voltaje alterno y voltaje continuo (AC-DC)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f1013e3f-14d9-48c4-8415-8e6b7ba39433/1_8%20-%20Sistemas%20m%C3%A9tricos_JNBRSU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1.8 - Sistemas métricos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3cbad1da-c395-48f8-81ea-8335f9750d3b/1_9%20-%20Laboratorio%201_UKWCSU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1.9 - Laboratorio 1</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c4b135c9-e7f5-457d-9ad2-74e5882958bc/2_1%20-%20Herramientas%20para%20electr%C3%B3nica_JDPSRU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2.1 - Herramientas para electrónica</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8ad827fe-171e-4e6c-a978-834137d757bf/2_2%20-%20Equipos%20de%20medici%C3%B3n_ZVCIFK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2.2 - Equipos de medición</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1640bc17-0a32-4e7b-8b08-11e895bb0717/2_3%20-%20Software%20de%20Simulaci%C3%B3n_UVKWWC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2.3 - Software de Simulación</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/84461036-626c-46fa-9ee0-039dabd20184/2_4%20-%20%C2%BFQu%C3%A9%20es%20un%20datasheet_YHVRDG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2.4 - ¿Qué es un datasheet</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0b878509-fa36-4093-812e-15918f1b44fc/3_1%20-%20%C2%BFComo%20usar%20un%20protoboard_WWQLJU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3.1 - ¿Como usar un protoboard</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a93acf9a-cfb4-489c-8ae0-c85026c59204/3_2%20-%20%C2%BFC%C3%B3mo%20funciona%20una%20bater%C3%ADa_WTHSUL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3.2 - ¿Cómo funciona una batería</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/31f61dd1-6cc3-4c88-b614-57f275ae02e2/3_3%20-%20%C2%BFQu%C3%A9%20son%20las%20resistencias%20(Parte%201)_ZBSWTX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3.3 - ¿Qué son las resistencias (Parte 1)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2db3dd44-ae24-431a-8dd0-c59a9a553611/3_4%20-%20%C2%BFQu%C3%A9%20son%20las%20resistencias%20(Parte%202)_AXBYUY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3.4 - ¿Qué son las resistencias (Parte 2)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4e108421-e9a2-4cd4-b8a2-5ed53f5645c9/3_5%20-%20Resistencia%20y%20Potencia_VHMSEH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3.5 - Resistencia y Potencia</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/282ac0b6-efc6-473f-b8fc-576882fa7f67/3_6%20-%20Resistencias%20variables_AVSNBL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3.6 - Resistencias variables</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0538e79f-b9dd-43d0-9ed3-96913ec02f5f/3_7%20-%20Fotorresistencias_OAEWOI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3.7 - Fotorresistencias</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5e71c73c-9851-4ea2-a36e-6d8fa815de75/3_8%20-%20Resistencias%20Serie%20y%20Paralelo_WFHMFO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3.8 - Resistencias Serie y Paralelo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/15958fea-2726-4bd1-b3ec-02310b7b9353/3_9%20-%20%C2%BFQu%C3%A9%20son%20los%20Capacitores_DDJKYA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3.9 - ¿Qué son los Capacitores</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/99e6a14e-56fe-49ea-b501-c3784bb7c018/3_10%20-%20Capacitores%20Serie%20y%20Paralelo_HXAEEX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3.10 - Capacitores Serie y Paralelo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/628606d3-f59e-4842-9e82-8aed1d50c691/3_11%20-%20Los%20switches_NNWHFY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3.11 - Los switches</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ba3a51db-4cc5-42de-9e11-f832d8c807e3/3_12%20-%20Laboratorio%202_DHCBBQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3.12 - Laboratorio 2</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d0f87a60-d6b7-4fab-8a5c-9df6bdd6340f/4_1%20-%20Componentes%20Semiconductores_NJYBER.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4.1 - Componentes Semiconductores</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/733df53e-0966-4eec-98b3-9c0d78deb539/4_2%20-%20Diodos_WVREFZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4.2 - Diodos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5493f34c-ff00-412f-9b85-f423e11b19ce/4_3%20-%20Diodos%20Leds_TCBSPN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4.3 - Diodos Leds</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/00c37330-ffb8-42fd-8d6f-789de15f278a/4_4%20-%20C%C3%A1lculo%20del%20resistor%20para%20un%20LED%20(Parte%201)_TLYTVT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4.4 - Cálculo del resistor para un LED (Parte 1)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ff1168c0-af9b-4ee4-8bc7-ed95bedc8f72/4_5%20-%20C%C3%A1lculo%20del%20resistor%20para%20un%20LED%20(Parte%202)_YUYUDE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4.5 - Cálculo del resistor para un LED (Parte 2)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/155743ae-cf08-4f9b-8e4a-c77fbbf3bc5f/4_6%20-%20%C2%BFQu%C3%A9%20es%20una%20fuente%20de%20voltaje%20(Parte%201)_RDMGLJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4.6 - ¿Qué es una fuente de voltaje (Parte 1)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f3d439cd-66af-4094-a087-09c7932d565c/4_7%20-%20%C2%BFQu%C3%A9%20es%20una%20fuente%20de%20voltaje%20(Parte%202)_KIYWYS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4.7 - ¿Qué es una fuente de voltaje (Parte 2)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b3a47178-cf69-40a9-87a6-c09f09afa8d0/5_1%20-%20Transistores_OBCOGZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5.1 - Transistores</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/78b90103-2875-426c-b819-761407123665/5_2%20-%20S%C3%ADmbolos%20esquematico%20transistores_CHOSWG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5.2 - Símbolos esquematico transistores</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/728cc119-24ec-460a-b273-2cd6c10de88f/5_4%20-%20El%20Relay_UCLGRE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5.4 - El Relay</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e3fd517b-0e56-424f-ad7c-5478e85041a4/5_5%20-%20Reguladores%20de%20Voltaje_DSSRQD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5.5 - Reguladores de Voltaje</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bd3e7ef8-e1d1-42fe-b9da-a9a1da495ed3/5_7%20-%20Laboratorio%204_STVHPV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5.7 - Laboratorio 4</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

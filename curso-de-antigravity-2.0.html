@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Antigravity 2.0 - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Antigravity 2.0</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/ed7bb3db-50c9-4cc6-a4dd-dd6e48f7345b-d852ff47-9534-4560-be18-cd60dbb7c2a2.png" alt="Badge">
+                <div>
+                    <h1>Curso de Antigravity 2.0</h1>
+                    <p class="video-title">1. Construye tu primera app con Google Antigravity</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/af52bd2b-d3dc-49b4-85ad-ff2f2a68b719/file_1793999434631_HFGOXQ.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d8257b9b-4812-4712-9739-98582a35743e/1_%20Construye%20tu%20primera%20app%20con%20Google%20Antigravity_KOLKET.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">12 clases</span>
+                    </div>
+                   <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d8257b9b-4812-4712-9739-98582a35743e/1_%20Construye%20tu%20primera%20app%20con%20Google%20Antigravity_KOLKET.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Construye tu primera app con Google Antigravity</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f2e99aa7-fc8f-44a2-acec-d285ff2fd41b/2_%20C%C3%B3mo%20instalar%20Antigravity%20y%20sus%20planes%20de%20Google_OZDRVM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Cómo instalar Antigravity y sus planes de Google</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/44dc6e05-6640-4e53-be3c-008623dbe6d7/3_%20C%C3%B3mo%20crear%20un%20proyecto%20con%20prompts%20en%20Antigravity_YKGTFG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Cómo crear un proyecto con prompts en Antigravity</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5f3db7e7-2806-442d-aab7-bfc56c0bf478/4_%20C%C3%B3mo%20configurar%20el%20IDE%20y%20manager%20de%20Antigravity_COYASX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Cómo configurar el IDE y manager de Antigravity</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4e8ad51e-61c0-43ce-a8d5-b4532b3ab3bc/5_%20Configura%20agents_md%20y%20corre%20microservicios%20en%20paralelo_YOGTZG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Configura agents.md y corre microservicios en paralelo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/64578f3a-b67e-4a74-a2c7-ae63d7c309a1/6_%20C%C3%B3mo%20Antigravity%20documenta%20el%20trabajo%20de%20sus%20agentes_RRYAFG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Cómo Antigravity documenta el trabajo de sus agentes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cac72801-3b3a-4fdf-a79f-f318ffaaf8f9/7_%20Sandbox%20Mode%20c%C3%B3mo%20Antigravity%20controla%20tus%20agentes%20IA_EUWDRY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Sandbox Mode cómo Antigravity controla tus agentes IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b69b2f7d-5ba1-46f7-b270-69a891eaa57d/8_%20C%C3%B3mo%20conectar%20GitHub%20con%20Antigravity%20usando%20MCP_XYQDGV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Cómo conectar GitHub con Antigravity usando MCP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2fa57fbc-8ae0-4396-b311-fa5bcfc73a02/9_%20C%C3%B3mo%20automatizar%20reportes%20con%20scheduled%20tasks_OXHVDI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Cómo automatizar reportes con scheduled tasks</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ff3079a4-4eba-4ab4-b51e-f8c6679b39e3/10_%20Comandos%20esenciales%20para%20dominar%20Antigravity%20CLI_KKMTXI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Comandos esenciales para dominar Antigravity CLI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/444e7693-6928-4c02-8eac-99cd098238cc/11_%20C%C3%B3mo%20crear%20agentes%20personalizados%20con%20Antigravity%20SDK_JNFVOM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Cómo crear agentes personalizados con Antigravity SDK</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d77aac7e-b462-4cdb-9408-ecd567b6cb94/12_%20Validar%20microservicios%20y%20frontend%20en%20Antigravity_FCJGPE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Validar microservicios y frontend en Antigravity</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

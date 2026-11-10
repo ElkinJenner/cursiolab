@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Reparación de Computadoras - CursioLab</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Reparación de Computadoras</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://www.openautoacademy.com/openauto-mark.png" alt="Badge">
+                <div>
+                    <h1>Curso de Reparación de Computadoras</h1>
+                    <p class="video-title">1. Fuente de alimentación de la computadora</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cc6f12a9-2a7f-4587-a541-3fb0e852d434/c_DMIZNZ.jpeg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0a14d516-6383-4726-bdfe-39b5b56fc596/Video%201_%20Fuente%20de%20alimentaci%C3%B3n%20de%20la%20computadora_XOVWST.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">26 clases</span>
+                    </div>
+                     <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0a14d516-6383-4726-bdfe-39b5b56fc596/Video%201_%20Fuente%20de%20alimentaci%C3%B3n%20de%20la%20computadora_XOVWST.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Fuente de alimentación de la computadora</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/10c45f2f-d7a9-49c9-b1b5-a97c023fcdc6/Video%202_%20Reloj%20de%20la%20computadora_YKKDOC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Reloj de la computadora</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/be052eda-e05c-4d6b-adc1-5b0f641a346f/Video%203_%20Microprocesador%20de%20la%20computadora%201_PNLZWZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Microprocesador de la computadora 1</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2a267ee6-5371-47d6-9366-bddfce4092c5/Video%204_%20Microprocesador%20de%20la%20computadora%202_TJENJM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Microprocesador de la computadora 2</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d58f6962-80ab-4719-ad21-f8f282a80436/Video%205_%20Memoria%20de%20la%20computadora_AFQGQK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Memoria de la computadora</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b7035d71-14ab-4bc3-9da7-0276f203f992/Video%201_%20Puertos%20de%20interfaz%20de%20la%20computadora_FDCXYL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Puertos de interfaz de la computadora</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/77215754-033e-4f5e-8c1b-a95a983873c0/Video%202_%20Buses%20de%20la%20computadora%201_SGUVZK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Buses de la computadora 1</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3cdeb737-d3fa-41c7-9207-c02de9900107/Video%203_%20Buses%20de%20la%20computadora%202_QVABDM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Buses de la computadora 2</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6784f5b8-3128-480b-9a70-1dbbce06fa9e/Video%201_%20Uso%20del%20mult%C3%ADmetro%20para%20corriente%20directa_ISQCFR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Uso del multímetro para corriente directa</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/112ac109-5c68-43c2-b3fa-a1388120cd6c/Video%202_%20Uso%20del%20mult%C3%ADmetro%20para%20corriente%20alterna_POGFJR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Uso del multímetro para corriente alterna</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c5e4b3c8-5a0e-4e48-a539-9799b4b35571/Video%201_%20Partes%20de%20la%20computadora%20y%20perif%C3%A9ricos_KUZZYY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Partes de la computadora y periféricos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5ffdef25-c07e-45dc-a34c-7d2ff99c68fd/Video%202_%20Componentes%20de%20la%20tarjeta%20madre%20de%20la%20computadora_FERABS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Componentes de la tarjeta madre de la computadora</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4fb41dde-1d55-4153-bda9-fa2ecce4c989/Video%201_%20Instalaci%C3%B3n%20de%20software%20del%20sistema%20operativo%20y%20drivers_LRFLPU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Instalación de software del sistema operativo y drivers</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2e2b12b3-95b9-43c7-9d3f-2780780efee9/Video%202_%20Creaci%C3%B3n%20de%20particiones%20FAT32%20y%20NTFS_WTWXAZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Creación de particiones FAT32 y NTFS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/111dfa98-84c6-41db-91b4-e52a455a4023/Video%203_%20Formateo%20de%20computadoras_ZCXFXY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Formateo de computadoras</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4c6926b6-b533-4e2e-a5c7-ce8df5a0e35c/Video%204_%20Recuperaci%C3%B3n%20de%20informaci%C3%B3n%20por%20da%C3%B1o%20en%20disco%20duro_MHMUQQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Recuperación de información por daño en disco duro</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7fe46840-2b03-4838-b2ac-7e457a01f43a/Video%201_%20Respaldo%20de%20informaci%C3%B3n_UVQFST.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Respaldo de información</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/514b9739-7684-4f46-ae3c-2aa526d24752/Video%202_%20Funcionamiento%20y%20configuraci%C3%B3n%20de%20perif%C3%A9ricos_IZJRVQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Funcionamiento y configuración de periféricos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/84f1da7f-94a6-44e3-bf84-041ef1a9cdb3/Video%203_%20Bluetooth_VYSRVE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Bluetooth </span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9e110c80-58aa-448b-94fd-23fb11c2a952/Video%201_%20Tipos%20de%20tarjeta%20madre%20para%20computadoras_VMCKQA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Tipos de tarjeta madre para computadoras</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b34222db-6ac8-4c4a-acf7-f32dde82adaf/Video%202_%20Tipos%20de%20disco%20duro%20para%20computadoras_FMVMQZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Tipos de disco duro para computadoras</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/494726ab-c61c-4251-aa53-e7575db8aee5/Video%203_%20Tipos%20de%20tarjeta%20de%20video%20para%20computadoras_OLMTHG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Tipos de tarjeta de video para computadoras</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0c28b5cb-77ac-4d8a-a7f5-ba0876af7653/Video%204_%20Tipos%20de%20memoria%20RAM%20para%20computadoras_LNTWYK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Tipos de memoria RAM para computadoras</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d2a50afd-62cb-4a04-85c7-684c6cbe3eb2/Video%201_%20Identificaci%C3%B3n%20de%20tipos%20de%20gabinete_EDCQES.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Identificación de tipos de gabinete</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c2467058-b849-43c7-bd89-2a4c17414796/Video%202_%20Tipos%20de%20fuentes%20de%20alimentaci%C3%B3n%20para%20computadoras%201_DAZMRM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Tipos de fuentes de alimentación para computadoras 1</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6bf69d35-ae32-4171-88e0-c237c7b8bce4/Video%203_%20Tipos%20de%20fuentes%20de%20alimentaci%C3%B3n%20para%20computadoras%202_SKWJUD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Tipos de fuentes de alimentación para computadoras 2</span>
+                        </li>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

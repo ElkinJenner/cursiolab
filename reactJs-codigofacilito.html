@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso profesional de React - Codigo Facilito - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso profesional de React - Codigo Facilito</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://files.catbox.moe/4hulu5.png" alt="Badge">
+                <div>
+                    <h1>Curso profesional de React - Codigo Facilito</h1>
+                    <p class="video-title">1. Introduccion - Curso profesional de React</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://codigofacilito.com/system/courses/thumbnails/000/000/646/original/Thumbnail_Curso_Curso_profesional_de_React.jpg?1691686262">
+                        <source src="https://files.catbox.moe/wfv6ck.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">89 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://files.catbox.moe/wfv6ck.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Introduccion - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/xtgkn6.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Que es React - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ioe9ur.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Virtual DOM - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/r3lttw.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Ecosistema de React - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/uqv1hw.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Pensando en Componentes - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/kg4wjg.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Entorno de Desarrollo - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/z7vliz.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. JSX - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/0yi3uc.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Components - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ynkgi5.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Reactividad - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/131hrd.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. State - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/z1uk8n.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Inmutabilidad - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/07towh.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Props - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/zbrp07.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Que es un Bundler - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/v6pcmh.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Como funciona Vite - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/lq3usu.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Creando Proyecto con Vite - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/68dfza.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Como Funcionan los Archivos Principales - Curso profesional de R</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/c5248w.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Descripcion del Proyecto - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/2im2or.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Estructura de Carpetas - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/iy3bji.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Creando Primer Componente del Proyecto - Curso profesional de Re</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/52mjei.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Renderizado Condicional - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/99sua3.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Renderizado de Listas - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/bx48xu.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Sesion 1 Aprendido en Clase - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/jph6oo.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Manejando Eventos - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/mbsvcf.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Pasando Eventos como Props - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/7ekjf3.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Event bubbling - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/csuju9.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Sesion 2 Aprendido en Clase - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ycm3h5.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Agregando Formularios - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/fyrpj2.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>28. Dependencias para el Manejo de Formularios - Curso profesional d</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/f40gzl.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>29. Migrando a React Hook Form - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/at33oz.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>30. Introduccion a hooks - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/zlaw8c.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>31. Reglas de los hooks - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/5hys22.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>32. Como Funciona useEffect - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/na3w8l.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>33. Creando hook reusable - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/lhl8v1.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>34. Que son las ref - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/obbsm2.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>35. Ejemplo Usando useRef - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ylyd6i.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>36. Implementando forwardRef - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/68ji0q.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>37. Como Usar useImperativeHandle - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/f138uj.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>38. Introduccion a Estilos - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/bkan0q.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>39. Usando CSS - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ftom5v.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>40. Implementando Modulos de CSS - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ila6pw.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>41. Como funciona el Routing - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/690j1w.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>42. Que es el Client Side Routing - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/9bz38s.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>43. Configurando Routing en Nuestro Proyecto - Curso profesional de</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/v3yq45.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>44. Limpiando Componente App - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/4vl0ac.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>45. Rutas No Existentes - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/xjfuli.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>46. Definiendo Parametros en las Rutas - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/nfvhv2.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>47. Rutas Anidadas - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/f2vt0r.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>48. Obteniendo Valores de los Parametros - Curso profesional de Reac</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/gk4o06.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>49. Obteniendo APIKey de Tickemaster - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/4qbyc3.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>50. Como Funciona el endpoint de Eventos - Curso profesional de Reac</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/i69ss6.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>51. Como Funciona fetch - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/j7cj8k.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>52. Enviando Parametros a API - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a41fbca6-c320-4753-87ce-87b8254e8ad9/53_%20Agregando%20Paginacion%20-%20Curso%20profesional%20de%20React%20_WEMOMZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>53. Agregando Paginacion - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/0aa62q.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>54. Usando fetch en Pantalla de Detalle - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7ca784cf-a36e-432c-9ae9-bae1168b1551/55_%20Agregando%20Pantalla%20de%20Detalle%20-%20Curso%20profesional%20de%20React%20_VMOKFG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>55. Agregando Pantalla de Detalle - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/vnsi3i.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>56. Agregando Variables de Entorno - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/c0hh9a.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>57. Que es un State Management - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/3j036s.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>58. Que es Zustand y Como Funciona - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/hm3v8m.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>59. Instalando Zustand - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/uimhts.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>60. Consumiendo info de Resultados desde el Detalle - Curso profesio</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/qm5ug9.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>61. Agregando icono de Like y Unlike a los Eventos - Curso profesion</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/wtg8qi.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>62. Agregando Like y Unlike con localStorage - Curso profesional de</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/0ib3en.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>63. Creando Componentes para Eventos Favoritos e Informacion - Curso</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/odnbgc.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>64. Creando Tabs - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/e8cykc.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>65. Estilizando Tabs - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/vujk1i.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>66. Creando Formulario de mi Informacion - Curso profesional de Reac</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/qxg91z.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>67. Obteniendo Listado de Eventos - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/2ayh39.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>68. Que es memoization - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/slofeo.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>69. Que es memo - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/4ih8lr.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>70. Recreacion de Funciones - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/6x5400.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>71. Que es useMemo - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/7ehc6n.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>72. Instalando React Dev Tools enhanced - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/k93h85.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>73. Deps arguments en useEffect - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ffnmsd.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>74. Strict Mode - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/x5f6k5.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>75. ErrorBoundary - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/lmjowg.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>76. Suspense - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/dpbxy3.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>77. useTransition - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/2gvl9j.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>78. Introduccion - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/692iay.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>79. Recordemos formularios - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/qo38g1.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>80. Usando un nuevo hook para formularios useActionState - Curso pro</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/l2o1f2.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>81. Conoce el status actual de tu formulario con useFormStatus - Cur</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/k20f9w.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>82. Haciendo actualizaciones optimistas con useOptimistic - Curso pr</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/3om3xi.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>83. Recordemos memoization - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ui0h46.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>84. Que es React compiler - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/id5i75.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>85. Reglas de React - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/u5c6xo.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>86. Compilador de React - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/gemf85.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>87. Forward Ref - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/wixosx.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>88. Implementando use - Curso profesional de React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/88s50x.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>89. Atributos metadata - Curso profesional de React</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

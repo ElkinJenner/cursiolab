@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Fundamentos con PHP - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Fundamentos con PHP</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-fundamentos-php-badge-4084311b-1caa-4c46-b9e8-f2f24a258767.png" alt="Badge">
+                <div>
+                    <h1>Curso de Fundamentos con PHP</h1>
+                    <p class="video-title">1. PHP en el 78 de la web hoy</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/37641852-620f-4da4-8aa2-fb4dd475fa5c/file_1794191095023_POHYBN.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/402da99e-98f4-45ce-a461-6d1694fb16d3/1_%20PHP%20en%20el%2078%20de%20la%20web%20hoy_UUXSAH.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">23 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/402da99e-98f4-45ce-a461-6d1694fb16d3/1_%20PHP%20en%20el%2078%20de%20la%20web%20hoy_UUXSAH.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. PHP en el 78 de la web hoy</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/20e55a28-c8a7-43ec-bcee-b7931fac9edc/2_%20Variables%20en%20PHP%20para%20contenido%20din%C3%A1mico_IGACOE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Variables en PHP para contenido dinámico</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7dd39e91-e76d-424c-8527-39f4833491fa/3_%20Tres%20formas%20de%20escribir%20condicionales%20en%20PHP_AXVNPF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Tres formas de escribir condicionales en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a5b0cf44-b4f9-4921-ace6-6926cff73b3c/4_%20Arrays%20en%20PHP%20%C3%ADndices%20y%20posiciones_SVSCJD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Arrays en PHP índices y posiciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c831e1ee-1379-4c94-805a-0ac7b3caa3e3/5_%20Recorrer%20arreglos%20en%20PHP%20con%20foreach_NDDXSJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Recorrer arreglos en PHP con foreach</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6c67a3dc-1f00-4491-9717-edb98e032579/6_%20Arreglos%20asociativos%20en%20PHP%20con%20claves_TJTBBJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Arreglos asociativos en PHP con claves</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/32c74f6c-4ffd-4319-8e08-70124374d01c/7_%20Creaci%C3%B3n%20de%20clases%20y%20objetos%20en%20PHP_NDUIUB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Creación de clases y objetos en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8c77c286-8245-449b-9fd9-78093c0a57d1/8_%20Organizaci%C3%B3n%20de%20clases%20PHP%20para%20c%C3%B3digo%20limpio%20y%20seguro_HSRHMT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Organización de clases PHP para código limpio y seguro</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/74d10797-9b77-4539-ad1b-b55892e6e441/9_%20M%C3%A9todos%20m%C3%A1gicos%20en%20PHP%20para%20acceso%20din%C3%A1mico%20a%20propiedades_GOHIDF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Métodos mágicos en PHP para acceso dinámico a propiedades</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b766c778-6f73-48a2-9cbb-accd3e226fdc/10_%20Estructura%20profesional%20de%20archivos%20en%20proyectos%20PHP_PVLJTQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Estructura profesional de archivos en proyectos PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8fb4332c-11d7-4ee5-8168-9bc20d45b822/11_%20Autoload%20de%20clases%20con%20Composer%20en%20PHP_ZBPQNT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Autoload de clases con Composer en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/90025ccc-eede-4dee-bd44-c8ae9c511de7/12_%20Bot%20interactivo%20en%20PHP%20con%20bucle%20while_OYYKCC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Bot interactivo en PHP con bucle while</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e58cb9f1-1e8c-4d40-9495-1b6c60be5b1e/13_%20Clase%20de%20servicio%20PHP%20con%20l%C3%B3gica%20separada_JGZIGJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Clase de servicio PHP con lógica separada</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b4ad05a1-949b-46bb-a703-1dadfddcd394/14_%20C%C3%B3mo%20instalar%20Ollama%20con%20DeepSeek%20en%20local_QXRXQJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Cómo instalar Ollama con DeepSeek en local</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7e8f856e-ca36-4a38-99a1-7dd4c246098d/15_%20Integraci%C3%B3n%20de%20Olama%20con%20PHP%20usando%20Composer_ERHKOP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Integración de Olama con PHP usando Composer</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2a057261-63da-429c-b8fb-575fdb70e595/16_%20PHP%20con%20OpenAI%20desde%20la%20nube_BKHXLP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. PHP con OpenAI desde la nube</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d43e7956-2b96-49bd-9b4a-fa3affe1ce77/17_%20Protege%20tu%20API%20key%20con%20variables%20de%20entorno_SQQGQY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Protege tu API key con variables de entorno</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a8d8a273-2e85-4c6b-b204-5f6c13da0177/18_%20Organizaci%C3%B3n%20de%20proyectos%20PHP%20con%20archivo%20Bootstrap_PRCHZO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Organización de proyectos PHP con archivo Bootstrap</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/53836aa5-ffce-4333-9459-27f4b7778e32/19_%20Dise%C3%B1o%20de%20prompts%20para%20asistentes%20especializados%20en%20PHP_KWHJRL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Diseño de prompts para asistentes especializados en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/961cd76d-8fb5-4848-a7cc-0e004c80cc2b/20_%20Inyecci%C3%B3n%20de%20dependencias%20en%20clases%20PHP_GHHLCN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Inyección de dependencias en clases PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/82dfc808-c428-444e-975f-aafeb4d7205c/21_%20Interfaces%20en%20PHP%20para%20reducir%20acoplamiento%20entre%20clases_NCEZWM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Interfaces en PHP para reducir acoplamiento entre clases</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/51f2edf0-1fa2-4ccd-b754-7e3467ecd97e/22_%20Refactorizaci%C3%B3n%20de%20c%C3%B3digo%20para%20mejor%20legibilidad%20y%20mantenimiento_TUVEPR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Refactorización de código para mejor legibilidad y mantenimiento</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6e7d1d5e-e12c-4a4c-b95c-51bb263cbb35/23_%20Reutilizar%20c%C3%B3digo%20PHP%20del%20terminal%20al%20navegador_HTNKQU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Reutilizar código PHP del terminal al navegador</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

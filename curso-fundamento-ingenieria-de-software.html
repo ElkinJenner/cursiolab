@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Fundamentos de Ingeniería de Software - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Fundamentos de Ingeniería de Software</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-fundamentosde-ingenieria-de-software_badge-d9c5b559-837f-44a3-8543-d_bkcvYTp.png" alt="Badge">
+                <div>
+                    <h1>Curso de Fundamentos de Ingeniería de Software</h1>
+                    <p class="video-title">1. Que pasa cuando enciendes una computadora</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://files.catbox.moe/ycwtkl.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cef36914-6890-442c-bf73-a22709b4258f/1_Que_pasa_cuando_enciendes_una_computadora_ZEWYXR.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">24 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cef36914-6890-442c-bf73-a22709b4258f/1_Que_pasa_cuando_enciendes_una_computadora_ZEWYXR.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Que pasa cuando enciendes una computadora</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/46912dce-9784-4e3e-b26b-49e5d5ce557d/2_Como_funciona_un_circuito_electr%C3%B3nico_PXNDDU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Como funciona un circuito electrónico</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/63b564e2-7ee5-4496-b25e-acda6db480c9/3_Que%20es%20un%20bit%20y%20que%20es%20un%20byte_IJMAWG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Que es un bit y que es un byte</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cd14e094-8122-42fc-a5a6-587752453eeb/4_Que%20es%20un%20procesador%20CPU%20y%20la%20memoria%20RAM_YQIKMQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Que es un procesador CPU y la memoria RAM</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/741cfe56-fc2b-4c95-85c1-d9c5c6c875b0/5_%C2%BFQu%C3%A9_es_un_sistema_operativo_UBGXUA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. ¿Qué es un sistema operativo?</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/mhb1in.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Como funciona internet</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/e0q76l.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Como las computadoras guardan datos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/r7m4dk.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Como se organizan los archivos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/uzh9xo.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Telefonos y sus System on a Chip o SOC</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/eo7ns1.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. GPUs Procesadores graficos y de AI</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/76za3d.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Que es un algoritmo y que es un lenguaje de programacion</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/kivukk.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Direcciones IP y el protocolo de Internet</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/le5mkb.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Nombres de dominio DNS y como obtener un com</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/aeijk6.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Modelo ClienteServidor Como funciona un sitio web</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/cttit8.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Diferencias entre Windows Linux y MacOS</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ebh0yz.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Permisos niveles de procesos y privilegios de ejecucion</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/7lfbd2.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Archivos Metadatos cabeceras y extensiones</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/en5wvr.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Que son las bases de datos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/x4ut2q.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Como funciona el formato JPG</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/61e066c9-4d2c-432b-af46-6b37e4200d7c/20_%20Videos%20contenedores%20codecs%20y%20protocolos_QPSDRC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Videos contenedores codecs y protocolos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/06tj1z.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Como Funciona un zip</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/21303db9-1d4b-48cb-a842-6dfc541317da/22_%20Arquitectura%20y%20funcionamiento%20interno%20de%20Blockchain_SULIRV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Arquitectura y funcionamiento interno de Blockchain</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8b44a0a9-4643-4958-a473-6e7827fe6a09/23_%20Que%20es%20una%20red%20neuronal_QLPOCK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Que es una red neuronal</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c4323973-d732-49fa-a25e-9cbf628427d1/24_%20Como%20funcionan%20los%20LLMs_SRDMVL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Como funcionan los LLMs</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de React.js con TypeScript - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de React.js con TypeScript</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-react-typescript_badge-0b482f25-d778-492a-9cd8-d3b351e45667.png" alt="Badge">
+                <div>
+                    <h1>Curso de React.js con TypeScript</h1>
+                    <p class="video-title">1. TypeScript y React Proyecto Práctico con Next.js</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a1ec4072-837a-4fe9-9feb-75b8149e0c8e/imagen_IIBLDE.png">
+                        <source src="https://files.catbox.moe/bu0bp7.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">16 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a96265ce-f892-41c5-93e0-7f30d338fdb3/1_%20TypeScript%20y%20React%20Proyecto%20Pr%C3%A1ctico%20con%20Next_js_DPCIAY.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. TypeScript y React Proyecto Práctico con Next.js</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9729b7cd-6726-4867-8a3b-94c320077a55/2_%20Tipado%20Impl%C3%ADcito%20y%20Expl%C3%ADcito%20en%20TypeScript_NEANOI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Tipado Implícito y Explícito en TypeScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4e895bba-893c-491d-a784-dba28625b6bd/3_%20Creaci%C3%B3n%20de%20proyecto%20con%20Next_js%20y%20configuraci%C3%B3n%20de%20TypeScript_QMJFFD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Creación de proyecto con Next.js y configuración de TypeScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/648ab6f7-9878-47ec-b973-5908a0381871/4_%20Componentes%20de%20React%20con%20TypeScript%20Creaci%C3%B3n%20de%20Lazy%20Image_XCGRJC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Componentes de React con TypeScript Creación de Lazy Image</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c087359a-898b-4af6-a395-3b50349e7793/5_%20Definici%C3%B3n%20de%20Props%20en%20Componentes%20React%20con%20TypeScript_PSKYYC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Definición de Props en Componentes React con TypeScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6d20246c-90f1-4965-884b-f663331686a0/6_%20Tipado%20de%20useState%20en%20React%20con%20TypeScript_EPXFXX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Tipado de useState en React con TypeScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e566b0aa-5e88-4507-9751-4b873859dcdc/7_%20Refactorizaci%C3%B3n%20de%20Tipos%20en%20TypeScript%20y%20React_YJNIML.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Refactorización de Tipos en TypeScript y React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e886abda-fed6-4985-8013-f51fe8bd976f/8_%20Manejadores%20de%20Eventos%20en%20React%20con%20TypeScript_IEYNAV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Manejadores de Eventos en React con TypeScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8c5b107f-3fec-4c27-b7c8-bc3322ac7f9c/9_%20Lazy%20Loading%20de%20Im%C3%A1genes%20con%20React%20y%20TypeScript_ZERJKB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Lazy Loading de Imágenes con React y TypeScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6f59531d-8658-4aa7-9834-b1d301e42f2c/10_%20Uso%20de%20IntersectionObserver%20en%20React%20para%20Carga%20Diferida%20de%20Im%C3%A1g_XTRFFL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Uso de IntersectionObserver en React para Carga Diferida de Imág</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3365e470-b45c-4cab-9b31-83907fedfe93/11_%20Creaci%C3%B3n%20de%20Componentes%20Gen%C3%A9ricos%20con%20TypeScript%20y%20Lazy%20Loading_DPYLFZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Creación de Componentes Genéricos con TypeScript y Lazy Loading</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5cee0347-7f63-46cb-a712-2e430d053e39/12_%20Implementaci%C3%B3n%20de%20onLazyLoad%20en%20React%20con%20TypeScript_HPQMSB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Implementación de onLazyLoad en React con TypeScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/be65954f-499b-4e2a-89f3-6e0d7622f85d/13_%20Uso%20Correcto%20de%20Tipos%20Globales%20en%20TypeScript_MODCLS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Uso Correcto de Tipos Globales en TypeScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0ee6c0f0-1688-4fdc-9e80-5aa8218644e9/14_%20Creaci%C3%B3n%20de%20Tipos%20Personalizados%20para%20Librer%C3%ADas%20en%20TypeScript_WMUNAT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Creación de Tipos Personalizados para Librerías en TypeScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/625b9775-442a-4e79-bb2a-e43c5005d4b9/15_%20Integraci%C3%B3n%20de%20Plugins%20Externos%20en%20TypeScript_KAVXMT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Integración de Plugins Externos en TypeScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5afa2d51-441e-4e99-b60d-7b245a27a176/16_%20Tipado%20Avanzado%20en%20Redux%20con%20TypeScript%20y%20React_SQAAVI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Tipado Avanzado en Redux con TypeScript y React</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

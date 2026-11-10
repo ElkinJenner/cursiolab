@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Figma - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Figma</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-5-9501581e-8659-4d2e-ad5f-40355c5bed1b.png" alt="Badge">
+                <div>
+                    <h1>Curso de Figma</h1>
+                    <p class="video-title">1. Botones dinámicos con Auto Layout en Figma</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_69f27496301ac379b04484a5_1777497679147.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/797f3d13-c2e4-4dc9-bd31-def39d92101c/1_%20Botones%20din%C3%A1micos%20con%20Auto%20Layout%20en%20Figma_TYCZDL.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">23 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/797f3d13-c2e4-4dc9-bd31-def39d92101c/1_%20Botones%20din%C3%A1micos%20con%20Auto%20Layout%20en%20Figma_TYCZDL.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Botones dinámicos con Auto Layout en Figma</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6e5c45c7-8504-49d3-ad52-87746822e386/2_%20Los%20cinco%20productos%20del%20ecosistema%20Figma_AQWVUT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Los cinco productos del ecosistema Figma</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7c03e4c4-fbaf-461b-bf2d-e2d007d984a3/3_%20Las%20cuatro%20zonas%20de%20la%20interfaz%20de%20Figma_MGWHJV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Las cuatro zonas de la interfaz de Figma</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/51f3986d-2a25-43ef-9259-da303ac6dad9/4_%20Grupos%20frames%20y%20secciones%20en%20Figma_NYKITV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Grupos frames y secciones en Figma</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6bb534a2-b693-4b32-8552-dcfa6ca28ce7/5_%20Iconos%20en%20Figma%20con%20operaciones%20booleanas_UPGJIX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Iconos en Figma con operaciones booleanas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1fc8cfe1-a80b-4d9a-b25c-a78a1797941e/6_%20Cajas%20de%20texto%20en%20Figma%20sin%20cortes_IPFTWY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Cajas de texto en Figma sin cortes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a100a309-a925-46c2-a5b7-3b1cf4c7280c/7_%20Fills%20strokes%20y%20efectos%20en%20capas%20de%20Figma_WGTVYX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Fills strokes y efectos en capas de Figma</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4b5acf71-7348-4ba1-ba8d-0d137ae344b6/8_%20Ilustraciones%20org%C3%A1nicas%20en%20Figma%20Draw_UXWKFB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Ilustraciones orgánicas en Figma Draw</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/473afc86-a6aa-4f4e-abf1-1f4a676d3f06/9_%20Alineaci%C3%B3n%20y%20distribuci%C3%B3n%20de%20capas%20en%20Figma_HSMRAI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Alineación y distribución de capas en Figma</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9f0aaeaa-1905-43c8-8439-eac3aea4ecd8/10_%20Constraints%20en%20Figma%20para%20dise%C3%B1os%20adaptables_OOTZWY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Constraints en Figma para diseños adaptables</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5cab44b3-d11f-4c27-ad48-2b30a2521b3f/11_%20Auto%20Layout%20en%20Figma%20para%20componentes%20din%C3%A1micos_TUJZHP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Auto Layout en Figma para componentes dinámicos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2030587b-8795-452c-85f9-c38dfd49f280/12_%20Estilos%20en%20Figma%20para%20dise%C3%B1o%20consistente_OVGXHK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Estilos en Figma para diseño consistente</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/eb6dd67d-9331-4a37-9c6f-31d207ae2d75/13_%20Componentes%20e%20instancias%20en%20Figma%20sin%20errores_IADSXK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Componentes e instancias en Figma sin errores</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/960eb1a4-a246-4b70-a56c-caf11e6c5c2b/14_%20Variantes%20en%20Figma%20para%20un%20mismo%20componente_GPJZGM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Variantes en Figma para un mismo componente</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0f9283e4-cc26-4cd8-9243-aad481645f56/15_%20Propiedades%20editables%20en%20componentes%20de%20Figma_CYPSWX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Propiedades editables en componentes de Figma</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2eeec08e-5532-435f-b243-2bba4649e8cd/16_%20Variables%20de%20color%20para%20dark%20mode%20en%20Figma_SGZYUH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Variables de color para dark mode en Figma</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/af6d575c-715c-47cb-97b7-99af17928b95/17_%20Publica%20y%20conecta%20tu%20librer%C3%ADa%20en%20Figma_WWJLOF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Publica y conecta tu librería en Figma</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/56b430eb-c64c-48c4-ad43-6bb1a360ab10/18_%20C%C3%B3mo%20conectar%20pantallas%20en%20Figma%20Prototype_FLTNLD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Cómo conectar pantallas en Figma Prototype</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4f59cb1c-eb44-4823-8bc4-0140601bdbb9/19_%20Overlays%20y%20smart%20animate%20en%20Figma_RNCBJC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Overlays y smart animate en Figma</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/dc1e79b5-a596-4671-a891-7bc83bd1ef40/20_%20Variables%20booleanas%20para%20prototipos%20con%20memoria_PUYUWU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Variables booleanas para prototipos con memoria</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3f3ce3b9-3f4b-4b0b-a438-430b3caaa9fe/21_%20IA%20en%20Figma%20para%20dise%C3%B1ar%20m%C3%A1s%20r%C3%A1pido_XTYNAC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. IA en Figma para diseñar más rápido</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d429967a-cf10-404a-87a9-9929f0786aff/22_%20C%C3%B3mo%20usar%20DevMode%20para%20un%20handoff%20sin%20preguntas_DXGXDB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Cómo usar DevMode para un handoff sin preguntas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/433861d1-cc7c-445e-ae0b-a3ed66b26da8/23_%20Figma%20Make%20de%20dise%C3%B1o%20a%20app%20funcional_MBJTYX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Figma Make de diseño a app funcional</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Backend con  NestJS - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Backend con NestJS</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-backend-nestjs-badge-8d6d6e75-e5cd-4546-8628-c7d9f361ba92.png" alt="Badge">
+                <div>
+                    <h1>Curso de Backend con NestJS</h1>
+                    <p class="video-title">1. Crea una API RESTful con NestJS</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://i.imgur.com/6yccD7m.jpeg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fd5eb4d0-fb71-454e-9bbf-58b5b56f2236/1_%20Crea%20una%20API%20RESTful%20con%20NestJS_XSALJN.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">35 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fd5eb4d0-fb71-454e-9bbf-58b5b56f2236/1_%20Crea%20una%20API%20RESTful%20con%20NestJS_XSALJN.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Crea una API RESTful con NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3ed0e538-6ca2-4d7a-8f4e-e5b12ee52d49/2_%20Instalaci%C3%B3n%20del%20CLI%20de%20NestJS%20y%20primer%20proyecto%20con%20API_YBDLFT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Instalación del CLI de NestJS y primer proyecto con API</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ce8fc32c-31b1-4804-81c0-35182411c03c/3_%20Creaci%C3%B3n%20de%20endpoints%20din%C3%A1micos%20para%20consultar%20usuarios%20en%20NestJ_HYBFER.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Creación de endpoints dinámicos para consultar usuarios en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/27a0e77a-627e-439b-8fde-e196afb401d1/4_%20Operaciones%20CRUD%20en%20APIs%20REST%20con%20Postman_ANPGJC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Operaciones CRUD en APIs REST con Postman</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/75a9a1a8-ffc2-4779-a79b-30ac6b10a02c/5_%20M%C3%A9todo%20PUT%20para%20actualizar%20usuarios%20con%20ID%20autom%C3%A1tico_VAUTNQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Método PUT para actualizar usuarios con ID automático</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e6a715fa-e565-4125-802f-dde1be794c54/6_%20Manejo%20de%20status%20codes%20HTTP%20en%20NestJS_RHJNHO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Manejo de status codes HTTP en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/36a0920f-6e72-44de-a110-174688d5d3c1/7_%20DTOs%20y%20validaci%C3%B3n%20autom%C3%A1tica%20de%20datos%20en%20APIs%20con%20NestJS_BCAYAM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. DTOs y validación automática de datos en APIs con NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/43596a2c-263d-410c-85c2-57d94a3e396a/8_%20Servicios%20y%20l%C3%B3gica%20de%20negocio%20en%20NestJS_WLXWPZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Servicios y lógica de negocio en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/34f39971-5766-4ca7-b314-f68897a894bf/9_%20Variables%20de%20entorno%20seguras%20en%20NestJS_VFHFKF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Variables de entorno seguras en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/49803e58-c567-4377-b0f7-9453dd6d18e3/10_%20Programaci%C3%B3n%20modular%20en%20NestJS%20con%20UserModule_PQDFMN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Programación modular en NestJS con UserModule</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b7236fce-c718-4798-89ed-772094fe4a3c/11_%20Configuraci%C3%B3n%20de%20PostgreSQL%20con%20Docker%20y%20Docker%20Compose_JXYWTZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Configuración de PostgreSQL con Docker y Docker Compose</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b3d892b7-3f7e-48cb-a6e7-8c918aafdbd3/12_%20Configuraci%C3%B3n%20de%20PostgreSQL%20con%20TypeORM%20en%20aplicaciones%20NestJS_ACRDNO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Configuración de PostgreSQL con TypeORM en aplicaciones NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3213af96-872e-4744-a451-bd2141fd52d0/13_%20Creaci%C3%B3n%20de%20entidades%20ORM%20con%20decoradores%20en%20TypeScript_HTVPFQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Creación de entidades ORM con decoradores en TypeScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/152cd42b-92d3-4332-a1ca-12a96723cc73/14_%20Repository%20Pattern%20con%20TypeORM%20en%20NestJS_NLYLPK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Repository Pattern con TypeORM en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7573ebc6-bc15-4ff5-aeb2-a722819ebfb2/15_%20Relaciones%20uno%20a%20uno%20entre%20usuarios%20y%20perfiles%20en%20PostgreSQL_UTQRGW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Relaciones uno a uno entre usuarios y perfiles en PostgreSQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/caf931ac-2587-4242-ba0f-572cd7041ab3/16_%20Actualizaci%C3%B3n%20de%20DTOs%20con%20mapped%20types%20en%20NestJS%20para%20perfil%20y%20u_ELIJRL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Actualización de DTOs con mapped types en NestJS para perfil y usuario</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/986402e6-cac2-4cc8-897c-532607861925/17_%20Generaci%C3%B3n%20autom%C3%A1tica%20de%20m%C3%B3dulos%20CRUD%20con%20NestJS%20y%20AI_XEYCAH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Generación automática de módulos CRUD con NestJS y AI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5d7ee044-17fc-441a-ae3a-6022b12153e6/18_%20Relaci%C3%B3n%20uno%20a%20muchos%20con%20TypeORM_RXYQQU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Relación uno a muchos con TypeORM</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fc8a60da-8152-44d1-8526-e1c3c304f0db/19_%20CRUD%20de%20categor%C3%ADas%20con%20IA%20en%20NestJS_FWASEF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. CRUD de categorías con IA en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/607713a8-c48b-480c-b7bc-9eb65cb7c9e7/20_%20Relaciones%20many-to-many%20con%20TypeORM%20y%20validaci%C3%B3n%20de%20arrays_HMXNIE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Relaciones many-to-many con TypeORM y validación de arrays</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/305dcf15-d6d7-4708-8ac2-c3c7ed0bcc27/21_%20Reutilizaci%C3%B3n%20de%20servicios%20entre%20m%C3%B3dulos%20en%20NestJS_IWVIMN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Reutilización de servicios entre módulos en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/39e3ca1b-6e4a-498f-82fe-b494eef096cc/22_%20Migraciones%20en%20TypeORM%20sin%20perder%20datos_NXOCLU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Migraciones en TypeORM sin perder datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/dab53b18-b3de-4d5e-8f77-3fda0ca33947/23_%20C%C3%B3mo%20evitar%20perder%20datos%20al%20migrar%20columnas_FYONYO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Cómo evitar perder datos al migrar columnas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a11a99a2-fa86-488c-a54a-059d57efaeeb/24_%20Hashing%20de%20contrase%C3%B1as%20con%20Bcrypt%20en%20NestJS_PQXYHT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Hashing de contraseñas con Bcrypt en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3aefa5b2-c679-4018-a45b-6ad87e946717/25_%20Excluir%20campos%20sensibles%20con%20ClassTransformer_YZXXJN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Excluir campos sensibles con ClassTransformer</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/50603b08-b9a7-424f-93d5-e3f403083086/26_%20Autenticaci%C3%B3n%20local%20con%20Passport%20en%20NestJS_TVVXFG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Autenticación local con Passport en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/af4aaade-3b04-4fa4-8dd3-e4c9cbf40be0/27_%20Endpoint%20de%20login%20con%20Passport%20en%20NestJS_LMKUIU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Endpoint de login con Passport en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cfbc6840-8c30-4964-b75e-29685594ba53/28_%20Implementaci%C3%B3n%20de%20JSON%20Web%20Token%20para%20autenticaci%C3%B3n%20en%20NestJS_IKKBOR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>28. Implementación de JSON Web Token para autenticación en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/24b772ac-0ba0-451f-be95-f8726d3410cf/29_%20Rutas%20protegidas%20con%20JWT%20en%20NestJS_IIVEWR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>29. Rutas protegidas con JWT en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c0058aee-0d8f-4beb-a193-6025fab3a243/30_%20User%20ID%20autom%C3%A1tico%20desde%20JWT%20en%20NestJS_MHKKRV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>30. User ID automático desde JWT en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d1f60f02-97d6-4f6a-897b-6c125d4bb078/31_%20Autogenera%20res%C3%BAmenes%20e%20im%C3%A1genes%20con%20OpenAI%20en%20NestJS_VZVQLK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>31. Autogenera resúmenes e imágenes con OpenAI en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a7777446-a36f-4111-9f5e-a3349a3eef5e/32_%20Documentaci%C3%B3n%20autom%C3%A1tica%20de%20APIs%20con%20Swagger%20en%20NestJS_PCZZNR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>32. Documentación automática de APIs con Swagger en NestJS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e873cf63-3011-4387-93bb-dda5d5c88503/33_%20Preparar%20tu%20API%20NestJS%20para%20producci%C3%B3n_UXKKSI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>33. Preparar tu API NestJS para producción</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d6b623a2-8642-455e-9f5e-2b6e77066ee6/34_%20Desplegar%20aplicaci%C3%B3n%20Node_js%20a%20producci%C3%B3n%20con%20Railway%20y%20PostgreS_YMVAHY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>34. Desplegar aplicación Node.js a producción con Railway y PostgreSQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/231a6b39-9c84-4847-bd65-c2b141f2871d/35_%20Desarrollo%20de%20API%20REST%20escalable%20con%20NestJS%20en%20producci%C3%B3n_PCDFED.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>35. Desarrollo de API REST escalable con NestJS en producción</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

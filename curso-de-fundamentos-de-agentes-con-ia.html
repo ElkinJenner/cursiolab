@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Fundamentos de Agentes con IA - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Fundamentos de Agentes con IA</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/91c8f4a0-d766-415c-aed6-a9ec103e9131-50aa4c77-fbfb-47c3-8b8c-15c6209c16d0.png" alt="Badge">
+                <div>
+                    <h1>Curso de Fundamentos de Agentes con IA</h1>
+                    <p class="video-title">1. De verdad necesitas un agente de IA</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e19cb326-a346-4232-a384-becb277f484d/file_1794002713878_ASAZUD.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5b824d6f-4b92-440e-912e-da191766b213/1_%20De%20verdad%20necesitas%20un%20agente%20de%20IA_QCQFUX.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">18 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5b824d6f-4b92-440e-912e-da191766b213/1_%20De%20verdad%20necesitas%20un%20agente%20de%20IA_QCQFUX.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. De verdad necesitas un agente de IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8cb00cda-2228-416a-ac2c-3de6eac560bb/2_%20Qu%C3%A9%20es%20un%20agente%20y%20c%C3%B3mo%20decide%20por%20s%C3%AD%20solo_OOQJIF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Qué es un agente y cómo decide por sí solo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/75e5039b-80ac-488b-88d6-8919f81e6ced/3_%20Por%20qu%C3%A9%20un%20modelo%20de%20IA%20no%20es%20un%20agente_EJQFNO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Por qué un modelo de IA no es un agente</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d50b3a28-6e81-451b-a407-e5383fa4543b/4_%20El%20bucle%20de%20razonamiento%20de%20un%20agente%20de%20IA_QMOXAB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. El bucle de razonamiento de un agente de IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/70c18c70-daee-469b-85fe-8ef457d3ec40/5_%20La%20escalera%20de%20soluciones%20automatizaci%C3%B3n%20IA%20o%20agente_EZCNQG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. La escalera de soluciones automatización IA o agente</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8ea05a23-8785-45c7-865f-129a4c03470c/6_%20Auditar%20solicitudes%20antes%20de%20elegir%20agente%20o%20automatizaci%C3%B3n_PTEXLA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Auditar solicitudes antes de elegir agente o automatización</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9176cae0-ad38-4b33-a065-4db92e2e71e4/7_%20Automatizaci%C3%B3n%20vs%20agente%20cu%C3%A1ndo%20cada%20uno%20conviene_JNZNCX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Automatización vs agente cuándo cada uno conviene</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/544fa8fb-b8e5-4ff6-b080-963ff4c5544a/8_%20Tres%20criterios%20para%20decidir%20si%20necesitas%20un%20agente%20de%20IA_FBUJVI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Tres criterios para decidir si necesitas un agente de IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c361b686-c3c3-4f82-93ea-eeabeb50fb0f/9_%20Cu%C3%A1nto%20cuesta%20realmente%20un%20agente%20de%20IA_GGUVBM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Cuánto cuesta realmente un agente de IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/36f191a6-8b47-4072-80f9-26aa922cb8ae/10_%20Los%206%20patrones%20de%20agentes%20IA%20en%20Tienda%20Andina_SWIMJG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Los 6 patrones de agentes IA en Tienda Andina</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/424235d9-ac09-47cb-bbb6-144b2d96e34b/11_%20M%C3%ADnimo%20privilegio%20el%20l%C3%ADmite%20real%20de%20un%20agente%20IA_APRGRQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Mínimo privilegio el límite real de un agente IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/33d1fbd5-d2d3-4462-b9a0-4067568fc531/12_%20Memoria%20l%C3%ADmites%20y%20aprobaci%C3%B3n%20humana%20en%20agentes%20de%20IA_ZUGSPI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Memoria límites y aprobación humana en agentes de IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fcc47b38-d5ad-44ca-b910-c7ca27f72202/13_%20Cuatro%20fallas%20t%C3%ADpicas%20de%20un%20agente%20de%20IA%20y%20su%20mitigaci%C3%B3n_TBCGTP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Cuatro fallas típicas de un agente de IA y su mitigación</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/df9451fa-499a-426a-85f1-98b1b48b5fda/14_%20Eval%C3%BAa%20el%20camino%20no%20solo%20la%20respuesta%20del%20agente_CCIXQZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Evalúa el camino no solo la respuesta del agente</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/32fdaeca-10d1-4a26-80d3-8f5207295fa1/15_%20La%20especificaci%C3%B3n%20de%20un%20agente%20en%20una%20sola%20p%C3%A1gina_OLVDJL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. La especificación de un agente en una sola página</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/953cca28-9292-4b57-b61d-fe46004f0a72/16_%20De%20especificaci%C3%B3n%20a%20arquitectura%20t%C3%A9cnica%20con%20Claude_LPNSYV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. De especificación a arquitectura técnica con Claude</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2df78c05-1d9e-4c22-ae6b-5cb8cb02411a/17_%20Construye%20tu%20agente%20de%20IA%20en%20Google%20Colab%20con%20Claude_AFPCJC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Construye tu agente de IA en Google Colab con Claude</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3e13a12c-6af9-4a82-9032-42d32bc3a978/18_%20Del%20plano%20al%20flujo%20real%20tu%20agente%20en%20n8n_TRSDGA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Del plano al flujo real tu agente en n8n</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

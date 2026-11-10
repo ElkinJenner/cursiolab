@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Avanzado de Redes de Internet - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso Avanzado de Redes de Internet</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-avanzado-redes-internet-078bd614-753b-4026-b07f-ec1db1b057fe.png" alt="Badge">
+                <div>
+                    <h1>Curso Avanzado de Redes de Internet</h1>
+                    <p class="video-title">1. Todo lo que aprenderás sobre redes de internet</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://files.catbox.moe/lo74v0.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bfaa26e0-eb41-4925-88d6-2eaf0b5fe384/1_Todo%20lo%20que%20aprender%C3%A1s%20sobre%20redes%20de%20internet_WBDQZH.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">29 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bfaa26e0-eb41-4925-88d6-2eaf0b5fe384/1_Todo%20lo%20que%20aprender%C3%A1s%20sobre%20redes%20de%20internet_WBDQZH.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Todo lo que aprenderás sobre redes de internet</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a12ca1c8-b73a-457b-8c0e-c266648fd2b3/2_N%C3%BAmeros%20binarios%20f%C3%A1ciles_QQCLTR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Números binarios fáciles</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/053e369d-5348-4926-99db-98af7d3d2f31/3_Mascaras%2C%20tofas%20las%20talals%20para%20todos%20los%20tama%C3%B1os_AYDLAU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Máscaras, todas las tablas para todos los tamaños</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3b6c5501-5d66-416f-9f37-5957f39833e3/4_Clases%20de%20direcciones_WHVWAY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Clases de direcciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/35d7d176-d0cc-463c-b418-c5448b8588c3/5_Dise%C3%B1o%20de%20direccionamiento_CUFZQO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Diseño de direccionamiento</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/90194e3a-d9db-4dc0-8954-e789c4353732/6_%C2%BFPor%20qu%C3%A9%20tenemos%20direcciones%20p%C3%BAblicas%20y%20privadas_GTDFXH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. ¿Por qué tenemos direcciones públicas y privadas?</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a8ad1784-6303-47e1-ba1c-d178179f8e0f/7_Traducci%C3%B3n%20de%20direcciones%20p%C3%BAblicas%20a%20privadas_UAYVAQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Traducción de direcciones públicas a privadas (NAT)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e43066ef-e4de-4c5a-903a-ac25a3d1b2f1/8_Capa%20de%20red%2C%20las%20direcciones%20p%C3%BAblicas%20se%20han%20acabado%20%C2%BFQu%C3%A9%20haremos_GTAKNR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Capa de red: las direcciones públicas se han acabado ¿Qué haremos? (Transición a IPv6)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1bc4072d-d9a0-4797-a5c2-551fb8b575cf/9_Nombres%20para%20humanos%20vs%20nombres%20para%20m%C3%A1quinas_COGYGQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Nombres para humanos vs. nombres para máquinas (DNS)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2e860bf2-c344-40de-91db-fe1d89fe010b/10_%C2%BFC%C3%B3mo%20sabe%20una%20m%C3%A1quina%20qui%C3%A9n%20es_%20Servicio%20de%20asignaci%C3%B3n%20de%20direcciones_ISUOVY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. ¿Cómo sabe una máquina quién es? Servicio de asignación de direcciones (DHCP)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5faeb371-eea6-4175-b683-b31c74b9f3df/11_Rutas%20%C2%BFCu%C3%A1l%20es%20la%20ubicaci%C3%B3n%20de%20las%20m%C3%A1quinas_NUVYJW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Rutas: ¿Cuál es la ubicación de las máquinas?</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f0a7df74-d201-4b3d-bdeb-95654c7587ae/12_Uso%20de%20rutas%20est%C3%A1ticas_JVCOKK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Uso de rutas estáticas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a139dc3a-8e9e-4164-9005-bccc167605c8/13_Configuraci%C3%B3n%20de%20rutas%20est%C3%A1ticas_GIURHW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Configuración de rutas estáticas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8897c3a4-4af2-4fd1-a387-709d3a1d0d87/14_Rutas%20din%C3%A1micas%20cuando%20los%20enrutadores%20aprenden%20por%20s%C3%AD%20mismos_JQKNWO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Rutas dinámicas: cuando los enrutadores aprenden por sí mismos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3fbb6dfe-4b8f-4a7e-8f0c-3dba9ae97b7e/15_Configuraci%C3%B3n%20de%20rutas%20din%C3%A1micas_IQGZTZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Configuración de rutas dinámicas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9449363a-d0eb-4d4f-a98a-2af8130f0325/16_Convergencia%20de%20enrutamiento%2C%20cuando%20todos%20los%20enrutadores%20est%C3%A1n%20de%20acuerdo_VFMSBG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Convergencia de enrutamiento: cuando todos los enrutadores están de acuerdo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4934abaa-cdce-4a35-949d-ba1144d0946a/17_Necesidad%20del%20dise%C3%B1o%20de%20la%20topolog%C3%ADa%20de%20LAN_BPNNSR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Necesidad del diseño de la topología de LAN</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3b5e9c63-21cf-4393-a166-a590d9557405/18_Ejecuci%C3%B3n%20del%20dise%C3%B1o%20de%20la%20topolog%C3%ADa%20de%20LAN_NZYIIT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Ejecución del diseño de la topología de LAN</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d3ec9ef8-81f5-40d6-afc5-e378c5721d78/19_Redes%20inal%C3%A1mbricas%2C%20los%20usuarios%20se%20mueven%20por%20todos%20lados_NJOMSN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Redes inalámbricas: los usuarios se mueven por todos lados</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8df80e2a-88f0-435d-a794-47a5399c0a00/20_Dise%C3%B1o%20de%20redes%20inal%C3%A1mbricas_ACCARC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Diseño de redes inalámbricas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3cef355a-5466-4fb0-8a24-a20efadb551d/21_Configuraci%C3%B3n%20de%20redes%20inal%C3%A1mbricas_HEUMWF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Configuración de redes inalámbricas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/63d4a1b1-7221-4b91-92a6-d2abb4151e54/22_Equipos%20activos%20de%20LAN_%20el%20cableado%20sigue%20siendo%20importante_ICYIBG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Equipos activos de LAN: el cableado sigue siendo importante</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/36e5c959-f245-4719-b104-2e69189f9b15/23_Separaci%C3%B3n%20de%20grupos%2C%20el%20uso%20de%20las%20VLAN_INVANB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Separación de grupos: el uso de las VLAN</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/08c5c693-29cf-4fde-bd94-76b3109f4af0/24_Enlaces%20troncales%2C%20cuando%20las%20conexiones%20se%20unen_SNXHEI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Enlaces troncales: cuando las conexiones se unen</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b8f0551c-f167-4f6b-8786-67e62099c3d7/25_Lista%20de%20control%20de%20acceso_%20elementos_SETENS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Lista de control de acceso: elementos (ACL)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d44e1d49-aabd-4d26-ae1d-606a0020dc53/26_Lista%20de%20control%20de%20acceso_%20filosof%C3%ADa_XUFVBV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Lista de control de acceso: filosofía (ACL)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/dcea6c00-6746-49e9-bf53-65ed1753e567/27_Listas%20de%20control%20de%20acceso%2C%20un%20firewall%20en%20reglas_DJZDYT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Listas de control de acceso: un firewall en reglas (ACL)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0e04deab-244a-48c9-9c87-a5715b89973d/28_Ataques%20al%20servicio%20DNS%20%C2%BFQu%C3%A9%20pasa%20cuando%20me%20enga%C3%B1an%20con%20el%20nombre_PIBOAF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>28. Ataques al servicio DNS: ¿Qué pasa cuando me engañan con el nombre?</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b2a9204a-5544-4165-8a17-05d7ce46a68e/29_Cierre%20del%20curso_USPPVA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>29. Cierre del curso</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

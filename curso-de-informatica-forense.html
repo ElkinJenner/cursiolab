@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Informática Forense - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Informática Forense</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-analisis-forense-52db4679-4df1-4859-9c87-0d2efb58cd14.png" alt="Badge">
+                <div>
+                    <h1>Curso de Informática Forense</h1>
+                    <p class="video-title">1. Análisis Forense en Sistemas Windows Unix y Mac</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/58add75b-7911-4887-b25a-f95904d7dba5/a_TOVWKT.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8e539c83-4380-41bc-b6d2-1d85c0b3abdc/1_%20An%C3%A1lisis%20Forense%20en%20Sistemas%20Windows%20Unix%20y%20Mac_PWNVUK.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">49 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8e539c83-4380-41bc-b6d2-1d85c0b3abdc/1_%20An%C3%A1lisis%20Forense%20en%20Sistemas%20Windows%20Unix%20y%20Mac_PWNVUK.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Análisis Forense en Sistemas Windows Unix y Mac</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e6948fcd-cd71-40bf-bb9c-b16b078a62e3/2_%20Etapas%20del%20Proceso%20de%20C%C3%B3mputo%20Forense_FGXVEK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Etapas del Proceso de Cómputo Forense</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/aea2cc78-22e1-44e3-b683-a0ae0c2cf339/3_%20Identificaci%C3%B3n%20y%20Preservaci%C3%B3n%20en%20Computo%20Forense_LAGYXV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Identificación y Preservación en Cómputo Forense</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a8a78560-d58d-48b0-a7e4-a997299e7e9c/4_%20An%C3%A1lisis%20y%20Presentaci%C3%B3n%20en%20C%C3%B3mputo%20Forense_GSAGQB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Análisis y Presentación en Cómputo Forense</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f015b085-8d92-4df3-a27f-78936a84e321/5_%20Elementos%20Esenciales%20para%20la%20Investigaci%C3%B3n%20Forense%20Digital_YYGQSF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Elementos Esenciales para la Investigación Forense Digital</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/eb239d1c-f47f-4a02-8757-c1b02af54804/6_%20Procedimiento%20de%20Cadena%20de%20Custodia%20en%20Investigaciones%20Forenses_DPILLQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Procedimiento de Cadena de Custodia en Investigaciones Forenses</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2262e21a-8d40-4a60-b31b-8f3f3e186fa4/7_%20Primer%20Respondiente%20en%20Inform%C3%A1tica%20Forense%20Roles%20y%20Capacitaci%C3%B3n_JIWUGT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Primer Respondiente en Informática Forense Roles y Capacitación</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0095b956-a945-4c25-b177-6e135fa530c9/9_%20Dispositivos%20de%20Bloqueo%20Contra%20Escritura%20Uso%20y%20Funci%C3%B3n_CCGGVI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Dispositivos de Bloqueo Contra Escritura Uso y Función</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/33cb3b3d-5496-4017-b5c8-7f0b73b8c315/10_%20Adquisici%C3%B3n%20de%20Evidencia%20con%20FTK%20Imager%20en%20Inform%C3%A1tica%20Forense_ZXJZSN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Adquisición de Evidencia con FTK Imager en Informática Forense</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/44cc1838-a14e-4f0c-aaf8-214c6fc2369e/11_%20Creaci%C3%B3n%20de%20Im%C3%A1genes%20Forenses%20Proceso%20y%20Verificaci%C3%B3n_ADVKID.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Creación de Imágenes Forenses Proceso y Verificación</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d140dec0-62c2-4416-b0b1-d78d746e7b63/12_%20Adquisici%C3%B3n%20de%20Im%C3%A1genes%20Forenses%20con%20Gait%C3%A1n%20Software_LJYLCY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Adquisición de Imágenes Forenses con Gaitán Software</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e6631be0-0b71-43f1-b212-81707184d9dd/13_%20Adquisici%C3%B3n%20en%20Vivo%20de%20Memoria%20RAM%20para%20An%C3%A1lisis%20Forense_DKWNOY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Adquisición en Vivo de Memoria RAM para Análisis Forense</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6fc60a8e-b2e1-4986-a02e-751d47f636d4/14_%20Creaci%C3%B3n%20de%20Im%C3%A1genes%20Forenses%20en%20Linux%20con%20Palad%C3%ADn_XQAXSC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Creación de Imágenes Forenses en Linux con Paladín</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/86b00186-f59c-4cd9-acb6-45b3633b098e/15_%20Creaci%C3%B3n%20de%20Im%C3%A1genes%20Forenses%20con%20DD%20y%20DC3DD%20en%20Linux_HRGJGU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Creación de Imágenes Forenses con DD y DC3DD en Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1d925dad-975d-4bd5-b1af-478987b77b95/16_%20Adquisici%C3%B3n%20de%20Im%C3%A1genes%20Forenses%20en%20Linux%20con%20FTK%20Imager_LBPWVH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Adquisición de Imágenes Forenses en Linux con FTK Imager</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/46428c06-8617-4a47-b51d-2f3ca17d982a/17_%20Creaci%C3%B3n%20de%20Im%C3%A1genes%20Forenses%20con%20Palad%C3%ADn%20en%20Dispositivos%20Apple_LIQUKA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Creación de Imágenes Forenses con Paladín en Dispositivos Apple</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/07b739d4-f3fc-4b51-9a0c-91f50eb2f133/18_%20Creaci%C3%B3n%20de%20Im%C3%A1genes%20Forenses%20en%20Mac%20con%20FTK%20Imager%20y%20Modo%20Targe_LXZJZD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Creación de Imágenes Forenses en Mac con FTK Imager y Modo Target</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e385a6ef-535d-47bc-a04f-90fd2401740f/19_%20Algoritmos%20de%20Funciones%20Hash%20y%20su%20Uso%20en%20Computaci%C3%B3n%20Forense_UNCRJF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Algoritmos de Funciones Hash y su Uso en Computación Forense</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a1d85b20-e519-42d0-b7d0-ebaafffc8115/22_%20Sistemas%20de%20Archivos%20en%20Windows%20FAT%20exFAT%20y%20NTFS_JLAOEH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Sistemas de Archivos en Windows FAT exFAT y NTFS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cb225933-8889-4c53-8c78-f2a7c66c3b2b/23_%20Sistemas%20de%20Archivos%20en%20Linux%20y%20Mac%20Funcionamiento%20y%20Caracter%C3%ADst_IVCWJQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Sistemas de Archivos en Linux y Mac Funcionamiento y Características</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fd166bb8-31ba-4d83-a998-f34d811fd372/24_%20An%C3%A1lisis%20y%20Exportaci%C3%B3n%20de%20Im%C3%A1genes%20Forenses%20con%20FTK%20Imager_GFJIGJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Análisis y Exportación de Imágenes Forenses con FTK Imager</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/736e537e-22f5-457e-8324-9dc70b72630d/25_%20Creaci%C3%B3n%20y%20Gesti%C3%B3n%20de%20Im%C3%A1genes%20Forenses%20Personalizadas_FCMQRJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Creación y Gestión de Imágenes Forenses Personalizadas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1f2c0a2a-0fe9-45e5-908b-e212c378c62a/26_%20An%C3%A1lisis%20Forense%20de%20Archivos%20de%20Registro%20en%20Windows_NKZHPS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Análisis Forense de Archivos de Registro en Windows</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0055ded4-b57f-4ce1-ba78-940a3144abd9/27_%20An%C3%A1lisis%20Forense%20de%20Im%C3%A1genes%20de%20Sistema%20Operativo%20Linux_HMQFZZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Análisis Forense de Imágenes de Sistema Operativo Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1f7e00fd-75d1-4f21-92e9-ce5505c1035d/31_%20An%C3%A1lisis%20de%20Archivos%20SAM%20con%20Regripper%20en%20Windows_PBWFGV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>31. Análisis de Archivos SAM con Regripper en Windows</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c0aeefe8-8f37-42b6-b826-c787c26713f2/32_%20An%C3%A1lisis%20de%20Archivos%20de%20Registro%20en%20Windows%20con%20Regripper_XHTZNY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>32. Análisis de Archivos de Registro en Windows con Regripper</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c094e4c5-f51f-4dea-ad56-7d3be7513e84/33_%20An%C3%A1lisis%20de%20Logs%20y%20Bit%C3%A1coras%20en%20Windows%20para%20Monitoreo%20y%20Trazabi_ECHAKW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>33. Análisis de Logs y Bitácoras en Windows para Monitoreo y Trazabilidad</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/155d9d50-36d1-44ce-9c3c-3ce1447ad2a4/34_%20An%C3%A1lisis%20Forense%20del%20Registro%20de%20Windows_Archivos%20NTUSER_DAT%20y%20ShellBags_WHWNJM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>34. Análisis Forense del Registro de Windows: Archivos NTUSER.DAT y ShellBags</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b5d33cab-3108-4f00-87e2-a6a9b306fba4/36_%20An%C3%A1lisis%20de%20Archivos%20Prefetch%20en%20Windows%20para%20Investigaci%C3%B3n%20Forense_NFKATP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>36. Análisis de Archivos Prefetch en Windows para Investigación Forense</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d26a6e6d-c249-464e-bf98-219c798ef390/37_%20Funcionamiento%20y%20Recuperaci%C3%B3n%20de%20Archivos%20en%20la%20Papelera%20de%20Reciclaje%20Windows_KFBHLJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>37. Funcionamiento y Recuperación de Archivos en la Papelera de Reciclaje Windows</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6aaeef82-4cff-4f80-9201-aff4d850431e/39_%20Diferencias%20de%20Configuraci%C3%B3n%20y%20Uso%20entre%20Linux%20y%20Windows_UCBWYP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>39. Diferencias de Configuración y Uso entre Linux y Windows</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/337673ac-1f9e-4ab6-b445-99b7985e622b/41_%20Curso%20de%20Inform%C3%A1tica%20Forense%20Configuraci%C3%B3n%20de%20Usuarios%20y%20Archivos%20Clave%20en%20Linux_SZTWON.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>41. Curso de Informática Forense Configuración de Usuarios y Archivos Clave en Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1f7555e3-c2a9-42eb-92fe-0ea8dd282e38/42_%20An%C3%A1lisis%20de%20Archivos%20de%20Registro%20en%20Sistemas%20Operativos%20Linux_WTQMAS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>42. Análisis de Archivos de Registro en Sistemas Operativos Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5c1fa9b3-e794-4844-ab81-202e381feca9/43_%20Uso%20de%20Autopsy%20para%20An%C3%A1lisis%20Forense%20Automatizado_IKVFRB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>43. Uso de Autopsy para Análisis Forense Automatizado</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8f3a32e7-af14-4152-846e-38caa290fe83/45_%20Estructuraci%C3%B3n%20de%20Informes%20Ejecutivos%20en%20Investigaciones%20Forense_GGNMHF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>45. Estructuración de Informes Ejecutivos en Investigaciones Forenses</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9806528d-7a97-4580-81e8-2b6a911a6005/46_%20Elaboraci%C3%B3n%20de%20Informes%20T%C3%A9cnicos%20en%20Computaci%C3%B3n%20Forense_XCSYAH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>46. Elaboración de Informes Técnicos en Computación Forense</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9cd2c690-4f54-4e89-94b6-e7098fb80dee/47_%20Consejos%20para%20Presentar%20Informes%20en%20Procesos%20Legales_KCHQYV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>47. Consejos para Presentar Informes en Procesos Legales</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/aef7af9a-588e-4cc3-9569-ab74af5b3da5/49_%20Libros%20y%20Recursos%20Clave%20para%20la%20Investigaci%C3%B3n%20Digital_PGOOXH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>49. Libros y Recursos Clave para la Investigación Digital</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

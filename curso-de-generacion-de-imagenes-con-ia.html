@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Generación de Imágenes con IA - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Generación de Imágenes con IA</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/447fc056-5069-4dde-8114-cd1e08e1d5fd-5f9c5398-f727-4263-b285-729a176cb58f.png" alt="Badge">
+                <div>
+                    <h1>Curso de Generación de Imágenes con IA</h1>
+                    <p class="video-title">1. Cómo escribir prompts que dan resultados profesionales</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/thumbnails/f6003083-04dc-41bf-96af-65264af0641a-e4acf3a9-9f12-4d3f-838d-b77f41be685a..jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0add6b0e-3f43-4596-bebf-d4c13dd0827f/1_%20C%C3%B3mo%20escribir%20prompts%20que%20dan%20resultados%20profesionales_ATDMUV.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">11 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0add6b0e-3f43-4596-bebf-d4c13dd0827f/1_%20C%C3%B3mo%20escribir%20prompts%20que%20dan%20resultados%20profesionales_ATDMUV.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Cómo escribir prompts que dan resultados profesionales</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f65a1eed-3e8f-4cc4-8582-638d00ab25a3/2_%20Modelos%20vs%20plataformas%20de%20generaci%C3%B3n%20de%20im%C3%A1genes%20con%20IA_VTDLDP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Modelos vs plataformas de generación de imágenes con IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cfad2944-7497-4a35-b408-662c24e5eeb9/3_%20Prompts%20por%20etiquetas%20para%20generar%20im%C3%A1genes%20con%20IA_YJOUOF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Prompts por etiquetas para generar imágenes con IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/30e2fd12-142a-438e-ad00-2968d02c2387/4_%20C%C3%B3mo%20construir%20un%20moodboard%20con%20tres%20preguntas%20clave_IGYPXR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Cómo construir un moodboard con tres preguntas clave</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e3acb90f-2779-40de-8acf-78e08f3e609b/5_%20C%C3%B3mo%20convertir%20tu%20moodboard%20en%20im%C3%A1genes%20de%20producto_BCNQSA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Cómo convertir tu moodboard en imágenes de producto</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f30880c6-7e64-46d8-9fd9-bf9a3cf093d3/6_%20C%C3%B3mo%20generar%20personas%20realistas%20con%20IA_SEQSSL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Cómo generar personas realistas con IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9e424e94-720c-4c1a-bf02-b09cf8ed2645/7_%20C%C3%B3mo%20mantener%20la%20identidad%20visual%20entre%20im%C3%A1genes_MBXMID.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Cómo mantener la identidad visual entre imágenes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f4e01302-7f50-497a-a38b-2e0a4e88247d/8_%20Style%20extractor%20c%C3%B3mo%20copiar%20el%20estilo%20visual%20de%20una%20imagen_AKWTCT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Style extractor cómo copiar el estilo visual de una imagen</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/609f16f2-48b7-4950-81e7-70a62cd50c09/9_%20Retoque%20profesional%20de%20fotos%20con%20NanoBanana%20e%20IA_OCTIIN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Retoque profesional de fotos con NanoBanana e IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0e2adcb3-dd58-4b18-8fde-4b2e85a462fb/10_%20C%C3%B3mo%20crear%20un%20brief%20de%20marca%20con%20IA_VATQQS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Cómo crear un brief de marca con IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6d47f1ce-0ca3-4329-9483-d294b5be76b2/11_%20C%C3%B3mo%20crear%20un%20carrusel%20de%20marca%20con%20Claude_RHCGJF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Cómo crear un carrusel de marca con Claude</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

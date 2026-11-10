@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Power BI Avanzado - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso Power BI Avanzado</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-powerbi-avanzado-badge-112b0a25-e7ac-49f8-904a-258e915fc1a8.png" alt="Badge">
+                <div>
+                    <h1>Curso Power BI Avanzado</h1>
+                    <p class="video-title">1. Modelado y Análisis Avanzado de Datos con Power BI</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6ec56eef-2f97-4d42-8365-1eed256a638e/1_%20Modelado%20y%20An%C3%A1lisis%20Avanzado%20de%20Datos%20con%20Power%20BI_FXDYXJ.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">27 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6ec56eef-2f97-4d42-8365-1eed256a638e/1_%20Modelado%20y%20An%C3%A1lisis%20Avanzado%20de%20Datos%20con%20Power%20BI_FXDYXJ.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Modelado y Análisis Avanzado de Datos con Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/206fae16-6fca-48dd-abda-46dd0975f60d/2_%20Business%20Intelligence%20Fundamentos%20y%20Uso%20de%20Power%20BI_EUWHGX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Business Intelligence Fundamentos y Uso de Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7a9a52fb-df55-492e-b38d-a83dbf0aca9f/3_%20Arquitecturas%20de%20Power%20BI%20Desktop%20Pro%20y%20Premium_JTSDJK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Arquitecturas de Power BI Desktop Pro y Premium</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/20db9d4c-8464-435d-82f6-4e779d18ebc3/4_%20ETL%20en%20Power%20BI%20con%20Power%20Query_WONGCF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. ETL en Power BI con Power Query</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3545df10-aff6-4d31-8b55-5316432aab58/5_%20C%C3%B3mo%20convertir%20matrices%20a%20tablas%20en%20Power%20Query_ANJKHO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Cómo convertir matrices a tablas en Power Query</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b6d4625f-f8da-4483-ab4e-b950e5ab5e99/6_%20Anexar%20combinar%20y%20binarios%20en%20Power%20Query_TQDYJU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Anexar, combinar y binarios en Power Query</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a1257f62-1bd9-4c5e-8c08-95b4ee92b73c/7_%20Limpieza%20de%20datos%20HR%20con%20Power%20Query_LRBJRH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Limpieza de datos HR con Power Query</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/970af620-5083-42da-ab30-39cb43b10dae/8_%20Automatizaci%C3%B3n%20de%20Datos%20con%20Lenguaje%20M%20en%20Power%20Query_YRGLAK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Automatización de Datos con Lenguaje M en Power Query</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/58af2459-c519-4349-a578-d84b05fcadb9/9_%20Modelado%20de%20Datos%20en%20Power%20BI%20Esquema%20Estrella%20y%20Optimizaci%C3%B3n_QQYREA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Modelado de Datos en Power BI Esquema Estrella y Optimización</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1573bd13-eebe-4131-a2a7-31aed7626fa5/10_%20Relaciones%20y%20Filtros%20en%20Modelado%20de%20Datos%20con%20Power%20BI_NKKCNU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Relaciones y Filtros en Modelado de Datos con Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fcaac9d1-fcd6-46a1-8691-edff1b92db9b/11_%20Optimizaci%C3%B3n%20de%20Modelos%20de%20Datos%20en%20Power%20BI%20y%20Power%20Query_SJVFWG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Optimización de Modelos de Datos en Power BI y Power Query</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f61aa354-ea7b-4e51-b959-c1a70db58057/12_%20Lenguaje%20DAX%20F%C3%B3rmulas%20y%20Medidas%20en%20Power%20BI%20y%20Excel_UQDEEU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Lenguaje DAX Fórmulas y Medidas en Power BI y Excel</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/266c09f9-9782-4e9c-aa72-f93148e5dbfb/13_%20Qu%C3%A9%20hace%20CALCULATE%20en%20DAX_XKLJWQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Qué hace CALCULATE en DAX</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cd3eec74-17ec-4663-bcde-3d9e0f3906c7/14_%20Gr%C3%A1fico%20Pareto%20en%20Power%20BI%20con%20RANKX_JXAKEX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Gráfico Pareto en Power BI con RANKX</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f30db3ba-7779-4657-9335-c16c90cbb209/15_%20Inteligencia%20de%20Tiempo%20en%20Power%20BI%20Creaci%C3%B3n%20y%20Uso%20de%20Tablas%20Cale_MCZOXB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Inteligencia de Tiempo en Power BI Creación y Uso de Tablas Calendario</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/41a53fcb-27fc-47b4-abc8-3667004ccbc5/16_%20Creaci%C3%B3n%20de%20KPIs%20con%20Variables%20en%20Power%20BI_VZPIZY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Creación de KPIs con Variables en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7e94839a-5d1f-48a8-88c4-9135baf18602/17_%20Creaci%C3%B3n%20de%20Informes%20Efectivos%20en%20Power%20BI_SWLCNJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Creación de Informes Efectivos en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6f9bfb32-1fe2-4e7e-92ef-a87f08dbde84/18_%20Elementos%20de%20Data%20Storytelling%20en%20Power%20BI%20Marcadores%20y%20Botones_DFCPSI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Elementos de Data Storytelling en Power BI Marcadores y Botones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/02a345af-ea8b-4cbb-b253-14a3e5573659/19_%20Gesti%C3%B3n%20de%20Informes%20en%20Power%20BI%20Service%20Carga%20y%20Colaboraci%C3%B3n_EJEHVC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Gestión de Informes en Power BI Service Carga y Colaboración</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/93092fa7-b3ee-4ce8-84a6-c73a01a85bf7/20_%20Exploraci%C3%B3n%20Avanzada%20en%20Power%20BI%20Service%20Funciones%20y%20Colaboraci%C3%B3_FOWJWC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Exploración Avanzada en Power BI Service Funciones y Colaboración</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b405820f-da45-4f9a-8104-f76c91a5eccd/21_%20Configuraci%C3%B3n%20de%20Data%20Gateway%20en%20Power%20BI%20Service_MADJGL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Configuración de Data Gateway en Power BI Service</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7a2d480f-ad67-4d15-8c4f-348520857e14/22_%20Integraci%C3%B3n%20de%20Python%20en%20Power%20BI%20Desktop_QAEEEH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Integración de Python en Power BI Desktop</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9e9fd402-e60b-4023-b0be-5708ebb568b1/23_%20Integraci%C3%B3n%20de%20R%20en%20Power%20BI%20para%20Visualizaci%C3%B3n%20de%20Datos_PSARGQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Integración de R en Power BI para Visualización de Datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/88e666fb-95c3-4fc4-b883-d760527bdb2d/24_%20Integraci%C3%B3n%20de%20PowerApps%20y%20Power%20Automate%20en%20Power%20BI_GXANRJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Integración de PowerApps y Power Automate en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/feb772ea-6f9b-4b9e-9240-d73f1d1292a0/25_%20Optimizaci%C3%B3n%20de%20Modelos%20en%20Power%20BI%20usando%20DAX%20Studio%20y%20Herramie_ZEYILC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Optimización de Modelos en Power BI usando DAX Studio y Herramientas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/18fb20c7-efee-4aec-af29-96594fe55fd1/26_%20Copilot%20como%20tutor%20de%20Power%20BI_CNQOCQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Copilot como tutor de Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d9d11eda-c640-4f0f-9281-7d020a8a594a/27_%20Gr%C3%A1ficos%20de%20IA%20en%20Power%20BI%20Uso%20y%20Optimizaci%C3%B3n%20de%20Visualizaciones_JWRCTY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Gráficos de IA en Power BI Uso y Optimización de Visualizaciones</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

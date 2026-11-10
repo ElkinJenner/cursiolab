@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso a fondo de GitHub - Codigo facilito - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso a fondo de GitHub - Codigo facilito</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://cdn3d.iconscout.com/3d/free/thumb/free-github-3d-icon-png-download-6491025.png" alt="Badge">
+                <div>
+                    <h1>Curso a fondo de GitHub - Codigo facilito</h1>
+                    <p class="video-title">1. Presentacion del Curso - Curso a fondo de GitHub</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://codigofacilito.com/system/courses/thumbnails/000/000/485/original/thumb-github.jpg?1664464496">
+                        <source src="https://files.catbox.moe/0p77fl.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">41 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://files.catbox.moe/0p77fl.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Presentacion del Curso - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/kxsrpn.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Control de Versiones - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/1s1igd.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Que es Git - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/621kjz.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Que es GitHub - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/wem1ar.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Git vs GitHub - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ril1rf.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Creacion de Cuenta - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/zwx0o8.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Instalacion de Git - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/mkv1o9.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Configuracion Inicial - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/y346zf.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Repositorios Locales y Remotos - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/phs2dy.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Repositorios de Git - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/eygim2.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Creacion de Repositorios - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/nzo4ms.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Descargar repositorios - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/xje22p.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Actualizacion de Repositorio - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/63dqfm.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Ramas de Git - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/od1evu.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Actualizar Rama de Trabajo - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/admetb.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Conflictos de Git - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ppmkcz.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Git Workflow - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/mfthrd.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Mensajes de Commit - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/2mmlrb.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Issues Pt 1 - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/7erhmm.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Issues Pt 2 - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/0it5ko.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Gestion de Proyectos - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ttniwa.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Pull Request - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/9iobzx.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Code Review - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/7al8ty.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Que es GitHub Pages - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/piqhlk.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Mi primera GitHub Page - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/72m8t2.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Dominio Personalizado - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/c6rbov.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Markdown - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/sxk2xm.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>28. Readme - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/8vf05q.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>29. Gists - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/v8fqhj.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>30. Que es Open Source - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/vu77bp.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>31. Caracteristicas de un Repo Open Source - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/1eu268.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>32. Como contribuir - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/m92q9l.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>33. Repositorios Favoritos - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/d6nykm.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>34. Profile Readme - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/9g4spg.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>35. Themes - Curso a fondo de GitHub-01</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/s8iyp7.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>36. GitHub Desktop - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/9kzl6m.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>37. GitHub CLI - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/agaxsa.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>38. GitHub Mobile - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/s8t37k.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>39. Gitignore - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/5v0se9.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>40. Dependabot - Curso a fondo de GitHub</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/b0i33u.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>41. Organizaciones - Curso a fondo de GitHub</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

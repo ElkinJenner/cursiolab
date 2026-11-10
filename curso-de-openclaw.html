@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de OpenClaw - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de OpenClaw</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/e801c3e1-cea1-4325-b0ea-8c08c7933802-0a33650a-97e5-4faa-82a5-bfdcd12bb93d.png" alt="Badge">
+                <div>
+                    <h1>Curso de OpenClaw</h1>
+                    <p class="video-title">1. Crea tu Second Brain automático con OpenClaw</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/blog/openclaw-guia-2eea6847-3a18-4368-a9b8-bf123cbe9a49.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6fde8a71-df3b-440c-a07b-f6b94ed4023b/1_%20Crea%20tu%20Second%20Brain%20autom%C3%A1tico%20con%20OpenClaw_ZTDHAO.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">12 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6fde8a71-df3b-440c-a07b-f6b94ed4023b/1_%20Crea%20tu%20Second%20Brain%20autom%C3%A1tico%20con%20OpenClaw_ZTDHAO.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Crea tu Second Brain automático con OpenClaw</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/32c63e51-1b1f-4e46-b0d4-c17060ea5ab8/2_%20Instalaci%C3%B3n%20de%20OpenClaw%20en%20Mac%20Windows%20y%20Linux_DWWPXR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Instalación de OpenClaw en Mac Windows y Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9f489b62-5ac3-4d20-a73d-d4afff993cf3/3_%20El%20cerebro%20de%20OpenClaw%20Con%C3%A9ctalo%20a%20Open%20Router%20Claude%20o%20GPT_VPRJIN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. El cerebro de OpenClaw Conéctalo a OpenRouter Claude o GPT</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8c28a47d-1572-45f5-8838-c9fab41f6aba/4_%20C%C3%B3mo%20conectar%20tu%20agente%20OpenClaw%20con%20Telegram_CCEGTF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Cómo conectar tu agente OpenClaw con Telegram</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b4643edf-7953-4bbe-9d1d-3088445c3abe/5_%20C%C3%B3mo%20personalizar%20tu%20agente%20con%20identity%20soul%20y%20agents_MVBAEP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Cómo personalizar tu agente con identity soul y agents</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/722ae1ce-35ea-4b35-95b5-1f4fe71b5df9/6_%20Tools%20las%20herramientas%20de%20tu%20agente_ZEZANU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Tools las herramientas de tu agente</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d54a36d3-929c-4b5b-8667-507d10f7ef9d/7_%20Skills%20nativas%20p%C3%BAblicas%20y%20personalizadas%20lo%20que%20puede%20hacer%20tu%20a_CHIIIC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Skills nativas públicas y personalizadas lo que puede hacer tu agente</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7e768b03-54cb-40d7-addb-6e26ad69dfe0/8_%20C%C3%B3mo%20crear%20una%20skill%20custom%20en%20OpenClaw_XHRUUX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Cómo crear una skill custom en OpenClaw</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9a60e509-3de0-4ca2-bc63-11fdfa63ad6d/9_%20C%C3%B3mo%20construir%20tu%20Second%20Brain%20con%20un%20agente%20IA_ULBBCW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Cómo construir tu Second Brain con un agente IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/90d970a9-75b1-47fd-a9a7-88f7508e0de5/10_%20C%C3%B3mo%20funciona%20la%20memoria%20de%20tu%20agente%20en%20OpenClaw_HIGJOV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Cómo funciona la memoria de tu agente en OpenClaw</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/29e3428e-4d9b-4f1c-a189-edadfdce5dd8/11_%20C%C3%B3mo%20conectar%20tu%20agente%20IA%20a%20Google%20Calendar_PBNXNQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Cómo conectar tu agente IA a Google Calendar</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/023e5189-e51b-401f-bb04-1ab4e968162b/12_%20Heartbeat%20y%20cron%20jobs%20para%20automatizar%20tu%20agente_DLDCAF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Heartbeat y cron jobs para automatizar tu agente</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

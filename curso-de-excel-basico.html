@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Excel Básico - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Excel Básico</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-curso-excel-basico-badge-3471057d-5e76-487f-b511-9ec4dff425e8.png" alt="Badge">
+                <div>
+                    <h1>Curso de Excel Básico</h1>
+                    <p class="video-title">1. Todo lo que aprenderás sobre redes de internet</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7b68833f-1bf3-4e2e-bfd0-8d3711a577cd/1_%20Excel%20de%200%20a%20100%20con%20f%C3%B3rmulas%20reales_PCQVLA.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">23 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7b68833f-1bf3-4e2e-bfd0-8d3711a577cd/1_%20Excel%20de%200%20a%20100%20con%20f%C3%B3rmulas%20reales_PCQVLA.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Excel de 0 a 100 con fórmulas reales</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/20ea38de-1e56-4e22-9b46-e932d4fe54a0/2_%20Interfaz%20b%C3%A1sica%20de%20Excel%20elementos%20y%20navegaci%C3%B3n%20esencial_KBWWHZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Interfaz básica de Excel elementos y navegación esencial</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bab775a9-1c16-4180-8fa3-14540e6532b4/3_%20Formatos%20de%20celda%20y%20autorrelleno%20en%20Excel_UYGSWH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Formatos de celda y autorrelleno en Excel</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ba658f87-2a6f-4111-9430-bd4b84d0f3c2/4_%20Formato%20visual%20y%20alineaci%C3%B3n%20de%20datos%20en%20Excel_IFWJAS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Formato visual y alineación de datos en Excel</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/eefd0852-066e-4915-adbf-7875c50eda8f/5_%20Errores%20que%20arruinan%20tus%20tablas%20en%20Excel_XMCBSV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Errores que arruinan tus tablas en Excel</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/37dbc507-117f-4635-9ac0-fe3c909197e5/6_%20C%C3%B3mo%20limpiar%20datos%20sucios%20en%20Excel_CCTMUP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Cómo limpiar datos sucios en Excel</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e6c7083b-6347-4a1e-b856-e0b3a8b23624/7_%20Atajos%20de%20Excel%20que%20ahorran%20horas_NXNEHR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Atajos de Excel que ahorran horas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a1ef9648-da0e-42ef-8393-79a832bd6e4b/8_%20Operadores%20b%C3%A1sicos%20y%20referencias%20en%20Excel%20para%20c%C3%A1lculos%20eficient_DYKJIH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Operadores básicos y referencias en Excel para cálculos eficientes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/60b91f02-546a-412c-8fd5-c8d2c530c659/9_%20Suma%20promedio%20y%20conteo%20en%20Excel_GQIEIY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Suma promedio y conteo en Excel</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c921f814-c215-4847-a6a5-65e018c663f2/10_%20Funciones%20de%20texto%20en%20Excel%20para%20limpiar%20datos_POWJCT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Funciones de texto en Excel para limpiar datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9ee41205-9ebf-460d-8be2-0278f3c23722/11_%20Funciones%20de%20fecha%20y%20tiempo%20para%20gesti%C3%B3n%20de%20proyectos_IKIZBY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Funciones de fecha y tiempo para gestión de proyectos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5e390078-801d-4175-bcf2-e6cbeb9d7fd2/12_%20Filtros%20y%20subtotales%20en%20Excel%20para%20analizar%20gastos_EWUIIO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Filtros y subtotales en Excel para analizar gastos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/11702654-b246-4d5e-98f3-9b6f26a544c6/13_%20Formato%20de%20tabla%20en%20Excel%20paso%20a%20paso_PCVFTK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Formato de tabla en Excel paso a paso</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d3eeb205-c991-4289-9585-417f49c55d3b/14_%20Formato%20condicional%20con%20%C3%ADconos%20y%20colores_JONBGB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Formato condicional con íconos y colores</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/288322de-ec06-4e19-ac47-d00b91c09a63/15_%20Gr%C3%A1ficos%20de%20barras%20y%20pie%20chart%20en%20Excel_SUIRYT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Gráficos de barras y pie chart en Excel</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f375a29e-6293-4e13-8ba7-e7311cfe2f9d/16_%20Gr%C3%A1fico%20de%20l%C3%ADneas%20para%20series%20de%20tiempo_DILNPH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Gráfico de líneas para series de tiempo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a4818244-d1cf-40fe-86e9-18bc3d85e6d2/17_%20Listas%20desplegables%20para%20evitar%20errores%20en%20Excel_PWBAAN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Listas desplegables para evitar errores en Excel</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/61a96f15-1afc-4b68-a4ac-910aeb480e8f/18_%20Tablas%20din%C3%A1micas%20para%20tu%20dashboard%20financiero_DEIHBL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Tablas dinámicas para tu dashboard financiero</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3d555a35-f255-4b3b-91e6-a32102439f10/19_%20Funciones%20SI%20Y%20y%20O%20para%20controlar%20gastos_NOIBXC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Funciones SI, Y y O para controlar gastos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/243cb7fb-4729-46c2-a692-bae5f7def840/20_%20BUSCARV%20y%20BUSCARX%20para%20cruzar%20tablas_HYJKML.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. BUSCARV y BUSCARX para cruzar tablas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ddb16fb4-c2a7-4bc6-b054-2f92c8751f70/21_%20C%C3%B3mo%20imprimir%20en%20Excel%20sin%20errores_IFXQBO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Cómo imprimir en Excel sin errores</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e3cb0151-ae18-4c8c-98a1-dffb10a2c2b1/22_%20Copilot%20Inteligencia%20artificial%20en%20Excel_ZXEQCG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Copilot Inteligencia artificial en Excel</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b873e2c0-b48f-4648-86f4-f4b5d41a3085/23_%20An%C3%A1lisis%20de%20presupuesto%20personal%20con%20ChatGPT_RIIPMP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Análisis de presupuesto personal con ChatGPT</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

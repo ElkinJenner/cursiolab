@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Reparacion de celulares y tablets - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Reparacion de celulares y tablets</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://play-lh.googleusercontent.com/LNQFpsq3P13FdHPQW5c5r_HpAafvpkalWNI_1rymzTG0ZIPfp9RwdW_HJw76v0VTIMcoD1zK7exqaEovmYZ6LA" alt="Badge">
+                <div>
+                    <h1>Curso de Reparacion de celulares y tablets</h1>
+                    <p class="video-title">1. Presentación del Curso</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/50ee2bc0-a2cb-4bb5-aae8-d62ac2b1b821/a_LOPRMX.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/80c06773-bda4-4144-9d1d-7c12288fcae4/1_%20Presentaci%C3%B3n%20del%20Curso_SWEBKP.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">21 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/80c06773-bda4-4144-9d1d-7c12288fcae4/1_%20Presentaci%C3%B3n%20del%20Curso_SWEBKP.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Presentación del Curso.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d8b1b298-3ecb-4f13-9ddf-7b12a4d4adb6/2_%20Funcionamiento%20de%20la%20red%20celular_HZAXTE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Funcionamiento de la red celular.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/68e026a0-dda3-4c3d-86bc-52f454dd4e8f/3_%20Componentes%20de%20celulares%20y%20tablets_WEJKFC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Componentes de celulares y tablets.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/64e1c083-27a4-4825-b099-e418c64f4b39/4_%20Electr%C3%B3nica%20anal%C3%B3gica_LZLODQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Electrónica analógica.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6b4174c3-db94-4ebf-be9f-8e21bcc669e9/5_%20Electr%C3%B3nica%20digital_SNVNDC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Electrónica digital.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8bd09d08-cdbf-4a24-824d-4ca82bc9e1f0/6_%20Uso%20del%20mult%C3%ADmetro_TAEMVP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Uso del multímetro.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/82884544-ffd3-420d-9fc7-3713f5d4ad66/7_%20Cargador%2C%20circuitos%20de%20carga%20y%20bater%C3%ADa_JWEQEE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Cargador, circuitos de carga y batería.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2d82932e-c39f-42d9-a185-1eefb2da1087/8_%20M%C3%B3dulo%20de%20procesamiento%20y%20memoria_KQSNNH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Módulo de procesamiento y memoria.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2490e59b-cf84-4165-9723-a96fd4f75181/9_%20M%C3%B3dulo%20RF_GBYXOO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Módulo RF.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7d7dbe13-3db3-44bb-9da8-77ca3ba4becd/10_%20M%C3%B3dulos%20de%20conectividad_QRZXJU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Módulos de conectividad.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d814a88d-4b64-426d-98e4-4a27764dfa0d/11_%20M%C3%B3dulos%20de%20audio%20y%20display_IZMCQH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Módulos de audio y display.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/147b9579-49af-4bed-a666-f269df3213b1/12_%20Sensores%20del%20equipo%20m%C3%B3vil_XCOAOF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Sensores del equipo móvil.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0469258f-f5b9-434b-b166-50787582960d/13_%20Revisi%C3%B3n%20y%20diagn%C3%B3stico_EESDJY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Revisión y diagnóstico.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/00994a1e-50ba-4e2d-9609-212768e14c3c/14_%20Soluci%C3%B3n%20de%20fallas%20en%20software_LEEXOJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Solución de fallas en software.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7fac4b21-72ae-4333-b6e6-0461fd95688c/15_%20Desensamble%20y%20ensamble_VXLLVW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Desensamble y ensamble.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/70a73aca-ca06-4830-b119-34b7ad2f6dc0/16_%20Soluci%C3%B3n%20de%20fallas%20en%20hardware%20parte%201_OZVYMW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Solución de fallas en hardware parte 1.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e673fe28-53e7-40e0-9fca-8f1781bc4cb6/17_%20Soluci%C3%B3n%20de%20fallas%20en%20hardware%20parte%202_LWZRAJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Solución de fallas en hardware parte 2.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8a074940-ab72-48cf-afcd-0cb15315244b/18_%20Calidad%20en%20tu%20servicio_ZYONFD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Calidad en tu servicio.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/21b65923-385f-46a7-a53f-122a51f59dc1/19_%20Atenci%C3%B3n%20a%20usuarios%20con%20discapacidad_OFQHBW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Atención a usuarios con discapacidad.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/959c911e-eeac-4e11-9358-e6467c9ce797/20_%20Tendencias%20y%20actualizaci%C3%B3n_TSTNEL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Tendencias y actualización.mp4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ac27284f-6b27-4cd1-8695-3ea705a9dfed/21_%20C%C3%B3mo%20poner%20tu%20propio%20taller_DDKRMF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Cómo poner tu propio taller.mp4</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de API REST con PHP - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de API REST con PHP</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-api-rest-php-2c1a859b-d2d4-4d6e-bb26-90c8d2c3d84a.png" alt="Badge">
+                <div>
+                    <h1>Curso de API REST con PHP</h1>
+                    <p class="video-title">1. Integración de Aplicaciones Web con PHP</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/90c87a26-ad89-4abd-9949-5832f1f27051/file_1794195866413_JVJVIP.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/074d4ac4-768f-41ef-9646-4cbef5e81b46/1_%20Integraci%C3%B3n%20de%20Aplicaciones%20Web%20con%20PHP_FGLTSA.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">19 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/074d4ac4-768f-41ef-9646-4cbef5e81b46/1_%20Integraci%C3%B3n%20de%20Aplicaciones%20Web%20con%20PHP_FGLTSA.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Integración de Aplicaciones Web con PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c325f44c-1353-4f92-bc98-6749e5cb31c6/2_%20Concepto%20y%20Herramientas%20B%C3%A1sicas%20de%20API%20en%20Programaci%C3%B3n_TVIVBY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Concepto y Herramientas Básicas de API en Programación</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/02e1b24b-97dc-45d1-808c-eff9b68a57f5/3_%20Conceptos%20B%C3%A1sicos%20de%20HTTP%20y%20su%20Funcionamiento%20en%20Navegadores_EPZRTG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Conceptos Básicos de HTTP y su Funcionamiento en Navegadores</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0a177660-ccb4-4d0a-b2e8-8ea7a78de23c/4_%20Protocolo%20REST%20Conceptos%20y%20Funciones%20B%C3%A1sicas_RIOCFA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Protocolo REST Conceptos y Funciones Básicas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e32795eb-6e60-474c-bf1c-b672ce2977a3/5_%20Consumo%20de%20APIs%20con%20PHP%20y%20manejo%20de%20peticiones%20HTTP_JIJKCA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Consumo de APIs con PHP y manejo de peticiones HTTP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/69720a82-4f60-489e-b469-36b5910bda35/6_%20Creaci%C3%B3n%20de%20un%20Servidor%20REST%20con%20PHP_JJMPNO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Creación de un Servidor REST con PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/63cc0450-db25-4063-9349-98ee526c6b08/7_%20Consulta%20de%20recursos%20espec%C3%ADficos%20en%20PHP%20y%20URLs%20amigables_ESXCIJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Consulta de recursos específicos en PHP y URLs amigables</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0c3e5fc8-ebab-40e6-b2ba-cd0e52b5c851/8_%20Incorporaci%C3%B3n%20de%20Datos%20a%20Servidor%20mediante%20API%20REST%20en%20PHP_NZHCIY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Incorporación de Datos a Servidor mediante API REST en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/08707041-b16c-4541-a82b-8454dfb2aaf6/9_%20Modificaci%C3%B3n%20de%20recursos%20en%20servidor%20con%20m%C3%A9todo%20HTTPS%20Push_SOBXQN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Modificación de recursos en servidor con método HTTPS Push</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/47f1ea9a-fd4c-4eb3-b473-ea68459f9903/10_%20Eliminar%20recursos%20con%20m%C3%A9todo%20DELETE%20en%20APIs%20RESTful_EJEREM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Eliminar recursos con método DELETE en APIs RESTful</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5b90d44d-c15a-46af-9e7f-8f2ac0cb73a9/11_%20Autenticaci%C3%B3n%20B%C3%A1sica%20HTTP%20en%20PHP%20Implementaci%C3%B3n%20y%20Limitaciones_UBMVGQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Autenticación Básica HTTP en PHP Implementación y Limitaciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/15631280-89d6-4ac7-b79b-fcdc52564d3b/12_%20Autenticaci%C3%B3n%20Segura%20con%20Hashes%20y%20Clave%20Secreta%20en%20PHP_FJACXV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Autenticación Segura con Hashes y Clave Secreta en PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ca6b5eaf-b809-436e-9a35-1ab1407e7c28/13_%20Autenticaci%C3%B3n%20con%20Access%20Touch%20Implementaci%C3%B3n%20y%20Funcionamiento_ISKBHZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Autenticación con Access Touch Implementación y Funcionamiento</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/57c5ee9f-8bc0-4495-ac61-d5fa86cc013f/14_%20Manejo%20de%20Errores%20HTTP%20en%20Cliente%20y%20Servidor%20con%20PHP_YXACHO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Manejo de Errores HTTP en Cliente y Servidor con PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2698e310-b844-4d8a-9d41-5c1bd00f35ae/15_%20Comunicaci%C3%B3n%20As%C3%ADncrona%20en%20Aplicaciones%20de%20una%20Sola%20P%C3%A1gina_CIZXHW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Comunicación Asíncrona en Aplicaciones de una Sola Página</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2b42796a-6c04-44bb-8ee5-73c44181d6f5/16_%20JavaScript%20para%20Interacci%C3%B3n%20con%20el%20DOM%20y%20AJAX_PTNIMI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. JavaScript para Interacción con el DOM y AJAX</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c241500b-8b0e-4400-a09d-9ef3e836371b/17_%20Comunicaci%C3%B3n%20con%20el%20Servidor%20Usando%20AJAX%20y%20JSON%20en%20JavaScript_ZESAPY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Comunicación con el Servidor Usando AJAX y JSON en JavaScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d2775fee-d67a-4623-b0f8-d807194d59e4/18_%20Publicaci%C3%B3n%20y%20Configuraci%C3%B3n%20de%20Aplicaciones%20en%20Servidores%20P%C3%BAblic_GKPDLA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Publicación y Configuración de Aplicaciones en Servidores Públic</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c9b2af88-b841-4477-bc96-248192ae7731/19_%20Buenas%20pr%C3%A1cticas%20para%20dise%C3%B1ar%20APIs%20RESTful_TLECPG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Buenas prácticas para diseñar APIs RESTful</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

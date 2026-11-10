@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Gestión de Bases de Datos con SQL Server - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Gestión de Bases de Datos con SQL Server</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-bases-datos-sql-server-badge-273d69a8-ccf2-4ef0-b9ee-eee0360dd377.png" alt="Badge">
+                <div>
+                    <h1>Curso de Gestión de Bases de Datos con SQL Server</h1>
+                    <p class="video-title">1. Por que aprender SQL Server</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/97f435ab-5d53-45f0-961d-1d18fb694db9/file_1794189383371_TVNYAU.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a2c739b5-017a-40cb-9fae-56b767e3b241/1_%20Por%20que%20aprender%20SQL%20Server_IFTYPA.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">26 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a2c739b5-017a-40cb-9fae-56b767e3b241/1_%20Por%20que%20aprender%20SQL%20Server_IFTYPA.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Por que aprender SQL Server</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/25e3ad60-3aab-42b6-a7c0-d3d97cc9fcf7/2_%20Instalacion%20de%20SQL%20Server%20y%20SSMS_EUZETA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Instalacion de SQL Server y SSMS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/80637d43-e0ef-46c1-8f3c-f0d89f3315fd/3_%20INNER%20JOIN%20vs%20LEFT%20JOIN_KQWEXF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. INNER JOIN vs LEFT JOIN</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c87d36ca-be35-468b-812e-549251487f5e/4_%20RIGHT%20JOIN%20FULL%20OUTER%20JOIN%20y%20CROSS%20JOIN_XZNIKP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. RIGHT JOIN FULL OUTER JOIN y CROSS JOIN</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/22a50409-43c4-4309-833d-f2224a0919fb/5_%20Subqueries%20en%20WHERE_HVNKRW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Subqueries en WHERE</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5652aa59-fe9d-4c26-b6d6-ed8586657b59/6_%20Subqueries%20en%20FROM%20y%20SELECT_QNOKEW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Subqueries en FROM y SELECT</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4f82c967-3102-4104-b1ae-8c20d53c82b9/7_%20Common%20Table%20Expressions%20CTEs_TPZUKE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Common Table Expressions CTEs</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a4ead1f2-e0ae-42cd-97b4-bbff956f958f/8_%20Vistas%20Views%20consultas%20que%20cualquiera%20puede%20usar_PRZXSE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Vistas Views consultas que cualquiera puede usar</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7ae33afe-f21e-4b68-985f-c8daa3e2daaf/9_%20Vistas%20indexadas%20en%20SQL%20Server_UKMSIR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Vistas indexadas en SQL Server</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/366aa626-4fbf-4797-bb95-9779747383bd/10_%20Columnas%20calculadas%20y%20columnas%20computadas%20persistidas_DBDDFY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Columnas calculadas y columnas computadas persistidas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4b2c7cef-7015-4f22-839c-a8361ff3dbc6/11_%20Triggers%20en%20SQL%20Server_OVSETV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Triggers en SQL Server</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e77d0f84-24a1-42e8-b90c-e8221cae51f4/12_%20Stored%20Procedures%20en%20SQL%20Server_XJLYBT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Stored Procedures en SQL Server</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/556b1143-7629-455a-a5fa-52e16497b6ee/13_%20IF%20ELSE%20WHILE%20en%20Stored%20Procedures_YAXPXI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. IF ELSE WHILE en Stored Procedures</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f1b92928-57d8-4b2a-a379-beb9dc8cbdc9/14_%20Funciones%20escalares%20y%20funciones%20de%20tabla%20en%20SQL%20Server_LVAPHU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Funciones escalares y funciones de tabla en SQL Server</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/761078db-ac36-4242-ba93-3252e0c60653/15_%20SP%20de%20cierre%20de%20mes%20para%20TiendaLatam_WYDNVG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. SP de cierre de mes para TiendaLatam</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2c4789ba-c357-480a-830f-a8a7fb620844/16_%20Transacciones%20BEGIN%20COMMIT%20y%20ROLLBACK_FIWNGJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Transacciones BEGIN COMMIT y ROLLBACK</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b2530a4c-743e-4fbf-9b5d-d564ca1717e3/17_%20Manejo%20de%20errores%20con%20TRY%20y%20CATCH_LRRSAP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Manejo de errores con TRY y CATCH</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3edef9ee-cf7c-4c48-b5af-6f1c64cc4667/18_%20Concurrencia%20y%20niveles%20de%20aislamiento%20en%20SQL%20Server_PGPIOA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Concurrencia y niveles de aislamiento en SQL Server</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5cf8a1fd-bf42-4e66-94ca-7a402e3bc956/19_%20Conoce%20el%20plan%20de%20ejecuci%C3%B3n%20de%20una%20consulta_TCHQAB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Conoce el plan de ejecución de una consulta</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d4426e28-957c-41de-925b-1b7f6b3b980f/20_%20%C3%8Dndices%20y%20paginaci%C3%B3n%20en%20SQL%20Server_SDDMXK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Índices y paginación en SQL Server</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7b3ad657-b58a-4f7f-b035-e02ef0a9f36d/21_%20Window%20Functions%20en%20SQL%20Server_LIPAZA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Window Functions en SQL Server</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/27f5f921-3d1f-4222-94a9-2db52129df79/22_%20Diagn%C3%B3stico%20de%20queries%20lentas_PYCHAN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Diagnóstico de queries lentas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4035082c-827a-4757-8b34-21c243045069/23_%20Gesti%C3%B3n%20de%20usuarios%20roles%20y%20permisos_DYAWTW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Gestión de usuarios roles y permisos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/73c54a9f-dafe-42e4-b8be-d2bdd7ced576/24_%20Backup%20y%20Restore%20en%20SQL%20Server_UQAGIV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Backup y Restore en SQL Server</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ec349818-93ce-4fff-9cc1-17fcc5ba7bd6/25_%20Conoce%20tu%20base%20de%20datos%20desde%20adentro_RPCKLF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Conoce tu base de datos desde adentro</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/210f3053-b887-448c-a39d-67b25d34a64c/26_%20DBA%20Data%20Analyst%20o%20Data%20Engineer_IGTSGR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. DBA Data Analyst o Data Engineer</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

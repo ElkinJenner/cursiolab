@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Visualización de Datos para BI- CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Visualización de Datos para BI</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-visualizacion-datos1-99553c60-ddf6-42c7-b7b5-ac12e7864165.png" alt="Badge">
+                <div>
+                    <h1>Curso de Visualización de Datos para BI</h1>
+                    <p class="video-title">1. Análisis de Datos para Decisiones Estratégicas con Power BI</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_672e8a79970c03daaf1ca1ce_672e8a79970c03daaf1ca1df_23s.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7869146b-07ae-43eb-86bf-4befdb9027df/1_%20Qu%C3%A9%20es%20visualizaci%C3%B3n%20de%20datos%20para%20BI_BRSJDC.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">21 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7869146b-07ae-43eb-86bf-4befdb9027df/1_%20Qu%C3%A9%20es%20visualizaci%C3%B3n%20de%20datos%20para%20BI_BRSJDC.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Qué es visualización de datos para BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2501287c-4f49-4615-90fd-1d9329f8173b/2_%20C%C3%B3mo%20planear%20un%20proyecto%20de%20Business%20Intelligence_YSMNJS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Cómo planear un proyecto de Business Intelligence</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/72a2f900-7459-4377-88b8-9546f49bae3f/3_%20C%C3%B3mo%20gestionar%20stakeholders%20en%20proyectos%20BI_FIVTEQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Cómo gestionar stakeholders en proyectos BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/20897ce4-01fa-42d8-8acd-331ba606372f/4_%20Entrevistas%20a%20stakeholders%20em%20projetos%20de%20BI_HLMWWB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Entrevistas a stakeholders en proyectos de BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/db89faa3-71ca-4153-8e0d-4bc14862bf5c/5_%20Gobernanza%20de%20datos%20y%20madurez%20organizacional_OHOIOQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Gobernanza de datos y madurez organizacional</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4d0a6e5c-1257-49ec-b981-62ee581acf44/6_%20Est%C3%A9tica%20y%20claridad%20en%20visualizaci%C3%B3n%20de%20datos_GZQWYZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Estética y claridad en visualización de datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/346a4250-1e55-428b-bfe0-6089bddde5a9/7_%20Tipos%20de%20datos%20en%20Power%20BI_RFNDXM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Tipos de datos en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4f7dcce5-9e98-4da5-8217-d14120c46057/8_%20Jerarqu%C3%ADa%20visual%20con%20patrones%20F%20y%20Z_VMDMWC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Jerarquía visual con patrones F y Z</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1f650d34-1307-4834-9d7e-ef690b856159/9_%20Modelado%20de%20datos%20para%20inventario%20en%20Power%20BI_SUIOTH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Modelado de datos para inventario en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9d7a70f9-4255-41d9-808b-9d58a0521ffb/10_%20Relaciones%201N%20y%20filtros%20%C3%BAnicos%20en%20Power%20BI_TZZCIE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Relaciones 1N y filtros únicos en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f1d26d4c-6884-4f24-8d99-e78e3a48bc01/11_%20Dise%C3%B1o%20visual%20de%20dashboards%20en%20Power%20BI_VHMKAC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Diseño visual de dashboards en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ba0f859b-4b05-4df6-96ab-f7fc93b28334/12_%20Predicci%C3%B3n%20de%20servicios%20p%C3%BAblicos%20con%20Power%20BI_WBOWXV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Predicción de servicios públicos con Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7797a1d0-ff2b-40a6-9eb9-719528a70488/13_%20Mapas%20de%20clientes%20B2B%20y%20B2C%20en%20Power%20BI_PQTBGH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Mapas de clientes B2B y B2C en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e2f7c67e-c4f7-49a3-b4ac-eef321407f47/14_%20Nodos%20y%20grafos%20conecta%20clientes%20con%20productos_ARFNQI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Nodos y grafos conecta clientes con productos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e715ca0d-a5b7-4f3f-b9bb-e67f7c498ee6/15_%20Primeros%20pasos%20con%20Tableau%20Public_NHQMRD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Primeros pasos con Tableau Public</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/44d6e8ac-7040-409d-a295-75973449f0ef/16_%20Historias%20en%20Tableau%20del%20dataset%20al%20tablero_LOGIJL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Historias en Tableau del dataset al tablero</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/afebd9de-7854-4cc0-898d-de8055ab4f22/17_%20Dise%C3%B1o%20de%20dashboard%20para%20evaluar%20vendedores_VMDDGH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Diseño de dashboard para evaluar vendedores</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/536b5b14-88e0-4d6a-810f-9ae35056f82e/18_%20An%C3%A1lisis%20de%20abandono%20de%20carrito%20con%20Power%20BI_POMQVN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Análisis de abandono de carrito con Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/309af40b-0cfc-4225-a7c5-eef9665fda4b/19_%20Mapa%20de%20conversi%C3%B3n%20por%20pa%C3%ADs%20en%20Looker%20Studio_RTWLQE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Mapa de conversión por país en Looker Studio</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/30965746-bcc0-4e89-92bd-3db3036e8114/20_%20Predicciones%20y%20tasas%20de%20abandono%20en%20Power%20BI_VCRKIC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Predicciones y tasas de abandono en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d6c5bbd0-754b-4f33-9eee-df9eef2306db/21_%20Buenas%20pr%C3%A1cticas%20para%20presentar%20informes%20BI_ORRKMF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Buenas prácticas para presentar informes BI</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

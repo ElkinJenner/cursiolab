@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Python Orientado a Objetos - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Python Orientado a Objetos</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-curso-python-poo-badge-a241c188-6d84-442c-9f21-5d23f8005d01.png" alt="Badge">
+                <div>
+                    <h1>Curso de Python Orientado a Objetos</h1>
+                    <p class="video-title">1. OOP in Python Modeling Real World Systems</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/courses/Piezas-Curso-Python-POO_OG.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/efef40a2-d4a0-4dd4-989b-743d7db03c88/1_%20OOP%20in%20Python%20Modeling%20Real%20World%20Systems_GHBEPY.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">17 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/efef40a2-d4a0-4dd4-989b-743d7db03c88/1_%20OOP%20in%20Python%20Modeling%20Real%20World%20Systems_GHBEPY.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. OOP in Python Modeling Real World Systems</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cf7be46a-d6a1-4f11-be9e-bcd16dc615d7/2_%20Classes%20and%20Objects%20in%20Python%20Explained_MKYJDX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Classes and Objects in Python Explained</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6eae1a86-652d-41dc-8099-320abc898560/3_%20Instance%20Methods%20That%20Make%20Python%20Objects%20Act_MNOBPC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Instance Methods That Make Python Objects Act</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ed89b9c6-8921-41c0-8d9e-d69f9dcb94b7/4_%20Private%20Attributes%20and%20Data%20Integrity%20in%20Python_BBUVIZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Private Attributes and Data Integrity in Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/19c1cfa8-78d4-46e2-9d1b-cf290c1dc3dc/5_%20Herencia%20en%20Python%20para%20evitar%20duplicaci%C3%B3n%20de%20c%C3%B3digo_SIEFAN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Herencia en Python para evitar duplicación de código</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/748fd8f8-0f62-47e3-a92a-d88be4460586/6_%20Simple%20Inheritance%20With%20Python%20Classes_QAJXJA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Simple Inheritance With Python Classes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/34f0591d-b7da-4556-a1fe-2c8663b529d4/7_%20Python%20Protocol%20for%20Flexible%20Polymorphism_OADHLE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Python Protocol for Flexible Polymorphism</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3f046ed5-1d4f-4504-b284-76609caf7fc2/8_%20Composition%20Over%20Inheritance%20in%20Python_CBJGDP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Composition Over Inheritance in Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/61a7d517-dabe-4402-9604-20e71f5beee9/9_%20Organizing%20Python%20Projects%20Into%20Modules_ZGXWVK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Organizing Python Projects Into Modules</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/333435b7-74a2-44f6-a586-6d7ec24729fe/10_%20Custom%20Exceptions%20That%20Make%20Python%20Errors%20Clear_MPFUOR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Custom Exceptions That Make Python Errors Clear</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bc90ea98-f675-46b2-94f2-bcabac09a9fe/11_%20Sistema%20de%20pr%C3%A9stamos%20con%20identificaci%C3%B3n%20de%20usuarios%20en%20Python_YXBHMX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Sistema de préstamos con identificación de usuarios en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/38f5f052-669d-4390-9ccc-8a52db66c7c1/12_%20Book%20Search%20and%20Lending%20Flow%20in%20Python%20OOP_LEIBFS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Book Search and Lending Flow in Python OOP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ac48e5dd-8139-4783-abda-34825b4572f6/13_%20Clases%20abstractas%20en%20Python%20con%20ABC%20y%20abstractmethod_JHKAIW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Clases abstractas en Python con ABC y abstractmethod</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c31f13c8-64ae-4094-8c1d-246f18dfe619/14_%20Decoradores%20property%20en%20Python%20para%20atributos%20con%20validaci%C3%B3n_NCPIFT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Decoradores property en Python para atributos con validación</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/131a7e5c-2829-49c5-a7bb-39bce7336959/15_%20Decoradores%20staticmethod%20y%20classmethod%20en%20Python_WYQRFC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Decoradores staticmethod y classmethod en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/dee4225e-4935-4ab5-a085-f17cdda52bbe/16_%20Serializaci%C3%B3n%20de%20objetos%20Python%20a%20JSON%20para%20persistencia%20de%20dato_EIMYDI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Serialización de objetos Python a JSON para persistencia de dato</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3c292917-99f1-46ce-9cb5-bf7f67e17049/17_%20Loading%20JSON%20Data%20to%20Restore%20App%20State_HKUGHY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Loading JSON Data to Restore App State</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

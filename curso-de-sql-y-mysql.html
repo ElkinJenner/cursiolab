@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de SQL y MySQL - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de SQL y MySQL</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-sql-mysql-badge-57b73b8c-f18a-4bde-ac2d-8fd67005712d.png" alt="Badge">
+                <div>
+                    <h1>Curso de SQL y MySQL</h1>
+                    <p class="video-title">1. Triggers vistas y JSON en MySQL</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d0555ca3-bafa-46a2-af36-e4b6d21fa7e9/a_NNUCPW.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/06d6d7ea-55bd-4664-ad0e-cff67064ffc9/1_%20Triggers%20vistas%20y%20JSON%20en%20MySQL_JJUQKW.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">19 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/06d6d7ea-55bd-4664-ad0e-cff67064ffc9/1_%20Triggers%20vistas%20y%20JSON%20en%20MySQL_JJUQKW.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Triggers vistas y JSON en MySQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/df454dae-09c2-4ca6-8fbe-789f8b0d3790/2_%20Buenas%20pr%C3%A1cticas%20avanzadas%20en%20MySQL%20optimizaci%C3%B3n%20y%20superqueries_BMAHBG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Buenas prácticas avanzadas en MySQL optimización y superqueries</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8c83c957-9984-4fa2-b505-48dbd6cf6724/3_%20Matrices%20SQL%20con%20SUM%20e%20IF%20sin%20pivots_VDDPED.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Matrices SQL con SUM e IF sin pivots</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8e76bae5-0220-495d-b65a-477d7550e454/4_%20Columnas%20Generadas%20en%20MySQL%20Automatizaci%C3%B3n%20de%20Operaciones_LGUOYB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Columnas Generadas en MySQL Automatización de Operaciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/59409c85-8475-44fd-9e13-4f70b4a03be2/5_%20Generaci%C3%B3n%20de%20Slugs%20SEO-Friendly%20en%20MySQL_PMHBXJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Generación de Slugs SEO-Friendly en MySQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d2152964-bad4-4262-a496-ea39310e1f4d/6_%20Creaci%C3%B3n%20y%20Uso%20de%20Vistas%20en%20Bases%20de%20Datos%20MySQL_QUQCRH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Creación y Uso de Vistas en Bases de Datos MySQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b404fb61-00fc-4cc3-ac80-9d18b173a314/7_%20Creaci%C3%B3n%20de%20Vistas%20Materializadas%20en%20MySQL_JEJNYW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Creación de Vistas Materializadas en MySQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/96364a73-2b94-4dca-8a1e-8b0fe5b29df5/8_%20Triggers%20en%20MySQL%20para%20vistas%20materializadas_GUEFWY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Triggers en MySQL para vistas materializadas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4f0daee6-b9e9-4d61-b426-d79a72673495/9_%20Creaci%C3%B3n%20de%20Vistas%20Materializadas%20en%20MySQL%20con%20Triggers_MQZPAO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Creación de Vistas Materializadas en MySQL con Triggers</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/83557640-5467-4bad-9e74-5b9b7ce40270/10_%20%C3%8Dndices%20en%20MySQL%208x%20m%C3%A1s%20velocidad%20en%20queries_JPZZXK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Índices en MySQL 8x más velocidad en queries</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/096b9810-6ab6-4c5a-8bc9-f7645bcba5d1/11_%20Columnas%20JSON%20en%20MySQL%20qu%C3%A9%20son%20y%20c%C3%B3mo%20modificarlas_MBYPLF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Columnas JSON en MySQL qué son y cómo modificarlas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c62bf638-7dc9-42aa-b940-c6b63008a6c4/12_%20%C3%8Dndices%20en%20columnas%20JSON%20con%20MySQL%208_FMZYZT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Índices en columnas JSON con MySQL 8</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f0684265-c472-44b5-bc21-10f95d13c809/13_%20Uso%20del%20Left%20Join%20en%20MySQL%20para%20Consultas%20Avanzadas_HQMOKJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Uso del Left Join en MySQL para Consultas Avanzadas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f83b4aa4-fa2b-4594-8cb1-37b12de9728f/14_%20Engines%20y%20Codificaciones%20en%20MySQL%20MyISAM%20vs%20InnoDB%20y%20UTF8MB4_IAKCMY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Engines y Codificaciones en MySQL MyISAM vs InnoDB y UTF8MB4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1088fcdb-e0f2-4ebb-adb2-c3af7f104bf6/15_%20Gesti%C3%B3n%20de%20Usuarios%20y%20Permisos%20en%20Bases%20de%20Datos%20MySQL_QZKTLK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Gestión de Usuarios y Permisos en Bases de Datos MySQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ba5ca42d-6543-4f55-87e0-921f3afd00f1/16_%20Gesti%C3%B3n%20de%20Informaci%C3%B3n%20Esquem%C3%A1tica%20en%20MySQL_WDEOBS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Gestión de Información Esquemática en MySQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/42a51713-361c-4150-8d8e-36b30bf34c40/17_%20Respaldo%20y%20exportaci%C3%B3n%20de%20bases%20de%20datos%20con%20MySQLdump_SRDOCU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Respaldo y exportación de bases de datos con MySQLdump</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/77f7e9be-0e5e-4f77-b36a-af2469232939/18_%20Migrations%20en%20Bases%20de%20Datos%20con%20G%20Framework_PGDMOA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Migrations en Bases de Datos con G Framework</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cf1d8e34-5a04-47a1-89fc-80e6fe046fda/19_%20Visualizaci%C3%B3n%20de%20Datos%20con%20Metabase%20para%20Toma%20de%20Decisiones_KPYXQH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Visualización de Datos con Metabase para Toma de Decisiones</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

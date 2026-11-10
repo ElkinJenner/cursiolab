@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Base de Datos NoSQL - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Base de Datos NoSQL</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-fundamentos-de-bases-de-datos-cc5eff2a-a7e0-4110-af5d-a47b628611da-42_vrW7zSq.png" alt="Badge">
+                <div>
+                    <h1>Curso de Base de Datos NoSQL</h1>
+                    <p class="video-title">1. Por qué gigantes tech migraron a NoSQL</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_6698579adaf4c7dfb3dbe278_6698579adaf4c7dfb3dbe28b_51s.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/63944369-8033-4747-9408-9a7516b6ab08/1_%20Por%20qu%C3%A9%20gigantes%20tech%20migraron%20a%20NoSQL_AMGACM.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">17 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/63944369-8033-4747-9408-9a7516b6ab08/1_%20Por%20qu%C3%A9%20gigantes%20tech%20migraron%20a%20NoSQL_AMGACM.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Por qué gigantes tech migraron a NoSQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5dc07dc5-e9a5-4bfc-8284-3fa1405a2237/2_%20Comparativa%20de%20Bases%20de%20Datos%20SQL%20vs%20NoSQL_LHVKII.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Comparativa de Bases de Datos SQL vs NoSQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7d701f64-d819-4f22-9449-a88565992cab/3_%20Creaci%C3%B3n%20y%20Gesti%C3%B3n%20de%20Bases%20de%20Datos%20NoSQL%20con%20MongoDB_BEQEKN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Creación y Gestión de Bases de Datos NoSQL con MongoDB</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6c93b2fc-f26a-4166-b51f-0346d8c71b25/4_%20Conexi%C3%B3n%20y%20gesti%C3%B3n%20b%C3%A1sica%20de%20MongoDB%20con%20Compass%20y%20Atlas_RDUOLB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Conexión y gestión básica de MongoDB con Compass y Atlas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c9ef4a4d-38af-4e9d-8901-3515ebed9575/5_%20Inserci%C3%B3n%20de%20Documentos%20en%20MongoDB%20Insert%20One%20y%20Insert%20Many_JKXRQU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Inserción de Documentos en MongoDB Insert One y Insert Many</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ea11d892-5473-41aa-8172-dc6c271c24ce/6_%20Eliminaci%C3%B3n%20de%20Documentos%20en%20MongoDB%20Comandos%20y%20Pr%C3%A1cticas%20Segura_USTVHC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Eliminación de Documentos en MongoDB Comandos y Prácticas Segura</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fc5d671d-a362-445c-84cf-3adc68798517/7_%20Consultas%20Avanzadas%20en%20MongoDB%20Uso%20de%20Compass%20y%20la%20Terminal_MCNMSH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Consultas Avanzadas en MongoDB Uso de Compass y la Terminal</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5963df0c-4b45-4182-8d0f-cee37301b3bd/8_%20Consultas%20Avanzadas%20con%20el%20Aggregation%20Framework%20de%20MongoDB_FXKUMZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Consultas Avanzadas con el Aggregation Framework de MongoDB</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/27c32939-7b6e-469c-ae96-490920e3b4b0/9_%20Uso%20de%20Lookup%20en%20MongoDB%20para%20Relaciones%20entre%20Colecciones_TROGBK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Uso de Lookup en MongoDB para Relaciones entre Colecciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/18211a52-6ad7-48f4-9049-3c56cb41cda2/10_%20Reemplazo%20y%20Modificaci%C3%B3n%20de%20Documentos%20en%20MongoDB_BMPGNG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Reemplazo y Modificación de Documentos en MongoDB</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/549e3686-340b-4692-b75a-ce84a3ba3569/11_%20Actualizaci%C3%B3n%20y%20Reemplazo%20de%20Documentos%20en%20MongoDB_XYMKBH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Actualización y Reemplazo de Documentos en MongoDB</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a0f2fa30-a789-400c-a985-093801f22def/12_%20Estructuras%20de%20Datos%20en%20Grafos%20para%20Redes%20Sociales_HQDYFR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Estructuras de Datos en Grafos para Redes Sociales</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d75ff8c9-3aec-4da1-a81f-5b454609d384/13_%20Nodos%20y%20relaciones%20en%20Neo4j%20con%20Cypher_JZJFCH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Nodos y relaciones en Neo4j con Cypher</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/eee36f60-5155-4c71-bb78-cbac4b94f313/14_%20Bases%20de%20datos%20documentales%20vs%20SQL_OJEPBI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Bases de datos documentales vs SQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f3beae80-29b1-4d6f-a886-ee0511bfacb4/15_%20Bases%20de%20Datos%20Clave-Valor%20Simplicidad%20y%20Alto%20Rendimiento_ENAOVL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Bases de Datos Clave-Valor Simplicidad y Alto Rendimiento</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7b161d7a-c013-4675-b1ab-f504564f986a/16_%20Bases%20de%20Datos%20Vectoriales%20Conceptos%20y%20Aplicaciones%20Pr%C3%A1cticas_PDLESI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Bases de Datos Vectoriales Conceptos y Aplicaciones Prácticas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e236f746-663a-4c4a-90f8-772bb27f6269/17_%20Bases%20de%20Datos%20NoSQL%20en%20Inteligencia%20Artificial_PYSUXO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Bases de Datos NoSQL en Inteligencia Artificial</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

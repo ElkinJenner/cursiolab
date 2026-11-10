@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de TailwindCSS - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de TailwindCSS</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-curso-de-fundamentos-de-css_badge-495a6456-77ae-4ede-8cc3-7678710e3d80.png" alt="Badge">
+                <div>
+                    <h1>Curso de TailwindCSS</h1>
+                    <p class="video-title">1. Por qué Tailwind CSS domina el frontend</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_67c231436136ca8b61c819e9_67c231436136ca8b61c819fa_29s.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/04a54531-0534-4759-bf00-c346ccb54277/1_%20Por%20qu%C3%A9%20Tailwind%20CSS%20domina%20el%20frontend_QTAXQI.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">19 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/04a54531-0534-4759-bf00-c346ccb54277/1_%20Por%20qu%C3%A9%20Tailwind%20CSS%20domina%20el%20frontend_QTAXQI.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Por qué Tailwind CSS domina el frontend</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e3a4aa39-806a-444f-9116-0313fd34e5d6/2_%20Primeros%20pasos%20con%20Tailwind%20CSS%20sin%20instalar%20nada_KECSEB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Primeros pasos con Tailwind CSS sin instalar nada</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e52321f0-3204-4b78-b314-630627bfec70/3_%20Configuraci%C3%B3n%20inicial%20de%20Tailwind%20CSS%20con%20Node_KLJMTQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Configuración inicial de Tailwind CSS con Node</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6ba47492-c31a-42ea-be66-1ec4b2204e06/4_%20Watch%20mode%20de%20Tailwind%20cambios%20en%20tiempo%20real_LSAJBU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Watch mode de Tailwind cambios en tiempo real</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9729b4c1-5b92-4486-9643-8d986deb69b3/5_%20Por%20qu%C3%A9%20CSS%20sigue%20siendo%20clave%20con%20Tailwind_ETNJKB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Por qué CSS sigue siendo clave con Tailwind</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1c493e73-82de-451f-8219-2ac786c9ce0e/6_%20Clases%20de%20utilidad%20en%20Tailwind%20CSS_WKATTV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Clases de utilidad en Tailwind CSS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1daf853d-b05d-446c-8611-fb64302af4b5/7_%20C%C3%B3mo%20aplicar%20tipograf%C3%ADa%20con%20Tailwind%20CSS_YHKFCR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Cómo aplicar tipografía con Tailwind CSS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/32afd928-7669-4305-b761-2f15b0b8a116/8_%20Cajas%20en%20Tailwind%20margin%20padding%20y%20bordes_ROPBYZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Cajas en Tailwind margin padding y bordes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3ed78f21-e86e-4bcc-b0cd-9fee073e8a8c/9_%20Colores%20degradados%20y%20paletas%20en%20Tailwind_CSIJYN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Colores degradados y paletas en Tailwind</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b1e603ca-13ac-4150-8d46-83a65f40c677/10_%20Dise%C3%B1o%20responsivo%20con%20breakpoints%20en%20Tailwind_KCMMNE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Diseño responsivo con breakpoints en Tailwind</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6809b4f1-b700-44b3-8ebc-895b03355d98/11_%20Layouts%20responsivos%20con%20container%20y%20max-width_CEAJOA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Layouts responsivos con container y max-width</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cf8c3d96-ff09-4338-9878-156542dec7cf/12_%20Flexbox%20en%20Tailwind%20layout%20f%C3%A1cil%20con%20flex_JGWUJB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Flexbox en Tailwind layout fácil con flex</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d1784679-89a1-4d95-a1bf-ac68b07d046b/13_%20CSS%20Grid%20vs%20Flexbox%20cu%C3%A1l%20usar%20cu%C3%A1ndo_FSFZGI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. CSS Grid vs Flexbox cuál usar cuándo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/858cee92-2ed9-487d-9cbf-0e73d31c5607/14_%20Integra%20Tailwind%20CSS%20con%20Astro%20desde%20cero_PWNZYV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Integra Tailwind CSS con Astro desde cero</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6f67cfdc-5f23-4ec9-a237-a07110889bc8/15_%20Personalizar%20Tailwind%20CSS%20en%20Astro_MESWEG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Personalizar Tailwind CSS en Astro</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3ac8b9a4-6dba-4f18-98a5-aa1b7fcf6152/16_%20Plugins%20de%20forms%20y%20aspect%20ratio%20en%20Tailwind_VOWSFZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Plugins de forms y aspect ratio en Tailwind</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ceee5356-ff5c-4454-9b65-f0f14f52a81d/17_%20Plugin%20Typography%20de%20Tailwind%20clase%20prose_IDODER.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Plugin Typography de Tailwind clase prose</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/05efe3a5-fba4-4814-b63e-f5ea44808ce5/18_%20C%C3%B3mo%20Next_js%20y%20Astro%20integran%20Tailwind%20CSS_TAOVRI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Cómo Next.js y Astro integran Tailwind CSS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7760bae0-4f41-436f-9e95-f3ff5e484ff8/19_%20Tailwind%20CSS%20con%20IA%20y%20plantillas%20Astro_PXWRTF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Tailwind CSS con IA y plantillas Astro</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

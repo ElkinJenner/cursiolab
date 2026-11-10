@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Claude Code para No Programadores- CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Claude Code para No Programadores</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/bba7ab4c-b51d-4859-999a-53bddbd39d0e-0589ee11-8735-4ac4-bc1c-06d4ba02f99e.png" alt="Badge">
+                <div>
+                    <h1>Curso de Claude Code para No Programadores</h1>
+                    <p class="video-title">1. Todo lo que aprenderás sobre redes de internet</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/317b35cc-a591-4301-b238-fd43bb12f6b1/file_1794021218615_DNQYZB.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b9749be7-f4d4-474d-82fb-18d40a0569e3/1_%20Automatiza%20tareas%20sin%20saber%20programar%20con%20Claude%20Code_SHSOVR.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">7 clases</span>
+                    </div>
+                   <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b9749be7-f4d4-474d-82fb-18d40a0569e3/1_%20Automatiza%20tareas%20sin%20saber%20programar%20con%20Claude%20Code_SHSOVR.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Automatiza tareas sin saber programar con Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6347cb4d-30ff-4e25-bd6d-f6b84beadb94/2_%20C%C3%B3mo%20instalar%20Claude%20Code%20en%20dos%20minutos_JVCEAN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Cómo instalar Claude Code en dos minutos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ae331630-b338-4072-b7ea-96ae44ca1e0d/3_%20Crea%20un%20videojuego%20con%20Claude%20Code%20sin%20c%C3%B3digo_QKOBDZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Crea un videojuego con Claude Code sin código</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6cea9e07-bc31-4a6f-a118-d4e5ceaad7cc/4_%20Organiza%20archivos%20y%20conecta%20apps%20con%20Claude%20Code_IVMQZI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Organiza archivos y conecta apps con Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1776c9dc-8087-49e6-abed-9e5c6fa321ff/5_%20C%C3%B3mo%20crear%20un%20skill%20de%20preparaci%C3%B3n%20para%20entrevistas_QVKEVW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Cómo crear un skill de preparación para entrevistas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1b3a906a-7654-452d-97ce-e5e9d00e3809/6_%20Crea%20tu%20asistente%20ejecutivo%20con%20Claude%20Code_WHQREF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Crea tu asistente ejecutivo con Claude Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a8408392-1387-4e7d-895f-4026223c58e9/7_%20Controla%20Claude%20Code%20desde%20tu%20m%C3%B3vil%20con%20Dispatch_EDPSRW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Controla Claude Code desde tu móvil con Dispatch</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

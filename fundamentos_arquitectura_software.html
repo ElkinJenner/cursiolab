@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Arquitectura de Software - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Fundamentos de Arquitectura de Software</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/1247-4f5b5d04-4b56-4e64-bec2-db8fe3c0aa18.png" alt="Badge">
+                <div>
+                    <h1>Fundamentos de Arquitectura de Software</h1>
+                    <p class="video-title">1. Fundamentos de Arquitectura de Software</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/76036425-a848-4b62-8937-d91a8733c2d2/image_LZCGYA.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/363f1d5c-16f8-4237-b5b7-407d7476238d/1_%20Introducci%C3%B3n%20al%20curso%20de%20Fundamentos%20de%20Arquitectura%20de%20Software_FCNLCM.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">22 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/363f1d5c-16f8-4237-b5b7-407d7476238d/1_%20Introducci%C3%B3n%20al%20curso%20de%20Fundamentos%20de%20Arquitectura%20de%20Software_FCNLCM.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Fundamentos de Arquitectura de Software</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/363f1d5c-16f8-4237-b5b7-407d7476238d/1_%20Introducci%C3%B3n%20al%20curso%20de%20Fundamentos%20de%20Arquitectura%20de%20Software_FCNLCM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Etapas del proceso de desarrollo de software.</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d48263bd-6f8f-4ea6-90f9-e463663bfa43/3_%20Dificultades%20en%20el%20desarrollo%20de%20software_QSZVRF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Dificultades en el desarrollo de software</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d2754a86-8f6a-4535-9d64-3ad4287dc44a/4_%20Roles%20en%20metodolog%C3%ADas%20tradicionales%20y%20%C3%A1giles_WURREZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Roles en metodologías tradicionales y ágiles</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8e565980-4e9c-4308-862f-ecd1e2fc37ea/5_%20%C2%BFQu%C3%A9%20es%20arquitectura%20de%20software_MPEJIC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. ¿Qué es arquitectura de software</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ced494f7-b9cd-41b8-a604-29b496388b46/6_%20La%20importancia%20de%20la%20comunicaci%C3%B3n%20-%20Ley%20de%20Conway_MJMOAO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. La importancia de la comunicación - Ley de Conway</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b358e961-d518-47ac-ba03-6190d90448e5/7_%20Objetivos%20del%20arquitecto_CUHQGU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Objetivos del arquitecto</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/489b86f3-37ea-44a3-861a-31b7ad6fbf6d/8_%20Arquitectura%20y%20metodolog%C3%ADas_LKODOF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Arquitectura y metodologías</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0421f728-4936-4dcd-97cd-cca925280265/9_%20Entender%20el%20problema_ZQLGOF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Entender el problema</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8cae6e0a-56c8-4b60-95f3-1b6bbc607b58/10_%20Requerimientos_HMGQRP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Requerimientos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/857cd173-4287-4336-becf-39434c1f76b7/11_%20Riesgos_IOOBGA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Riesgos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/dc176622-8cdf-43d0-af38-d5e38f88614e/12_Restricciones_ZLECEF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Restricciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/048c00a8-cca5-418c-a877-6abffe2f8df3/14_%20Arquitectura%2C%20panorama%20y%20definici%C3%B3n_JDSMME.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Arquitectura, panorama y definición</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/420253d4-5f06-4506-b640-07ca314a2c9c/15_%20Estilos%20Llamado%20y%20retorno_SIQZGC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Estilos Llamado y retorno</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/75004a8a-232d-4ce4-8c0f-c244da4d59d6/16_%20Estilos%20Flujo%20de%20datos_CKRBRD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Estilos Flujo de datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/dd0c0bbb-1b02-4a75-9775-c66d85e2fb09/17_%20Estilos%20Centradas%20en%20datos_CTWXIE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Estilos Centradas en datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d20cc5a3-d0fd-40e8-b868-8a228e8242ca/18_%20Estilos%20Componentes%20independientes_TOADTQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Estilos Componentes independientes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/47b205ab-4bac-4f98-aebf-c0233d37c1a5/19_%20Comparando%20estilos_%20%C2%BFC%C3%B3mo%20elijo_SZWJGQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Comparando estilos_ ¿Cómo elijo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c516d2e7-8c23-4027-abc6-add6625c544e/21_%20Desarrollo%20del%20proyecto%20PlatziServicios%20Fase%20Startup_EHJBML.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Desarrollo del proyecto PlatziServicios Fase Startup</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b9041282-d46c-41ec-9292-488ba1cfbf76/22_%20Desarrollo%20del%20proyecto%20PlatziServicios%20Fase%20Producto%20en%20crecimiento_DKHMLM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Desarrollo del proyecto PlatziServicios Fase Producto en crecimiento</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/738047f8-bc89-4aba-b8dc-4c8d8c29c2ea/23_%20Desarrollo%20del%20proyecto%20PlatziServicios%20Fase%20Escala%20global_TFXSNP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Desarrollo del proyecto PlatziServicios Fase Escala global</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/383cb6ab-62d2-439a-a2d8-1134db1fd8a5/24_%20Conclusiones%20del%20curso_IRQYHU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Conclusiones del curso</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

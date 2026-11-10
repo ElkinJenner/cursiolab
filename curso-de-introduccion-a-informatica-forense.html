@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Introducción a Informática Forense - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Introducción a Informática Forense</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge_curso_informatica_forense-b6693b06-99f6-45ec-b4bd-45bf39ce6edf.png" alt="Badge">
+                <div>
+                    <h1>Curso de Introducción a Informática Forense</h1>
+                    <p class="video-title">1. Qué es la informática forense y cómo funciona</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e79c98d9-e9a8-46d9-80fc-10b94b5a9691/1_%20Qu%C3%A9%20es%20la%20inform%C3%A1tica%20forense%20y%20c%C3%B3mo%20funciona_GFESRG.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">8 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e79c98d9-e9a8-46d9-80fc-10b94b5a9691/1_%20Qu%C3%A9%20es%20la%20inform%C3%A1tica%20forense%20y%20c%C3%B3mo%20funciona_GFESRG.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Qué es la informática forense y cómo funciona</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8ca7fb94-1336-4405-b983-319c3e5c00cd/2_%20Elementos%20Clave%20en%20Investigaci%C3%B3n%20Forense%20Digital_OZIHLL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Elementos Clave en Investigación Forense Digital</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d93684f6-1f0a-4fcf-b985-5eb75fb94d22/3_%20Preservaci%C3%B3n%20de%20Escenarios%20en%20Investigaci%C3%B3n%20Forense_LQXDBZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Preservación de Escenarios en Investigación Forense</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e185f2fc-0a4d-42e2-8519-5ba9e9af80d9/4_%20C%C3%A1lculo%20de%20Hash%20SHA-256%20y%20SHA-512%20en%20Archivos%20Sensibles_WCJSKN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Cálculo de Hash SHA-256 y SHA-512 en Archivos Sensibles</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e273e30b-2a6d-4ef2-8821-9546d516c0fc/5_%20Hardware%20esencial%20para%20inform%C3%A1tica%20forense%20duplicadores%20y%20bloque_KQUCTS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Hardware esencial para informática forense duplicadores y bloqueadores</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/adb7eb32-758b-4bca-a858-8e478e59b644/6_%20An%C3%A1lisis%20de%20Copias%20Forenses%20en%20Investigaciones%20Digitales_JCCFVO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Análisis de Copias Forenses en Investigaciones Digitales</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9dec7ce1-6509-4384-9db5-1d20fa5d6773/7_%20An%C3%A1lisis%20Forense%20en%20Windows%20Uso%20de%20RegReaper%20y%20Volatility_SFRKJB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Análisis Forense en Windows Uso de RegReaper y Volatility</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e8f552ae-c65c-4dc1-97d7-1776d3ee644c/8_%20Tipos%20de%20Reportes%20en%20An%C3%A1lisis%20Forense%20Inform%C3%A1tico_DFXYOJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Tipos de Reportes en Análisis Forense Informático</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

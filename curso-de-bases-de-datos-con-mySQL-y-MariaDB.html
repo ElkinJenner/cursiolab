@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Bases de Datos con MySQL y MariaDB - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Bases de Datos con MySQL y MariaDB </span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-mysql-mariadb-449be7e2-82cb-47bd-864d-cc49f855503c.png" alt="Badge">
+                <div>
+                    <h1>Curso de Bases de Datos con MySQL y MariaDB</h1>
+                    <p class="video-title">1. Cuál es la diferencia entre MySQL y MariaDB</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e9e38dc8-d69d-443f-b0ce-e410bce15bae/file_1794237129590_ZHUAJS.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/680a0731-ce3c-4bcb-b910-bee3a0b93665/1_%20Cu%C3%A1l%20es%20la%20diferencia%20entre%20MySQL%20y%20MariaDB_FNKBZF.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">26 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/680a0731-ce3c-4bcb-b910-bee3a0b93665/1_%20Cu%C3%A1l%20es%20la%20diferencia%20entre%20MySQL%20y%20MariaDB_FNKBZF.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Cuál es la diferencia entre MySQL y MariaDB</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7bfff532-a16d-44a2-98ff-d88bba29979d/2_%20Proyecto%20del%20curso%20metro%20de%20CDMX_RLPPSV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Proyecto del curso metro de CDMX</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/86e58250-3002-4d4e-9084-63eb50bb4ede/3_%20Diagramas%20conceptuales%20vs_%20diagramas%20f%C3%ADsicos_KVHKEL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Diagramas conceptuales vs. diagramas físicos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/90dbc354-6b08-401b-acd7-c7b4568aa8ba/4_%20Diagrama%20conceptual%20estableciendo%20relaciones_HUFOUL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Diagrama conceptual estableciendo relaciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3e13ff7b-84b3-4d79-abdc-3bf0b180b288/5_%20Diagrama%20f%C3%ADsico%20detalles%20en%20las%20tablas_KJTKVK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Diagrama físico detalles en las tablas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1240693d-d35c-4f21-974e-91f9feecbef9/6_%20Reto%20relaciones%20en%20el%20diagrama%20f%C3%ADsico_FCBTOZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Reto relaciones en el diagrama físico</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8b06fca2-5f39-4739-a218-d2c6e4b5c060/7_%20Instalaci%C3%B3n%20de%20MariaDB%20en%20Windows_RYOJGR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Instalación de MariaDB en Windows</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4d19f83c-8741-48e8-9251-41c0c335b038/8_%20Instalaci%C3%B3n%20de%20MariaDB%20en%20Linux_DPRCGL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Instalación de MariaDB en Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b4edb7b9-251f-471f-b05b-2a6d693b504b/9_%20Instalaci%C3%B3n%20de%20MariaDB%20en%20macOS_OSTNQY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Instalación de MariaDB en macOS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/76497323-5726-4050-b189-d94417a2ffc8/10_%20Archivos%20SQL%20CREATE%20DATABASE_AGYLHK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Archivos SQL CREATE DATABASE</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0a16da58-b667-403c-9e6b-2cb741284336/11_%20Manejo%20de%20usuarios%20para%20la%20base%20de%20datos_ZWMEZR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Manejo de usuarios para la base de datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9ffeaae2-77f1-42c0-affd-1e2b5c28a2fc/12_%20CREATE%20TABLE_XMAGXN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. CREATE TABLE</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b9b4c5f4-5d37-4c46-a284-2c211390d25f/13_%20Modificando%20tablas%20con%20ALTER%20TABLE_BSVDGC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Modificando tablas con ALTER TABLE</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a76c8511-5ae2-40a2-bdc7-6acaca9bbb01/14_%20Insertando%20informaci%C3%B3n%20en%20la%20base%20de%20datos_FOEYQJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Insertando información en la base de datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/96612bfd-b40d-4195-a3fd-8a5753cbc020/15_%20Actualizando%20informaci%C3%B3n%20UPDATE_DNWJXD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Actualizando información UPDATE</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/63c03529-ae31-4f24-84d9-57c48d883ad9/16_%20Borrando%20datos%20DELETE_JHAYHM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Borrando datos DELETE</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5a3c23f4-6f33-4a61-af48-8196213e8aaf/17_%20Listando%20datos%20SELECT_AZGXSV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Listando datos SELECT</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e9924475-7265-4bab-a5f2-41b1fc754e48/18_%20Qu%C3%A9%20son%20las%20consultas%20anidadas_YFWOGJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Qué son las consultas anidadas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/af62c5c1-2d21-418b-8699-2d6591a1ddf3/19_%20Creando%20nuestra%20primer%20consulta%20anidada_MNSFDB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Creando nuestra primer consulta anidada</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0ac7a740-60f0-474e-a8b5-3af7cec9b768/20_%20C%C3%B3mo%20funciona%20la%20geolocalizaci%C3%B3n_BIPOED.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Cómo funciona la geolocalización</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/03104d2a-526b-45d6-9fd0-29e31c4a4d98/21_%20Creando%20nuestras%20consultas%20de%20geolocalizaci%C3%B3n_MMTPKA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Creando nuestras consultas de geolocalización</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0985a515-f0f1-43f6-af84-263beaca3cda/22_%20Reto%20geolocalizaci%C3%B3n%20con%20consultas%20anidadas_AZABZT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Reto geolocalización con consultas anidadas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a9568d60-6538-43eb-8fdd-ed258748fb2f/23_%20Qu%C3%A9%20son%20los%20Stored%20Procedures_QXWMHG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Qué son los Stored Procedures</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c8ae22a8-cd62-4320-aee1-1d6e67d36154/24_%20Crea%20tus%20primeras%20Stored%20Procedures_DIEWRF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Crea tus primeras Stored Procedures</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5f657bad-183f-4b59-aaf1-821de1d89134/25_%20Prepared%20statements_ICFZCT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Prepared statements</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1c56c318-ef5a-48a0-bfed-795cbb758683/26_%20Qu%C3%A9%20son%20los%20triggers_EYSEIA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Qué son los triggers</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

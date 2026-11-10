@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de React.js - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de React.js</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/reactjs-patrones-render_badge-3c77e155-b04a-4c95-ac61-e2b6d2d5b92e-00753ce_R9qSoA6.webp" alt="Badge">
+                <div>
+                    <h1>Curso de React.js</h1>
+                    <p class="video-title">1. Aprende React: Desarrollo Web y Mobile Eficiente y Escalable</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://files.catbox.moe/1p4i3f.jpg">
+                        <source src="https://files.catbox.moe/uvkxtg.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">24 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://files.catbox.moe/uvkxtg.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Aprende React: Desarrollo Web y Mobile Eficiente y Escalable</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/l88c8q.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Creación de Componentes con JavaScript y React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/bts3o4.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Creación de Componentes Reutilizables con Props en React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/tmq5h2.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Estado Local en React: Uso de useState para Contadores</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/rtii2c.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Creación y manejo de estados en un Toggle Button con React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/1q4e6q.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Eventos y manejo de estado en React: Name Form interactivo</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/hgm974.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Uso de useEffect para Manejar Efectos Secundarios en React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/3rm1zj.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Estilos en React: CSS, SaSS y Módulos CSS</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/rxhxeu.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Estilos en Línea en React: Uso y Mejores Prácticas</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/oouvyv.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Creación de Botones Reactivos con Styled Components en React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/3p8kxq.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Instalación y Uso de Tailwind CSS en Proyectos Web</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/0vscaj.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Creación de Componentes con Datos Estáticos en React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ogidh2.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Creación de un Componente User List con Fetch en React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/j2tunx.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Manejo de Errores y Carga en Fetch para Componentes React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/thmlii.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Optimización de Fetch con useEffect y Dependencias en React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/xex2zs.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Manejo de estados complejos en React con useReducer</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/f0r6yf.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Context API en React: Manejo de Estados Globales y Proveedores</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/drwsgi.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Creación de Hooks Personalizados en React para Contadores Reutilizables</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/wxnwhk.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Optimización de Componentes en React con React.memo y Hooks</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/x0yghk.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Componentes con TypeScript en React: Tipado de Props y Funciones</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/2u8i5s.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Tipado de Estados y Funciones en TypeScript para React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/p57ruo.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Tipado de useReducer y Context API en TypeScript</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/6tb32t.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Novedades y Mejoras en React 19 para Desarrolladores</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/9z7ljf.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Fundamentos y Actualización Continua en React</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

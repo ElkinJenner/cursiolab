@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de C# para Videojuegos - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de C# para Videojuegos</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badges-c-videojuegos-69d46a30-5392-48d5-8c0e-d0d08c1ba7f8.png" alt="Badge">
+                <div>
+                    <h1>Curso de C# para Videojuegos</h1>
+                    <p class="video-title">1. Introducción De la idea al desarrollo</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d71b8ab1-7ef0-42a6-93f8-31a5b05ce141/cover_GDRHNZ.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/634e57eb-7363-4f63-a0d7-897c8923ef83/1_%20Introducci%C3%B3n%20De%20la%20idea%20al%20desarrollo_YQGUNC.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">53 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/634e57eb-7363-4f63-a0d7-897c8923ef83/1_%20Introducci%C3%B3n%20De%20la%20idea%20al%20desarrollo_YQGUNC.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Introducción De la idea al desarrollo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f7e105c9-a40a-4973-a769-7183f7480f70/2_%20Estructura%20de%20carpetas%20en%20Unity_KIERTW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Estructura de carpetas en Unity</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d3ac5bd4-4bcc-4914-aa69-1a97e575ed34/3_%20Assets%2C%20Game%20Objects%20y%20Sprite%20Atlas_PBORJL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Assets, Game Objects y Sprite Atlas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7f9f8e86-3ac3-4dd3-8cb7-efde2010f10a/4_%20Animaciones%20desde%20un%20sprite%20map_PCNZUN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Animaciones desde un sprite map</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c6b56a91-5db0-4365-93c3-a4033db34423/5_%20Animation%20Controller%20y%20Transiciones_RKHGXH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Animation Controller y Transiciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5754abae-8178-4812-925c-e1ac079d0da0/6_%20Plataformas%20y%20gravedad_FRKGFH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Plataformas y gravedad</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d6fecd4e-4dbe-447f-89fb-8608983628ff/7_%20F%C3%ADsica%20en%20Unity_OJENHJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Física en Unity</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/243b1d87-2af8-4736-b720-6ef1db6512a1/8_%20El%20script%20de%20control_IYRUDC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. El script de control</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6c5add1e-f466-4fac-9bcd-422264c12b14/9_%20Programando%20funciones%20en%20C%23%20y%20Unity_%20Jump_PCRPVT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Programando funciones en C# y Unity: Jump</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/396d9446-ed2a-4ed5-8e62-4c6a43470977/10_%20Detectar%20el%20suelo%20con%20Raycast_MDJZLI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Detectar el suelo con Raycast</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/882d7fe5-d08c-4593-8bb9-cdf47f32beb2/11_%20Herramientas%20de%20debugging%20visual_RIGUHS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Herramientas de debugging visual</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5729c517-a32b-46b1-8a03-6c05f5866121/12_Cambiar%20las%20animaciones%20seg%C3%BAn%20los%20estados_MUUDTA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Cambiar las animaciones según los estados</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/796ab470-0cae-476c-9022-112a6a6ed77e/13_Reto%20Terminando%20nuestras%20animaciones_NSZUWC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Reto Terminando nuestras animaciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0d341cda-0dcd-4229-8177-8f16ecc7745e/14_%20Soluci%C3%B3n%20del%20reto_IHZWUG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Solución del reto</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b8504fbd-7463-4897-8880-3320c315dbcb/15_%20Hacer%20que%20el%20personaje%20camine_JZUQGE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Hacer que el personaje camine</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e1c912f7-16ef-452e-9202-8f923b000798/16_%20C%C3%B3mo%20funciona%20el%20Game%20Manager_GZVJTC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Cómo funciona el Game Manager</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/56616dee-5354-4ffb-aa12-005739d41b8d/17_%20El%20Singleton_BIYQJR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. El Singleton</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b1f39050-3093-403c-a583-9e8622fd42b1/18_%20El%20modo%20de%20juego_TORTNP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. El modo de juego</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b6d6f19d-fad6-460c-8053-0ccf79b7685d/19_%20Input%20manager%20y%20juegos%20multiplataforma_GELYOC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Input manager y juegos multiplataforma</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6e8a0b93-9acf-4d71-b9dc-ed62d4ba639d/20_%20capture_WJAVWV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Capture</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fd134039-8322-4249-aad9-898f7fc7500a/21_%20La%20zona%20de%20muerte_GICYLI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. La zona de muerte</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c0effcc7-b92c-4417-b50e-a31408d6f336/22_%20Reiniciar%20la%20partida_QPRGKN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Reiniciar la partida</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c4c1a4c9-f528-4113-84a6-ef6301a7d23e/23_%20Corrigiendo%20los%20bugs%20al%20reiniciar%20nuestro%20juego_VKXPHS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Corrigiendo los bugs al reiniciar nuestro juego</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/364a2875-ca5e-4c93-866d-0c2ef50a038f/24_%20El%20dise%C3%B1o%20de%20niveles%20a%20mano_GXBGCX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. El diseño de niveles a mano</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/214542fc-0484-43f6-9778-6eaca392a8ed/25_%20Configurando%20nuestros%20assets%20para%20el%20dise%C3%B1o%20procedural_VSQLUN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Configurando nuestros assets para el diseño procedural</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/59ad87ff-bd91-451a-a497-819d72e5e5e0/26_%20Generaci%C3%B3n%20procedural%20de%20niveles_PYWZET.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Generación procedural de niveles</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/80b275af-b64a-4168-9847-3f9cd54755ae/27_%20Creando%20la%20zona%20que%20eliminar%C3%A1%20bloques%20del%20nivel%20excedentes_HMGYAD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Creando la zona que eliminará bloques del nivel excedentes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ea280b1a-6b6b-4d4d-b17f-8edd167681b9/28_%20A%C3%B1adir%20un%20nuevo%20bloque%20de%20forma%20aleatoria_MLWUEK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>28. Añadir un nuevo bloque de forma aleatoria</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f194cf2f-d8ad-4c1f-8c9a-3bad3f8dd71d/29_%20Capture_KBUGFM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>29. Capture</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2528ab19-6984-4acb-ba3e-a2b83c5fb56c/30_%20Destrucci%C3%B3n%20de%20bloques%20antiguos_CICMFZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>30. Destrucción de bloques antiguos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/34514fe0-7b59-43c1-bf0a-0253bf6c3306/31_%20Terminando%20de%20programar%20la%20destrucci%C3%B3n%20de%20bloques%20antiguos_ZSBHEA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>31. Terminando de programar la destrucción de bloques antiguos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cb886c2f-5c70-41f8-a61f-d2085c49101f/32_%20Solucionando%20el%20salto%20de%20la%20c%C3%A1mara%20al%20reiniciar%20el%20juego_RKURKY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>32. Solucionando el salto de la cámara al reiniciar el juego</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2d68e696-18fa-48b3-9ad4-ac4872f28e07/33_%20El%20canvas%20en%20Unity_VSPAJB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>33. El canvas en Unity</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/86a5576b-8087-47ed-a36b-50dfc531cc04/34_%20Uso%20de%20botones%20para%20crear%20un%20men%C3%BA_GALUXP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>34. Uso de botones para crear un menú</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/078c158e-bea9-420a-a1bb-32247d414504/35_%20la%20l%C3%B3gica%20de%20los%20men%C3%BAs_EFLVAK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>35. La lógica de los menús</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f55cc1a3-9de0-4811-b3fb-f0c5effeae37/36_%20Ejercicio%20Preparando%20el%20men%C3%BA%20del%20juego_GKASJX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>36. Ejercicio Preparando el menú del juego</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/aa1c132d-d276-4006-91c7-f663273db749/37_%20Programando%20el%20men%C3%BA%20del%20juego_ZRUZOG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>37. Programando el menú del juego</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/88f035f1-5ada-4839-a36d-133e223b9a0e/38_%20Los%20coleccionables%20del%20juego_GNSFFM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>38. Los coleccionables del juego</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cab1fa9f-2e25-422e-aab4-a8a58970158b/39_%20Actualizar%20UI%20de%20coleccionables_KZSSCJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>39. Actualizar UI de coleccionables</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/492c9117-c10d-43d4-93d5-0e00f404d916/40_%20Iniciando%20con%20pociones%20y%20man%C3%A1_VLVKLC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>40. Iniciando con pociones y maná</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/30e3120f-5abd-44b5-a917-f427180eb89b/41_%20Pociones%20de%20vida%20y%20man%C3%A1_EUGVNB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>41. Pociones de vida y maná</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/52e1fc89-fd24-4d43-b287-0f252ef7b443/42_%20Programando%20las%20barras%20de%20vida%20y%20man%C3%A1_GEYJVU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>42. Programando las barras de vida y maná</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9c937a1e-0573-4c26-acc2-37389609fb1f/43_%20Calculando%20los%20puntajes%20con%20la%20distancia%20y%20el%20tiempo%20de%20juego_ADWAOT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>43. Calculando los puntajes con la distancia y el tiempo de juego</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ccf86d8a-0deb-4257-a4c9-7f9811e60e7b/44_%20La%20l%C3%B3gica%20del%20man%C3%A1_VOSOJY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>44. La lógica del maná</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e68a1292-a888-4478-9f9f-90b994986476/45_%20Plataformas%20m%C3%B3viles_RWNLCT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>45. Plataformas móviles</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1d5e35cc-5e7d-457c-9dfe-4563cb90022d/46_%20Iniciar%20movimiento%20de%20la%20plataforma%20con%20trigger_AAEZTL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>46. Iniciar movimiento de la plataforma con trigger</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/16483d73-4196-4359-b4bd-63fdf8459355/47_%20Enemigos%20m%C3%B3viles_OCRXZA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>47. Enemigos móviles</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f71f8c66-4137-42af-b8e5-00c29e81cb78/48_%20Enemigos%20m%C3%B3viles%20preparando%20nuestro%20enemigo%20para%20girar_AAKFHD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>48. Enemigos móviles preparando nuestro enemigo para girar</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8eeab3b7-d505-4cba-a27e-e4a3cf30f3fb/49_%20Enemigos%20m%C3%B3viles%20%20programando%20que%20gire%20al%20chocar_LFKBER.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>49. Enemigos móviles programando que gire al chocar</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6a4b4c16-e6d2-49b3-8640-1fc32dae97a9/50_%20Arreglando%20el%20collider%20de%20nuestra%20roca_HOXKLS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>50. Arreglando el collider de nuestra roca</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f976c827-6059-45e2-b21f-8a438ca129ad/51_%20Programando%20la%20condici%C3%B3n%20de%20muerte%20del%20personaje_ILHJUT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>51. Programando la condición de muerte del personaje</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e9fdc445-ba0e-4c86-bd03-f9be50675f20/52_%20A%C3%B1adiendo%20m%C3%BAsica%20de%20fondo%20a%20nuestro%20videojuego_EYSGBG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>52. Añadiendo música de fondo a nuestro videojuego</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/875da085-7b56-4c4b-b4f5-13848fb6618a/53_%20A%C3%B1adiendo%20efectos%20de%20sonido%20y%20cierre%20del%20curso_QEXNJI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>53. Añadiendo efectos de sonido y cierre del curso</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

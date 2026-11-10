@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Introducción a Ciberseguridad: Prevención de Ataques Informáticos - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Introducción a Ciberseguridad: Prevención de Ataques Informáticost</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-taller-ciberseguridad-4e4b663e-50c2-4d1b-a204-4c88b78c6e49.png" alt="Badge">
+                <div>
+                    <h1>Curso de Introducción a Ciberseguridad: Prevención de Ataques Informáticos</h1>
+                    <p class="video-title"></p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e794e4d3-4c72-4ebd-8045-14723a1e3fcc/a_QHBFCU.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ceb1495e-fc64-4e88-9561-e93734525839/1_%20Protecci%C3%B3n%20Personal%20en%20Ciberseguridad%20Estrategias%20Efectivas_MGBDYY.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">14 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ceb1495e-fc64-4e88-9561-e93734525839/1_%20Protecci%C3%B3n%20Personal%20en%20Ciberseguridad%20Estrategias%20Efectivas_MGBDYY.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Protección Personal en Ciberseguridad Estrategias Efectivas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a8791277-9556-48ce-8c2e-ce3e8e7acd62/2_%20C%C3%B3mo%20configurar%20Authy%20para%20proteger%20tus%20cuentas_PXOKTK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Cómo configurar Authy para proteger tus cuentas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/579c6e55-ebe4-4468-a9e2-6ebf05ad8214/3_%20C%C3%B3mo%20usar%20Bitwarden%20para%20contrase%C3%B1as%20seguras_MNUGXD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Cómo usar Bitwarden para contraseñas seguras</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f6521bd3-0c33-4f58-93f3-80b05642d0dc/4_%20C%C3%B3mo%20usar%20Proton%20VPN%20en%20redes%20p%C3%BAblicas_CEXCOI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Cómo usar Proton VPN en redes públicas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ad5536c0-b9c0-408b-a5e6-7df56167a0e1/5_%20Configuraci%C3%B3n%20y%20uso%20efectivo%20de%20antivirus%20en%20Windows%20y%20Mac_PUYLKW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Configuración y uso efectivo de antivirus en Windows y Mac</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ccb7c08f-5260-4480-8964-5bb7bb787000/6_%20Prevenci%C3%B3n%20y%20Manejo%20de%20Ataques%20de%20Ransomware_RMGIXQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Prevención y Manejo de Ataques de Ransomware</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/90af3a60-766c-464f-98d1-a5652bee82a6/7_%20C%C3%B3mo%20validar%20la%20licencia%20de%20Windows%2011%20para%20garantizar%20seguridad_EXRUOV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Cómo validar la licencia de Windows 11 para garantizar seguridad</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/40c2cb1d-91cf-483a-acf1-3bc8b020aaf4/8_%20Riesgos%20reales%20del%20software%20sin%20parches_XRBDWU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Riesgos reales del software sin parches</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cce92b4f-b2c2-4bc0-b7b1-333d29b60a2b/9_%20Ciberseguridad%20Familiar%20y%20Uso%20de%20Controles%20Parentales_FTDZGZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Ciberseguridad Familiar y Uso de Controles Parentales</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/032b1b8f-5817-4c5c-baa1-25c90bf9d350/10_%20Por%20qu%C3%A9%20los%20parches%20de%20seguridad%20son%20urgentes_HMKCVL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Por qué los parches de seguridad son urgentes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/29c2ba86-7b8f-46bf-a4c6-66da48aa70e3/11_%20Principio%20de%20M%C3%ADnimo%20Privilegio%20en%20Ciberseguridad_XZOZPS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Principio de Mínimo Privilegio en Ciberseguridad</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a40a8abf-e689-4a81-8c02-9ba01f4e0e3c/12_%20Detecci%C3%B3n%20y%20Prevenci%C3%B3n%20de%20Phishing%20en%20Ciberseguridad_ACBKZJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Detección y Prevención de Phishing en Ciberseguridad</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e8535c03-78f4-448f-a76d-9a9d3335a02f/13_%20Seguridad%20en%20el%20Uso%20de%20Herramientas%20de%20Inteligencia%20Artificial_GXFHWB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Seguridad en el Uso de Herramientas de Inteligencia Artificial</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/71510e84-6a54-418d-a8c6-46de7eb1291e/14_%20Concienciaci%C3%B3n%20sobre%20Ciberseguridad%20Individual%20y%20Grupal_MUYECF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Concienciación sobre Ciberseguridad Individual y Grupal</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

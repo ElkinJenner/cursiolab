@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Excel Intermedio - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Excel Intermedio</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-curso-excel-intermedio-badge-ea87aa0c-7e7f-4a01-8192-6916e56a4944.png" alt="Badge">
+                <div>
+                    <h1>Curso de Excel Intermedio</h1>
+                    <p class="video-title">1. Dashboards interactivos en Excel con Power Query</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/18615833-f6d6-4691-acbd-89f1a9a47686/a_PYGFKI.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/638a9644-af47-4490-943d-12e078759c70/1_%20Dashboards%20interactivos%20en%20Excel%20con%20Power%20Query_ZEVUDE.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">23 clases</span>
+                    </div>
+                   <ul id="videoList">
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/638a9644-af47-4490-943d-12e078759c70/1_%20Dashboards%20interactivos%20en%20Excel%20con%20Power%20Query_ZEVUDE.mp4" class="active">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>1. Dashboards interactivos en Excel con Power Query</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/25029f0a-82f6-4dd6-bbc9-5ff34e8c3d41/2_%20C%C3%B3mo%20importar%20datos%20a%20Excel%20CSV%20texto%20y%20web_FVDHQH.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>2. Cómo importar datos a Excel CSV texto y web</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f6fcf5ae-974d-4be5-8469-f3e6b1aa3b88/3_%20Referencias%20din%C3%A1micas%20en%20tablas%20de%20Excel_WLBLXX.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>3. Referencias dinámicas en tablas de Excel</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8441b735-ea92-4806-bb30-2aa9883546b5/4_%20Funciones%20anidadas%20para%20limpiar%20datos%20en%20Excel_EKSGEO.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>4. Funciones anidadas para limpiar datos en Excel</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2d874b04-b9d2-4099-82f8-5b374a738883/5_%20Filtros%20avanzados%20y%20sumar%20si%20conjunto%20en%20Excel_PYIVEU.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>5. Filtros avanzados y sumar si conjunto en Excel</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e0ede244-2c6a-4f2f-bc14-fb491662aef9/6_%20Listas%20desplegables%20anidadas%20con%20%C3%ADndice%20y%20coincidir_ACPNOD.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>6. Listas desplegables anidadas con índice y coincidir</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0b8593e2-5b5f-46ea-8d54-c61e776253df/7_%20C%C3%B3mo%20agrupar%20fechas%20texto%20y%20n%C3%BAmeros%20en%20Excel_QWPBHT.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>7. Cómo agrupar fechas texto y números en Excel</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/402e12be-dbb6-4c9e-8d22-fd8e600e560d/8_%20C%C3%B3mo%20crear%20un%20top%2010%20en%20tablas%20din%C3%A1micas_PJKSRK.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>8. Cómo crear un top 10 en tablas dinámicas</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3d14e5ed-2c05-44ae-9fa7-658cecb1e715/9_%20Campos%20calculados%20en%20tablas%20din%C3%A1micas%20para%20comparar%20meses_EUXUXI.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>9. Campos calculados en tablas dinámicas para comparar meses</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d0fbc301-9b6a-4906-81c8-58402f283d13/10_%20C%C3%B3mo%20crear%20mapas%20y%20veloc%C3%ADmetros%20en%20Excel_WFCFQU.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>10. Cómo crear mapas y velocímetros en Excel</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7d66bda4-9bc1-4c83-a224-b58b9a44d4b3/11_%20C%C3%B3mo%20crear%20un%20dashboard%20visual%20en%20Excel_WHLDFU.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>11. Cómo crear un dashboard visual en Excel</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2df9b815-b9e9-4fd4-8d84-5864e1373fd2/12_%20Conecta%20segmentadores%20para%20dashboards%20din%C3%A1micos%20en%20Excel_AZWUUM.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>12. Conecta segmentadores para dashboards dinámicos en Excel</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1d42cf01-2fed-43cc-839b-fb7eebed76d6/13_%20Automatiza%20tus%20tablas%20din%C3%A1micas%20con%20macros%20en%20Excel_XLBCEN.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>13. Automatiza tus tablas dinámicas con macros en Excel</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6e91cb21-652e-4881-854c-173e8394c205/14_%20C%C3%B3mo%20relacionar%20varios%20Excel%20con%20Power%20Pivot_FPDUCB.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>14. Cómo relacionar varios Excel con Power Pivot</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3fe4d515-ac39-4817-afc1-9d3ff09e1297/15_%20BuscarV%20BuscarX%20y%20BuscarH%20para%20cruzar%20datos%20en%20Excel_SWHALR.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>15. BuscarV BuscarX y BuscarH para cruzar datos en Excel</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/13a1075d-20f1-405b-8fe5-a21080da8cc0/16_%20%C3%8Dndice%20y%20coincidir%20reportes%20din%C3%A1micos%20en%20Excel_KBGUJY.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>16. Índice y coincidir reportes dinámicos en Excel</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/526559d6-a901-40ab-a2ff-f4e2fcfc1a32/17_%20SI%20conjunto%20anidado%20Y%20y%20O%20en%20Excel_GDSNGU.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>17. SI conjunto anidado Y y O en Excel</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5c7d53b4-7e86-4a8a-a107-7f0452d52d73/18_%20C%C3%B3mo%20solucionar%20errores%20en%20Excel%20con%20SI_ERROR_KHERDJ.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>18. Cómo solucionar errores en Excel con SI.ERROR</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9d1c1561-e35a-45b9-a2ed-28a7ed0ce8ae/19_%20C%C3%B3mo%20maximizar%20ganancias%20con%20el%20Solver%20de%20Excel_JUXIXR.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>19. Cómo maximizar ganancias con el Solver de Excel</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/353ebe08-7f52-40cc-963b-d9d34eaee4e4/20_%20C%C3%B3mo%20combinar%20varios%20archivos%20con%20Power%20Query_QZJADR.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>20. Cómo combinar varios archivos con Power Query</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2075d24b-5e6f-4d6b-8dec-4076868263ee/21_%20Limpieza%20autom%C3%A1tica%20de%20datos%20con%20Power%20Query_MRVDIM.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>21. Limpieza automática de datos con Power Query</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/195709a3-1ddc-4106-b991-92dafaa35ad0/22_%20Power%20Query%20actualiza%20tu%20dashboard%20autom%C3%A1ticamente_WNNJTU.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>22. Power Query actualiza tu dashboard automáticamente</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

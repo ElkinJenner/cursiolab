@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de PHP: Bases de Datos - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de PHP: Bases de Datos</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-piezas-intermedio-php-conexion-bases-datos-16efa716-f27b-433e-809f-d6adf5b48f.png" alt="Badge">
+                <div>
+                    <h1>Curso de PHP: Bases de Datos</h1>
+                    <p class="video-title">1. Cómo conectarse a una base de datos con PHP</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b4f69496-4d41-424f-9d16-b6ef3ddadb19/file_1794194979754_VKDXYG.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cd0e95ca-450d-409a-95ac-db895eb963db/1_%20C%C3%B3mo%20conectarse%20a%20una%20base%20de%20datos%20con%20PHP_UEILGV.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">22 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cd0e95ca-450d-409a-95ac-db895eb963db/1_%20C%C3%B3mo%20conectarse%20a%20una%20base%20de%20datos%20con%20PHP_UEILGV.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Cómo conectarse a una base de datos con PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cf9bc48c-368f-4d0c-a923-e640a03c1902/2_%20Programa%20un%20sistema%20de%20control%20de%20gastos_PCBJFV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Programa un sistema de control de gastos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/277349e3-ce51-4cc1-94ab-e89f83032edd/3_%20Diagramando%20la%20base%20de%20datos_RZSQSZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Diagramando la base de datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/46cceb27-bef7-4ada-b22b-4fd9d1dfa3e9/4_%20Instalaci%C3%B3n%20de%20phpMyAdmin_VTDSRD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Instalación de phpMyAdmin</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/73d316d6-7465-4e81-90d0-fb244b224f55/5_%20Creando%20tablas%20con%20phpMyAdmin_KZUMBX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Creando tablas con phpMyAdmin</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ea64360c-47ee-4467-a6bd-c8f401892d7b/6_%20Instalaci%C3%B3n%20de%20drivers%20para%20PDO%20en%20Linux_GRHMYN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Instalación de drivers para PDO en Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a5616a57-06d4-42ff-b180-5ed0fed1a32e/7_%20Conexi%C3%B3n%20con%20MySQLi_TLMJUP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Conexión con MySQLi</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/50099d64-ca8e-4638-ab2a-034ba42580f6/8_%20%20Conexi%C3%B3n%20con%20PDO_QRNRWH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Conexión con PDO</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/da487e89-0454-4524-a648-16d41092d711/9_%20Refactor%20de%20la%20conexi%C3%B3n%20con%20clases_BVNPLM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Refactor de la conexión con clases</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/13f823d9-5dff-4204-b501-8a8a8f9f041a/10_%20Creaci%C3%B3n%20de%20controladores%20para%20la%20aplicaci%C3%B3n_XBPYRL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Creación de controladores para la aplicación</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6cde06e8-7ac3-4597-9acb-f3c66c8c7dc5/11_%20Creaci%C3%B3n%20de%20ENUMS%20para%20la%20aplicaci%C3%B3n_NYACON.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Creación de ENUMS para la aplicación</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9a840088-55d2-4fe7-ba72-ff22e5b6568e/12_%20Consultas%20con%20MySQLi_OZHQFK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Consultas con MySQLi</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e0e1f131-97e7-4e90-a856-a8f449e4abe5/13_%20Evitando%20SQL%20Injection%20con%20bindParam_TMZXHR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Evitando SQL Injection con bindParam</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4c53f72e-2bde-43d1-b0a8-0fbf1f0c9e32/14_%20Consultas%20con%20PDO_MYETLF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Consultas con PDO</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d5eaa579-7ef1-450a-b030-170aa01ede2d/15_%20Evitando%20SQL%20Injection%20con%20consultas%20preparadas%20en%20PDO_GYQAES.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Evitando SQL Injection con consultas preparadas en PDO</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5c60765e-9ae3-47eb-a298-011a84c80d6f/16_%20Ligando%20par%C3%A1metros%20con%20bindParams_YMNNKP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Ligando parámetros con bindParams</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d4c1f3d0-a3bc-43fb-a029-0007c1e2dc1d/17_%20Ligando%20par%C3%A1metros%20con%20bindValue_YMMDCH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Ligando parámetros con bindValue</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ac1fd8cf-a8dc-4d45-9448-a5cb73b8cfa9/18_%20Consultando%20datos%20con%20FetchAll_RNSLBN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Consultando datos con FetchAll</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/297bdb60-747d-43d0-9893-18f3558734a1/19_%20Consultando%20datos%20con%20Fetch_TJYBYN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Consultando datos con Fetch</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9d2e1620-f038-40ec-9331-54dd2f3695cd/20_%20Vinculando%20columnas%20con%20bindColumn_YIYIFK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Vinculando columnas con bindColumn</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6f57e851-be39-4ccf-ac64-21633deaa5c4/21_%20Transacciones%20c%C3%B3mo%20revertir%20una%20consulta%20SQL%20con%20PHP_HPMSWZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Transacciones cómo revertir una consulta SQL con PHP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/29035cd9-0272-47d2-af37-7a552ef65270/22_%20Reto%20CRUD%20con%20PHP%20y%20SQL_RKRHZN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Reto CRUD con PHP y SQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fc7d8828-ce3d-447d-bd88-b63f0f0d67c3/23_%20Creaci%C3%B3n%20de%20nuestro%20router_OUKZGO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Creación de nuestro router</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/92fa36c6-0565-4cfd-b1a5-c299c6d43e94/24_%20Programando%20los%20m%C3%A9todos%20del%20router_MSWNTX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Programando los métodos del router</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6a776d50-f8ca-4061-a246-c15d8f4c1c8c/25_%20Mostrando%20nuestros%20datos%20en%20HTML_HMSTUH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Mostrando nuestros datos en HTML</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5985f0cb-6498-42d1-89e7-90d3e6869d31/26_%20Quieres%20un%20Curso%20Profesional%20de%20PHP_REJEHQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Quieres un Curso Profesional de PHP</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

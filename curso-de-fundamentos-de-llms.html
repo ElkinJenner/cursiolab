@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Fundamentos de LLMS - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Fundamentos de LLMS</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-fundamentos-llms-badge-f2e90ab0-9b5e-4744-99d8-58400b12fca3.png" alt="Badge">
+                <div>
+                    <h1>Curso de Fundamentos de LLMS</h1>
+                    <p class="video-title">1. Funcionamiento interno de los grandes modelos de lenguaje</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/courses/Piezas-fundamentos-LLMs_OG_1.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3fe06c7b-b4d3-468b-b333-986a816d7a49/1_%20Funcionamiento%20interno%20de%20los%20grandes%20modelos%20de%20lenguaje_PAEQFB.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">20 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3fe06c7b-b4d3-468b-b333-986a816d7a49/1_%20Funcionamiento%20interno%20de%20los%20grandes%20modelos%20de%20lenguaje_PAEQFB.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Funcionamiento interno de los grandes modelos de lenguaje</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4bd86bae-4852-416a-a5be-54ae909d24d2/2_%20Qu%C3%A9%20construir%C3%A1s%20al%20terminar%20el%20curso%20de%20LLMs_GJQGSY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Qué construirás al terminar el curso de LLMs</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8485e6e3-95cf-48ce-a494-86db38b69406/3_%20Historia%20de%20la%20inteligencia%20artificial%20desde%20Turing%20hasta%20GPT-4_OFNMIU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Historia de la inteligencia artificial desde Turing hasta GPT-4</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c53093ec-495f-40d5-8e2d-045b5e5e5986/4_%20Tokenizaci%C3%B3n%20y%20embeddings%20en%20LLMs_ZBNRRZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Tokenización y embeddings en LLMs</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3e615172-93c5-4d2c-995b-bcafc59e2144/5_%20Qu%C3%A9%20es%20y%20c%C3%B3mo%20aprende%20un%20MLP_GUFGZL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Qué es y cómo aprende un MLP</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7d620338-e81c-4ce3-abd7-5be609ff5c06/6_%20C%C3%B3mo%20funciona%20la%20atenci%C3%B3n%20en%20GPT-2_PBZQQU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Cómo funciona la atención en GPT-2</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b10c1542-ced8-4d4c-a472-b0563c6fce87/7_%20Fundamentos%20de%20PyTorch%20para%20modelos%20de%20machine%20learning_GDQAKY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Fundamentos de PyTorch para modelos de machine learning</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/12bcc8f9-cb51-4a5b-bdd5-888b1e431711/8_%20Construye%20GPT-2%20desde%20cero%20con%20PyTorch_QVCIKA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Construye GPT-2 desde cero con PyTorch</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e6060102-c077-4ba8-9b1b-36bf0de30dca/9_%20Qu%C3%A9%20es%20RoPE%20y%20c%C3%B3mo%20mejora%20GPT_ATROPR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Qué es RoPE y cómo mejora GPT</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9aa90cd6-949b-4ab1-97e5-3da93ca21456/10_%20Integraci%C3%B3n%20de%20Rope%20en%20GPT-2%20con%20PyTorch_XDUWIU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Integración de Rope en GPT-2 con PyTorch</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e34d23f5-f663-4dab-baf4-b225047062d6/11_%20Leyes%20de%20escalado%20y%20modelos%20multimodales%20en%20inteligencia%20artific_QOHRLE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Leyes de escalado y modelos multimodales en inteligencia artificial</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/074f8f95-cac1-43eb-bfec-0cdd006f0673/12_%20C%C3%B3mo%20se%20entrena%20un%20LLM%20paso%20a%20paso_PKFZOR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Cómo se entrena un LLM paso a paso</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1190e228-099a-49b3-98bd-e26447f40959/13_%20Mixture%20of%20Experts%20c%C3%B3mo%20funciona%20MoE_BNRDMV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Mixture of Experts cómo funciona MoE</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/de9ce479-e64f-412e-870f-5e3c9ebf86a8/14_%20RAM%20y%20VRAM%20para%20ejecutar%20LLMs%20en%20local_HAAUAO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. RAM y VRAM para ejecutar LLMs en local</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0710106d-b20b-4acb-ae09-729ccf67abd5/15_%20Instalaci%C3%B3n%20de%20Olama%20y%20configuraci%C3%B3n%20de%20cl%C3%BAster%20local%20con%20ExoLab_OUOQNE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Instalación de Ollama y configuración de clúster local con ExoLab</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6bbe12d3-a027-4f67-883a-0fc249bfab26/16_%20Fine%20tuning%20de%20GPT-4o%20con%20datos%20propios_YTTWKV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Fine tuning de GPT-4o con datos propios</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8018d47b-b307-4378-9376-1f18fec34c4e/17_%20Fine%20Tuning%20con%20LoRA%20en%20Colab%20gratis_EEDJHN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Fine Tuning con LoRA en Colab gratis</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4697628a-d8b7-45f8-bc50-d16b291afdf9/18_%20Despliegue%20de%20modelos%20fine-tuned%20con%20Hugging%20Face%20Endpoints_XZMAYT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Despliegue de modelos fine-tuned con Hugging Face Endpoints</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8af34db1-8e0d-408e-9112-dcfd84053a23/19_%20C%C3%B3mo%20funciona%20la%20cuantizaci%C3%B3n%20de%20LLMs_IFXHRA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Cómo funciona la cuantización de LLMs</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8f45491b-d60b-4605-929e-8f7f8a18abb6/20_%20Benchmarks%20para%20evaluar%20y%20comparar%20modelos%20LLM_XUUKHQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Benchmarks para evaluar y comparar modelos LLM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

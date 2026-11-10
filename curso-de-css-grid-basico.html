@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de CSS Grid Básico - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de CSS Grid Básico</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-css-grid-basico-5a5b5ab7-3cbb-4c7a-a15d-9f2719b56598.png" alt="Badge">
+                <div>
+                    <h1>Curso de CSS Grid Básico</h1>
+                    <p class="video-title">1. CSS Grid Layout Crea Diseños Web Dinámicos</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/courses/Og_CSS_Grid_Basico.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bf81051b-d3c1-42cf-9a1e-f81d8c884276/1_%20CSS%20Grid%20Layout%20Crea%20Dise%C3%B1os%20Web%20Din%C3%A1micos_CGIJBF.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">13 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bf81051b-d3c1-42cf-9a1e-f81d8c884276/1_%20CSS%20Grid%20Layout%20Crea%20Dise%C3%B1os%20Web%20Din%C3%A1micos_CGIJBF.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. CSS Grid Layout Crea Diseños Web Dinámicos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/be1b0bcf-17db-4f5d-98bf-1a3fb205a8e7/2_%20Conceptos%20b%C3%A1sicos%20de%20CSS%20Grid%20Layout_ZZWKYE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Conceptos básicos de CSS Grid Layout</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bf634a76-cc69-485d-a0a6-1970d79373f4/3_%20Creaci%C3%B3n%20de%20Grillas%20con%20CSS%20Grid%20Propiedades%20y%20Ejemplos%20Pr%C3%A1ctico_JULGKI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Creación de Grillas con CSS Grid Propiedades y Ejemplos Práctico</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6e81ef2f-c17a-4a7a-8336-40b1b27a30f2/4_%20Propiedades%20de%20Alineaci%C3%B3n%20en%20CSS%20Grid_ZAUCRN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Propiedades de Alineación en CSS Grid</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0853c8b9-2004-488e-9127-8dfb1045a273/5_%20Ubicaci%C3%B3n%20de%20Elementos%20en%20CSS%20Grid%20Grid%20Column%20Grid%20Row%20y%20Grid%20A_UFHFDD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Ubicación de Elementos en CSS Grid Grid Column Grid Row y Grid A</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2b5bf9c5-7760-40d5-b819-800781f852a6/6_%20Funciones%20avanzadas%20de%20CSS%20Grid%20minmax%20y%20repeat_EIXWZK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Funciones avanzadas de CSS Grid minmax y repeat</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/419d0156-1fc3-400b-bc4c-29807b66dbf6/7_%20CSS%20Grid%20Uso%20de%20fr%20minContent%20maxContent%20autofill%20y%20autofit_PHSNVD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. CSS Grid Uso de fr minContent maxContent autofill y autofit</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c38b7b69-74b0-4b61-86a5-bd70d4aae3de/8_%20Dise%C3%B1o%20de%20Grillas%20para%20P%C3%A1ginas%20Web%20de%20Comida_MTZKSC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Diseño de Grillas para Páginas Web de Comida</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9f685a9b-73b3-41f5-8aa7-25109e890259/9_%20Maquetaci%C3%B3n%20de%20Secci%C3%B3n%20con%20Grid%20en%20HTML%20y%20CSS_LIPWMD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Maquetación de Sección con Grid en HTML y CSS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a0c128f5-5a56-4173-88af-1e557bfd62b0/10_Maquetaci%C3%B3n%20de%20Grillas%20y%20Estilos%20CSS%20en%20Proyectos%20Web_JSPNFH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Maquetación de Grillas y Estilos CSS en Proyectos Web</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/43eb9c9a-477b-4b08-8f9c-8258ddc7dda3/11_%20Creaci%C3%B3n%20de%20Grilla%20de%20Men%C3%BA%20en%20HTML%20y%20CSS_LQDAWZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Creación de Grilla de Menú en HTML y CSS</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/93f41d2e-3cd6-4d7d-b019-bd90779e3304/12_%20Creaci%C3%B3n%20de%20Dise%C3%B1os%20Responsivos%20con%20CSS%20Grid_SSSSAU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Creación de Diseños Responsivos con CSS Grid</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1eea32c9-614f-45d8-9f18-a3fb284e9563/13_%20Especificaci%C3%B3n%20de%20CSS%20Grid%20Curso%20Final%20y%20Pr%C3%B3ximos%20Pasos_BSZOQM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Especificación de CSS Grid Curso Final y Próximos Pasos</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

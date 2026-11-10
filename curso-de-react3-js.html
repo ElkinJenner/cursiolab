@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de ReactJs - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de ReactJs</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/2b817551-7ddc-48da-8bf1-1b7d992dfa27-c21038a5-2524-4641-a9c9-5fe55c40c1a4.png" alt="Badge">
+                <div>
+                    <h1>Curso de ReactJs</h1>
+                    <p class="video-title">1. Componentes y hooks los dos pilares de React</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/12dea3fd-578c-477e-9c10-8ad62df39314/a_FLMAZC.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/02be49d0-9e06-4b28-8b0b-3b09680e238e/1_%20Componentes%20y%20hooks%20los%20dos%20pilares%20de%20React_HMCHMB.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">18 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/02be49d0-9e06-4b28-8b0b-3b09680e238e/1_%20Componentes%20y%20hooks%20los%20dos%20pilares%20de%20React_HMCHMB.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Componentes y hooks los dos pilares de React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/186706c9-6cae-41e8-a76f-a28e703f5ace/2_%20C%C3%B3mo%20dividir%20tu%20clon%20de%20Airbnb%20en%20componentes%20React_WSANHW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Cómo dividir tu clon de Airbnb en componentes React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ec7fc890-8804-498f-b68e-1ef782ee3ffc/3_%20C%C3%B3mo%20crear%20un%20proyecto%20React%20con%20Vite_FWZEWB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Cómo crear un proyecto React con Vite</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ad6af935-5969-4a67-9c1e-7e6339294899/4_%20Estructura%20visual%20inicial%20de%20App_jsx%20en%20React_WSBPJR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Estructura visual inicial de App.jsx en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1a819d24-3b3a-4354-b332-05771b5d1d1f/5_%20C%C3%B3mo%20dividir%20App_jsx%20en%20componentes%20React%20con%20IA_JXOKKO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Cómo dividir App.jsx en componentes React con IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1083a09b-0f73-469c-b07e-13c8e9d6da9f/6_%20C%C3%B3mo%20pasar%20props%20de%20padre%20a%20hijo%20en%20React_BEPUNH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Cómo pasar props de padre a hijo en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4face691-a5e5-42be-accc-753877b4c1a3/7_%20Renderizar%20listas%20en%20React%20con%20map_UEFDHG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Renderizar listas en React con map</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/441c065b-f2e0-4ce6-8a2c-975620f4d2d3/8_%20Renderizado%20condicional%20en%20React%20para%20datos%20incompletos_HPKFNV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Renderizado condicional en React para datos incompletos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/11a2b1b8-9e55-484b-b81d-5ae0771448ed/9_%20useState%20en%20React%20c%C3%B3mo%20guardar%20y%20actualizar%20estado_IRKLCB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. useState en React cómo guardar y actualizar estado</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6df7561e-c490-4cd7-8d11-d1c2e8668b87/10_%20C%C3%B3mo%20limpiar%20dos%20estados%20con%20un%20solo%20clic_KBEEDW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Cómo limpiar dos estados con un solo clic</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/02c0a2e2-ced4-4d19-89e3-3bc940ad03e9/11_%20Filtrar%20propiedades%20en%20React%20con%20useState%20y%20props_DRRGNT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Filtrar propiedades en React con useState y props</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9ca11e9f-2564-4d4b-9f74-fa5772042bae/12_%20Componentes%20controlados%20migrar%20estados%20en%20React_KPPVHH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Componentes controlados migrar estados en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0b3fccff-86a7-4ff9-934a-aa2a7c89ecdd/13_%20Simular%20carga%20de%20API%20con%20useEffect%20en%20React_TBYXTE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Simular carga de API con useEffect en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/98a53386-ffb6-4a61-8390-faf216685c64/14_%20Estados%20de%20carga%20y%20error%20con%20useEffect%20en%20React_KVZIGL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Estados de carga y error con useEffect en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/555100e1-3115-404f-a7f3-169606f81c0d/15_%20Organiza%20carpetas%20y%20utils%20en%20React_QRIVCF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Organiza carpetas y utils en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ae3bd826-8548-4ebd-85c7-e4bb67c56b3e/16_%20C%C3%B3mo%20migrar%20tu%20app%20React%20a%20TypeScript_NQNJDK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Cómo migrar tu app React a TypeScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/45aa7a12-3efb-4997-a292-d5663a3d43bb/17_%20C%C3%B3mo%20Devin%20AI%20migra%20componentes%20React%20a%20TypeScript_CUQUPB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Cómo Devin AI migra componentes React a TypeScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/38798899-befa-4902-a191-ff365db79446/18_%20Repaso%20final%20tu%20proyecto%20React%20migrado%20a%20TypeScript_YTXNAF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Repaso final tu proyecto React migrado a TypeScript</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

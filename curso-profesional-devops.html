@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Profesional de DevOps - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso Profesional de DevOps</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-devops-d3e8b2ef-b2ef-4a16-8a4a-ac0e6953b054.png" alt="Badge">
+                <div>
+                    <h1>Curso Profesional de DevOps</h1>
+                    <p class="video-title">1. Introducción y Filosofía de DevOps</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://files.catbox.moe/k4xaih.jpg">
+                        <source src="https://files.catbox.moe/mdsch7.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">20 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://files.catbox.moe/mdsch7.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Introducción y Filosofía de DevOps</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/1r2eyu.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Ambientes Homogéneos para Aplicaciones</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/7fw7cz.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Implementación de Dockerfile</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ejy3p6.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Ambientes Homogéneos para Infraestructura</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/68yutb.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Implementación de Pruebas</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/aiv4ad.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Sin pruebas no hay confianza</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/4s7shm.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Continuous Integration y Artifacts</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/9iqr1k.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Implementación de CI con Jenkins</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/7690px.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Implementación de Artifacts con Jenkins</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/thoc94.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Herramientas Externas en proceso de CI</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/1o44vo.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. CD a Ambiente Staging</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/9pur84.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Continuous Deployments (CD)</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/gsaee3.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Implementar Acceptance Test en Jenkins</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ug35ef.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Completar Pipeline de CD</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/d56ice.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Introducción a Incident Response</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ur6jhx.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Introducción a Reliability - SLO/SLI</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/i1se0p.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Implementar Uptime Monitoring</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/u6t7dg.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Exception Trackers y Logs</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/68mvb1.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Métricas</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/jopel1.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Conclusiones</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```[cite: 15]

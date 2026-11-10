@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Python Intermedio para Entornos virtuales y PEP8 - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Python Intermedio para Entornos virtuales y PEP8</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-curso-python-intermedio-badge-4e2855b1-e325-48d6-95c1-18e5d99ad8e4.png" alt="Badge">
+                <div>
+                    <h1>Curso de Python Intermedio para Entornos virtuales y PEP8</h1>
+                    <p class="video-title">1. Python intermedio crea una app de noticias con IA</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/courses/pythopnmid2.jpeg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bd428740-ca2d-430d-b542-4cb07fd62caa/1_%20Python%20intermedio%20crea%20una%20app%20de%20noticias%20con%20IA_FXKRAL.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">25 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bd428740-ca2d-430d-b542-4cb07fd62caa/1_%20Python%20intermedio%20crea%20una%20app%20de%20noticias%20con%20IA_FXKRAL.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Python intermedio crea una app de noticias con IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b48cb4bb-b197-4823-bac1-2e0229af3bee/2_%20C%C3%B3mo%20aplicar%20PEP%208%20y%20automatizarlo%20con%20Ruff_AIYQJW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Cómo aplicar PEP 8 y automatizarlo con Ruff</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e7c2e408-13e1-4787-aa0b-0eeeaf477cf6/3_%20C%C3%B3mo%20convertir%20un%20ciclo%20for%20en%20list%20comprehension_IFZTTT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Cómo convertir un ciclo for en list comprehension</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d2ae78c3-f2f7-4902-b2cf-cc5d546c9413/4_%20C%C3%B3mo%20convertir%20bucles%20en%20set%20y%20dict%20comprehensions_NDQVBR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Cómo convertir bucles en set y dict comprehensions</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b12ff25e-2c62-4f60-961a-d663358a5680/5_%20C%C3%B3mo%20usar%20F-strings%20para%20formatear%20texto%20en%20Python_MEUSPS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Cómo usar F-strings para formatear texto en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ae274832-8f0f-449b-a555-05d42503909a/6_%20Modificadores%20de%20formato%20en%20f-strings%20de%20Python_NCBBJR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Modificadores de formato en f-strings de Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4273781a-78d3-4188-82b3-cf004d81c8d9/7_%20Python%20args%20Variable%20Function%20Arguments_AUERKT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Python args Variable Function Arguments</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ee992e9d-16ba-4c92-bce9-734fd4a4663f/8_%20Kwargs%20en%20Python%20cliente%20flexible%20para%20APIs_FLIBPD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Kwargs en Python cliente flexible para APIs</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b4813f29-3e18-42c5-ac6a-fd6e141e82c2/9_%20Conectar%20Python%20a%20NewsAPI%20con%20par%C3%A1metros%20reales_ZDERMM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Conectar Python a NewsAPI con parámetros reales</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cb97f2f9-d79f-4d65-995a-803b5067a2c1/10_%20C%C3%B3mo%20manejar%20errores%20con%20try%20y%20except%20en%20Python_RVGKTH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Cómo manejar errores con try y except en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f449749f-0dc3-44a4-ae46-afda5008e981/11_%20C%C3%B3mo%20usar%20finally%20para%20manejar%20errores%20en%20Python_OAKIIA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Cómo usar finally para manejar errores en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/693d54f1-b952-453c-b51a-91ea01b5e92e/12_%20C%C3%B3mo%20crear%20excepciones%20personalizadas%20en%20Python_HLMQUN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Cómo crear excepciones personalizadas en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/64f65046-136e-4b27-9164-d028aede1494/13_%20Type%20hints%20en%20Python%20etiquetas%20para%20tus%20variables_FHBGXL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Type hints en Python etiquetas para tus variables</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b354c506-887a-456d-a2f0-7b7380c9b47e/14_%20Type%20Hints%20for%20Functions%20and%20Lists%20in%20Python_JOBOWZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Type Hints for Functions and Lists in Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/eaacb656-18ea-4a13-8742-9fbe8bc16ec8/15_%20C%C3%B3mo%20documentar%20funciones%20en%20Python%20con%20docstrings_CHNDKK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Cómo documentar funciones en Python con docstrings</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/83ec2367-389a-4bc9-94fa-272953052480/16_%20Python%20Virtual%20Environments%20Explained_MNZOFG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Python Virtual Environments Explained</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4f5a46d0-c19f-49e1-9dca-1bc606dd5067/17_%20C%C3%B3mo%20crear%20y%20activar%20un%20entorno%20virtual%20en%20Python_QRAJSU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Cómo crear y activar un entorno virtual en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/dc145036-cc93-445a-9258-8fb87b1eee96/18_%20C%C3%B3mo%20crear%20un%20entorno%20virtual%20de%20Python%20en%20Windows_YBYMKH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Cómo crear un entorno virtual de Python en Windows</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/573ec66d-ed49-4417-8fdf-284a89c9520f/19_%20UV%20gesti%C3%B3n%20r%C3%A1pida%20de%20dependencias%20en%20Python_XYPUEX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. UV gestión rápida de dependencias en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/670f5844-9c20-4626-92c5-079550252b5f/20_%20C%C3%B3mo%20dividir%20tu%20c%C3%B3digo%20en%20m%C3%B3dulos%20de%20Python_KGIVYL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Cómo dividir tu código en módulos de Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c0c57d42-c806-4d22-bc5b-5beb84b5c273/21_%20C%C3%B3mo%20crear%20paquetes%20en%20Python%20con%20__init___py_MCWDZJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Cómo crear paquetes en Python con __init__.py</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/617c411f-c7cc-4052-934d-934375585f94/22_%20Funci%C3%B3n%20enumerate%20en%20Python%20para%20indexar%20listas%20autom%C3%A1ticamente_QCPXHZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Función enumerate en Python para indexar listas automáticamente</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e0e37c0a-98a1-4fc6-9464-e7a4e9509b00/23_%20Filtrado%20de%20listas%20con%20filter%20en%20Python_FOGPCC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Filtrado de listas con filter en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a25af9a3-11f2-4467-99c6-d51ac7e84c89/24_%20Funci%C3%B3n%20map%20para%20calcular%20tiempo%20de%20lectura%20en%20Python_QNMOXZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Función map para calcular tiempo de lectura en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fc6ffe87-0190-46e1-8bd9-ce1ff3499637/25_%20C%C3%B3mo%20integrar%20la%20API%20de%20OpenAI%20con%20noticias_DSABHC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Cómo integrar la API de OpenAI con noticias</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

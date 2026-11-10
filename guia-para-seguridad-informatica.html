@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía para Aprender Seguridad Informática - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Guía para Aprender Seguridad Informática</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-guia-aprender-seguridad-informatica-48e36343-e90d-4efb-80b3-5d7ec22aab5e.png" alt="Badge">
+                <div>
+                    <h1>Guía para Aprender Seguridad Informática</h1>
+                    <p class="video-title">1. Fundamentos de Ciberseguridad para Principiantes</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/46d19f2c-56e9-4b6f-b237-140209e1665e/file_1792988648318_GERXVF.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e94e4fc3-41ce-457a-b54b-83f52fd2c872/1_%20Fundamentos%20de%20Ciberseguridad%20para%20Principiantes_FEAEDV.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">13 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e94e4fc3-41ce-457a-b54b-83f52fd2c872/1_%20Fundamentos%20de%20Ciberseguridad%20para%20Principiantes_FEAEDV.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Fundamentos de Ciberseguridad para Principiantes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/965ad14f-f338-46f3-97c1-a9a30e3479cb/2_%20Ramas%20de%20la%20Ciberseguridad%20y%20su%20Importancia_HFIXDA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Ramas de la Ciberseguridad y su Importancia</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0b6378f0-a39d-4a64-8572-b1f53a552306/3_%20Seguridad%20de%20la%20Informaci%C3%B3n%20en%20Empresas%20Tecnol%C3%B3gicas_KHPPGK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Seguridad de la Información en Empresas Tecnológicas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/86d6bc1f-bcad-49e0-a848-d49cb435a157/4_%20Ciberinteligencia%20An%C3%A1lisis%20de%20Amenazas%20y%20Espionaje%20Digital_DCYANW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Ciberinteligencia Análisis de Amenazas y Espionaje Digital</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/780a6427-c270-4cd9-b9ff-e079999d01ee/5_%20Historia%20de%20Marcus%20Hutchins%20y%20el%20impacto%20de%20WanaCry%20en%20cibersegu_SDDZVE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Historia de Marcus Hutchins y el impacto de WannaCry en ciberseguridad</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/41fdb986-e2ec-4dee-a883-81cd2f1c5124/6_%20Criptograf%C3%ADa%20y%20Esteganograf%C3%ADa%20T%C3%A9cnicas%20de%20Seguridad%20de%20Datos_NOFOKZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Criptografía y Esteganografía Técnicas de Seguridad de Datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/33bdd455-45d8-4d2c-8520-a2abf7dbaaa6/7_%20C%C3%B3digo%20Seguro%20en%20el%20Ciclo%20de%20Vida%20del%20Desarrollo%20de%20Software_FABIKV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Código Seguro en el Ciclo de Vida del Desarrollo de Software</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8c14e4ca-dadd-449c-b705-6dc5707281d1/8_%20Vectores%20de%20Ataque%20en%20Ciberseguridad%20y%20Pruebas%20de%20Seguridad_VKYRGX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Vectores de Ataque en Ciberseguridad y Pruebas de Seguridad</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/631c39fc-1baf-4da3-b1a6-eefc8bda1658/9_%20Ingenier%C3%ADa%20Forense%20Caso%20Chapo%20Guzm%C3%A1n%20y%20Software%20Esp%C3%ADa_FMBAMB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Ingeniería Forense Caso Chapo Guzmán y Software Espía</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2685cf7f-714c-4dc0-aa68-e38dc8b2d29e/10_%20Redes%20Inform%C3%A1ticas%20y%20Seguridad%20Bases%20para%20Ciberseguridad_RGTKAB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Redes Informáticas y Seguridad Bases para Ciberseguridad</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6c465a98-55a2-4b8d-96a0-e9e71727dec4/11_%20Roles%20y%20Certificaciones%20para%20Iniciar%20en%20Ciberseguridad_HYHUYQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Roles y Certificaciones para Iniciar en Ciberseguridad</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/257dcf99-34f4-42b9-93bf-34745ede64de/12_%20Roles%20y%20Oportunidades%20en%20Ciberseguridad_ZVGJWA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Roles y Oportunidades en Ciberseguridad</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7035d5ca-7613-4f7e-9511-332f079eb356/13_%20Recomendaciones%20para%20Iniciar%20en%20Ciberseguridad_XFXSLA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Recomendaciones para Iniciar en Ciberseguridad</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

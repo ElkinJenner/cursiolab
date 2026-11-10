@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Complejidad Algorítmica con Python - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Complejidad Algorítmica con Python</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-complejidad-algoritmica-python_badge-ff69b19d-dbc5-4bf8-a2be-d985e9f45932.png" alt="Badge">
+                <div>
+                    <h1>Curso de Complejidad Algorítmica con Python</h1>
+                    <p class="video-title">1. Programación Orientada a Objetos y Algoritmos Avanzados</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/courses/Piezas-complejidad-algoritmica-python_OG2.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c4c0825d-7813-4c93-9358-4ee7c7a5d5cf/1_%20Programaci%C3%B3n%20Orientada%20a%20Objetos%20y%20Algoritmos%20Avanzados_PJDGTE.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">16 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c4c0825d-7813-4c93-9358-4ee7c7a5d5cf/1_%20Programaci%C3%B3n%20Orientada%20a%20Objetos%20y%20Algoritmos%20Avanzados_PJDGTE.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Programación Orientada a Objetos y Algoritmos Avanzados</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c661ded7-cf2b-45b3-a742-e00aee83e524/2_%20Complejidad%20Algor%C3%ADtmica%20Comparaci%C3%B3n%20y%20Medici%C3%B3n%20de%20Eficiencia_RVKBGU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Complejidad Algorítmica Comparación y Medición de Eficiencia</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cfdf6ff5-9857-4ced-a94f-123dfc8b703b/3_%20An%C3%A1lisis%20del%20Crecimiento%20de%20Funciones%20en%20Algoritmos_GJHVGN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Análisis del Crecimiento de Funciones en Algoritmos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f20739c8-dac1-4675-bc70-6b672a5f415b/4_%20Notaci%C3%B3n%20asint%C3%B3tica%20y%20complejidad%20algor%C3%ADtmica%20b%C3%A1sica_MRPSNS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Notación asintótica y complejidad algorítmica básica</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f880cf1a-0e8f-45e6-ab18-1c9f9f18a20c/5_%20Clases%20de%20Complejidad%20Algor%C3%ADtmica%20y%20su%20Impacto%20en%20el%20Rendimiento_CYCQPY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Clases de Complejidad Algorítmica y su Impacto en el Rendimiento</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1a673afc-4f37-45bb-b793-8c7405ff4306/6_%20Algoritmos%20de%20B%C3%BAsqueda%20y%20Ordenaci%C3%B3n%20B%C3%BAsqueda%20Lineal%20en%20Python_FRJGMN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Algoritmos de Búsqueda y Ordenación Búsqueda Lineal en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a7dfc61a-b19c-416b-a439-e393a9e9e3e8/7_%20Implementaci%C3%B3n%20Recursiva%20de%20B%C3%BAsqueda%20Binaria_WRKGXO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Implementación Recursiva de Búsqueda Binaria</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d4a21a5f-375b-456a-a283-e95c72104ad0/8_%20Ordenamiento%20de%20Burbuja%20Algoritmo%20y%20Complejidad_WDITXG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Ordenamiento de Burbuja Algoritmo y Complejidad</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/280af194-12b5-4a23-9e9f-ca55c2ddefc3/10_%20Ordenamiento%20por%20Mezcla%20Algoritmo%20y%20Conceptos%20B%C3%A1sicos_CTFZDE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Ordenamiento por Mezcla Algoritmo y Conceptos Básicos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/08b61e54-cc2a-49db-b353-c1e6012ae8a2/11_%20Creaci%C3%B3n%20y%20Uso%20de%20Ambientes%20Virtuales%20en%20Python_WTFMND.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Creación y Uso de Ambientes Virtuales en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8fc16d86-d6a4-4cbd-b935-e98bd7b843fd/12_%20Importancia%20de%20los%20Gr%C3%A1ficos%20en%20el%20An%C3%A1lisis%20de%20Datos_TICRQB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Importancia de los Gráficos en el Análisis de Datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d4f44c2c-db75-4a75-a2ea-cdb15894652c/13_%20Graficaci%C3%B3n%20de%20Datos%20con%20Bokeh%20en%20Python_SIEODL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Graficación de Datos con Bokeh en Python</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9d2069e0-cc7f-4cad-9782-9a3a0fb38606/14_%20Algoritmos%20de%20Optimizaci%C3%B3n%20y%20el%20Problema%20del%20Viajero_KDTFRX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Algoritmos de Optimización y el Problema del Viajero</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7be5cac2-4921-4931-aa56-d7751925f06e/15_%20Soluci%C3%B3n%20recursiva%20al%20problema%20del%20morral%20uno-cero_HFPJKA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Solución recursiva al problema del morral uno-cero</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b87a4727-82d8-422b-b14a-909745ed7d3c/16_%20Herramientas%20Avanzadas%20de%20Programaci%C3%B3n%20y%20Algoritmos%20Eficientes_PABCGG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Herramientas Avanzadas de Programación y Algoritmos Eficientes</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

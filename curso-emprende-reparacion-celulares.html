@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Emprenda Reparación de Celulares - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso Emprenda Reparación de Celulares</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-avanzado-redes-internet-078bd614-753b-4026-b07f-ec1db1b057fe.png" alt="Badge">
+                <div>
+                    <h1>Curso Emprenda Reparación de Celulares </h1>
+                    <p class="video-title">1. Destornilladores</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d691b983-a343-4b68-843a-efa76ff3515f/98ca-1fa9415695f7_IYDQEX.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/716e3b9a-c4d2-41f4-bdde-30d30296d6bc/1_1%20Destornilladores_YMSROC.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">20 clases</span>
+                    </div>
+                <ul id="videoList">
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/716e3b9a-c4d2-41f4-bdde-30d30296d6bc/1_1%20Destornilladores_YMSROC.mp4" class="active">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>1. Destornilladores</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e4a69b55-5192-41b3-948f-2906195dfc43/1_2%20Bruselas%20y%20paletas_QCQZEX.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>2. Bruselas y paletas</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/93c3c0bd-080d-4922-a1a1-9a6ff26f5226/1_3%20M%C3%A1quina%20quita%20Glass%20%E2%80%93%20Succionadora%20al%20vac%C3%ADo_KNHGBM.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>3. Máquina quita Glass – Succionadora al vacío</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9b1f08bd-54e4-4672-9784-7757991f4cd0/1_4%20Batea%20Ultrasonica_XMMKOA.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>4. Batea Ultrasonica</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b8d595a0-3b02-4e0d-ab4a-28888d48d08d/1_5%20Estacion%20de%20Soldado_XPXMGU.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>5. Estacion de Soldado</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/eac75c05-ef58-4071-9c7b-ea199d5cb511/1_6%20Herramientas%20para%20quitar%20pantallas_IXDRVV.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>6. Herramientas para quitar pantallas</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/491203d2-da53-4e9c-a117-5e457a919eca/1_7%20Uso%20de%20Caut%C3%ADn%2C%20Esta%C3%B1o%20y%20alcohol%20isopropilico_LXFMJA.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>7. Uso de Cautín, Estaño y alcohol isopropílico</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/21a318bc-03df-41d6-8131-00f668a8b489/1_8%20Soportes%20para%20placas%2C%20fijo%20y%20m%C3%B3vil_%20Manta%20antiestatica_ESEEEL.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>8. Soportes para placas, fijo y móvil. Manta antiestática</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2a41c299-05e4-425a-a51a-aef4bb33e354/1_9%20Tester_XOZROT.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>9. Tester</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/77a8cca7-2355-449e-ae94-9df5fda4a6ad/1_10%20Moldes%20y%20Molde%20universal_LANVAN.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>10. Moldes y Molde universal</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c9403195-ad93-4ea7-b5ab-0a7ced9899fb/2_1%20Manual%20de%20servicio%20Nivel%203%20y%20Nomenclaturas_LXGYYA.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>11. Manual de servicio Nivel 3 y Nomenclaturas</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/79611bb4-6927-481c-ab4d-f18c0cc57b3f/2_2%20Planos%20esquematicos%20con%20Phone%20Board_DXOUZK.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>12. Planos esquemáticos con Phone Board</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0497a62b-d6c1-414c-b67e-416fc0e483e7/2_3%20%C2%BFC%C3%B3mo%20crear%20un%20cargador%20y%20testeador%20de%20bater%C3%ADas%20y%20arranque_URGLBR.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>13. ¿Cómo crear un cargador y testeador de baterías y arranque?</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2e165203-586f-4778-b93d-5b1880102165/2_4%20Cambio%20de%20Pin%20de%20Carga_SZMKNQ.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>14. Cambio de Pin de Carga</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1f25ab4a-72e9-4357-8307-e27dedc1734d/2_5%20Medici%C3%B3n%20de%20componentes%20con%20el%20tester_TCHDPL.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>15. Medición de componentes con el tester</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0ed7edb0-b365-44bc-a61e-4e37c44df16a/3_1%20Cambio%20de%20m%C3%B3dulo_YCHKZI.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>16. Cambio de módulo</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/470ce26f-af5c-4a06-ab44-4b38d9c92eac/3_2%20Cambio%20de%20modulo%20Motorola%20G6%20Plus_GUWOXP.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>17. Cambio de módulo Motorola G6 Plus</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/17625f74-4fdb-4679-a859-22f99ba5964d/3_3%20Cambio%20de%20Touch_DKYERH.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>18. Cambio de Touch</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7565fbf4-ae8a-49fb-87a6-f2fbe285fa18/3_4CAMB~1_DOORSV.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>19. Cambio de Glass / Pantalla</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f293ed6b-6490-462b-8072-c67be10a3547/3_5%20Pegado%20con%20gel%20y%20horno%20UV_ZOGROW.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>20. Pegado con gel y horno UV</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

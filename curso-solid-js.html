@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Solid JS - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Solid JS</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-solidjs-a3f4a330-0b76-41a0-bc36-d2d96b00659a.png" alt="Badge">
+                <div>
+                    <h1>Curso de Solid JS</h1>
+                    <p class="video-title">1. Desarrollo Web Avanzado con SolidJS: Reactividad Eficiente</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_64a82c15c5d2524b0194bca9_64a82c15c5d2524b0194bcb4_43s.jpg">
+                        <source src="https://files.catbox.moe/2xjvww.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">27 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://files.catbox.moe/2xjvww.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Desarrollo Web Avanzado con SolidJS: Reactividad Eficiente</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/o3z61t.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Uso de Signals en SolidJS para Datos Reactivos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/j7kzcx.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Uso de Create Effects en SolidJS</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/aaqsou.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Memos y Signals Derivados en Solid para Optimizar Actualizaciones</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/5w3t7v.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Creación de una Librería Reactiva MiniSolid desde Cero</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/sf9s6j.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Reactividad: Conceptos Prácticos y Aplicaciones en Solid</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/o7t9xg.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Implementación de Signals en Librería Reactiva Solid</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/xvft2b.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Creación de Efectos Reactivos en Librerías Web</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/4cjmr1.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Signals Derivados: Mejora y Optimización en Aplicaciones Reactivas</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/pzkopa.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Implementación de createMemo en Sistemas Reactivos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/0ntk7d.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Renderizado Reactivo en Solid: Uso de DOM Expressions</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/313gk0.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Implementación de TodoApp con SolidJS y Tailwind CSS</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/kz9lfc.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Implementación de Dark Mode con SolidJS y TailwindCSS</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/3kdhv1.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Renderizado Condicional en Solid: Técnicas y Optimización</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/fir1lr.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Renderizado de listas y optimización con SolidJS</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/bc4wok.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Manejo de Eventos en Elementos HTML con SolidJS</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/0miv3c.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Optimización de Renderizado y Reactividad en Listas con SolidJS</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/r6n3ox.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Implementación de Stores Reactivos en SolidJS</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/s3cokn.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Uso de Stores en Solid para Optimizar Reactividad y Ergonomía</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/r3i20t.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Uso de la función Produce en SolidJS para gestionar stores</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/gx8zci.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Creación y Uso de Componentes en Solid para Mejora de Aplicación</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/yn9uey.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Uso de Props para Comunicación entre Componentes en React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/lt5s2u.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Manejo de Eventos y Corrección de Errores en Aplicaciones React</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/vh6992.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Uso de Local Storage para Guardar Estado de Aplicación Web</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/tag4b6.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Despliegue de Aplicaciones Web con Netlify y SolidJS</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/nojhqk.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Solid: Sistema Reactivo y Desafíos en Desarrollo Web</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

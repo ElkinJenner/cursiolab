@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Expresiones Regulares- CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Expresiones Regulares</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/9fa3eeb3-9fa8-4c9e-a4fb-4e4baf88a4e9-6aa4cb01-060c-4d5e-8064-159adb539892.png" alt="Badge">
+                <div>
+                    <h1>Curso de Expresiones Regulares</h1>
+                    <p class="video-title">1. Cómo describir patrones con expresiones regulares</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b79c198a-69c8-4d0f-845c-2857bbd5eb8b/1_%20C%C3%B3mo%20describir%20patrones%20con%20expresiones%20regulares_CNZUPI.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">14 clases</span>
+                    </div>
+                    <ul id="videoList">
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b79c198a-69c8-4d0f-845c-2857bbd5eb8b/1_%20C%C3%B3mo%20describir%20patrones%20con%20expresiones%20regulares_CNZUPI.mp4" class="active">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>1. Cómo describir patrones con expresiones regulares</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/abfc45bf-23ee-4b40-aadb-97c1e543e41f/2_%20C%C3%B3mo%20piensa%20un%20motor%20de%20expresiones%20regulares_HLQCTK.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>2. Cómo piensa un motor de expresiones regulares</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a8847cd8-5596-4622-8c90-e36fe84df72a/3_%20Cu%C3%A1ndo%20no%20usar%20regex%20tres%20casos%20clave_VVGTWD.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>3. Cuándo no usar regex tres casos clave</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0a12c98b-f322-43fc-922d-9b5cc0de8f4b/4_%20Metacaracteres%20en%20regex%20y%20c%C3%B3mo%20escaparlos_HWLHJY.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>4. Metacaracteres en regex y cómo escaparlos</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1d1430db-d1ff-464c-bc15-e4dcd2e071de/5_%20Clases%20predefinidas%20en%20regex%20d%20w%20y%20s_JKYMGT.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>5. Clases predefinidas en regex d w y s</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1ec9ef56-bebd-495a-9bb1-128a099435c5/6_%20Clases%20de%20caracteres%20en%20regex%20rangos%20y%20negaci%C3%B3n_ZVKWRQ.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>6. Clases de caracteres en regex rangos y negación</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e768047f-0758-4fc9-873c-74edc0f6935e/7_%20Cuantificadores%20en%20regex%20de%20asterisco%20a%20llaves%20precisas_SORKZP.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>7. Cuantificadores en regex de asterisco a llaves precisas</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ba999cf3-a96c-4afb-ab5a-7f0e605ce5c5/8_%20Cuantificadores%20codiciosos%20vs%20perezosos%20en%20regex_PZXSNV.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>8. Cuantificadores codiciosos vs perezosos en regex</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1f48fafe-861e-4a4f-b1a0-359c76ad3439/9_%20Anclas%20y%20bordes%20de%20palabra%20buscar%20vs%20validar_OLLXKK.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>9. Anclas y bordes de palabra buscar vs validar</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f1dc51d7-4fee-434b-a392-452f75db9bc4/10_%20Alternancia%20y%20par%C3%A9ntesis%20domina%20grupos%20en%20regex_VOMGWP.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>10. Alternancia y paréntesis domina grupos en regex</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e43468ba-680f-4dcb-bbc6-adfadd6ff3dc/11_%20Grupos%20nombrados%20en%20regex%20adi%C3%B3s%20a%20los%20n%C3%BAmeros_BSSNAX.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>11. Grupos nombrados en regex adiós a los números</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/04b31824-d7af-43ba-a587-0feb78f74c51/12_%20Lookahead%20y%20lookbehind%20c%C3%B3mo%20validar%20sin%20consumir%20texto_WSVRZL.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>12. Lookahead y lookbehind cómo validar sin consumir texto</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ea13c6c0-19ba-443c-b5e8-611012b542c9/13_%20Property%20escapes%20y%20flags%20para%20regex%20Unicode_LHBZYE.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>13. Property escapes y flags para regex Unicode</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2b2581d6-53a4-4151-9b9a-17aef69cda4b/14_%20ReDoS%20c%C3%B3mo%20una%20regex%20puede%20tumbar%20tu%20servidor_FGLUDI.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>14. ReDoS cómo una regex puede tumbar tu servidor</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

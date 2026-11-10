@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de IoT: Protocolos de Comunicación - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de IoT: Protocolos de Comunicación</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/ubsik_c3-a61fed33-1feb-417f-b18e-db120c28dbcf.png" alt="Badge">
+                <div>
+                    <h1>Curso de IoT: Protocolos de Comunicación</h1>
+                    <p class="video-title">1. Protocolos de Comunicacion en Hardware Libre con Arduino</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://files.catbox.moe/yoklbt.jpg">
+                        <source src="https://files.catbox.moe/8kbsar.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">34 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://files.catbox.moe/8kbsar.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Protocolos de Comunicacion en Hardware Libre con Arduino</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/o9rw78.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Conceptos Basicos del Espectro Electromagnetico y Radiofrecuencia</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/yqfc4h.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Clasificacion de Frecuencias en el Espectro Electromagnetico</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/qahoj8.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Regulacion y Uso de Bandas de Radiofrecuencia</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/sugxmy.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Elementos de la Telecomunicacion y su Analogia Humana</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/eiyy8l.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Sistemas de Comunicacion Semiduplex y Duplex Completo</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/aoku45.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Clasificacion de Conexiones de Red Half y Full Duplex</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/k820fz.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Calculo de Potencia en Sistemas de Telecomunicaciones</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/v0n23l.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Ancho de Banda y Tecnologia Wi-Fi: Funcionamiento y Limitaciones</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/6tk9ln.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Bluetooth: Conexiones, Usos y Seguridad en Redes Inalambricas</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/55ebr9.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Evolucion y Funcionamiento de las Redes Celulares 1G a 5G</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/dmqd0r.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Redes de Largo Alcance y Bajo Consumo Energetico</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/8uvrrx.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Introduccion a LoRaWAN: Caracteristicas y Usos en IoT</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/dggqe0.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Diseno y Arquitectura de Nodos IoT para Redes Eficientes</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/pn7tws.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Instalacion de placas de desarrollo IoT en Arduino IDE</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/6ko7ir.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Programacion de Interrupciones en Microcontroladores con Arduino</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/y9x3fj.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Programacion basica de ESP32: Escaneo y conexion WiFi</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/q1bc01.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Conexion WiFi y Peticiones HTTP en Microcontroladores ESP32</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/leeiod.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Conexion de Sensores y Actuadores con ESP32 y Prototipos en Protoboard</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/k23jty.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Configuracion de Aplicaciones IoT con Microcontrolador ESP32</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/uebc59.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Programacion de Eventos en Microcontroladores ESP32</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/cbjwpv.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Manejo de interrupciones y banderas en microcontroladores ESP32</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/afo6u1.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Programacion de Microcontroladores ESP32 con Arduino y Aplicacion</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/4nlk5o.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Infraestructura y Programacion de Redes LoRaWAN para IoT</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/qk7tfh.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>28. Creacion de Infraestructura LoRa con Raspberry Pi y Modulo RFM95</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/zvsq0v.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>30. Conexion RF95 a Raspberry Pi y configuracion de red IoT</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/drvslx.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>31. Creacion de un Stack LoRa en Arduino: Librerias y Configuracion Inicial</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/dolngi.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>32. Programacion de Nodos en Redes LoRa: Uso de Librerias Cayenne</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/5xeuly.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>33. Conexion ABP en LoRaWAN: Configuracion y Credenciales</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/7ke691.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>34. Transmision de Datos con LoRa en Redes IoT</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/xnyrk6.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>35. Correccion de Errores Comunes en Codigo de Programacion</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/jwfzpz.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>36. Ensamble de Componentes para Transmision de Datos con SP32</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/w5hwdr.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>37. Comunicacion de Datos con Lora y Cayenne LPP</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/rturuk.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>39. Dispositivos y Tecnologias para el Internet de las Cosas (IoT)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

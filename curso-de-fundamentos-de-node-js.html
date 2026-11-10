@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Fundamentos de Node.js - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Fundamentos de Node.js</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-fund-nodejs-badge-e8fe933b-8dc6-4ee7-8f72-f79c35250c9c.png" alt="Badge">
+                <div>
+                    <h1>Curso de Fundamentos de Node.js</h1>
+                    <p class="video-title">1. Qué es Node.js y cómo funciona</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cae10000-5325-400b-be3e-252d3f01b4da/file_1794189013698_SSZJUI.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8ff73d5a-617c-4665-8621-e5cd985b2eb2/1_%20Qu%C3%A9%20es%20Node_js%20y%20c%C3%B3mo%20funciona_UOXQYD.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">20 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8ff73d5a-617c-4665-8621-e5cd985b2eb2/1_%20Qu%C3%A9%20es%20Node_js%20y%20c%C3%B3mo%20funciona_UOXQYD.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Qué es Node.js y cómo funciona</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/98c3c6dc-f08a-453b-9105-4ee035635768/2_%20NVM%20para%20m%C3%BAltiples%20versiones%20de%20Node_TFNAXW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. NVM para múltiples versiones de Node</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/323f0325-e643-4336-8720-b81274b861d3/3_%20Primer%20programa%20Node_js%20con%20argumentos_RBZJAH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Primer programa Node.js con argumentos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c05baf20-745f-4564-9c92-95b18a55a5c2/4_%20M%C3%B3dulos%20en%20Node_js%20CommonJS%20vs%20ES%20Modules_GYOEXJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Módulos en Node.js CommonJS vs ES Modules</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1ee486f1-31bb-4b7f-9697-2322bbd70828/5_%20C%C3%B3mo%20funciona%20npm%20en%20tu%20primer%20proyecto_ZAPYIA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Cómo funciona npm en tu primer proyecto</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f143a2f7-618e-4042-9fbc-c3a2fed10805/6_%20C%C3%B3mo%20crear%20y%20probar%20un%20paquete%20npm%20local_NNTTHI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Cómo crear y probar un paquete npm local</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b4571b39-748c-45ae-9252-e1d81f842f58/7_%20C%C3%B3mo%20publicar%20tu%20primer%20paquete%20npm_YRQQMD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Cómo publicar tu primer paquete npm</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9606ddde-1ff5-4194-bdc0-12c82fdd88f0/8_%20CRUD%20de%20archivos%20con%20m%C3%B3dulo%20fs_TOOLCO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. CRUD de archivos con módulo fs</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4b5b3a58-6c75-4efa-895f-51f6fc763935/9_%20Transcribir%20audio%20a%20texto%20con%20Whisper%20y%20Node_js_QFWGHW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Transcribir audio a texto con Whisper y Node.js</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cac06e60-7de7-420d-94b2-a24b45bc5d0e/10_%20Implementar%20transcriptAudio%20con%20Whisper%20en%20Node_js_CJBXVL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Implementar transcriptAudio con Whisper en Node.js</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ffbbd925-57fe-4470-b5fb-a9412ab22674/11_%20Console%20API%20en%20Node_js%20m%C3%A9todos%20b%C3%A1sicos_FBAWKF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Console API en Node.js métodos básicos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fd38ea81-8210-431d-b1b5-4cab339ad8d8/12_%20Console_count%20y%20console_group%20en%20JavaScript_QYPITB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Console.count y console.group en JavaScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/39daac52-3d62-43d3-a506-0dac82341235/13_%20M%C3%B3dulo%20OS%20de%20Node_js%20para%20monitoreo_NKJNVK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Módulo OS de Node.js para monitoreo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/800d91b0-ea1c-4513-8669-1abed3af2020/14_%20Crypto%20de%20Node_js%20hash%20SHA-256%20completo_YGQNTE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Crypto de Node.js hash SHA-256 completo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/08976db8-c866-45ee-8615-d10cc867bb27/15_%20M%C3%B3dulo%20process%20de%20Node_js%20en%20detalle_JUZMAC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Módulo process de Node.js en detalle</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2cb36069-f6d8-4f91-bc9a-91dafaa095f4/16_%20Timers%20en%20Node_js%20setTimeout%20y%20setInterval_RXJZNB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Timers en Node.js setTimeout y setInterval</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/87c25599-deb7-476d-bf54-5b2ee587bc7c/17_%20Streams%20en%20Node_js%20para%20archivos%20grandes_MNMAPZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Streams en Node.js para archivos grandes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bc47986c-783b-4db9-ac4e-6522a5507043/18_%20Manipulaci%C3%B3n%20de%20buffers%20binarios%20en%20Node_js_GWKFVP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Manipulación de buffers binarios en Node.js</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/37d3117c-3626-4074-b604-603ccca68750/19_%20Servidor%20HTTP%20en%20Node_js%20con%20flag%20watch_SKJUOX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Servidor HTTP en Node.js con flag watch</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ec04a3e0-8746-42b8-a481-fb0b6bf0a1c2/20_%20Servidor%20Node_js%20que%20env%C3%ADa%20video%20con%20streams_ZUCTWH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Servidor Node.js que envía video con streams</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

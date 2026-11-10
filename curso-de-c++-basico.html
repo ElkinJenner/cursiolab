@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de C++ Básico - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de C++ Básico</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badges-curso-c-basico-9e53cb3b-acf8-4842-bedd-9210ffaba942.png" alt="Badge">
+                <div>
+                    <h1>Curso de C++ Básico</h1>
+                    <p class="video-title">1. Historia y evolución del lenguaje C y C++</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d2194d4c-0eb4-4fcc-8a22-29374b372fe0/imagen_NUGQAJ.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fb083052-6b0c-4f68-9874-ddae16da243f/1_%20Historia%20y%20evoluci%C3%B3n%20del%20lenguaje%20C%20y%20C_ZUOQBO.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">15 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fb083052-6b0c-4f68-9874-ddae16da243f/1_%20Historia%20y%20evoluci%C3%B3n%20del%20lenguaje%20C%20y%20C_ZUOQBO.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Historia y evolución del lenguaje C y C++</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5dc42969-62b1-4f33-a09b-2b428bee1738/2_%20Proceso%20de%20compilaci%C3%B3n%20en%20C%20paso%20a%20paso_XIMAKO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Proceso de compilación en C paso a paso</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0725a193-345b-4cc2-ac47-b7b4f8034f23/3_%20Primer%20Programa%20Hola%20Mundo%20en%20C%20Estructura%20y%20Ejecuci%C3%B3n%20B%C3%A1sica_XBTVPZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Primer Programa Hola Mundo en C: Estructura y Ejecución Básica</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1b41f43f-5cdf-4c37-97bd-8078332af3f2/4_%20Tipos%20de%20Datos%20en%20C%20Booleanos%20Enteros%20Flotantes%20y%20Caracteres_IDFJTU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Tipos de Datos en C: Booleanos, Enteros, Flotantes y Caracteres</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/872ca5c4-dfee-4906-8207-582c69d12486/5_%20Creaci%C3%B3n%20y%20Uso%20de%20Variables%20en%20C_ZZZKRX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Creación y Uso de Variables en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f094f503-537c-4a35-b252-3a6a05fa06dd/6_%20Constantes%20y%20Listas%20en%20C%20Uso%20y%20Manipulaci%C3%B3n%20B%C3%A1sica_FOBXEH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Constantes y Listas en C: Uso y Manipulación Básica</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8e2fa91f-cdbc-4f25-9d66-a1fd66c0b3b0/7_%20Operadores%20en%20C%20Aritm%C3%A9ticos%20Comparativos%20y%20L%C3%B3gicos_KSEASJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Operadores en C: Aritméticos, Comparativos y Lógicos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c09a6b85-8508-4438-b203-36b027ebb8c2/8_%20Manejo%20de%20Entrada%20y%20Salida%20de%20Datos%20con%20IOStream%20en%20C_ADZFGN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Manejo de Entrada y Salida de Datos con IOStream en C++</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ae2b6967-befa-4576-9223-b0ba95d775f5/9_%20Condicionales%20en%20C%20if%20else%20else%20if%20y%20operadores%20l%C3%B3gicos_XYHEFK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Condicionales en C: if, else, else if y operadores lógicos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/60e22e1a-f06a-43f8-bb88-662d7d2c2910/10_%20Condicionales%20en%20C%20Uso%20de%20la%20Sentencia%20Switch%20Case_MGVZYS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Condicionales en C: Uso de la Sentencia Switch Case</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3455a96c-d25c-4117-8c02-5d538039a7fe/11_%20Ciclos%20For%20en%20C%20C%C3%B3mo%20Iterar%20Listas%20y%20Rangos%20Num%C3%A9ricos_CLPPWL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Ciclos For en C: Cómo Iterar Listas y Rangos Numéricos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/943b13c4-22ed-40ee-bea4-5b2f2d60e3e5/12_%20Ciclos%20While%20y%20Do%20While%20en%20C%20Ejemplos%20Pr%C3%A1cticos_GMJWZS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Ciclos While y Do While en C: Ejemplos Prácticos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/75ebe3cd-3cd7-4363-8867-576905d3c203/13_%20Funciones%20en%20C%20creaci%C3%B3n%20uso%20y%20valores%20por%20defecto_MSBEMH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Funciones en C: creación, uso y valores por defecto</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d49c1166-d095-48e2-9a20-e52612000653/14_%20Uso%20de%20la%20Biblioteca%20String%20en%20C%20para%20Manejo%20de%20Cadenas%20de%20Texto_ARJILL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Uso de la Biblioteca String en C (Parte 1)</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7b5909ba-0311-49d6-bc56-7f796ced9aaa/15_%20Uso%20de%20la%20Biblioteca%20String%20en%20C%20para%20Manejo%20de%20Cadenas%20de%20Texto_EJVSZP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Uso de la Biblioteca String en C (Parte 2)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

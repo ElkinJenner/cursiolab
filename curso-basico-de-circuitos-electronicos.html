@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Básico de Circuitos Electrónicos - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso Básico de Circuitos Electrónicos</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-fundamentos-circuitos-fba3d2e7-65b9-412f-b040-6ce966221e1c.png" alt="Badge">
+                <div>
+                    <h1>Curso Básico de Circuitos Electrónicos</h1>
+                    <p class="video-title">1. Qué aprenderás sobre circuitos electrónicos</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_5d37719e925e3307036ef49a_5d37719e925e3307036ef49e_18s.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5475f265-4365-46d1-abb5-8cffda4072f3/1_%20Qu%C3%A9%20aprender%C3%A1s%20sobre%20circuitos%20electr%C3%B3nicos_KBQRXT.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">27 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bfaa26e0-eb41-4925-88d6-2eaf0b5fe384/1_Todo%20lo%20que%20aprender%C3%A1s%20sobre%20redes%20de%20internet_WBDQZH.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Qué aprenderás sobre circuitos electrónicos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ae063b8b-022d-4349-b641-b40752713ba6/2_%20Esquem%C3%A1ticos_MXTXAU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Esquemáticos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3d96bb14-f90f-420b-b802-85955a40f7de/4_%20Flujo%20de%20trabajo%20profesional%20para%20dominar%20la%20electr%C3%B3nica_TCKTQQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Flujo de trabajo profesional para dominar la electrónica</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a8f47d8f-6201-44d9-aa39-e8f6aaa8e017/5_%20Hojas%20de%20datos%20o%20data%20sheets%20conociendo%20un%20regulador%20de%20voltaje_XVWUVS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Hojas de datos o data sheets conociendo un regulador de voltaje</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2a486575-3368-469a-87f0-b7bcf2bdf638/6_%20%C2%BFQu%C3%A9%20es%20un%20divisor%20de%20voltaje%20y%20su%20importancia_XKZNGO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. ¿Qué es un divisor de voltaje y su importancia</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d1c5389b-2aa5-43af-ba0a-a32173f1f85b/7_%20Pr%C3%A1ctica%20Creando%20nuestro%20divisor%20de%20voltaje_SQXBRR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Práctica Creando nuestro divisor de voltaje</span>
+                        </li>
+                        
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2535306a-a839-4efe-b89d-4a1141f375b2/9_%20Tipos%20de%20capacitores%20y%20sus%20aplicaciones_MTBZRJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Tipos de capacitores y sus aplicaciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/09952f5e-ff7f-4729-a097-e739e736458c/10_%20Capacitores%20a%20detalle_FHDBZP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Capacitores a detalle</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f6a5b37f-e441-4765-8e7a-6cedaae73b31/12_%20Qu%C3%A9%20son%20los%20diodos_TYGICC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Qué son los diodos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/360e7c64-3b65-4c4d-9144-cf7027a75ca1/13_%20Qu%C3%A9%20son%20las%20bobinas_GREBJA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Qué son las bobinas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2a63f8de-634d-4c66-bc29-29a053ac000c/14_%20Uso%20pr%C3%A1ctico%20de%20un%20relevador_WUIPBL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Uso práctico de un relevador</span>
+                        </li>
+                        
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ce5df663-db6a-4d1e-9359-c13f29339dae/16_%20Tipos%20de%20se%C3%B1ales%20el%C3%A9ctricas_DRZKZS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Tipos de señales eléctricas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/60248db7-4e00-4fc4-9e1e-3fefb6f73af2/17_%20Definiendo%20una%20frecuencia_POUYCO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Definiendo una frecuencia</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d3587989-62dd-4c88-b1a9-965f900547cb/18_%20Pr%C3%A1ctica%20Creando%20un%20flash_VWICED.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Práctica Creando un flash</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d3acb5d7-fbd7-46b4-89a4-e168c184d04e/20_%20Proyecto%20final%20%C2%BFqu%C3%A9%20haremos_EKQYYR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Proyecto final ¿qué haremos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/75747e02-00b3-4620-a468-ab376ee9b8e7/22_%20Proyecto%20final%20Esquem%C3%A1tico%20y%20data%20sheets_SVPWKV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Proyecto final Esquemático y data sheets</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1df068a3-4966-4d68-915c-a232666d6688/23_%20Proyecto%20final%20Circuitos%20b%C3%A1sicos%20del%20sistema_MTKWNA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Proyecto final Circuitos básicos del sistema</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0369755b-9728-4507-bf0b-48a929658da9/24_%20Proyecto%20final%20Conexi%C3%B3n%20de%20componentes_PTJICK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Proyecto final Conexión de componentes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f3b0ee98-82c2-44c6-9221-4982e3fbc1b2/26_%20Proyecto%20final%20Demo%20y%20desaf%C3%ADo%20con%20fotoresistencias_PPDOLE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Proyecto final Demo y desafío con fotoresistencias</span>
+                        </li>
+                        
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b88ae9b2-0aae-437c-ab3e-d6d60d95d73b/27_%20Cierre%20del%20curso%20y%20%C2%BFqu%C3%A9%20sigue_TEFGAQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Cierre del curso y ¿qué sigue</span>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

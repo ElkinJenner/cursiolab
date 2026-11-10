@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Introducción a las Pruebas de Software (QA) - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Introducción a las Pruebas de Software (QA)</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <!-- Se omite insignia si no estaba presente en el original, o se mantiene limpio -->
+                <div>
+                    <h1>Curso de Introducción a las Pruebas de Software (QA)</h1>
+                    <p class="video-title">1. Bienvenida al Curso</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://images-codigofacilito.s3.us-west-1.amazonaws.com/images/thumb_default.jpg">
+                        <source src="https://files.catbox.moe/v0inf1.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">24 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://files.catbox.moe/v0inf1.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Bienvenida al Curso</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8e3e8215-491d-4dfe-a319-15aa06375d71/2_%20Anatomia%20del%20Tester%20-%20Curso%20de%20Introduccion%20a%20las%20Pruebas%20de%20Sof_BFXFXR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Etapas del proceso de desarrollo de software.</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/zpqvek.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Definicion y Objetivos de las Pruebas de Software</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/p3t4zn.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Caso de Estudio - El Fallo del Mariner 1</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/q38qlt.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Necesidad de Calidad</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/jyiw1w.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. QA vs Testing</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/v8ernj.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Errores Fallos y Defectos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/f3sjkn.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Caso de Estudio - Agujero en la Capa de Ozono</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/f9okco.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Las Pruebas Denotan la Presencia de Bugs</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/u01ufn.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Las Pruebas Exhaustivas son Imposibles</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/nx3hh7.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Las Pruebas Tempranas Ahorran Mucho Tiempo y Dinero</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/6s9a5r.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Los Errores Tienden a Agruparse</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/jn82ie.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. La Paradoja del Pesticida</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/3jqxhg.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Las Pruebas Dependen del Contexto</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/2180tx.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. La Ausencia de Errores es una Falacia</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/3skibq.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Caso de Estudio - Therac-25</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/rnc6yq.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Contexto como Parte del Proceso Pruebas</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/7ib4uk.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Definicion de Tareas y Actividades Pt1</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8c060f1e-96a2-4cdf-bebb-59f0fa05f03e/19_%20Definicion%20de%20Tareas%20y%20Actividades%20Pt2_SMJQWK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Definicion de Tareas y Actividades Pt2</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/29sg61.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Definicion de Tareas y Actividades Pt3</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8e43d60f-fe18-4e2e-9e97-b083c143d39f/21_%20Caso%20de%20Estudio%20-%20Fallas%20en%20BBVA%20Mexico_WUPMQO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Caso de Estudio - Fallas en BBVA Mexico</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/jdww71.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Pensamiento Orientado a Pruebas</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/qotn2l.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Prejuicios en las Pruebas</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/odor0j.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Siguientes Pasos</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

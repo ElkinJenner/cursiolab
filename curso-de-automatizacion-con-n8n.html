@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Automatizaciones con n8n - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Automatizaciones con n8n</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/f58fa27d-f4f5-4797-920d-f95447cbba5d-aec0c65e-7e42-4b74-9940-d0ae7a4a2e40.png" alt="Badge">
+                <div>
+                    <h1>Curso de Automatizaciones con n8n</h1>
+                    <p class="video-title">1. Automatiza tu trabajo con Nexo CRM</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e0df1011-9f5e-439a-ac95-943ff7984e55/a_XZLGWV.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5804fc24-5c9b-4da4-abac-2b2e4dad557c/1_%20Automatiza%20tu%20trabajo%20con%20Nexo%20CRM_QBVYBE.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">18 clases</span>
+                    </div>
+                  <ul id="videoList">
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5804fc24-5c9b-4da4-abac-2b2e4dad557c/1_%20Automatiza%20tu%20trabajo%20con%20Nexo%20CRM_QBVYBE.mp4" class="active">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>1. Automatiza tu trabajo con Nexo CRM</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5f449ac0-e941-4b3c-b994-48092ae0b47a/2_%20Crea%20tu%20cuenta%20gratuita%20y%20explora%20n8n_ANJYIP.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>2. Crea tu cuenta gratuita y explora n8n</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/41f58395-b07c-4ea2-8d53-65b689139daf/3_%20C%C3%B3mo%20configurar%20triggers%20manuales%20y%20programados%20en%20n8n_YGMCPM.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>3. Cómo configurar triggers manuales y programados en n8n</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/41050b73-812a-407a-8888-9fb446e4d2d7/4_%20C%C3%B3mo%20conectar%20Notion%20con%20n8n%20para%20tu%20CRM_WZLCKF.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>4. Cómo conectar Notion con n8n para tu CRM</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bfc1069d-82be-4a06-9837-39a2c5ca0345/5_%20Edit%20Fields%20en%20n8n%20renombra%20y%20filtra%20datos_ESOHLC.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>5. Edit Fields en n8n renombra y filtra datos</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b81b75d9-ce11-4050-9b35-0ed085ea7f22/6_%20Split%20Out%20divide%20paquetes%20de%20datos%20en%20n8n_RCQFRZ.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>6. Split Out divide paquetes de datos en n8n</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/176b46be-be2c-46bd-842b-dc951ae605b5/7_%20Nodo%20Merge%20cruza%20Google%20Sheets%20con%20Notion%20sin%20duplicar_KMLDGG.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>7. Nodo Merge cruza Google Sheets con Notion sin duplicar</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/83c6612a-a9c1-4a2b-a30c-dcbe8bd7124e/8_%20Credenciales%20propias%20en%20N8N%20Gmail%20Slack%20y%20Notion_PKNVLS.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>8. Credenciales propias en N8N Gmail Slack y Notion</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7a186ad3-8787-4a3b-a2a1-4fb9e4c19d81/9_%20Conectar%20Slack%20a%20n8n%20con%20el%20nodo%20HTTP%20Request_IZWSYM.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>9. Conectar Slack a n8n con el nodo HTTP Request</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/65ee1a8e-d341-4a9f-9943-6e10065b777e/10_%20Automatiza%20contactos%20en%20n8n%20con%20Webhook%20y%20Notion_JAACRH.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>10. Automatiza contactos en n8n con Webhook y Notion</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/23ebc7c6-ff67-4b84-b0bb-687d02a7a27f/11_%20C%C3%B3mo%20dividir%20workflows%20en%20subworkflows%20con%20n8n_GMWLHY.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>11. Cómo dividir workflows en subworkflows con n8n</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b577c70a-9a0b-4d5c-a505-8b7b07714d0d/12_%20C%C3%B3mo%20crear%20un%20error%20workflow%20en%20n8n_QEYDMI.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>12. Cómo crear un error workflow en n8n</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6eb008a1-19f2-4110-9bff-e2c891469b0a/13_%20Crea%20tu%20primer%20agente%20de%20IA%20en%20n8n_YNUZHL.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>13. Crea tu primer agente de IA en n8n</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c35e26fc-a3c4-4860-a4ae-c7f138c069d0/14_%20Memoria%20y%20Telegram%20para%20tu%20agente%20en%20n8n_GCDQLS.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>14. Memoria y Telegram para tu agente en n8n</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3b402ff3-ac64-4ba8-9351-7069dddf3bf2/15_%20C%C3%B3mo%20dar%20herramientas%20de%20Notion%20a%20tu%20agente_GOBZWC.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>15. Cómo dar herramientas de Notion a tu agente</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e47683b6-d15d-4ee1-a193-70ea1282aef6/16_%20C%C3%B3mo%20el%20AI%20Assistant%20de%20n8n%20construye%20workflows_ZRWNJL.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>16. Cómo el AI Assistant de n8n construye workflows</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a85a484e-47bf-4c2a-a41f-5d43a4cf19c5/17_%20C%C3%B3mo%20conectar%20el%20MCP%20de%20Claude%20con%20n8n_HHDGOL.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>17. Cómo conectar el MCP de Claude con n8n</span>
+                    </li>
+                    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7e3dc2fb-5296-4ddf-a223-d774ace4aa40/18_%20n8n%20Cloud%20vs%20self-hosted%20cu%C3%A1l%20elegir_GYOUVV.mp4">
+                        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                        <span>18. n8n Cloud vs self-hosted cuál elegir</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

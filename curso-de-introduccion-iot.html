@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Introducción al IoT - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Introducción al IoT</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badges-intro-iot-d5fd9c07-a18e-487a-8ff8-cc4f2a8b3ff2.png" alt="Badge">
+                <div>
+                    <h1>Curso de Introducción al IoT</h1>
+                    <p class="video-title">1. ¿Qué es el IoT y El IoT de consumo personal?</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://files.catbox.moe/rg91oq.jpg">
+                        <source src="https://files.catbox.moe/6jknnq.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">26 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://files.catbox.moe/6jknnq.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. ¿Qué es el IoT y El IoT de consumo personal?</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/b4jl9f.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. IoT en industria e infraestructura</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/1drkb7.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Lo necesario para tu proyecto IoT</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/yeqpo8.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Materiales y herramientas necesarias</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/4pylcu.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. El impacto de mi proyecto IoT</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/pm408v.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Conexión física de sensores</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/gs5vjp.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Tipos de sensores</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/4m0xyv.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Tipos de actuadores</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/yjuqof.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Voltaje y corriente necesarios para el funcionamiento de un actuador</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/yv81hv.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Tipos de controladores y sus características</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/px5lrj.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Los super poderes de la Pi (Raspberry Pi)</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/891a1s.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Configuración inicial de la Pi, comandos útiles de la consola de Linux</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/id4azv.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Conecta tu Pi a internet</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/h8xnt3.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Conexión por SSH</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/2f6vnp.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Arduino o Raspberry Pi ¿Cuál escoger?</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/3ucd35.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Tipos de comunicaciones básicas entre dispositivos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/xrczc4.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Contexto del problema ¿Cómo lo solucionamos?</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/bigr2l.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Materiales que necesitas</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/qxe32d.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Planeemos el circuito y conectemos sensores</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/24my5t.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Escribamos el código</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/y0yriw.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Subir código y asegurar comunicaciones</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/v6voev.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Trámite de ingreso a la API de Twitter y configuración de Tweetpy</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/wrp4vy.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. ¡Probemos!</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/besupk.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Conclusiones</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

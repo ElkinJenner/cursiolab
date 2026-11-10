@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Fundamentos de Bases de Datos y SQL - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Fundamentos de Bases de Datos y SQL</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-fundamentos-bases-datos-sql-server-badge-96faf80d-23cd-49bb-b7be-64f_dcUPgvP.png" alt="Badge">
+                <div>
+                    <h1>Curso de Fundamentos de Bases de Datos y SQL</h1>
+                    <p class="video-title">1. Para qué sirven las bases de datos</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/effe994a-a28a-4233-a071-93c051a2466f/a_KZZVIH.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5b556810-5e3a-481f-904c-6123da0d38eb/1_%20Para%20qu%C3%A9%20sirven%20las%20bases%20de%20datos_QTJMOH.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">25 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5b556810-5e3a-481f-904c-6123da0d38eb/1_%20Para%20qu%C3%A9%20sirven%20las%20bases%20de%20datos_QTJMOH.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Para qué sirven las bases de datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b6b614de-b39f-4fd5-a4d9-e37f9b1de7e1/2_%20Conoce%20TiendaLatam_UAXZGF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Conoce TiendaLatam</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d3496725-057c-43b4-8c5c-18b95c5df69c/3_%20Entidades%20atributos%20y%20conexiones_JPGXFF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Entidades atributos y conexiones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/80cc0f7a-d6b0-4e63-a654-0be39b4874c4/4_%20Tipos%20de%20relaciones%20entre%20tablas_CMQAGJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Tipos de relaciones entre tablas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/860fadac-fb04-4c0a-8cb7-579900d10925/5_%20Diagrama%20ER%20con%20notaci%C3%B3n%20crows%20foot_NGQRKD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Diagrama ER con notación crows foot</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cd4583b8-b4c8-4c80-a4a3-bd25d3f672a6/6_%20Normalizaci%C3%B3n%20de%20una%20tabla%20plana%20a%20un%20modelo%20limpio_IVRHUS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Normalización de una tabla plana a un modelo limpio</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/262508d6-5d03-4111-b033-951fdece9f56/7_%20Tipos%20de%20datos%20en%20SQL_LWMBJQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Tipos de datos en SQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e8a8197f-f4e1-44fc-af0d-17468aaf09ac/8_%20CREATE%20TABLE%20con%20claves%20primarias%20y%20restricciones_LBPTIK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. CREATE TABLE con claves primarias y restricciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5fcdc2f0-92c4-482a-a442-df69609c9ef1/9_%20Claves%20for%C3%A1neas%20e%20integridad%20referencial_UBFYXF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Claves foráneas e integridad referencial</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fc6440c3-4c37-455f-84d1-ce3b9e128c76/10_%20ALTER%20TABLE%20c%C3%B3mo%20modificar%20tablas%20sin%20perder%20datos_VGBNLX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. ALTER TABLE cómo modificar tablas sin perder datos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8ffe8ab5-f1c7-4fbc-b13e-1ac24448face/11_%20INSERT%20c%C3%B3mo%20cargar%20datos%20en%20tus%20tablas_HTNIEN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. INSERT cómo cargar datos en tus tablas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4958e9df-85ba-4b73-b99f-e60c0c2e77bc/12_%20SELECT%20c%C3%B3mo%20filtrar%20y%20ordenar%20datos%20en%20SQL_LLWMXT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. SELECT cómo filtrar y ordenar datos en SQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e9bae40e-a771-4747-a162-a26c00a4bf11/13_%20UPDATE%20c%C3%B3mo%20actualizar%20datos%20en%20SQL_APYANW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. UPDATE cómo actualizar datos en SQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/11bd41a2-a578-4d80-8ee9-95b73bcca6f2/14_%20DELETE%20borrar%20filas%20o%20desactivarlas_OQTZAQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. DELETE borrar filas o desactivarlas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8a601447-5f8c-454c-a49f-492f101d95b2/15_%20ORDER%20BY%20y%20LIMIT%20C%C3%B3mo%20ordenar%20y%20paginar%20resultados%20en%20SQL_BIBVJR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. ORDER BY y LIMIT Cómo ordenar y paginar resultados en SQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bfb08a31-6c21-43a8-9083-15678f61988b/16_%20Funciones%20de%20texto%20en%20SQL_QKTTQI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Funciones de texto en SQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/111c1e9b-3d7c-47e8-8023-675279e27300/17_%20C%C3%B3mo%20instalar%20PostgreSQL%20en%20Windows_UJWJPC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Cómo instalar PostgreSQL en Windows</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/936bd485-a9a1-42fa-8e58-7702a731ee79/18_%20C%C3%B3mo%20instalar%20PostgreSQL%20en%20Mac_JQRXDI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Cómo instalar PostgreSQL en Mac</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/380abf75-0c93-4d72-82fa-030e76d8a97c/19_%20C%C3%B3mo%20navegar%20PostgreSQL_STCEEE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Cómo navegar PostgreSQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/529ce1ee-014d-4620-91ef-968d8b5d1ee8/20_%20Crea%20la%20base%20de%20datos%20TiendaLatam_GBQUVX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Crea la base de datos TiendaLatam</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a452a61b-0a30-4831-bef8-bd47ec0307ec/21_%20GROUP%20BY%20y%20funciones%20de%20agregaci%C3%B3n%20en%20SQL_QEXUKJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. GROUP BY y funciones de agregación en SQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/85c6df7b-6779-49b1-8651-1f10585db3fc/22_%20HAVING%20filtrar%20despu%C3%A9s%20de%20agrupar_ZQEJCL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. HAVING filtrar después de agrupar</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/75821545-d54b-4b4c-8d73-36e5c77467cb/23_%20INNER%20JOIN%20y%20LEFT%20JOIN%20para%20conectar%20tablas_YWRZPG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. INNER JOIN y LEFT JOIN para conectar tablas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b3d4cfec-bc8a-4e67-9a8b-7f5ddc41fc13/24_%20Reporte%20de%20ventas%20por%20pa%C3%ADs%20de%20TiendaLatam_PKIXKR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Reporte de ventas por país de TiendaLatam</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7843c7a8-d628-4c10-8b39-9781a7e51554/25_%20Detr%C3%A1s%20de%20cada%20tabla%20hay%20una%20decisi%C3%B3n_TUKQEW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Detrás de cada tabla hay una decisión</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

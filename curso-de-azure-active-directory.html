@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Azure Active Directory - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Azure Active Directory</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge_azure-active-directory-54c45045-ea50-40eb-8d53-5d11882a6969.png" alt="Badge">
+                <div>
+                    <h1>Curso de Azure Active Directory</h1>
+                    <p class="video-title">1. Todo lo que aprenderás sobre redes de internet</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ec0ca50b-00d4-4ef0-80bd-e588f241b62d/a_GLUMAU.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4f48062f-2cc4-4ee1-b18e-5dd897d0c57f/1_%20Azure%20Active%20Directory%20Autenticaci%C3%B3n%20y%20Autorizaci%C3%B3n%20en%20la%20Nube_YHQXFW.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">28 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4f48062f-2cc4-4ee1-b18e-5dd897d0c57f/1_%20Azure%20Active%20Directory%20Autenticaci%C3%B3n%20y%20Autorizaci%C3%B3n%20en%20la%20Nube_YHQXFW.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Azure Active Directory Autenticación y Autorización en la Nube</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6c44ba0a-0cce-44c1-88cd-453f2801850d/2_%20Conceptos%20Clave%20de%20Azure%20Active%20Directory_MTEAWI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Conceptos Clave de Azure Active Directory</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ef0ead3f-8023-4444-92b5-2d45cc98b285/3_%20Identidad%20como%20Clave%20en%20Seguridad%20de%20IT%20y%20Autenticaci%C3%B3n%20Avanzada_TXDZZW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Identidad como Clave en Seguridad de IT y Autenticación Avanzada</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/579d0505-fc0b-4be3-bcaf-bfbda21da2c7/4_%20Autenticaci%C3%B3n%20de%20usuarios%20con%20Azure%20Active%20Directory_WOKQJZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Autenticación de usuarios con Azure Active Directory</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fa4f78c9-cd39-4ee0-964e-28dee7027df4/5_%20Autenticaci%C3%B3n%20Multifactor%20Seguridad%20Adicional%20en%20Inicios%20de%20Sesion_RQLGHX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Autenticación Multifactor Seguridad Adicional en Inicios de Sesión</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/827d4df4-7828-4098-9b75-9bb0fec2cfdf/6_%20Autenticaci%C3%B3n%20Moderna%20con%20Azure%20Active%20Directory%20B2C_ZKHEAE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Autenticación Moderna con Azure Active Directory B2C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b7766783-136c-4709-8dde-e65a5843f3d8/7_%20Diferencias%20entre%20Autenticaci%C3%B3n%20y%20Autorizaci%C3%B3n%20en%20Azure%20Active%20D_XXLLLB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Diferencias entre Autenticación y Autorización en Azure Active Directory</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/83be9cec-e4f3-4705-ab69-78068214c979/8_%20Tokens%20en%20Azure%20Active%20Directory%20Tipos%20y%20Uso%20Pr%C3%A1ctico_LJQVVN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Tokens en Azure Active Directory Tipos y Uso Práctico</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6d261b56-e38c-4a52-ab16-f73c2a6863fb/9_%20Protocolos%20de%20Autenticaci%C3%B3n%20en%20Azure%20Active%20Directory_YMSDDD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Protocolos de Autenticación en Azure Active Directory</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/65d8aec5-5f30-41f8-95d7-154e37c33764/10_%20Integraci%C3%B3n%20de%20Aplicaciones%20con%20Active%20Directory%20usando%20MSAL_VOWLEI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Integración de Aplicaciones con Active Directory usando MSAL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c6f90246-9dc3-4b60-993b-4e36ee2a92c2/11_%20Azure%20Active%20Directory%20B2C%20Gesti%C3%B3n%20de%20Usuarios%20y%20Autenticaci%C3%B3n_TEHWUE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Azure Active Directory B2C Gestión de Usuarios y Autenticación</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d4a4d876-991e-4591-b6c0-0b4e4b0ce056/12_%20Personalizaci%C3%B3n%20de%20Active%20Directory%20B2C%20para%20Aplicaciones_EPWDZY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Personalización de Active Directory B2C para Aplicaciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0f78964f-b507-4f52-b0f0-8bf08265cc74/13_%20Creaci%C3%B3n%20y%20gesti%C3%B3n%20de%20Active%20Directory%20B2C%20en%20Azure_BNXGIW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Creación y gestión de Active Directory B2C en Azure</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/880704a4-56ad-4f6b-adec-6d1e731211f6/14_%20Personalizaci%C3%B3n%20de%20Atributos%20y%20UI%20en%20Azure%20Active%20Directory%20B2C_BEZDOK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Personalización de Atributos y UI en Azure Active Directory B2C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9e7e87a1-6e1c-413a-a003-e79aa078a98d/15_%20Comparaci%C3%B3n%20de%20Flujos%20de%20Usuario%20y%20Directivas%20Personalizadas%20en_IGLXBX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Comparación de Flujos de Usuario y Directivas Personalizadas en Azure</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/154a5bf8-ae35-4527-9276-3284e6aee407/16_%20Pol%C3%ADticas%20Personalizadas%20en%20Azure%20Active%20Directory%20B2C_WKDOWA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Políticas Personalizadas en Azure Active Directory B2C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/84c2b34a-f4da-4ae2-878b-dd1847eb8b87/17_%20Configuraci%C3%B3n%20de%20Prerrequisitos%20para%20Pol%C3%ADticas%20Personalizadas%20en_SQCTDH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Configuración de Prerrequisitos para Políticas Personalizadas en Azure</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4afc1764-0dc2-44d6-a324-ba12016e0a14/18_%20Configuraci%C3%B3n%20de%20Pol%C3%ADticas%20Personalizadas%20en%20Azure%20B2C_QPUYZM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Configuración de Políticas Personalizadas en Azure B2C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c3d1c91a-8102-4a40-98c1-5e3c2f7dfaba/19_%20Subida%20y%20prueba%20de%20archivos%20en%20Azure%20para%20pol%C3%ADticas%20de%20identidad_QFWGEY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Subida y prueba de archivos en Azure para políticas de identidad</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6b6ee051-3043-46d5-adaa-c78ce7321882/20_%20Ejemplos%20de%20Active%20Directory%20B2C%20para%20Soluciones%20de%20Identidad_DZALDZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Ejemplos de Active Directory B2C para Soluciones de Identidad</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/129448c8-8e08-48b7-94bb-0f01a546af8e/21_%20Integraci%C3%B3n%20de%20Active%20Directory%20B2C%20en%20ASP_NET%20Core_MLSGJO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Integración de Active Directory B2C en ASP.NET Core</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/30f452f8-ce90-4325-8f96-5ee47d3fe15c/22_%20Configuraci%C3%B3n%20de%20API%20en%20Azure%20Active%20Directory%20Registro%20y%20Permis_AMVUVO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Configuración de API en Azure Active Directory Registro y Permisos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/481f8bc6-1680-47db-9405-5ec3a7739f3a/23_%20Integraci%C3%B3n%20de%20Active%20Directory%20en%20Aplicaciones%20_NET_LYFBXW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Integración de Active Directory en Aplicaciones .NET</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a4b32593-cd93-495e-aadc-cc92b1d7b3e6/24_%20Gesti%C3%B3n%20de%20Active%20Directory%20con%20Microsoft%20Graph%20y%20APIs_EVGRAP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Gestión de Active Directory con Microsoft Graph y APIs</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/84c905e4-c265-4891-bd7e-20ec70b2716b/25_%20Protecci%C3%B3n%20de%20Identidad%20con%20Acceso%20Condicional%20en%20Active%20Directo_ERISHG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Protección de Identidad con Acceso Condicional en Active Directory</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/25bf1740-f47c-4455-950a-ee6e17e83135/26_%20Detecci%C3%B3n%20de%20Inicios%20de%20Sesi%C3%B3n%20Comprometidos%20con%20Azure%20AD_EVMZYS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Detección de Inicios de Sesión Comprometidos con Azure AD</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c7feb194-8eb5-4d7b-a85c-f9f4cbedb518/27_%20Configuraci%C3%B3n%20de%20Multifactor%20Authentication%20en%20Azure_CUPOFJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Configuración de Multifactor Authentication en Azure</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2e141be9-7510-4f7e-b3fa-6957f01c64cd/28_%20Integraci%C3%B3n%20de%20Active%20Directory%20con%20Aplicaciones%20y%20UserFlows_OUJKSN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>28. Integración de Active Directory con Aplicaciones y UserFlows</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Hacking Ético - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Hacking Ético</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-ethical-hacking-7882aa60-a295-4abd-8891-b60c482700cf.png" alt="Badge">
+                <div>
+                    <h1>Curso de Hacking Ético</h1>
+                    <p class="video-title">1. Todo lo que aprenderás sobre redes de internet</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7416eb43-e0f5-4710-b8f8-975cc30f0abc/file_1793314602657_IFRLZP.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b6dd5593-819f-4f80-ad32-b5576a368935/1_%20Seguridad%20Inform%C3%A1tica%20y%20%C3%89tica%20en%20el%20Hacking_EFTEZX.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">35 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b6dd5593-819f-4f80-ad32-b5576a368935/1_%20Seguridad%20Inform%C3%A1tica%20y%20%C3%89tica%20en%20el%20Hacking_EFTEZX.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Seguridad Informática y Ética en el Hacking</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ac45de0a-e36c-4583-ac97-14949cf9f21b/2_%20Panorama%20General%20de%20la%20Seguridad%20Inform%C3%A1tica%20y%20sus%20Principales%20A_IHLTEG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Panorama General de la Seguridad Informática y sus Principales Amenazas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9f01b840-8379-4920-9483-3bcba7728b8d/3_%20Gesti%C3%B3n%20y%20Clasificaci%C3%B3n%20de%20Vulnerabilidades%20en%20Sistemas%20Inform%C3%A1t_TLAXNX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Gestión y Clasificación de Vulnerabilidades en Sistemas Informáticos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b19cf76e-3d04-4a45-8f5a-5605e26f427d/5_%20Instalaci%C3%B3n%20de%20Kali%20Linux%20y%20configuraci%C3%B3n%20de%20entorno%20de%20pruebas_AUNJWX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Instalación de Kali Linux y configuración de entorno de pruebas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3ed9b97d-2afb-4a1f-b35d-eec1f2e856bd/6_%20Instalaci%C3%B3n%20y%20configuraci%C3%B3n%20de%20m%C3%A1quinas%20virtuales%20vulnerables%20en_FLRTTN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Instalación y configuración de máquinas virtuales vulnerables</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d90a9da9-f8a7-4172-bef8-db9d0ef8c638/8_%20Explotaci%C3%B3n%20de%20Vulnerabilidades%20en%20Aplicaciones%20Web_YDLUCH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Explotación de Vulnerabilidades en Aplicaciones Web</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f07b65f3-f611-4efc-a065-0cce5668c1b8/10_%20%C3%89tica%20y%20Hacking%20%C3%89tico%20Fundamentos%20y%20Aplicaciones_VHHDBO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Ética y Hacking Ético Fundamentos y Aplicaciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5a0096f8-d6e7-4241-af6f-ec8e7eb5790f/11_%20B%C3%BAsqueda%20Avanzada%20de%20Informaci%C3%B3n%20en%20Fuentes%20Abiertas_ZSMJAB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Búsqueda Avanzada de Información en Fuentes Abiertas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e26c68ed-bd4d-4b4d-9179-4347e5799046/12_%20Uso%20de%20Herramientas%20de%20Hacking%20para%20Resoluci%C3%B3n%20de%20Retos%20Cibern%C3%A9t_AXMBBY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Uso de Herramientas de Hacking para Resolución de Retos Cibernéticos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ed652598-1838-4510-998f-f5045acb002e/13_%20Fundamentos%20del%20Ethical%20Hacking%20y%20Certificaciones%20Internacionale_EYPDWU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Fundamentos del Ethical Hacking y Certificaciones Internacionales</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/40b67683-9e7b-4cf0-b2f6-6e207f5caa8e/14_%20Prueba%20de%20seguridad%20conceptos%20importancia%20y%20recomendaciones_BDWAQO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Prueba de seguridad conceptos importancia y recomendaciones</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0daaa09a-f384-4cfe-9c46-f25dbaf1f96e/15_%20Pruebas%20de%20Seguridad%20Tipos%20y%20Fases%20Esenciales_JWSSOO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Pruebas de Seguridad Tipos y Fases Esenciales</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1bf6474a-d3e0-4a21-b9d1-c92aed3038dd/16_%20B%C3%BAsqueda%20de%20Claves%20Secretas%20en%20Repositorios%20Git%20con%20Kali%20Linux_OBRLFC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Búsqueda de Claves Secretas en Repositorios Git con Kali Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/73a40944-b386-46fa-897c-46ed2f8448c4/18_%20Escaneo%20de%20Redes%20con%20Nmap%20en%20Kali%20Linux_KDMBXJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Escaneo de Redes con Nmap en Kali Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/83877193-5dc9-4040-a55f-22a1a3ac8898/19_%20Resoluci%C3%B3n%20de%20retos%20con%20herramientas%20de%20seguridad%20web_JCGUJG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Resolución de retos con herramientas de seguridad web</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3c1ce1cb-84c8-435d-a1dd-525fd075afc9/20_%20Explotaci%C3%B3n%20de%20Vulnerabilidades%20en%20Sistemas%20con%20Nexus%20y%20Metasplo_EHJDYA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Explotación de Vulnerabilidades en Sistemas con Nessus y Metasploit</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5e40d164-4b9d-4e8a-b022-0a391bf021e2/22_%20Est%C3%A1ndares%20y%20Legislaci%C3%B3n%20en%20Seguridad%20de%20la%20Informaci%C3%B3n_JMFXFB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Estándares y Legislación en Seguridad de la Información</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9df6c1cf-8280-4cfc-accd-cc2adc0e4cf8/24_%20Ciberdelitos%20y%20Convenio%20de%20Budapest%20Estrategias%20de%20Persecuci%C3%B3n_MBEGFE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Ciberdelitos y Convenio de Budapest Estrategias de Persecución</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e2f4fd58-9b5d-4b4f-b2a6-cd82795906e9/25_%20An%C3%A1lisis%20Est%C3%A1tico%20de%20Malware%20Herramientas%20y%20T%C3%A9cnicas%20B%C3%A1sicas_FSWYZI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Análisis Estático de Malware Herramientas y Técnicas Básicas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/73666608-c211-4672-bcd0-5d4aebb6a228/26_%20An%C3%A1lisis%20Din%C3%A1mico%20de%20Malware%20Uso%20de%20Herramientas%20y%20T%C3%A9cnicas%20B%C3%A1si_KTLMJG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Análisis Dinámico de Malware Uso de Herramientas y Técnicas Básicas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3bfab34e-6bb7-479e-90a1-b65aec2e2202/28_%20Ataques%20de%20Hombre%20en%20el%20Medio%20Conceptos%20y%20Ejecuci%C3%B3n%20Pr%C3%A1ctica_ONWBEI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>28. Ataques de Hombre en el Medio Conceptos y Ejecución Práctica</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ba2d8bda-0dac-405d-ad62-e8d5fcf67784/29_%20Ataques%20de%20Denegaci%C3%B3n%20de%20Servicio%20Uso%20de%20LOIC%20y%20HOIC_UXWJXB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>29. Ataques de Denegación de Servicio Uso de LOIC y HOIC</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9b71914f-62cf-4ae2-abf6-abaa766b7968/30_%20Ingenier%C3%ADa%20Social%20T%C3%A9cnicas%20y%20Uso%20de%20Social%20Finish_BWZGJM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>30. Ingeniería Social Técnicas y Uso de Social Fish</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/850c82a9-2bef-4946-aaa3-dfab649d7c96/31_%20Pol%C3%ADticas%20de%20Seguridad%20y%20Controles%20de%20Acceso%20en%20Empresas_KIAILM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>31. Políticas de Seguridad y Controles de Acceso en Empresas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/85185c3f-1cab-4395-bacb-1991c5550a58/32_%20Resoluci%C3%B3n%20de%20Retos%20de%20Seguridad%20en%20San%20Holidays%20Challenge_UFTROU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>32. Resolución de Retos de Seguridad en San Holidays Challenge</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c6e6d7e6-e185-4d77-8a43-cfe82060560c/34_%20Instalaci%C3%B3n%20y%20configuraci%C3%B3n%20de%20IDS%20con%20Snort%20en%20Linux_VFUIIO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>34. Instalación y configuración de IDS con Snort en Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1eea9433-fff6-4965-af89-e5c2c395612f/35_%20Gesti%C3%B3n%20de%20Riesgos%20y%20Modelado%20de%20Amenazas%20en%20Seguridad%20Inform%C3%A1ti_XLXBCO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>35. Gestión de Riesgos y Modelado de Amenazas en Seguridad Informática</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

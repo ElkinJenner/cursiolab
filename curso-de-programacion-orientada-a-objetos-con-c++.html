@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Programación Orientada a Objetos con C++ - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Programación Orientada a Objetos con C++</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/programacion-orientada-objetos-c-badge-390c6f52-c29b-42a0-810a-4fa5527cdf96.png" alt="Badge">
+                <div>
+                    <h1>Curso de Programación Orientada a Objetos con C++</h1>
+                    <p class="video-title">1. Manejo de Memoria y Punteros en C</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_60c3f20a677434191d5d7c8a_60c3f20a677434191d5d7c96_5s.jpg">
+                        <source src="https://files.catbox.moe/bu0bp7.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">16 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/72d09ccc-8900-4e79-b090-5ab27f77fc28/1_%20Manejo%20de%20Memoria%20y%20Punteros%20en%20C_EVULWI.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Manejo de Memoria y Punteros en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5d69f0c5-032b-44ff-881d-8bfef926f918/2_%20Punteros%20en%20C%20Manejo%20y%20Uso%20de%20Memoria%20Din%C3%A1mica_JYLBGC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Punteros en C Manejo y Uso de Memoria Dinámica</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7eff9b70-0136-47b8-9c40-c1a7a0ad5a76/3_%20Uso%20de%20Punteros%20en%20C%20Variables%20y%20Memoria%20Din%C3%A1mica_YZVZCH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Uso de Punteros en C Variables y Memoria Dinámica</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bbdc7e2e-5ef8-4e60-8029-18a8781f575a/4_%20Estructuras%20de%20Datos%20Personalizadas%20en%20C_QKQNGE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Estructuras de Datos Personalizadas en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/77c28be8-7e5a-4bcf-a35e-622c07609766/5_%20Creaci%C3%B3n%20y%20uso%20de%20estructuras%20y%20punteros%20en%20C_VGEABU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Creación y uso de estructuras y punteros en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/242765f1-199e-4811-ba97-df04f99f7365/6_%20Uniones%20y%20Enumeraciones%20en%20C%20Gesti%C3%B3n%20Eficiente%20de%20Memoria_XVVHJG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Uniones y Enumeraciones en C Gestión Eficiente de Memoria</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/831c2cb3-ffd4-44e1-abcf-47fdf03f69bc/7_%20Programaci%C3%B3n%20Orientada%20a%20Objetos%20en%20C%20Conceptos%20B%C3%A1sicos_TYAJRG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Programación Orientada a Objetos en C Conceptos Básicos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c8ba394d-1a75-4f37-9a3b-6812635d8ca2/8_%20Programaci%C3%B3n%20Orientada%20a%20Objetos%20Creaci%C3%B3n%20de%20Clases%20y%20Objetos%20en_SQMCCU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Programación Orientada a Objetos Creación de Clases y Objetos en</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8198f490-4889-4b44-847f-022d4234b06e/9_%20Ciclo%20de%20Vida%20de%20Objetos%20en%20C%20Constructores%20y%20Destructores_AVQZRP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Ciclo de Vida de Objetos en C Constructores y Destructores</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d6c045e3-2cb6-4b3b-b3f7-4f663711203f/10_%20Encapsulaci%C3%B3n%20de%20Atributos%20en%20C%20Pr%C3%A1cticas%20Seguras_WGTNQU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Encapsulación de Atributos en C Prácticas Seguras</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2bf1e3d1-c008-43cb-b236-37af2ab66120/11_%20Uso%20del%20Puntero%20This%20en%20C%20para%20Desambiguaci%C3%B3n%20y%20Autorreferencia_DWXJHC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Uso del Puntero This en C para Desambiguación y Autorreferencia</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c2ad6272-a1c4-4560-8783-0cd8de4d64c7/12_%20Atributos%20y%20M%C3%A9todos%20Est%C3%A1ticos%20en%20Programaci%C3%B3n%20Orientada%20a%20Objeto_QJKRPR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Atributos y Métodos Estáticos en Programación Orientada a Objeto</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1fc730b2-0410-4ced-9558-b33b904327da/13_%20Herencia%20en%20C%20Implementaci%C3%B3n%20y%20Ejemplos%20Pr%C3%A1cticos_CTEMHD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Herencia en C Implementación y Ejemplos Prácticos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8d75f081-7632-4718-b3c2-4dd70edea9f7/14_%20Herencia%20M%C3%BAltiple%20en%20C%20Implementaci%C3%B3n%20y%20Ejemplos%20Pr%C3%A1cticos_DDRFPC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Herencia Múltiple en C Implementación y Ejemplos Prácticos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9bb56175-e5bf-4713-a88b-ef451bb12849/15_%20Polimorfismo%20en%20Programaci%C3%B3n%20Orientada%20a%20Objetos_KTEPLD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Polimorfismo en Programación Orientada a Objetos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/221ec068-a960-43be-a6eb-21858e00c323/16_%20Evaluaci%C3%B3n%20Final%20Programaci%C3%B3n%20Orientada%20a%20Objetos%20en%20C_ZTHFNN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Evaluación Final Programación Orientada a Objetos en C</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

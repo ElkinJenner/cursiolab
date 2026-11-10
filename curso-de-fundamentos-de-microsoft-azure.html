@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Fundamentos de Microsoft Azure (AZ-900) - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Fundamentos de Microsoft Azure (AZ-900)</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-introduccion-nube-azure-05c6de71-609b-4b00-971c-56a8d88915d2-bc332df_mEWvSp5.webp" alt="Badge">
+                <div>
+                    <h1>Curso de Fundamentos de Microsoft Azure (AZ-900)</h1>
+                    <p class="video-title">1. Despliegue de Soluciones en la Nube con Azure</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ef45ccc1-124e-4159-af7a-717f70c2eeb6/1_%20Despliegue%20de%20Soluciones%20en%20la%20Nube%20con%20Azure_IYSFRK.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">39 clases</span>
+                    </div>
+                    <ul id="videoList">
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ef45ccc1-124e-4159-af7a-717f70c2eeb6/1_%20Despliegue%20de%20Soluciones%20en%20la%20Nube%20con%20Azure_IYSFRK.mp4" class="active">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>1. Despliegue de Soluciones en la Nube con Azure</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f41e3119-8645-4473-a26f-07db3a021cf8/2_%20Nube%20privada%20p%C3%BAblica%20e%20h%C3%ADbrida%20en%20Azure_XBACRA.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>2. Nube privada, pública e híbrida en Azure</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ed59338b-da27-45bf-ac10-c2e6e16fbcee/3_%20Costos%20y%20Beneficios%20de%20Soluciones%20en%20la%20Nube%20con%20Azure_UGRYKP.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>3. Costos y Beneficios de Soluciones en la Nube con Azure</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9be36358-4165-4f67-9e29-1a98da095c77/4_%20C%C3%B3mo%20crear%20tu%20cuenta%20gratuita%20en%20Azure_PAEGIC.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>4. Cómo crear tu cuenta gratuita en Azure</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1bc2cc5c-8470-4030-a2b3-95a7ccde903c/5_%20Instala%20y%20configura%20Azure%20CLI%20desde%20cero_ZRVUAX.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>5. Instala y configura Azure CLI desde cero</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0a7b5ec2-13a4-4ab9-8a79-f19a46a25c59/6_%20Gesti%C3%B3n%20de%20Costos%20en%20Azure%20Uso%20de%20Suscripciones%20y%20Presupuestos_PDAGPZ.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>6. Gestión de Costos en Azure Uso de Suscripciones y Presupuestos</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/dc52c384-0eba-4280-86b8-6cad2bf736d1/7_%20C%C3%B3mo%20navegar%20el%20cat%C3%A1logo%20de%20servicios%20Azure_XGPHUA.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>7. Cómo navegar el catálogo de servicios Azure</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f4f6ba3c-13c9-4888-b523-272fce195c63/8_%20Exploraci%C3%B3n%20de%20Productos%20y%20Documentaci%C3%B3n%20en%20Azure%20para%20Contenedo_HATNLM.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>8. Exploración de Productos y Documentación en Azure para Contenedores</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bac36cdb-d90d-478e-9a4f-fe82fec98982/9_%20Etiquetas%20en%20Azure%20para%20organizar%20recursos_GZQNVK.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>9. Etiquetas en Azure para organizar recursos</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ceb8c97d-b26a-4d2b-ae16-70771eca8015/10_%20Crea%20y%20automatiza%20Storage%20Accounts%20con%20ARM_LACDNA.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>10. Crea y automatiza Storage Accounts con ARM</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6853bd6b-76ec-4cec-abbc-0a669dc73b2a/11_%20Automatizaci%C3%B3n%20de%20Despliegue%20en%20Azure%20con%20L%C3%ADnea%20de%20Comandos_KVOXPM.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>11. Automatización de Despliegue en Azure con Línea de Comandos</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/33ef4521-58b6-4a79-9e4b-28327b6b844a/12_%20M%C3%A1quinas%20virtuales%20en%20Azure%20con%20CLI_LWXLHU.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>12. Máquinas virtuales en Azure con CLI</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b032abaa-90b7-41d5-a62f-495d6de93b93/13_%20Despliega%20apps%20en%20Azure%20sin%20m%C3%A1quinas%20virtuales_ZGNTRS.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>13. Despliega apps en Azure sin máquinas virtuales</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d6e9677f-9d33-4c04-9ccb-2f75b9481624/14_%20Despliegue%20de%20WordPress%20usando%20SaaS%20en%20Azure_TJGSBO.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>14. Despliegue de WordPress usando SaaS en Azure</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8f8fbfe9-ec7b-40bb-ae24-b68138913c3f/15_%20Selecci%C3%B3n%20de%20Regiones%20de%20Centros%20de%20Datos%20en%20la%20Nube_FPFKUE.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>15. Selección de Regiones de Centros de Datos en la Nube</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f281b202-e291-4056-b4ce-090f3deb1b06/16_%20Escalabilidad%20y%20Alta%20Disponibilidad%20en%20la%20Nube%20con%20Azure_MEDUIZ.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>16. Escalabilidad y Alta Disponibilidad en la Nube con Azure</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9cf5a84f-0f21-4387-84f3-797fa6625528/17_%20Administraci%C3%B3n%20de%20Acceso%20en%20Azure%20Control%20de%20Roles%20y%20Permisos_XSWDCQ.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>17. Administración de Acceso en Azure Control de Roles y Permisos</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/60f02a6e-20e9-47f8-933c-2547c0142d64/18_%20Gesti%C3%B3n%20de%20Accesos%20y%20Roles%20en%20Azure%20Control%20de%20Privilegios_OALXVX.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>18. Gestión de Accesos y Roles en Azure Control de Privilegios</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f9047c63-ecd9-40a4-8577-3e896544c85a/19_%20Seguridad%20en%20Aplicaciones%20Nativas%20en%20la%20Nube%20Principio%20de%20Cero%20C_UUIYXB.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>19. Seguridad en Aplicaciones Nativas en la Nube Principio de Cero Confianza</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/935b6d53-58ab-4b00-bc1f-0f76d7dd7c56/20_%20Evaluaci%C3%B3n%20de%20Costos%20en%20la%20Nube%20Uso%20de%20Calculadora%20TCO_QDPBZV.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>20. Evaluación de Costos en la Nube Uso de Calculadora TCO</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/311c7e7f-bd45-4a85-b792-91ff7ab92811/21_%20Gesti%C3%B3n%20de%20Seguridad%20y%20Usuarios%20en%20Microsoft%20Entra%20ID%20para%20Azure_NJRGWL.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>21. Gestión de Seguridad y Usuarios en Microsoft Entra ID para Azure</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/22ac2187-504c-4292-b005-ee275defdce7/22_%20Autenticaci%C3%B3n%20sin%20contrase%C3%B1a%20en%20Microsoft%20Entra%20ID_YCGUHU.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>22. Autenticación sin contraseña en Microsoft Entra ID</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/52b928c3-68fb-4db6-a5d2-abcf6b64675c/23_%20Creaci%C3%B3n%20de%20Roles%20de%20Acceso%20en%20Azure%20con%20Service%20Principal_SGEBRC.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>23. Creación de Roles de Acceso en Azure con Service Principal</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/33900dd9-7437-489c-ac61-806db5792443/24_%20M%C3%A1quinas%20virtuales%20containers%20y%20functions%20en%20Azure_ZDIUPW.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>24. Máquinas virtuales, containers y functions en Azure</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/80a6d67b-882b-497b-99ca-437a8508014c/25_%20Despliega%20m%C3%BAltiples%20VMs%20con%20Scale%20Sets_LBHXTA.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>25. Despliega múltiples VMs con Scale Sets</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b3d23ffd-28cf-4e90-906e-925bd299cf98/26_%20Zonas%20DNS%20internas%20en%20Azure%20con%20CLI_VVJZOF.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>26. Zonas DNS internas en Azure con CLI</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8cd59d43-d2e4-460c-a9cc-637e74955c0b/27_%20Acceso%20p%C3%BAblico%20a%20una%20VM%20en%20Azure%20con%20RDP_SIOBUR.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>27. Acceso público a una VM en Azure con RDP</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/34d368f3-a840-4d7d-8629-7bcaa05f71bb/28_%20N%C3%ADveis%20de%20acesso%20no%20Azure%20Storage%20e%20custos_TJIIIR.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>28. Níveis de acesso no Azure Storage e custos</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2d518aba-8f17-4e95-8aac-e5712cb9fee5/29_%20Llaves%20de%20acceso%20en%20Azure%20Storage_RTXWHE.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>29. Llaves de acceso en Azure Storage</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3c8bdea4-8f5f-4418-82bd-0cc74bcd7d99/30_%20Cuenta%20de%20almacenamiento%20privada%20en%20Azure%20VNet_SCCLVF.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>30. Cuenta de almacenamiento privada en Azure VNet</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/29fe9b95-69c9-4ac8-b37b-92158f536f2a/31_%20Acceso%20a%20VMs%20privadas%20con%20Azure%20Bastion_KYGHLS.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>31. Acceso a VMs privadas con Azure Bastion</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7cc58dae-f527-4839-b7c7-dd73afdbad2c/32_%20Seguridad%20en%20la%20Nube%20con%20Microsoft%20Defender%20y%20Azure_IXVZBN.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>32. Seguridad en la Nube con Microsoft Defender y Azure</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e1031e5b-940a-4f81-9f3d-d94a7579fba9/33_%20C%C3%B3mo%20crear%20pol%C3%ADticas%20de%20seguridad%20con%20Azure%20Policy_XVJOYS.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>33. Cómo crear políticas de seguridad con Azure Policy</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/634e2bb0-699d-4569-902c-1d6c6b1fab2c/34_%20Azure%20Cloud%20Shell%20desde%20el%20portal%20sin%20instalar%20nada_MGQKNQ.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>34. Azure Cloud Shell desde el portal sin instalar nada</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/89615daf-e09c-448d-9495-6db1098004a2/35_%20Desplegando%20recursos%20en%20Azure%20con%20Bicep_WAUAQZ.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>35. Desplegando recursos en Azure con Bicep</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ed7d2e33-bb0f-4f71-9017-5628a0c1cb6c/36_%20Automatizaci%C3%B3n%20de%20Despliegue%20en%20Azure%20con%20Bicep%20y%20Terraform_DXVTZL.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>36. Automatización de Despliegue en Azure con Bicep y Terraform</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/08613f67-af23-4f1e-a3ae-4c161b4b034a/37_%20Monitoreo%20de%20Azure%20Service%20Health%20para%20Administradores%20de%20Nube_JDFDWJ.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>37. Monitoreo de Azure Service Health para Administradores de Nube</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2b4738e4-360d-45e4-af8b-492ab30a2a79/38_%20Portales%20sat%C3%A9lite%20de%20Azure%20por%20especialidad_QISIBS.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>38. Portales satélite de Azure por especialidad</span>
+    </li>
+    <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6f08b881-ec66-43bf-a08c-cdef45e34b75/39_%20Qu%C3%A9%20es%20serverless%20y%20c%C3%B3mo%20funciona%20en%20Azure_CBUMRN.mp4">
+        <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+        <span>39. Qué es serverless y cómo funciona en Azure</span>
+    </li>
+</ul>
+
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

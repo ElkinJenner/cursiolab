@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Klotin - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Klotin</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-kotlin-eb74bb6e-ee76-4b91-9f17-be3d1da8804d.png" alt="Badge">
+                <div>
+                    <h1>Curso de Klotin</h1>
+                    <p class="video-title">1. Fundamentos de Kotlin Variables funciones y estructuras de datos</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://files.catbox.moe/5qy7js.jpg">
+                        <source src="https://files.catbox.moe/me94kr.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">35 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://files.catbox.moe/me94kr.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Fundamentos de Kotlin: Variables, funciones y estructuras de datos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/cpl53i.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Instalación y configuración de IntelliJ IDEA para Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/2169z2.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Creación de proyecto Kotlin en IntelliJ y primer programa</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/gtgtph.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Variables y tipos de datos básicos en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/es1hra.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Operadores aritméticos y módulo en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/rqqxil.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Operadores lógicos (AND, OR y NOT) en programación</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/0icmnq.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Manejo de valores nulos y operadores seguros en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/pa1r67.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Lectura de datos por consola con readLine en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/x3bbse.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Creación de funciones en Kotlin para organizar código</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/yhpzyh.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Condicionales en Kotlin: if/else</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/yrx3m2.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Estructura when de Kotlin para múltiples condiciones</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/hbzydq.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Arrays y listas mutables en Kotlin: creación y manipulación</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/5djdib.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Listas inmutables y mutables en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/s862cp.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Ciclos for, while y do while en Kotlin para iterar colecciones</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/gr59dk.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Creación de clases y objetos en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/xdxysv.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Getters y setters en Kotlin: validación y propiedades calculadas</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/e3adk5.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Dataclases en Kotlin: ventajas sobre clases normales</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/wn1jvz.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Enums en Kotlin: Constantes organizadas para casos específicos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/dshd86.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Manejo de excepciones con Try, Catch y Finally en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/qui9at.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Extension functions en Kotlin para ampliar clases existentes</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/off6sc.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Funciones de alto orden y lambdas en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/i0ncwc.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Uso de lambdas y funciones de alto orden en arrays y colecciones</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/ljhx4h.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Funciones with y also en Kotlin para operaciones múltiples</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/wi7dkz.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Scope functions de Kotlin: let, apply y run para manipular objetos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/7qoayk.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Modificadores de visibilidad y encapsulamiento en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/l39x0a.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Interfaces y patrón repository en Kotlin para gestión de datos</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/37kcr1.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Clases abstractas y métodos abstractos en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/kfv9qk.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>28. Control de herencia con sealed classes en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/6v95cr.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>29. Sealed interfaces para modelar acciones en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/805fdx.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>30. Generics en Kotlin: tipos genéricos para código reutilizable</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/exfaoj.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>31. Creación de modelos y repositorios para simulador de emails en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/od4ui3.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>32. Creación de clase service para coordinar repositorios en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/y0b9qm.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>33. Implementación de funciones avanzadas del servicio Inbox en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/s8ljb1.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>34. Interfaz por consola para gestión de correos en Kotlin</span>
+                        </li>
+                        <li data-video="https://files.catbox.moe/e545ia.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>35. Pruebas de funcionalidades de correo en Kotlin</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

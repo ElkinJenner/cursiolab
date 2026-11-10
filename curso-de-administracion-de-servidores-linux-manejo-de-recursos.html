@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Administración de Servidores Linux: Manejo de Recursos - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Administración de Servidores Linux</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-admin-servidores-linux2-1-9ee5d59f-559d-451a-a7ea-6bae8c6bf47b.png" alt="Badge">
+                <div>
+                    <h1>Curso de Administración de Servidores Linux: Manejo de Recursos</h1>
+                    <p class="video-title">1. Gestión de recursos en servidores Linux</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/courses/og-admin-servidores-linux2_1.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d289dec4-1656-484d-a1c2-22280486d73f/1_%20Gesti%C3%B3n%20de%20recursos%20en%20servidores%20Linux_KBVFIJ.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">15 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d289dec4-1656-484d-a1c2-22280486d73f/1_%20Gesti%C3%B3n%20de%20recursos%20en%20servidores%20Linux_KBVFIJ.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Gestión de recursos en servidores Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4995e3fe-4612-49de-a49c-b72e967ccd9d/2_%20Arranque%20del%20Sistema%20Operativo%20Conceptos%20y%20Procesos%20Clave_MFJXQR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Arranque del Sistema Operativo Conceptos y Procesos Clave</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7f47cf10-df4a-4514-9538-a222669afa1e/3_%20Modo%20recovery%20de%20Ubuntu%20desde%20GRUB_YLBMOZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Modo recovery de Ubuntu desde GRUB</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d72f526f-b865-41e8-aa5c-191ed75711f9/4_%20Usuarios%20y%20grupos%20en%20Linux%20explicados_TSDDYS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Usuarios y grupos en Linux explicados</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/45f8ab94-26bf-4182-aa13-e00aa06d11ca/5_%20Gesti%C3%B3n%20de%20usuarios%20en%20Linux%20desde%20SSH_BSTNHD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Gestión de usuarios en Linux desde SSH</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ab5e6ec9-32ab-44f6-9436-06127b40c699/6_%20Carpetas%20compartidas%20con%20grupos%20en%20Linux_IDHCAJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Carpetas compartidas con grupos en Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0939da50-d493-4985-aeb9-3c6379ff25e1/7_%20C%C3%B3mo%20Linux%20controla%20accesos%20y%20permisos_IWSZKN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Cómo Linux controla accesos y permisos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/216c4441-bf65-4ef9-ad2f-fe583bce6486/8_%20Gesti%C3%B3n%20de%20Permisos%20de%20Administrador%20en%20Linux%20con%20Sudo_GZYRUL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Gestión de Permisos de Administrador en Linux con Sudo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bc7e665a-0eac-4e24-a9e8-3e4a2fb4125b/9_%20Particiones%20y%20montaje%20de%20discos%20en%20Linux_SOIMTU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Particiones y montaje de discos en Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e37b8f56-5c1c-431e-ba66-0eb659d166ce/10_%20RAID%201%20y%20LVM%20combinados%20en%20Linux_SFCSCH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. RAID 1 y LVM combinados en Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fd4bd3df-a031-4d7a-a570-dc28ac1ae708/11_%20C%C3%B3mo%20crear%20RAID%201%20en%20Linux%20con%20mdadm_KUDEGT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Cómo crear RAID 1 en Linux con mdadm</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/83b4537b-04f6-4e27-a9a2-83a5462b305f/12_%20LVM%20sobre%20RAID-1%20en%20Linux%20paso%20a%20paso_KAZMUG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. LVM sobre RAID-1 en Linux paso a paso</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/02e1ec47-45b6-4a9c-8303-0a3ebf421730/13_%20C%C3%B3mo%20montar%20LVM%20sobre%20RAID%20en%20fstab_TDLBHM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Cómo montar LVM sobre RAID en fstab</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b4b43fcc-3a79-431e-8e5f-a2b1c2d75648/14_%20C%C3%B3mo%20romper%20el%20GRUB%20en%20Linux_TEXWGB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Cómo romper el GRUB en Linux</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ee676bea-e1d0-4b43-9d36-fe6e246055e8/15_%20C%C3%B3mo%20reparar%20el%20GRUB%20con%20chroot_ZNSOMQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Cómo reparar el GRUB con chroot</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

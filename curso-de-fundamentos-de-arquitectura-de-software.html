@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Fundamentos de Arquitectura de Software - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Fundamentos de Arquitectura de Software </span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-fundamentos-arquitectura-software-badge-0d432110-03c6-4dbc-821b-d83179d14334.png" alt="Badge">
+                <div>
+                    <h1>Curso de Fundamentos de Arquitectura de Software</h1>
+                    <p class="video-title">1. Decisiones de arquitectura de software y sus consecuencias reale</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/37eac541-8c6d-4f18-8975-7c5d81d250d9/file_1794236154458_WAPVVT.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ab49dcd1-2d5e-496c-a741-faf4984e4c94/1_%20Decisiones%20de%20arquitectura%20de%20software%20y%20sus%20consecuencias%20reale_VANGTT.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">24 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ab49dcd1-2d5e-496c-a741-faf4984e4c94/1_%20Decisiones%20de%20arquitectura%20de%20software%20y%20sus%20consecuencias%20reale_VANGTT.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Decisiones de arquitectura de software y sus consecuencias reale</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/852c245c-dd1a-40ab-9556-236c3f3bb81b/2_%20IA%20en%20arquitectura%20herramienta%20o%20amenaza_KGCTNM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. IA en arquitectura herramienta o amenaza</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9efa4334-a775-412c-b12b-07c74eb1b43b/3_%20Qu%C3%A9%20hace%20un%20arquitecto%20de%20software_ZNLNHC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Qué hace un arquitecto de software</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4b317a17-15ec-434e-a82b-7c4cd46a487b/4_%20Problemas%20esenciales%20vs%20incidentales%20en%20arquitectura%20de%20software_WQQEJH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Problemas esenciales vs incidentales en arquitectura de software</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/330fc7fc-8ebd-4030-9c4a-c6f315511e1a/5_%20Malas%20pr%C3%A1cticas%20de%20arquitectura%20y%20c%C3%B3mo%20evitarlas_VQGDQT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Malas prácticas de arquitectura y cómo evitarlas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6da6c21e-cc64-41b0-8740-22f381b5f696/6_%20Espacio%20de%20problema%20vs%20soluci%C3%B3n%20en%20arquitectura_PNIHXT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Espacio de problema vs solución en arquitectura</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/002682bb-49f1-475f-8067-791b798736f9/7_%20Requisitos%20funcionales%20y%20no%20funcionales%20en%20arquitectura%20de%20softw_OOXFVM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Requisitos funcionales y no funcionales en arquitectura de softw</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cd155978-dd21-491c-afda-74017f1f9250/8_%20Costo%20total%20de%20operaci%C3%B3n%20en%20arquitecturas%20modernas_GPAPRH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Costo total de operación en arquitecturas modernas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e136dc0e-ea6e-4c85-88a6-63d3761f6b76/9_%20Alineaci%C3%B3n%20de%20arquitectura%20de%20software%20con%20estrategia%20empresaria_IUKVIR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Alineación de arquitectura de software con estrategia empresaria</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fc358298-0a9e-425b-b00d-f1e9f5eb7650/10_%20Mindset%20del%20arquitecto%20que%20abraza%20el%20cambio_OGKMFZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Mindset del arquitecto que abraza el cambio</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2f77cfe5-db96-4f25-b6b0-e4c5dbb1a206/11_%20C%C3%B3mo%20elegir%20un%20estilo%20arquitect%C3%B3nico%20sin%20fallar_LBZDHQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Cómo elegir un estilo arquitectónico sin fallar</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8e3f3a2c-5fab-4546-9463-130adb6d343c/12_%20Arquitectura%20cliente%20servidor%20fundamentos%20y%20comunicaci%C3%B3n%20por%20cap_DPTKPU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Arquitectura cliente servidor fundamentos y comunicación por cap</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2dd66d97-3ea0-44ed-b2b9-0ff959d3a838/13_%20Qu%C3%A9%20son%20las%20arquitecturas%20monol%C3%ADticas%20y%20sus%20ventajas%20y%20desventaj_IUZVRS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Qué son las arquitecturas monolíticas y sus ventajas y desventaj</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9c00d811-ed67-451e-8caf-e0df4581c0c1/14_%20Arquitecturas%20orientadas%20a%20servicios%20contratos%20y%20especificacione_DNPEKH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Arquitecturas orientadas a servicios contratos y especificacione</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/37e1ab0d-d122-4225-b6a5-ff5fea1a3934/15_%20C%C3%B3mo%20funcionan%20los%20eventos%20en%20sistemas%20distribuidos_CLXJEQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Cómo funcionan los eventos en sistemas distribuidos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1dc6c094-ad8a-40ea-9860-03eddec0258f/16_%20Costos%20ocultos%20de%20los%20microservicios_LAUGJA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Costos ocultos de los microservicios</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7655cc70-f1ee-4882-9f0a-0c00a369d5ba/17_%20Paradigmas%20y%20principios%20SOLID%20explicados_JVSDUK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Paradigmas y principios SOLID explicados</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/51d9714c-46ef-4376-8541-a210616d76b0/18_%20Qu%C3%A9%20hace%20limpia%20a%20una%20arquitectura%20de%20software_BCGKFL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Qué hace limpia a una arquitectura de software</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/02163d58-8dd4-4fdf-a9cc-4d921c26368a/19_%20Patrones%20de%20software%20para%20arquitectos_CWSLEJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Patrones de software para arquitectos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3bf9cab3-845a-4cb7-99ff-af0dfd06ebfd/20_%20Arquitectura%20MVP%20de%20Telegram%20a%20Remarkable_CAHWLR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Arquitectura MVP de Telegram a Remarkable</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3bf9533f-4ea2-48bf-925b-d84b56340cf2/21_%20Evolucionar%20un%20MVP%20sin%20rearquitectar%20desde%20cero_XVDSBG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Evolucionar un MVP sin rearquitectar desde cero</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2a17272f-5aaf-4dcf-af6c-0db92d71b248/22_%20Evoluci%C3%B3n%20del%20software%20personal%20hacia%20el%20modelo%20empresarial_FGOZYF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Evolución del software personal hacia el modelo empresarial</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bdfb9b69-c966-4ba0-bff6-bf00feb5c50a/23_%20Preguntas%20clave%20que%20todo%20arquitecto%20de%20software%20usa_WXYDKW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Preguntas clave que todo arquitecto de software usa</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5d301dad-d26a-43b0-b6d2-36ebd1ab8f2a/24_%20Consejos%20para%20desarrollar%20carrera%20como%20arquitecto%20de%20software_NJDFDR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Consejos para desarrollar carrera como arquitecto de software</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

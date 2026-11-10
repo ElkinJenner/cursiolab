@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Fundamentos de .NET - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Fundamentos de .NET</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-punto-net-e43a17e5-0b67-456a-b2c9-89057b0e0960.png" alt="Badge">
+                <div>
+                    <h1>Curso de Fundamentos de .NET</h1>
+                    <p class="video-title">1. Cómo el motor de .NET ejecuta tu código C</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/ms-landings-admin/media/thumb_punto_net_236050fc1d.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fcbc4ce1-9d42-418e-b233-84f0c9958244/1_%20C%C3%B3mo%20el%20motor%20de%20_NET%20ejecuta%20tu%20c%C3%B3digo%20C_MWPAXG.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">21 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fcbc4ce1-9d42-418e-b233-84f0c9958244/1_%20C%C3%B3mo%20el%20motor%20de%20_NET%20ejecuta%20tu%20c%C3%B3digo%20C_MWPAXG.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Cómo el motor de .NET ejecuta tu código C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/734699de-d0fd-4af9-91e1-dec739b190bf/2_%20C%C3%B3mo%20_NET%20corre%20c%C3%B3digo%20en%20tres%20sistemas_GIFIJG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Cómo .NET corre código en tres sistemas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c195fec4-7fc9-4f44-b0c5-a7dc4ad34e8e/3_%20Creaci%C3%B3n%20de%20un%20proyecto%20de%20consola%20en%20C_YLRFUN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Creación de un proyecto de consola en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e7862559-3e79-4aa5-ace6-ebb4557dcaff/4_%20CLI%20de%20_NET%20comandos%20para%20organizar%20proyectos_BLSEZU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. CLI de .NET comandos para organizar proyectos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ace5bd9b-364f-486f-bb91-33bbf9886343/5_%20Carpetas%20bin%20y%20obj%20en%20_NET%20qu%C3%A9%20son%20y%20cu%C3%A1ndo%20ignorarlas_XFTWVK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Carpetas bin y obj en .NET qué son y cuándo ignorarlas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0418edb6-704a-43cc-be6c-f1be35f61380/6_%20Checkpoint%20del%20m%C3%B3dulo%20quiz%20y%20proyecto%20base_PQWASG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Checkpoint del módulo quiz y proyecto base</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/39993b5a-786a-4411-b372-f2dfa7447f69/7_%20C%C3%B3mo%20funcionan%20los%20argumentos%20en%20C_YUGELI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Cómo funcionan los argumentos en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/163084cd-e38f-48cf-897a-a579adf5654e/8_%20Conversi%C3%B3n%20segura%20con%20TryParse%20en%20C_EGFQYQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Conversión segura con TryParse en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/62d7f70b-3922-4ec3-b5af-702f90a64424/9_%20Null%20en%20C%20validar%20entrada%20del%20usuario_IMVLTU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Null en C validar entrada del usuario</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4b39aa7e-195a-40cd-abb9-6d19d3a92134/10_%20Exit%20codes%20y%20manejo%20de%20null%20en%20C_XYJHVQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Exit codes y manejo de null en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5d148db1-b70f-4148-b235-79497a1229bc/11_%20Anatom%C3%ADa%20de%20un%20m%C3%A9todo%20en%20C_UJXPWK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Anatomía de un método en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a0312383-f636-472f-95f9-d067f5aaf9d7/12_%20Clases%20enums%20y%20records%20en%20C_VDWZXN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Clases enums y records en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1af4d799-46ca-4af9-8404-6cb7bbd38661/13_%20Guard%20clauses%20validaci%C3%B3n%20temprana%20en%20C_WDLKCF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Guard clauses validación temprana en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5f45a637-994f-4f2c-a122-45810e96a1d4/14_%20Checkpoint%20validaci%C3%B3n%20Factory%20y%20enums%20en%20C_JZGFYJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Checkpoint validación Factory y enums en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6666c391-e35d-45db-8f73-1f7635efd087/15_%20List%20Dictionary%20y%20HashSet%20en%20C_PTKIRB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. List Dictionary y HashSet en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/60968610-f418-4937-aad8-83e4dc6b7f94/16_%20LINQ%20para%20filtrar%20agrupar%20y%20calcular%20en%20C_AIYJUO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. LINQ para filtrar agrupar y calcular en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/35a08e90-2230-4f87-95af-46f9ec4d7414/17_%20Checkpoint%20Consultas%20Avanzadas_VEQMNL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Checkpoint Consultas Avanzadas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/01b0877a-1496-4905-a8d5-c9cf22f9f20b/18_%20C%C3%B3mo%20funciona%20FileManager%20en%20C_AOAFTH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Cómo funciona FileManager en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ed17f1e6-0f72-4386-b275-1c5f6cc1ebdb/19_%20Serializaci%C3%B3n%20JSON%20en%20_NET%20guardar%20y%20recuperar%20objetos_WOUJKU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Serialización JSON en .NET guardar y recuperar objetos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/adaf9654-dcd7-42ad-a89a-f0b0cf23b2af/20_%20LINQ%20y%20StringBuilder%20reportes%20de%20inventario%20en%20C_UZNYKR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. LINQ y StringBuilder reportes de inventario en C</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e3663ba4-095e-4507-b7c5-e0401b0628ad/21_%20Facade%20y%20men%C3%BA%20completo%20en%20C%20con%20persistencia%20JSON_JAXPBA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Facade y menú completo en C con persistencia JSON</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

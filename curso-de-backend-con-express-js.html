@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Backend con ExpressJS - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Backend con ExpressJS</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/piezas-backend-expressjs-badge-f1c3ae16-10d8-4d8b-8e76-351c8ea44413.png" alt="Badge">
+                <div>
+                    <h1>Curso de Backend con ExpressJS</h1>
+                    <p class="video-title">1. Primer servidor con Express JS en Node</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/thumbnails/expressJSTumb-2ec7ded1-c1e6-4b7c-92e6-85d812abbf06..png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ee749224-022a-4e46-8f2d-faa7af8eaa41/1_%20Primer%20servidor%20con%20Express%20JS%20en%20Node_KCYWID.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">30 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ee749224-022a-4e46-8f2d-faa7af8eaa41/1_%20Primer%20servidor%20con%20Express%20JS%20en%20Node_KCYWID.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Primer servidor con Express JS en Node</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ed84bcf6-e99c-4b09-a9f6-5bcbcd3372a3/2_%20Gesti%C3%B3n%20de%20Versiones%20y%20Configuraci%C3%B3n%20de%20Node_js%20con%20NVM_IFDDQK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Gestión de Versiones y Configuración de Node.js con NVM</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/965b464f-4bf2-4edf-95d8-965c0d3dbefb/3_%20Configuraci%C3%B3n%20y%20uso%20de%20variables%20de%20entorno%20en%20Node_js_DQHVEG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Configuración y uso de variables de entorno en Node.js</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6b13c741-7373-46a3-9b89-18fbb929ab62/4_%20Configuraci%C3%B3n%20de%20Body%20Parser%20en%20Express%20para%20APIs%20RESTful_YEJTHV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Configuración de Body Parser en Express para APIs RESTful</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8d7b03fc-cf36-4eb3-a8f7-978eaf6bc947/5_%20Procesamiento%20de%20Formularios%20y%20JSON%20con%20Body%20Parser_MSPBLF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Procesamiento de Formularios y JSON con Body Parser</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/18b86ecf-a662-4b0e-95bb-c72e05c67808/6_%20Creaci%C3%B3n%20y%20Configuraci%C3%B3n%20de%20Workspaces%20en%20Postman%20para%20API%20Testi_IXMUPU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Creación y Configuración de Workspaces en Postman para API Testi</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/53b9107a-af8e-4ac1-8924-da47aab9b0f9/7_%20M%C3%A9todos%20HTTP%20y%20CRUD%20con%20Express_js_BFIZVT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Métodos HTTP y CRUD con Express.js</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0048bc74-5aac-420d-aadc-54628578f92b/8_%20Endpoint%20GET%20con%20fs%20en%20Node_js_JVPSDN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Endpoint GET con fs en Node.js</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0faf07c5-7d6c-4410-ac37-45c14cd10be3/9_%20Creaci%C3%B3n%20de%20Usuarios%20con%20M%C3%A9todo%20POST%20en%20Node_js_XQXUNO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Creación de Usuarios con Método POST en Node.js</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e3a5d302-7911-4101-89b0-2a28263ef7d3/10_%20Actualizaci%C3%B3n%20de%20Usuarios%20con%20Node_js%20y%20Express_KWNQZW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Actualización de Usuarios con Node.js y Express</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bebae366-77f4-4ef7-9b00-a6f7257fd0c5/11_%20Validaciones%20en%20POST%20y%20PUT%20para%20Datos%20de%20Usuario%20en%20APIs_ZITEXI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Validaciones en POST y PUT para Datos de Usuario en APIs</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c579a608-76f1-4a85-b5fc-909113584343/12_%20Eliminar%20Usuarios%20en%20un%20CRUD%20usando%20Node_js%20y%20Express_JJEWVJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Eliminar Usuarios en un CRUD usando Node.js y Express</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b0257a50-a883-4748-8520-75e40eba2d12/13_%20Creaci%C3%B3n%20de%20Middleware%20para%20Registro%20de%20Solicitudes%20en%20Express_QADOVM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Creación de Middleware para Registro de Solicitudes en Express</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/301e3b04-cfcb-4ba3-986b-c7ecbb0ca3c0/14_%20Middleware%20de%20errores%20en%20Express%20por%20entorno_STHUIF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Middleware de errores en Express por entorno</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ee4e423b-3a8f-4229-835b-e92b85f5ab8b/15_%20Instala%20PostgreSQL%20para%20tu%20API%20m%C3%A9dica_SUUUSY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Instala PostgreSQL para tu API médica</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a0e6a9bf-ffca-43e7-bc32-a2d794b53c2b/16_%20Prisma%20ORM%20con%20PostgreSQL%20en%20Node_js_CMDTWW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Prisma ORM con PostgreSQL en Node.js</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ce7a5278-df14-4254-a7e4-ff9c2f27b51a/17_%20Creaci%C3%B3n%20y%20Gesti%C3%B3n%20de%20Usuarios%20con%20Prisma%20y%20Node_js_NRBNGO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Creación y Gestión de Usuarios con Prisma y Node.js</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/50ca7f3e-6e67-45fa-b7aa-b937a0c48f69/18_%20Middleware%20JWT%20para%20rutas%20protegidas_PPBCXN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Middleware JWT para rutas protegidas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ca7b401c-308e-4ab0-800f-4cf2533f2c84/19_%20Registro%20de%20Usuarios%20y%20Almacenamiento%20Seguro%20de%20Contrase%C3%B1as_KYTYBL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Registro de Usuarios y Almacenamiento Seguro de Contraseñas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b3295c22-e4f0-449a-9100-c79f6b9e4853/20_%20Autenticaci%C3%B3n%20de%20Usuarios%20con%20JSON%20Web%20Tokens%20y%20Prisma_RFQOIU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Autenticación de Usuarios con JSON Web Tokens y Prisma</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7e78ac34-7082-496f-8a68-968fb976d10c/21_%20Organizaci%C3%B3n%20y%20estructuraci%C3%B3n%20de%20aplicaciones%20Node_js%20con%20Expres_IDQWDJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Organización y estructuración de aplicaciones Node.js con Expres</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/924c4ff4-f108-4d1a-84de-22116b47d509/22_%20Refactorizando%20auth%20en%20controllers%20y%20services_GNLWIQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Refactorizando auth en controllers y services</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e2031f9d-f22f-48ef-92f6-ee9d6fdecae6/23_%20Modelado%20de%20Citas%20M%C3%A9dicas%20con%20Prisma%20y%20PostgreSQL_KSGHSQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Modelado de Citas Médicas con Prisma y PostgreSQL</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1435e3a7-6abd-447e-9421-1734c47acc9e/24_%20Administraci%C3%B3n%20de%20Bloques%20de%20Tiempo%20en%20Aplicaciones%20Web_UJSTFB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Administración de Bloques de Tiempo en Aplicaciones Web</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f86b312b-95d6-4bb8-90e8-9a1dff8e48e5/25_%20C%C3%B3mo%20crear%20un%20admin%20service%20con%20Prisma_RKVEBD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Cómo crear un admin service con Prisma</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/175ade86-58ce-4620-acc1-de44972abb74/26_%20Rutas%20y%20controladores%20del%20m%C3%B3dulo%20reservations_VQMXQX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Rutas y controladores del módulo reservations</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f27aad84-00c0-45ba-a4bc-d851cb787674/27_%20Servicios%20y%20Controladores%20para%20Gesti%C3%B3n%20de%20Reservas%20en%20Node_js_IYWQTZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Servicios y Controladores para Gestión de Reservas en Node.js</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2fbbd040-e89b-449b-9129-515bc2e9b1f8/28_%20Endpoint%20para%20listar%20citas%20con%20Prisma_DJGVAE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>28. Endpoint para listar citas con Prisma</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/69aeb5bf-5d1d-42a8-85ab-52da05d3b2c2/29_%20Despliegue%20de%20API%20Express%20con%20Railway_VGFTME.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>29. Despliegue de API Express con Railway</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bb1f1aed-ff07-43ca-89ca-886700ef0308/30_%20Despliegue%20de%20API%20Express%20en%20la%20Nube%20con%20Base%20de%20Datos%20Conectada_OXYSQD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>30. Despliegue de API Express en la Nube con Base de Datos Conectada</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

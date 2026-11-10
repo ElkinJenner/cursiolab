@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de React.js: Manejo Profesional del Estado - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de React.js: Manejo Profesional del Estado</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/react-a4cc5125-0dee-4ec4-a3e3-f1d799973cfd.png" alt="Badge">
+                <div>
+                    <h1>Curso de React.js: Manejo Profesional del Estado</h1>
+                    <p class="video-title">1. Manejo Avanzado del Estado en React.js</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://thumbs.cdn.mdstrm.com/thumbs/512e13acaca1ebcd2f000279/thumb_61898bb0a465160821f0d6ab_61898bb0a465160821f0d6b7_21s.jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4b0fd08a-a7cb-43f0-a182-dca3bfd8fdfc/1_%20Manejo%20Avanzado%20del%20Estado%20en%20React_js_YTIMXN.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">29 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4b0fd08a-a7cb-43f0-a182-dca3bfd8fdfc/1_%20Manejo%20Avanzado%20del%20Estado%20en%20React_js_YTIMXN.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Manejo Avanzado del Estado en React.js</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2805a851-4e2e-4249-aed9-bf561560a6c9/2_%20Creaci%C3%B3n%20de%20Proyectos%20React%20y%20Manejo%20de%20Estado%20con%20Hooks%20y%20Clase_AVGJHN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Creación de Proyectos React y Manejo de Estado con Hooks y Clase</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a4e11ee3-35f5-4b65-8391-68ed6585811e/3_%20Diferencias%20entre%20Componentes%20de%20Clase%20y%20Funci%C3%B3n%20en%20React_TCRNLH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Diferencias entre Componentes de Clase y Función en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1a560ce2-0b16-4408-9dcc-673e53e976be/4_%20Efectos%20y%20ciclo%20de%20vida%20en%20componentes%20React%20con%20useEffect_VKYDVP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Efectos y ciclo de vida en componentes React con useEffect</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/80e25c07-88d3-44c6-ad5b-48971f54254d/5_%20M%C3%A9todos%20del%20ciclo%20de%20vida%20en%20componentes%20de%20clase%20React_XFDAIM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Métodos del ciclo de vida en componentes de clase React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1660fb16-eb05-4ba4-be44-cb3540134544/6_%20Diferencias%20entre%20estados%20simples%20y%20compuestos%20en%20React_OLHREQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Diferencias entre estados simples y compuestos en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5754d3f2-d6d6-4601-9384-c2f6862a62fe/7_%20Actualizaci%C3%B3n%20de%20estados%20en%20interfaces%20de%20usuario%20con%20React_ZKWBER.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Actualización de estados en interfaces de usuario con React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d0946677-2992-4950-bcca-73f8e72a011e/8_%20Estados%20Compuestos%20en%20Componentes%20de%20Clase%20con%20React_WWGERT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Estados Compuestos en Componentes de Clase con React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6da8e39e-dc3f-4021-9217-7866310e8112/9_%20Estados%20Compuestos%20con%20React_UseState%20Manejo%20y%20Actualizaci%C3%B3n%20Efi_YKSXXB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Estados Compuestos con React.UseState Manejo y Actualización Efi</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6513bdc0-613f-443b-8461-a408cb8ad4e1/10_%20Programaci%C3%B3n%20Imperativa%20vs%20Declarativa%20Implementaci%C3%B3n%20en%20React_EGRHOA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Programación Imperativa vs Declarativa Implementación en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1e1451fa-cfdc-4b71-8b92-c88a2f38d096/11_%20Programaci%C3%B3n%20Declarativa%20Simplificaci%C3%B3n%20y%20Abstracci%C3%B3n%20de%20Estados_SVLEQH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Programación Declarativa Simplificación y Abstracción de Estados</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a3dc637f-56cc-4fb6-af0d-00219ee53e8f/12_%20Uso%20de%20UseReducer%20para%20manejar%20el%20estado%20en%20React_VZMOPN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Uso de UseReducer para manejar el estado en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/dc4c4414-9a3e-4f37-87b8-1835a151fc6b/13_%20Creaci%C3%B3n%20de%20Reducers%20If%20Switch%20y%20Reducer%20Objects%20en%20React_STJQQE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Creación de Reducers If Switch y Reducer Objects en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0ff74006-612c-4575-b998-a91e090f11d0/14_%20Manejo%20de%20estados%20con%20useReducer%20en%20React_SGVRFO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Manejo de estados con useReducer en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0ba910ba-5eb0-4436-bf67-8ead53bb5b42/15_%20Manejo%20de%20Action%20Types%20y%20Action%20Creators%20en%20React%20Reducers_SVIDUC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Manejo de Action Types y Action Creators en React Reducers</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f0b946cb-47e0-47b4-9b2c-bfd48ad192fe/16_%20Manejo%20de%20Estados%20Derivados%20en%20React%20con%20useState_ZZYZJF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Manejo de Estados Derivados en React con useState</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6de08e01-a093-4435-b664-a93734f0a65c/17_%20Migraci%C3%B3n%20de%20UseState%20a%20UseReducer%20en%20React_IHRXLN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Migración de UseState a UseReducer en React</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1ea1155b-ff27-4597-9e29-c0d0c48ced53/18_%20Optimizaci%C3%B3n%20de%20Custom%20Hooks%20en%20React%20sin%20UseReducer_HUSDAT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Optimización de Custom Hooks en React sin UseReducer</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8fabc96f-e629-4e10-9406-ef7e59765383/19_%20Manejo%20Profesional%20del%20Estado%20en%20React%20con%20Hooks%20y%20Reducers_JPZUAR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Manejo Profesional del Estado en React con Hooks y Reducers</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

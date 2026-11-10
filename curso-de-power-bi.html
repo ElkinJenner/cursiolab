@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Power BI - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Power BI</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-powerbi-new-e7335632-ac4a-4d3b-8a23-5735e1a569a1.png" alt="Badge">
+                <div>
+                    <h1>Curso de Power BI</h1>
+                    <p class="video-title">1. Análisis de Datos para Decisiones Estratégicas con Power BI</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/51b7df10-e420-4392-b775-1d4463bbccfc/file_1793319794430_EPYAQN.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5e64af6d-f8b5-4d7b-9792-fa82dca2919f/1_%20An%C3%A1lisis%20de%20Datos%20para%20Decisiones%20Estrat%C3%A9gicas%20con%20Power%20BI_DMDFDU.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">25 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5e64af6d-f8b5-4d7b-9792-fa82dca2919f/1_%20An%C3%A1lisis%20de%20Datos%20para%20Decisiones%20Estrat%C3%A9gicas%20con%20Power%20BI_DMDFDU.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Análisis de Datos para Decisiones Estratégicas con Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fc50af84-6b71-4c10-99a3-2cd3200b2d68/2_%20Instalaci%C3%B3n%20de%20Power%20BI%20en%20Windows%20paso%20a%20paso_QXQYZH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Instalación de Power BI en Windows paso a paso</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/74040a83-7801-4296-8f58-b2dc789c5d14/3_%20Exploraci%C3%B3n%20de%20Interfaces%20en%20Power%20BI%20para%20Principiantes_ESOGWM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Exploración de Interfaces en Power BI para Principiantes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/fcb7c880-6a29-432b-97d7-bf5c2f0160d1/4_%20Configuraci%C3%B3n%20de%20Conexiones%20de%20Datos%20en%20Power%20BI_FYFVPO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Configuración de Conexiones de Datos en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/785ed6e5-327b-4d67-88fb-039673d32940/5_%20An%C3%A1lisis%20de%20Datos%20Exploraci%C3%B3n%20y%20Definici%C3%B3n%20de%20Preguntas%20en%20Power_OLZNES.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Análisis de Datos Exploración y Definición de Preguntas en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ee6a4d23-4266-4776-acb0-705a9849fb8c/6_%20Limpieza%20y%20Preparaci%C3%B3n%20de%20Datos%20en%20Power%20BI_FZNLJF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Limpieza y Preparación de Datos en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0b2eccce-def6-491d-ba9c-cc8823cd8888/7_Limpieza%20y%20Transformaci%C3%B3n%20de%20Datos%20en%20Power%20BI_DAHOXW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Limpieza y Transformación de Datos en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8b417597-b716-4d06-9bf6-bb6cea41d187/8_%20Creaci%C3%B3n%20de%20Columnas%20Personalizadas%20con%20Power%20Query%20en%20Power%20BI_VNOXVE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Creación de Columnas Personalizadas con Power Query en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a56447e2-1e0b-4cf7-9822-b9a2c7999e5c/9_%20Modelado%20de%20Datos%20Conceptos%20y%20Buenas%20Pr%C3%A1cticas%20en%20Power%20BI_MNNMBO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Modelado de Datos Conceptos y Buenas Prácticas en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/04301798-e1fc-468d-9f94-d74a0652bfcc/10_%20Construcci%C3%B3n%20de%20Modelos%20de%20Datos%20en%20Power%20BI_LWEVNN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Construcción de Modelos de Datos en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/02a637e5-9784-4a5c-944c-d9548f02a09e/11_%20Creaci%C3%B3n%20de%20Columnas%20Calculadas%20y%20Medidas%20con%20DAX%20en%20Power%20BI_CXYRBE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Creación de Columnas Calculadas y Medidas con DAX en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0e7d999a-b197-4240-8e85-7bda98665a5b/12_%20Creaci%C3%B3n%20de%20Tablas%20Calendario%20en%20Power%20BI%20con%20DAX_XLFGJN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Creación de Tablas Calendario en Power BI con DAX</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5534e836-dd18-4e00-bcb0-231996884c93/13_%20An%C3%A1lisis%20de%20Ventas%20y%20DAX%20en%20Sucursales%20Comerciales_IZRKHW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Análisis de Ventas y DAX en Sucursales Comerciales</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/130cbe07-785f-416a-a22d-022ba8ec6979/14_%20Comparar%20ventas%20por%20a%C3%B1o%20con%20DAX_NLQUHR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Comparar ventas por año con DAX</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b4eb74ee-f1ac-4b57-903d-d396921cd711/15_%20Principales%20Visualizaciones%20de%20Datos%20en%20Power%20BI_YIOPBJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Principales Visualizaciones de Datos en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8ed480ed-8c62-48f2-8fee-7e8dec636522/16_%20Interacciones%20y%20filtros%20en%20Power%20BI%20para%20an%C3%A1lisis%20de%20ventas_LUMDRP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Interacciones y filtros en Power BI para análisis de ventas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e89463fc-4bce-4d5c-bb1e-80035c5fc5ef/17_%20Principios%20de%20Dise%C3%B1o%20para%20Reportes%20Efectivos%20en%20Power%20BI_CNXZVU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Principios de Diseño para Reportes Efectivos en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ca2f4433-e4b3-4eb4-bb7d-f6374b7a5efb/18_%20Optimizaci%C3%B3n%20de%20Reportes%20en%20Power%20BI%20para%20Mejorar%20Experiencia%20de_LRLLGI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Optimización de Reportes en Power BI para Mejorar Experiencia de Usuario</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a5b8e465-f011-49fd-99b6-c5d250512d3b/19_%20Configuraci%C3%B3n%20de%20Gr%C3%A1ficos%20de%20Dispersi%C3%B3n%20en%20Power%20BI_MGCVMC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Configuración de Gráficos de Dispersión en Power BI</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f535e9fb-e507-49a5-8ab9-2fe9557793d7/20_%20Uso%20de%20Temas%20en%20Power%20BI%20para%20Mejorar%20el%20Dise%C3%B1o%20de%20Reportes_UPVVJE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Uso de Temas en Power BI para Mejorar el Diseño de Reportes</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/819c8b04-4f95-49eb-b71b-aedda378f5b0/21_%20Publicar%20reportes%20con%20Power%20BI%20Service_XKTDMI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Publicar reportes con Power BI Service</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f4c247ad-3908-45d1-8121-610b05138612/22_%20Creaci%C3%B3n%20de%20Cuenta%20de%20Prueba%20en%20Power%20BI%20Service_QPJWSI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Creación de Cuenta de Prueba en Power BI Service</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e29e2aaf-5b91-4d05-a587-092938faa771/23_%20Publicaci%C3%B3n%20y%20Compartici%C3%B3n%20de%20Reportes%20en%20Power%20BI%20Service_FEZHXI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Publicación y Compartición de Reportes en Power BI Service</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0083de88-a0df-41d4-b141-b99143761d1a/24_%20Exportar%20Datos%20de%20Power%20BI%20a%20Excel%20Gu%C3%ADa%20Pr%C3%A1ctica_CRSRFG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Exportar Datos de Power BI a Excel Guía Práctica</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7dc791b1-73b6-44c1-9c3a-b5e03c9eefb6/25_%20An%C3%A1lisis%20de%20Resultados%20en%20Power%20BI%20Transformando%20Datos%20en%20Conoci_HYLXWO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Análisis de Resultados en Power BI Transformando Datos en Conocimiento</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

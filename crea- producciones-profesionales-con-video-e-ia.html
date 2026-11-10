@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea producciones profesionales con video e IA - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Crea producciones profesionales con video e IA</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/f73d8b00-e195-4f0f-8cc6-62ad62d72f20-744c3f59-e451-4cfd-b049-c7f9a8d14dc0.png" alt="Badge">
+                <div>
+                    <h1>Crea producciones profesionales con video e IA</h1>
+                    <p class="video-title">1. Crea producciones profesionales con video e IA</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/courses/688c4fe5-821c-4511-ba83-1a74164fe71d.jpeg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5b99efe7-9c57-4832-b779-87fe3df60e73/1_%20Crea%20producciones%20profesionales%20con%20video%20e%20IA_FSWKFG.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">12 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5b99efe7-9c57-4832-b779-87fe3df60e73/1_%20Crea%20producciones%20profesionales%20con%20video%20e%20IA_FSWKFG.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Crea producciones profesionales con video e IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8b4c301e-2d21-472b-801e-eae5e3d22117/2_%20Genera%20tu%20primer%20video%20con%20AI%20gratis_JTGGTQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Genera tu primer video con AI gratis</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cebb6fdf-293b-4763-b0ee-8030979de23a/3_%20Tres%20m%C3%A9todos%20para%20controlar%20tus%20videos%20con%20IA_JHSXOX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Tres métodos para controlar tus videos con IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6129eeb0-a56e-4170-8bc3-0dc8e052d637/4_%20Prompt%20por%20etiquetas%20control%20total%20en%20video%20con%20IA_CGBMZV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Prompt por etiquetas control total en video con IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/270b7b48-2f75-49b1-81a3-8283cc8d41ac/5_%20Moodboard%20la%20clave%20para%20im%C3%A1genes%20con%20IA_XYEUAL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Moodboard la clave para imágenes con IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/58fa684e-beb8-4494-b6ec-3735a810305d/6_%20C%C3%B3mo%20crear%20un%20video%20de%20producto%20con%20IA_EEELWM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Cómo crear un video de producto con IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2bc1ae78-a247-4c97-9b89-972042fb47e7/7_%20C%C3%B3mo%20crear%20videos%20IA%20que%20parecen%20reales_PMIPVO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Cómo crear videos IA que parecen reales</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/278a203b-339f-4600-88ed-fc77be4ef920/8_%20C%C3%B3mo%20editar%20un%20video%20sin%20regrabarlo%20con%20IA_DRHOEK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Cómo editar un video sin regrabarlo con IA</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1c390e26-46e4-4428-8df6-c3ff32ea50fd/9_%20C%C3%B3mo%20crear%20B-roll%20con%20inteligencia%20artificial_QGKOWE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Cómo crear B-roll con inteligencia artificial</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/39c730ef-9722-4504-9fa7-830c870f55cf/10_%20Style%20extractor%20c%C3%B3mo%20aplicar%20cualquier%20estilo%20visual_BCPXBV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Style extractor cómo aplicar cualquier estilo visual</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d56b32f7-5796-45b3-915b-630b1c59e47c/11_%20De%20storyboard%20a%20video%20con%20Kling%20y%20Seance_GMJMLV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. De storyboard a video con Kling y Seance</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/acb85e3c-da6f-4328-914d-87780bad952f/12_%20C%C3%B3mo%20crear%20un%20guion%20t%C3%A9cnico%20con%20IA%20paso%20a%20paso_WGOFYA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Cómo crear un guion técnico con IA paso a paso</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

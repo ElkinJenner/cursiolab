@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Fundamentos de Prueba de Software - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Fundamentos de Prueba de Software</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/5d01a6ea-05e8-425a-aa32-556885923e3a-676afe56-1384-46ab-8d30-5f9d759d5a16.png" alt="Badge">
+                <div>
+                    <h1>Curso de Fundamentos de Prueba de Software</h1>
+                    <p class="video-title">1. Siete Principios del Testing de Software</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/thumbnails/course-piece-pruebas-software-f06a4ad3-9944-4985-b48d-cdca30dfc3f3..jpg">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e036caa4-9e7c-425b-825e-df4e7e4de971/1_%20Siete%20Principios%20del%20Testing%20de%20Software_KJHWGQ.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">15 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e036caa4-9e7c-425b-825e-df4e7e4de971/1_%20Siete%20Principios%20del%20Testing%20de%20Software_KJHWGQ.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Siete Principios del Testing de Software</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/f704f2ea-3d54-43b4-bb27-5a41428eb23e/2_%20Diferencias%20entre%20Error%20Defecto%20Falla%20y%20Anomal%C3%ADa_INTFPX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Diferencias entre Error Defecto Falla y Anomalía</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/755c4fb8-1894-4490-81ba-d65b1f0d5973/3_%20Tipos%20y%20Niveles%20de%20Pruebas%20de%20Software_KSNYJL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Tipos y Niveles de Pruebas de Software</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/319738f3-0aa8-4dc6-a9c5-374e91941bc3/4_%20Detecci%C3%B3n%20Temprana%20con%20Pruebas%20Est%C3%A1ticas_CWFHIY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Detección Temprana con Pruebas Estáticas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1f5a7ee1-de56-40e3-9648-818003dc0356/5_%20Particiones%20de%20Equivalencia%20y%20Valores%20L%C3%ADmite_AFQPQD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Particiones de Equivalencia y Valores Límite</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1eb5ca55-2c2e-404a-9e06-2496e2c7edce/6_%20Tablas%20de%20Decisi%C3%B3n%20para%20Reglas%20de%20Negocio_FVSFAH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Tablas de Decisión para Reglas de Negocio</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a856b15b-e179-4691-a4cf-5bfc8b101bd6/7_%20Pruebas%20de%20Caja%20Blanca%20y%20Caja%20Gris_FINVLN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Pruebas de Caja Blanca y Caja Gris</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8384f1fd-e3c1-4bf6-add8-baddfb3f9f03/8_%20Estructura%20del%20Reporte%20de%20Defecto%20Profesional_ZFBTOQ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Estructura del Reporte de Defecto Profesional</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/da3589d0-9589-4117-a33a-ec4cab9ce84a/9_%20Severidad%20Prioridad%20y%20Ciclo%20del%20Defecto_YDYJOM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Severidad Prioridad y Ciclo del Defecto</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b64e11e4-b114-46b4-94c3-19e953f1789f/10_%20Estrategia%20de%20Pruebas%20Basada%20en%20Riesgo_OZJTNZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Estrategia de Pruebas Basada en Riesgo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/993b8085-f0a0-45a7-85df-9a5fe92cd33a/11_%20Testing%20%C3%81gil%20y%20Criterios%20de%20Aceptaci%C3%B3n_NSIEFW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Testing Ágil y Criterios de Aceptación</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/7d4f776a-84a0-43d7-b0f4-e38560f1da2a/12_%20M%C3%A9tricas%20e%20Indicadores%20del%20Proceso%20de%20Pruebas_TRRNQN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Métricas e Indicadores del Proceso de Pruebas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ab7d785a-de97-443c-a91f-91f7eaf8d590/13_%20Evaluar%20Candidatos%20para%20Automatizaci%C3%B3n%20de%20Pruebas_MYBZSL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Evaluar Candidatos para Automatización de Pruebas</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2f37663b-85dd-463e-a022-b2b52c7b8388/14_%20Elaborar%20un%20Plan%20de%20Pruebas%20Formal_PDGKFJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Elaborar un Plan de Pruebas Formal</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/76bc8de3-13cc-4c1d-bbee-3c98b56c8b4d/15_%20Reporte%20de%20Cierre%20y%20Entregables%20de%20Pruebas_AFZFCE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Reporte de Cierre y Entregables de Pruebas</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Firebase 5 para Web - CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Firebase 5 para Web</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-firebase-web-441f64cc-bedf-4aea-937d-e2f413f2d96d.png" alt="Badge">
+                <div>
+                    <h1>Curso de Firebase 5 para Web</h1>
+                    <p class="video-title">1. Firebase web blog completo paso a paso</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="https://static.platzi.com/media/courses/OG-Firebase-para-Web.png">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d2df2dee-e1a8-4a0f-a2b1-c774ebe4201a/1_%20Firebase%20web%20blog%20completo%20paso%20a%20paso_KDDZOK.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">32 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d2df2dee-e1a8-4a0f-a2b1-c774ebe4201a/1_%20Firebase%20web%20blog%20completo%20paso%20a%20paso_KDDZOK.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Firebase web blog completo paso a paso</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e7b3717a-3d86-41e7-bc96-fbaebf3188ac/2_%20Qu%C3%A9%20es%20Firebase%20y%20para%20qu%C3%A9%20sirve_MVGDPM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Qué es Firebase y para qué sirve</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1902dd40-2768-4e0c-bd59-ee55986c3e8e/3_%20Creaci%C3%B3n%20y%20gesti%C3%B3n%20de%20un%20videoblog%20con%20Firebase_URUNXC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Creación y gestión de un videoblog con Firebase</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/dfd337ce-6243-499a-8a4a-7b13ecae76e4/4_%20Configuraci%C3%B3n%20de%20Firebase%20en%20Proyectos%20Web%20y%20M%C3%B3viles_SKIDXO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Configuración de Firebase en Proyectos Web y Móviles</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d9537165-cb1c-47e6-b065-49e1c2c39c63/5_%20Configuraci%C3%B3n%20de%20Firebase%20en%20Proyecto%20Web%20con%20JavaScript_RRJWKR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Configuración de Firebase en Proyecto Web con JavaScript</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bbc9140f-596a-48d4-8b7a-bdb739c29b4a/6_%20Servicios%20de%20autenticaci%C3%B3n%20de%20Firebase_XGCAAL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Servicios de autenticación de Firebase</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e9ce69e5-8d1b-473b-8858-fa2f76e0582b/7_%20Crear%20usuarios%20con%20Firebase%20Authentication_VBGFSX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Crear usuarios con Firebase Authentication</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/eb5c889a-724b-41c0-b056-2d0913447e0e/8_%20Autenticaci%C3%B3n%20de%20Usuarios%20con%20Firebase%20Registro%20y%20Verificaci%C3%B3n%20d_CDGAHP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Autenticación de Usuarios con Firebase Registro y Verificación d</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/444e21ac-3220-4606-997d-ad6115cc9503/9_%20Autenticaci%C3%B3n%20con%20Google%20usando%20Firebase%20en%20aplicaciones%20web_DQMDDZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Autenticación con Google usando Firebase en aplicaciones web</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bbc65a18-df5b-423e-9055-670db47054c4/10_%20Login%20con%20Facebook%20en%20Firebase_AHGLWC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Login con Facebook en Firebase</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/e29fc4a4-da36-46a6-a89b-c181c81441ae/11_%20Gesti%C3%B3n%20de%20Autenticaci%C3%B3n%20de%20Usuarios%20con%20Firebase_LWCZSD.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Gestión de Autenticación de Usuarios con Firebase</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/61b3c30b-e8f1-49e5-9e26-e8840a0b8a37/12_%20Gesti%C3%B3n%20de%20usuarios%20en%20consola%20Firebase_BBQRPO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Gestión de usuarios en consola Firebase</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6466ae0b-62fe-4f6c-b51b-997a572acdd3/13_%20Importar%20y%20exportar%20usuarios%20de%20Firebase_MEVNAZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>13. Importar y exportar usuarios de Firebase</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/0b4210eb-b8f0-4ca8-8563-58cd5f39b6e3/14_%20Firestore%20vs%20Realtime%20Database%20por%20qu%C3%A9%20migrar_REAWUR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Firestore vs Realtime Database por qué migrar</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d0317e2e-8531-45fe-bcce-8cf157f23d6d/16_%20Habilitar%20Firestore%20en%20Firebase%20Console_VZAUUO.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Habilitar Firestore en Firebase Console</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d40d1fcd-c83a-4bff-ba21-1b4518960be0/17_%20C%C3%B3mo%20insertar%20datos%20en%20Firestore%20con%20validaci%C3%B3n_PKYGAI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Cómo insertar datos en Firestore con validación</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9197ad4a-68e2-4493-92e4-57e3b31fcc72/18_%20Consultas%20en%20Tiempo%20Real%20con%20Firestore%20para%20Aplicaciones%20Web_LHRJOW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Consultas en Tiempo Real con Firestore para Aplicaciones Web</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/cf7dc4ca-5344-44e8-aa75-05b6e891199f/19_%20Operaciones%20avanzadas%20de%20Firestore_OKHHQI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. Operaciones avanzadas de Firestore</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c06fd2f3-4056-462f-b19d-c81bafd136a2/20_%20Reglas%20de%20seguridad%20b%C3%A1sicas%20en%20Firestore_QGURQW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Reglas de seguridad básicas en Firestore</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/553a98fd-c664-4cf9-b004-df7f81b7202b/21_%20Creaci%C3%B3n%20y%20gesti%C3%B3n%20de%20%C3%ADndices%20en%20Firestore%20para%20optimizar%20consul_SORDUE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>21. Creación y gestión de índices en Firestore para optimizar consul</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8b7e0a28-bbdd-424c-8066-3b499d59985a/22_%20Almacenamiento%20de%20Archivos%20en%20Firebase%20Gesti%C3%B3n%20y%20Seguridad_FOKAAS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Almacenamiento de Archivos en Firebase Gestión y Seguridad</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/1f3057e4-57db-47a0-91e3-d31be5c5fc3a/23_%20Subir%20Im%C3%A1genes%20a%20Firebase%20Storage%20desde%20un%20Blog_SLMBAW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>23. Subir Imágenes a Firebase Storage desde un Blog</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6f3d9b46-2f5b-42f9-b93c-d20e2c08f111/24_%20Reglas%20de%20Seguridad%20en%20Firebase%20Storage%20para%20Blogs_FGEBLU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Reglas de Seguridad en Firebase Storage para Blogs</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/89add15a-8838-4036-b8e4-cd83550f5784/25_%20Caracter%C3%ADsticas%20y%20beneficios%20del%20hosting%20de%20Firebase_PSEMKS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Características y beneficios del hosting de Firebase</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3a001b90-e715-4e0d-a596-55c6560e9919/26_%20Despliegue%20de%20Aplicaciones%20con%20Firebase%20Hosting_VWZMSC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Despliegue de Aplicaciones con Firebase Hosting</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3d4cc456-830e-4e20-84d3-d9449c13a517/27_%20Configuraci%C3%B3n%20Personalizada%20de%20Hosting%20con%20Firebase_DFHAFT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Configuración Personalizada de Hosting con Firebase</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/dd0094cd-abeb-490e-9555-f0acdc00f547/28_%20Arquitectura%20de%20notificaciones%20Firebase_AUXZLZ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>28. Arquitectura de notificaciones Firebase</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/952049ce-1872-4672-b17f-1bd6205be069/29_%20Implementaci%C3%B3n%20de%20Notificaciones%20en%20Blog%20con%20Firebase_PSVNNN.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>29. Implementación de Notificaciones en Blog con Firebase</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/706b05c2-73e1-457d-b73a-0b87762cb3bc/30_%20onTokenRefresh%20renovar%20tokens%20en%20Firebase_FXEQJG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>30. onTokenRefresh renovar tokens en Firebase</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/aed5b737-0ba8-4628-8c18-0b68a54c5507/31_%20Probando%20notificaciones%20push%20con%20Firebase_SGZCVG.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>31. Probando notificaciones push con Firebase</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/108f1b58-db09-4220-9db1-f7109797d63b/32_%20Integraci%C3%B3n%20de%20Firebase%20en%20Aplicaciones%20Web_VAQJHV.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>32. Integración de Firebase en Aplicaciones Web</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

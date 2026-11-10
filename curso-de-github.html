@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Git y GitHub- CursioLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="dark-mode">
+
+    <!-- Sidebar Lateral -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="logo-img" src="logo.png" alt="CursioLab Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item">
+                <img src="assets/icons/arrow_icon.png" alt="Volver a Inicio" class="icon-png">
+                <span>Volver a Inicio</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="assets/icons/classes_icon.png" alt="Clases" class="icon-png">
+                <span>Ver Clases</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/resources_icon.png" alt="Recursos" class="icon-png">
+                <span>Recursos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="assets/icons/foro_icon.png" alt="Foro" class="icon-png">
+                <span>Foro</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Contenido del Reproductor -->
+    <div class="main-wrapper">
+        <header class="topbar">
+            <div class="course-breadcrumb">
+                <a href="index.html">Cursos</a> / <span>Curso de Git y GitHub</span>
+            </div>
+
+            <div class="user-profile">
+                <button id="themeToggle" class="theme-toggle" title="Cambiar tema">
+                    <img id="themeIcon" src="assets/icons/lightmode_icon.png" class="icon-png" alt="Modo Claro/Oscuro">
+                </button>
+                <div class="profile-info">
+                    <img src="assets/user.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span class="username">Jhon Doe</span>
+                        <span class="user-email">@jhonDoe</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body player-body">
+            <div class="course-title-section">
+                <img class="course-badge" src="https://static.platzi.com/media/achievements/badge-8-738d990a-87e0-488a-b069-6ac164a2790c.png" alt="Badge">
+                <div>
+                    <h1>Curso de Git y GitHub</h1>
+                    <p class="video-title">1. Todo lo que aprenderás sobre redes de internet</p>
+                </div>
+            </div>
+
+            <div class="container_curso">
+                <!-- Zona del reproductor de video -->
+                <div class="video-player">
+                    <video id="videoPlayer" controls autoplay controlsList="nodownload" disablePictureInPicture poster="">
+                        <source src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/84107276-d677-4226-85d2-4c48de42c9c9/1_%20Control%20de%20Versiones%20con%20Git%20y%20GitHub%20De%20B%C3%A1sico%20a%20Avanzado_NVVGPA.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Playlist de clases -->
+                <div class="playlist">
+                    <div class="playlist-header">
+                        <h3>Contenido del Curso</h3>
+                        <span class="lesson-count">42 clases</span>
+                    </div>
+                    <ul id="videoList">
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/84107276-d677-4226-85d2-4c48de42c9c9/1_%20Control%20de%20Versiones%20con%20Git%20y%20GitHub%20De%20B%C3%A1sico%20a%20Avanzado_NVVGPA.mp4" class="active">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>1. Control de Versiones con Git y GitHub De Básico a Avanzado</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ad7aab8c-d2e2-4e9e-9fc8-5031b5efc396/2_%20Fundamentos%20de%20Git%20Configuraci%C3%B3n%20y%20Comandos%20B%C3%A1sicos_WVMDWJ.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>2. Fundamentos de Git Configuración y Comandos Básicos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5445a50f-85e1-4fe2-bf43-92914eeec519/3_%20Control%20de%20Versiones%20con%20Git%20Comandos%20B%C3%A1sicos%20y%20Flujo%20de%20Trabajo_TZZZHU.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>3. Control de Versiones con Git Comandos Básicos y Flujo de Trabajo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2c95982e-9a01-41dc-b1fc-3c4167c72477/4_%20Gesti%C3%B3n%20de%20ramas%20en%20Git%20creaci%C3%B3n%20fusi%C3%B3n%20y%20eliminaci%C3%B3n%20eficiente_XLVNLT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>4. Gestión de ramas en Git creación fusión y eliminación eficiente</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/69889004-28ff-4f3d-b631-1e3f384bcf55/5_%20Git%20reset%20vs%20revert%20para%20deshacer%20commits_MMDASL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>5. Git reset vs revert para deshacer commits</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/ce540cb1-e6b4-4925-ad2e-a61dcb8632d5/6_%20Git%20Tag%20y%20Checkout%20sin%20romper%20tu%20proyecto_QWJXTS.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>6. Git Tag y Checkout sin romper tu proyecto</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/68d46943-b224-4207-ba55-0be19495ce02/7_%20C%C3%B3mo%20resolver%20conflictos%20de%20merge%20en%20Git_RTUJIK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>7. Cómo resolver conflictos de merge en Git</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d92d9ab2-5a04-4371-a88b-4c3457423780/8_%20Uso%20de%20Git%20en%20Visual%20Studio%20Code_WJCXKW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>8. Uso de Git en Visual Studio Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2a7b1371-b7ef-4a28-9d98-293e18e04a34/9_%20Uso%20de%20GitHub%20para%20Colaboraci%C3%B3n%20y%20Desarrollo%20Seguro_DRJDKW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>9. Uso de GitHub para Colaboración y Desarrollo Seguro</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/deb38e6a-ed33-4027-aabd-e49e4907ab52/10_%20C%C3%B3mo%20crear%20y%20proteger%20tu%20cuenta%20de%20GitHub_DWQSBM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>10. Cómo crear y proteger tu cuenta de GitHub</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b866be69-cb12-4cde-adb5-1cc2cd4d5174/11_%20Proceso%20de%20Trabajo%20con%20Git%20y%20GitHub%20Creaci%C3%B3n%20y%20Revisi%C3%B3n%20de%20Repos_QRCOUH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>11. Proceso de Trabajo con Git y GitHub Creación y Revisión de Repos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/543b5877-e931-4e61-914b-ef541507e9b8/12_%20Crea%20y%20clona%20tu%20primer%20repo%20en%20GitHub_SHZLPW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>12. Crea y clona tu primer repo en GitHub</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3d6bcf98-d2fc-4bcc-b7d8-3d824c8d7feb/14_%20Configuraci%C3%B3n%20de%20SSH%20en%20GitHub%20para%20Windows%20Linux%20y%20Mac_SKHSPK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>14. Configuración de SSH en GitHub para Windows Linux y Mac</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5461f36f-7f2b-426b-a360-8d756b0a9d89/15_%20Uso%20de%20Forks%20y%20Estrellas%20en%20Repositorios%20de%20GitHub_NNQWPK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>15. Uso de Forks y Estrellas en Repositorios de GitHub</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/26ea17b8-51bb-413b-8826-3105cfe0a298/16_%20Uso%20de%20git%20pull%20git%20push%20y%20git%20fetch%20en%20repositorios%20GitHub_WPGXSW.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>16. Uso de git pull git push y git fetch en repositorios GitHub</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/6d5e05a8-9487-441d-bc21-0a6e2b39e7a7/17_%20Plantillas%20de%20issues%20en%20GitHub%20paso%20a%20paso_VUALAA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>17. Plantillas de issues en GitHub paso a paso</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3dd0f522-bcec-46c1-8d9f-6c2466f20b67/18_%20Uso%20de%20Pull%20Requests%20en%20GitHub%20para%20Colaboraci%C3%B3n%20Efectiva_CAJKXK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>18. Uso de Pull Requests en GitHub para Colaboración Efectiva</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bf54bfe0-c298-4e10-989e-529a02134d81/19_%20GitHub%20Projects%20para%20gestionar%20tareas%20en%20equipo_DSJJVM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>19. GitHub Projects para gestionar tareas en equipo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/9328ebd3-1edc-4e06-a664-fc64fc9a413c/20_%20Automatiza%20GitHub%20Projects%20con%20workflows_LXKBYI.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>20. Automatiza GitHub Projects con workflows</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/b34b1a48-09db-4088-bd6c-8754bac576a8/22_%20Creaci%C3%B3n%20de%20una%20Portada%20de%20Perfil%20en%20GitHub%20con%20Markdown_TMOQMY.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>22. Creación de una Portada de Perfil en GitHub con Markdown</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/4cbaa84c-71d5-439f-ad26-3e31f5660b07/24_%20Uso%20de%20GitHub%20Gist%20para%20Compartir%20y%20Revisar%20C%C3%B3digo%20Colaborativo_RATJVC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>24. Uso de GitHub Gist para Compartir y Revisar Código Colaborativo</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/8648b5e6-f254-4fa1-8dd5-19ae5d7beb53/25_%20Creaci%C3%B3n%20y%20Publicaci%C3%B3n%20de%20Sitios%20Web%20con%20GitHub%20Pages_OFDZKH.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>25. Creación y Publicación de Sitios Web con GitHub Pages</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/50acfc12-958c-4cc0-8df1-0be8b0cba59d/26_%20Creaci%C3%B3n%20y%20Gesti%C3%B3n%20de%20GitHub%20Codespaces%20en%20la%20Nube_YVQNAX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>26. Creación y Gestión de GitHub Codespaces en la Nube</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c5e7fb21-3135-4353-b521-caf464f10d35/27_%20Plantillas%20de%20Codespaces%20con%20Django%20y%20devcontainer_IETSHL.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>27. Plantillas de Codespaces con Django y devcontainer</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2aefea83-f2a6-4468-b82a-d065e5405287/28_%20Pair%20programming%20con%20Live%20Share%20en%20Codespaces_DFUZWE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>28. Pair programming con Live Share en Codespaces</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c8e2499c-f655-4749-b4f9-3639896c71bf/29_%20Uso%20del%20Editor%20Web%20de%20GitHub%20para%20Edici%C3%B3n%20R%C3%A1pida%20de%20Archivos_ENTUUC.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>29. Uso del Editor Web de GitHub para Edición Rápida de Archivos</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c8bdf499-a0e3-4441-967a-e290a40ec00e/30_%20Gesti%C3%B3n%20de%20GitHub%20Tokens%20para%20Acceso%20Seguro%20a%20Repositorios_FVUCAP.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>30. Gestión de GitHub Tokens para Acceso Seguro a Repositorios</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/3408fc79-04a0-44d2-bcb1-6dbbe31aa89e/31_%20Gesti%C3%B3n%20de%20Seguridad%20de%20Paquetes%20con%20Dependabot%20en%20Proyectos%20_NE_TCSESK.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>31. Gestión de Seguridad de Paquetes con Dependabot en Proyectos .NET</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/61bb6b0f-ef11-4858-9999-bd748a9f77c6/32_%20Repositorios%20privados%20y%20_gitignore%20en%20GitHub_DTDWBA.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>32. Repositorios privados y .gitignore en GitHub</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/356598c4-2418-4171-8fbb-8d181e975792/33_%20Secret%20Scanning%20en%20GitHub%20y%20sus%20l%C3%ADmites_FBACGX.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>33. Secret Scanning en GitHub y sus límites</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/d469d58f-3af3-4838-bf36-f4925c9f05fe/34_%20Creaci%C3%B3n%20y%20gesti%C3%B3n%20de%20repositorios%20en%20GitHub_YDACLF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>34. Creación y gestión de repositorios en GitHub</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/771fefb9-b066-4204-9853-7950d90b0325/35_%20Automatizaci%C3%B3n%20de%20GitHub%20Actions%20para%20Actualizar%20Perfil_KOQQGB.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>35. Automatización de GitHub Actions para Actualizar Perfil</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/2aeb6c3e-448a-4830-b0a7-03cf166476e5/36_%20Gestiona%20GitHub%20desde%20tu%20terminal%20con%20gh_GLQVJE.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>36. Gestiona GitHub desde tu terminal con gh</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/a85d757b-4936-4ce0-893f-e930c785cf07/37_%20Configuraci%C3%B3n%20de%20Proyectos%20de%20Software%20con%20Git%20y%20GitHub_MEANBM.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>37. Configuración de Proyectos de Software con Git y GitHub</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/11d92cc7-5298-4e94-ac71-b172c3c3af64/38_%20C%C3%B3mo%20resolver%20conflictos%20de%20merge%20en%20VS%20Code_AZRKCF.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>38. Cómo resolver conflictos de merge en VS Code</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c363b786-e961-4f9b-84d8-1645d524ed56/40_%20Creaci%C3%B3n%20de%20Releases%20en%20Github%20para%20Desarrolladores%20de%20Software_OHBHII.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>40. Creación de Releases en Github para Desarrolladores de Software</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/684b89f0-a232-4223-9d49-aee9d53a3980/41_%20Instala%20tu%20paquete%20pip%20desde%20GitHub_GOOSPT.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>41. Instala tu paquete pip desde GitHub</span>
+                        </li>
+                        <li data-video="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/17347f9c-b4a9-4407-8f97-4642e20f72fa/42_%20Pro%20tips%20ocultos%20de%20GitHub%20para%20trabajar%20mejor_TKVGHR.mp4">
+                            <img src="assets/icons/classes_icon.png" alt="Clase" class="icon-png icon-png-small play-icon">
+                            <span>42. Pro tips ocultos de GitHub para trabajar mejor</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
